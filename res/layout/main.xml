@@ -11,5 +11,9 @@
             android:id="@+id/actionbar"
             style="@style/ActionBar"
             />
+    <Gallery
+            android:layout_width="fill_parent"
+            android:layout_height="121dp"
+            android:id="@+id/gallery"/>
 </LinearLayout>
 
