@@ -1,8 +1,31 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-              android:orientation="vertical"
-              android:layout_width="match_parent"
-              android:layout_height="match_parent" android:background="#ffffff">
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#ffededed"
+        android:orientation="vertical">
 
-</LinearLayout>
+
+    <ListView
+            android:id="@+id/classItemListView"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:cacheColorHint="#00000000"
+            android:divider="@drawable/divider_style"
+            android:dividerHeight="1px"
+            android:fastScrollEnabled="true">
+    </ListView>
+    <View
+            android:layout_width="fill_parent"
+            android:layout_height="1.0dip">
+    </View>
+
+
+    <com.example.taotaokanAndroid.ActionBar
+            android:id="@+id/settingActionBar"
+            style="@style/ActionBar"
+            android:layout_width="fill_parent"
+            android:layout_alignLeft="@+id/classItemListView" android:layout_alignParentBottom="true"/>
+</RelativeLayout>

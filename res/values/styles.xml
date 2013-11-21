@@ -41,5 +41,11 @@
     <declare-styleable name="Gallery">
         <attr name="android:galleryItemBackground"/>
     </declare-styleable>
-
+    <style name="custom_window_title_background">
+        <item name="android:background">@drawable/ic_title_home_demo</item>
+    </style>
+    <style name="custom_title">
+        <item name="android:windowTitleSize">50dp</item>
+        <item name="android:windowTitleBackgroundStyle">@style/custom_window_title_background</item>
+    </style>
 </resources>
