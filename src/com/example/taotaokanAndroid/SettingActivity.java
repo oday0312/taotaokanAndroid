@@ -4,6 +4,7 @@ import android.app.Activity;
 import android.os.Bundle;
 import android.view.Window;
 import android.widget.ListView;
+import com.umeng.analytics.MobclickAgent;
 
 import java.util.HashSet;
 import java.util.Set;
@@ -84,6 +85,15 @@ public class SettingActivity extends Activity {
         overridePendingTransition(R.anim.slide_in, R.anim.slide_out);
     }
 
+
+    public void onResume() {
+        super.onResume();
+        MobclickAgent.onResume(this);
+    }
+    public void onPause() {
+        super.onPause();
+        MobclickAgent.onPause(this);
+    }
 }
 
 
