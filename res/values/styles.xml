@@ -36,4 +36,10 @@
     </style>
     <style name="ActionBarProgressBar" parent="@android:style/Widget.ProgressBar.Small">
     </style>
+
+
+    <declare-styleable name="Gallery">
+        <attr name="android:galleryItemBackground"/>
+    </declare-styleable>
+
 </resources>
