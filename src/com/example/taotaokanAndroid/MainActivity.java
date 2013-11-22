@@ -8,6 +8,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Gallery;
 import android.widget.Toast;
+import com.umeng.analytics.MobclickAgent;
 
 public class MainActivity extends Activity {
     /**
@@ -68,5 +69,14 @@ public class MainActivity extends Activity {
 
         }
 
+    }
+
+    public void onResume() {
+        super.onResume();
+        MobclickAgent.onResume(this);
+    }
+    public void onPause() {
+        super.onPause();
+        MobclickAgent.onPause(this);
     }
 }
