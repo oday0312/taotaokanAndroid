@@ -28,4 +28,8 @@
             style="@style/ActionBar"
             android:layout_width="fill_parent"
             android:layout_alignLeft="@+id/classItemListView" android:layout_alignParentBottom="true"/>
+    <include android:layout_width="wrap_content"
+             android:layout_height="45dp"
+             layout="@layout/titlebar" android:id="@+id/include" android:layout_alignLeft="@+id/classItemListView"
+             android:layout_alignTop="@+id/classItemListView"/>
 </RelativeLayout>
