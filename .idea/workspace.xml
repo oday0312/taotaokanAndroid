@@ -29,19 +29,7 @@
     <option name="TOOL_WINDOW_LOG_LEVEL" value="ERROR" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="02026f30-e8a8-4b15-a05f-9eb53e256d6d" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/anim/menu_bottombar_in.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/anim/menu_bottombar_out.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/layout/share_popup_windows.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/example/taotaokanAndroid/ClassItem.java" afterPath="$PROJECT_DIR$/src/com/example/taotaokanAndroid/ClassItem/ClassItem.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/example/taotaokanAndroid/ClassItemAct.java" afterPath="$PROJECT_DIR$/src/com/example/taotaokanAndroid/ClassItem/ClassItemAct.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/example/taotaokanAndroid/ClassListAdapter.java" afterPath="$PROJECT_DIR$/src/com/example/taotaokanAndroid/ClassItem/ClassListAdapter.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/example/taotaokanAndroid/MainActivity.java" afterPath="$PROJECT_DIR$/src/com/example/taotaokanAndroid/MainActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/example/taotaokanAndroid/SettingActivity.java" afterPath="$PROJECT_DIR$/src/com/example/taotaokanAndroid/SettingActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/layout/main.xml" afterPath="$PROJECT_DIR$/res/layout/main.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/values/styles.xml" afterPath="$PROJECT_DIR$/res/values/styles.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-    </list>
+    <list default="true" id="02026f30-e8a8-4b15-a05f-9eb53e256d6d" name="Default" comment="" />
     <ignored path="taotaokanAndroid.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/Dummy.txt" changelist="02026f30-e8a8-4b15-a05f-9eb53e256d6d" time="1385107449051" ignored="false" />
@@ -189,7 +177,7 @@
       <file leaf-file-name="styles.xml" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/res/values/styles.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="55" column="73" selection-start="2409" selection-end="2427" vertical-scroll-proportion="0.7448015">
+            <state line="41" column="31" selection-start="1842" selection-end="1842" vertical-scroll-proportion="0.3478261">
               <folding />
             </state>
           </provider>
@@ -266,8 +254,8 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="681" />
-    <option name="y" value="40" />
+    <option name="x" value="456" />
+    <option name="y" value="22" />
     <option name="width" value="1900" />
     <option name="height" value="982" />
   </component>
@@ -679,7 +667,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="681" y="40" width="1900" height="982" extended-state="0" />
+    <frame x="456" y="22" width="1900" height="982" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32955772" sideWeight="0.6728538" order="3" side_tool="false" content_ui="tabs" />
@@ -904,7 +892,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/res/values/styles.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="55" column="73" selection-start="2409" selection-end="2427" vertical-scroll-proportion="0.7448015">
+        <state line="41" column="31" selection-start="1842" selection-end="1842" vertical-scroll-proportion="0.3478261">
           <folding />
         </state>
       </provider>
