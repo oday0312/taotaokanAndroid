@@ -1,4 +1,4 @@
-package com.example.taotaokanAndroid;
+package com.example.taotaokanAndroid.ClassItem;
 
 import java.io.Serializable;
 

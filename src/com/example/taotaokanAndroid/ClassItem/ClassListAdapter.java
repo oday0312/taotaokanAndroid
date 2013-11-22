@@ -1,4 +1,4 @@
-package com.example.taotaokanAndroid;
+package com.example.taotaokanAndroid.ClassItem;
 
 import java.util.Vector;
 
@@ -10,7 +10,7 @@ import android.widget.BaseAdapter;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
-
+import com.example.taotaokanAndroid.R;
 
 
 public class ClassListAdapter extends BaseAdapter {

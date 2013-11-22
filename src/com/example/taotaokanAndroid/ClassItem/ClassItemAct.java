@@ -1,4 +1,4 @@
-package com.example.taotaokanAndroid;
+package com.example.taotaokanAndroid.ClassItem;
 
 
 import java.util.HashSet;
@@ -8,7 +8,7 @@ import java.util.Vector;
 import android.app.Activity;
 import android.os.Bundle;
 import android.widget.ListView;
-
+import com.example.taotaokanAndroid.R;
 
 
 public class ClassItemAct extends Activity {

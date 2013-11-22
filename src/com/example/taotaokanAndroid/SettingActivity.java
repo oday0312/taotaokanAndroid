@@ -4,6 +4,8 @@ import android.app.Activity;
 import android.os.Bundle;
 import android.view.Window;
 import android.widget.ListView;
+import com.example.taotaokanAndroid.ClassItem.ClassItem;
+import com.example.taotaokanAndroid.ClassItem.ClassListAdapter;
 import com.umeng.analytics.MobclickAgent;
 
 import java.util.HashSet;
