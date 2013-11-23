@@ -86,7 +86,7 @@ public class MainActivity extends Activity {
     public Intent createIntent(Context context)
     {
         Intent t = new Intent();
-        t.setClass(MainActivity.this,SettingActivity.class);
+        t.setClass(MainActivity.this,GridViewActivity.class);
         return t;
     }
 
