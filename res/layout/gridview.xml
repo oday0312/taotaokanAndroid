@@ -1,10 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-              android:orientation="vertical"
-              android:layout_width="match_parent"
-              android:layout_height="match_parent">
-
+<com.example.taotaokanAndroid.PullToRefresh.PullToRefreshView xmlns:android="http://schemas.android.com/apk/res/android"
+                                                    android:id="@+id/main_pull_refresh_view"
+                                                    android:background="@android:color/white"
+                                                    android:layout_width="fill_parent"
+                                                    android:layout_height="fill_parent"
+                                                    android:orientation="vertical">
+    <!-- 这里放置listview,gridview或者scrollview的布局 ,PullToRefreshView
+    要设置android:orientation="vertical"属性
+    否则,显示不正确-->
 
     <GridView xmlns:android="http://schemas.android.com/apk/res/android"
               android:id="@+id/gridview"
@@ -16,4 +20,4 @@
               android:stretchMode="columnWidth"
               android:gravity="center"
               android:numColumns="1"/>
-</LinearLayout>
+</com.example.taotaokanAndroid.PullToRefresh.PullToRefreshView>

@@ -6,6 +6,8 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.GridView;
 import android.widget.Toast;
+import com.example.taotaokanAndroid.PullToRefresh.PullToRefreshView;
+import com.example.taotaokanAndroid.gridView.GridItemType1Adapter;
 
 /**
  * Created with IntelliJ IDEA.
@@ -14,8 +16,8 @@ import android.widget.Toast;
  * Time: 上午11:52
  * To change this template use File | Settings | File Templates.
  */
-public class GridViewActivity extends Activity {
-
+public class GridViewActivity extends Activity implements PullToRefreshView.OnHeaderRefreshListener,PullToRefreshView.OnFooterRefreshListener {
+    PullToRefreshView mPullToRefreshView;
     private GridView gridView;
     //图片的第一行文字
     private String[] titles = new String[]
@@ -38,6 +40,10 @@ public class GridViewActivity extends Activity {
         setContentView(R.layout.gridview);
 
         gridView = (GridView) findViewById(R.id.gridview);
+        mPullToRefreshView = (PullToRefreshView)findViewById(R.id.main_pull_refresh_view);
+        mPullToRefreshView.setOnHeaderRefreshListener(this);
+        mPullToRefreshView.setOnFooterRefreshListener(this);
+
         GridItemType1Adapter adapter = new GridItemType1Adapter(titles, images,description,this);
         gridView.setAdapter(adapter);
 
@@ -51,4 +57,30 @@ public class GridViewActivity extends Activity {
         });
 
     }
+
+
+    @Override
+    public void onFooterRefresh(PullToRefreshView view) {
+        mPullToRefreshView.postDelayed(new Runnable() {
+
+            @Override
+            public void run() {
+                mPullToRefreshView.onFooterRefreshComplete();
+            }
+        }, 1000);
+    }
+    @Override
+    public void onHeaderRefresh(PullToRefreshView view) {
+        mPullToRefreshView.postDelayed(new Runnable() {
+
+            @Override
+            public void run() {
+                // 璁剧疆鏇存柊鏃堕棿
+                //mPullToRefreshView.onHeaderRefreshComplete("鏈�繎鏇存柊:01-23 12:01");
+                mPullToRefreshView.onHeaderRefreshComplete();
+            }
+        },1000);
+
+    }
+
 }

@@ -1,4 +1,4 @@
-package com.example.taotaokanAndroid;
+package com.example.taotaokanAndroid.gridView;
 
 /**
  * Created with IntelliJ IDEA.
@@ -17,6 +17,7 @@ import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
+import com.example.taotaokanAndroid.R;
 
 public class GridItemType1Adapter extends BaseAdapter
 {

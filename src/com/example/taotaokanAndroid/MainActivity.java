@@ -7,11 +7,16 @@ import android.content.res.TypedArray;
 import android.graphics.Bitmap;
 import android.graphics.drawable.BitmapDrawable;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.*;
 import android.widget.Gallery;
 import android.widget.PopupWindow;
-import android.widget.Toast;
+import com.example.taotaokanAndroid.gridView.GalleryImageAdapter;
+import com.theindex.CuzyAdSDK.CuzyAdSDK;
+import com.theindex.CuzyAdSDK.CuzyTBKItem;
 import com.umeng.analytics.MobclickAgent;
+
+import java.util.ArrayList;
 
 public class MainActivity extends Activity {
     /**
@@ -24,6 +29,11 @@ public class MainActivity extends Activity {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main);
+
+        CuzyAdSDK.getInstance().setContext(this);
+        CuzyAdSDK.getInstance().registerApp("200003","208f53acd6d396867c2a721be6c807eb");
+
+
 
         ActionBar actionBar = (ActionBar) findViewById(R.id.actionbar);
 
@@ -86,7 +96,7 @@ public class MainActivity extends Activity {
     public Intent createIntent(Context context)
     {
         Intent t = new Intent();
-        t.setClass(MainActivity.this,GridViewActivity.class);
+        t.setClass(MainActivity.this, GridViewActivity.class);
         return t;
     }
 
@@ -99,7 +109,12 @@ public class MainActivity extends Activity {
 
         @Override
         public void performAction(View view) {
-            mPopupWindow.showAtLocation(findViewById(R.id.mainlayout), Gravity.BOTTOM, 0, 0);
+
+            ArrayList<CuzyTBKItem> rawData = CuzyAdSDK.getInstance().fetchRawItems("", "手机", 0);
+            Log.d("huang alex", ""+rawData.size());
+            //CuzyAdSDK.getInstance().("6","",0);
+
+            //mPopupWindow.showAtLocation(findViewById(R.id.mainlayout), Gravity.BOTTOM, 0, 0);
 
 
 //            Intent t = new Intent();

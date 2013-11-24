@@ -1,4 +1,4 @@
-package com.example.taotaokanAndroid;
+package com.example.taotaokanAndroid.gridView;
 
 import android.widget.ImageView;
 import android.widget.TextView;
