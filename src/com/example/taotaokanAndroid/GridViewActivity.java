@@ -65,6 +65,7 @@ public class GridViewActivity extends Activity implements PullToRefreshView.OnHe
 
             @Override
             public void run() {
+
                 mPullToRefreshView.onFooterRefreshComplete();
             }
         }, 1000);
