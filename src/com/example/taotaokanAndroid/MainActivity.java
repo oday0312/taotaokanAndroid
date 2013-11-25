@@ -9,6 +9,7 @@ import android.graphics.drawable.BitmapDrawable;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.*;
+import android.widget.Button;
 import android.widget.Gallery;
 import android.widget.PopupWindow;
 import com.example.taotaokanAndroid.gridView.GalleryImageAdapter;
@@ -75,6 +76,16 @@ public class MainActivity extends Activity {
                 }
                 return false;
             }
+        });
+
+        Button b = (Button)findViewById(R.id.button);
+        b.setOnClickListener(new View.OnClickListener() {
+                    public void onClick(View v)
+                    {
+                        CuzyAdSDK.getInstance().fetchItems("1006","",0);
+                        //ArrayList<CuzyTBKItem> rawData = CuzyAdSDK.getInstance().fetchRawItems("", "手机", 0);
+                        //Log.d("cuzy data: huang alex", ""+rawData.size());
+                    }
         });
     }
 

@@ -1,7 +1,7 @@
 <component name="libraryTable">
-  <library name="umeng_sdk">
+  <library name="CuzyAdSDKAndroid">
     <CLASSES>
-      <root url="jar://$PROJECT_DIR$/libs/umeng_sdk.jar!/" />
+      <root url="jar://$PROJECT_DIR$/libs/CuzyAdSDKAndroid.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />

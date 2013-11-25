@@ -15,6 +15,7 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" name="CuzyAdSDKAndroid" level="project" />
     <orderEntry type="library" name="umeng_sdk" level="project" />
   </component>
 </module>
