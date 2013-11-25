@@ -26,6 +26,9 @@ public class MainActivity extends Activity {
 
     private PopupWindow mPopupWindow;
     private Gallery myGallery;
+
+    public ArrayList<CuzyTBKItem> rawData = new ArrayList<CuzyTBKItem>();
+
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -40,7 +43,11 @@ public class MainActivity extends Activity {
 
 
         actionBar.setTitle("淘淘看");
-        actionBar.setHomeAction(new ActionBar.IntentAction(this, createIntent(this), R.drawable.ic_title_home_default));
+        //actionBar.setHomeAction(new ActionBar.IntentAction(this, createIntent(this), R.drawable.ic_title_home_default));
+        actionBar.addAction(new StartSearchAction());
+        actionBar.addAction(new StartSettingAction());
+        actionBar.addAction(new StartShareGridView());
+
         //actionBar.addAction(new ActionBar.IntentAction(this, createShareIntent(), R.drawable.ic_title_share_default));
         actionBar.addAction(new ToastAction());
 
@@ -123,7 +130,7 @@ public class MainActivity extends Activity {
         @Override
         public void performAction(View view) {
 
-            ArrayList<CuzyTBKItem> rawData = CuzyAdSDK.getInstance().fetchRawItems("", "手机", 0);
+            rawData = CuzyAdSDK.getInstance().fetchRawItems("", "手机", 0);
             Log.d("huang alex", ""+rawData.size());
             //CuzyAdSDK.getInstance().("6","",0);
 
@@ -142,6 +149,57 @@ public class MainActivity extends Activity {
         }
 
     }
+
+    private class StartSettingAction implements ActionBar.Action {
+
+        @Override
+        public int getDrawable() {
+            return R.drawable.ic_title_export_default;
+        }
+
+        @Override
+        public void performAction(View view) {
+            Intent t = new Intent();
+            t.setClass(MainActivity.this,SettingActivity.class);
+            startActivity(t);
+            overridePendingTransition(R.anim.slide_in, R.anim.slide_out);
+        }
+
+    }
+
+    private class StartSearchAction implements ActionBar.Action {
+
+        @Override
+        public int getDrawable() {
+            return R.drawable.ic_title_export_default;
+        }
+
+        @Override
+        public void performAction(View view) {
+            Intent t = new Intent();
+            t.setClass(MainActivity.this,SearchActivity.class);
+            startActivity(t);
+            overridePendingTransition(R.anim.slide_in, R.anim.slide_out);
+        }
+
+    }
+
+
+    private class StartShareGridView implements ActionBar.Action {
+
+        @Override
+        public int getDrawable() {
+            return R.drawable.ic_title_export_default;
+        }
+
+        @Override
+        public void performAction(View view) {
+           mPopupWindow.showAtLocation(findViewById(R.id.mainlayout), Gravity.BOTTOM, 0, 0);
+
+        }
+
+    }
+
 
     public void onResume() {
         super.onResume();

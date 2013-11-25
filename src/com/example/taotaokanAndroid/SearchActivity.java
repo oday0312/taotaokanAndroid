@@ -3,6 +3,7 @@ package com.example.taotaokanAndroid;
 import android.app.Activity;
 import android.os.Bundle;
 import android.widget.SearchView;
+import com.umeng.analytics.MobclickAgent;
 
 /**
  * Created with IntelliJ IDEA.
@@ -20,5 +21,21 @@ public class SearchActivity extends Activity {
         search.setFocusable(true);
         search.setIconified(false);
         search.requestFocusFromTouch();
+    }
+
+
+
+
+    public void onBackPressed() {
+        finish();
+        overridePendingTransition(R.anim.slide_in, R.anim.slide_out);
+    }
+    public void onResume() {
+        super.onResume();
+        MobclickAgent.onResume(this);
+    }
+    public void onPause() {
+        super.onPause();
+        MobclickAgent.onPause(this);
     }
 }

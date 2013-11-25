@@ -38,17 +38,27 @@ public class SettingActivity extends Activity {
         Vector<ClassItem> data = new Vector<ClassItem>();
 
         /**
-         * ���������  �����ʵ��ݿ������Ҹ����xml���
+         * ClassItem(int classId,
+         *              String className,
+         *              int partId,
+         *              String partName,
+         *              String classIcon)
          */
-        ClassItem item1 = new ClassItem(1,"ɢ��������",1,"��ȷ��","");
-        ClassItem item2 = new ClassItem(1,"ɢ��������",2,"δȷ��","");
-        ClassItem item3 = new ClassItem(1,"ɢ��������",2,"δȷ��","");
-        ClassItem item4 = new ClassItem(1,"ɢ��������",3,"��ȡ��","");
+        ClassItem item1 = new ClassItem(1,"清理缓存文件",1,"程序","");
+        ClassItem item2 = new ClassItem(1,"帮助说明",1,"程序","");
+        ClassItem item3 = new ClassItem(1,"设置桌面背景",1,"程序","");
+        ClassItem item4 = new ClassItem(1,"给我们打分",2,"其他","");
+        ClassItem item5 = new ClassItem(1,"版本更新",2,"其他","");
+        ClassItem item6 = new ClassItem(1,"反馈和建议",2,"其他","");
+
+
 
         data.addElement(item1);
         data.addElement(item2);
         data.addElement(item3);
         data.addElement(item4);
+        data.addElement(item5);
+        data.addElement(item6);
 
         addAdapterItem(data);
 
