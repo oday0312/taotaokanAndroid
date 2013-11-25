@@ -82,7 +82,7 @@ public class MainActivity extends Activity {
         b.setOnClickListener(new View.OnClickListener() {
                     public void onClick(View v)
                     {
-                        CuzyAdSDK.getInstance().fetchItems("1006","",0);
+                        //CuzyAdSDK.getInstance().fetchItems("1006","",0);
                         //ArrayList<CuzyTBKItem> rawData = CuzyAdSDK.getInstance().fetchRawItems("", "手机", 0);
                         //Log.d("cuzy data: huang alex", ""+rawData.size());
                     }
@@ -107,7 +107,9 @@ public class MainActivity extends Activity {
     public Intent createIntent(Context context)
     {
         Intent t = new Intent();
-        t.setClass(MainActivity.this, GridViewActivity.class);
+        //t.setClass(MainActivity.this, GridViewActivity.class);
+        t.setClass(MainActivity.this, SearchActivity.class);
+
         return t;
     }
 
