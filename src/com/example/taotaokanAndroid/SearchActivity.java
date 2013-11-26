@@ -1,11 +1,13 @@
 package com.example.taotaokanAndroid;
 
 import android.app.Activity;
+import android.content.Context;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.Gravity;
 import android.view.View;
+import android.view.inputmethod.InputMethodManager;
 import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.RelativeLayout;
@@ -63,6 +65,8 @@ public class SearchActivity extends Activity {
                     DataArray.add(temp);
                 }
 
+                InputMethodManager imm = (InputMethodManager)getSystemService(Context.INPUT_METHOD_SERVICE);
+                imm.hideSoftInputFromWindow(search.getWindowToken(), 0);
                 return false;
             }
 

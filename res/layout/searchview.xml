@@ -11,14 +11,16 @@
             android:id="@+id/searchView" android:layout_gravity="center"
             android:background="@color/class_item_bg_sel_color"/>
 
-    <include android:layout_width="fill_parent"
-             android:layout_height="45dp"
-             layout="@layout/search_tool_bar" android:id="@+id/searchbarview"
-             android:layout_alignParentStart="true" android:layout_alignParentBottom="true"/>
     <com.example.taotaokanAndroid.LoadMoreListView.LoadMoreListView
             android:layout_width="fill_parent"
             android:layout_height="fill_parent"
             android:id="@+id/searchview_listview"
             android:layout_alignParentLeft="true"
             android:layout_below="@+id/searchView"/>
+
+    <include android:layout_width="fill_parent"
+             android:layout_height="45dp"
+             layout="@layout/search_tool_bar" android:id="@+id/searchbarview"
+             android:layout_alignParentStart="true" android:layout_alignParentBottom="true"/>
+
 </RelativeLayout>
