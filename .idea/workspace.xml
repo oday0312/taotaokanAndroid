@@ -30,13 +30,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="02026f30-e8a8-4b15-a05f-9eb53e256d6d" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/example/taotaokanAndroid/webViewActivity.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/layout/webview.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AndroidManifest.xml" afterPath="$PROJECT_DIR$/AndroidManifest.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/example/taotaokanAndroid/SearchActivity.java" afterPath="$PROJECT_DIR$/src/com/example/taotaokanAndroid/SearchActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/layout/searchview.xml" afterPath="$PROJECT_DIR$/res/layout/searchview.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="taotaokanAndroid.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="02026f30-e8a8-4b15-a05f-9eb53e256d6d" time="1385473319186" ignored="false" />
+    <file path="/Dummy.txt" changelist="02026f30-e8a8-4b15-a05f-9eb53e256d6d" time="1385474537726" ignored="false" />
     <file path="/main.xml" changelist="02026f30-e8a8-4b15-a05f-9eb53e256d6d" time="1385108325847" ignored="false" />
     <file path="/MainActivity.java" changelist="02026f30-e8a8-4b15-a05f-9eb53e256d6d" time="1385437712725" ignored="false" />
     <file path="/ActionBar.java" changelist="02026f30-e8a8-4b15-a05f-9eb53e256d6d" time="1384942417332" ignored="false" />
@@ -47,7 +49,7 @@
     <file path="/ClassItemAct.java" changelist="02026f30-e8a8-4b15-a05f-9eb53e256d6d" time="1385027046021" ignored="false" />
     <file path="/setting.xml" changelist="02026f30-e8a8-4b15-a05f-9eb53e256d6d" time="1385028132268" ignored="false" />
     <file path="/titlebar.xml" changelist="02026f30-e8a8-4b15-a05f-9eb53e256d6d" time="1385115893718" ignored="false" />
-    <file path="/AndroidManifest.xml" changelist="02026f30-e8a8-4b15-a05f-9eb53e256d6d" time="1385029047098" ignored="false" />
+    <file path="/AndroidManifest.xml" changelist="02026f30-e8a8-4b15-a05f-9eb53e256d6d" time="1385474909613" ignored="false" />
     <file path="/styles.xml" changelist="02026f30-e8a8-4b15-a05f-9eb53e256d6d" time="1385029668819" ignored="false" />
     <file path="/share_popup_windows.xml" changelist="02026f30-e8a8-4b15-a05f-9eb53e256d6d" time="1385108384687" ignored="false" />
     <file path="/GridViewActivity.java" changelist="02026f30-e8a8-4b15-a05f-9eb53e256d6d" time="1385287450817" ignored="false" />
@@ -58,7 +60,7 @@
     <file path="$USER_HOME$/Documents/workspace/cuzyAndroidSimpleDemo/CuzyAdSDKAndroidDemo/gen/com/theindex/CuzyAdSDKDemo/BuildConfig.java" changelist="02026f30-e8a8-4b15-a05f-9eb53e256d6d" time="1385368163346" ignored="false" />
     <file path="$USER_HOME$/Documents/workspace/cuzyAndroidSimpleDemo/CuzyAdSDKAndroidDemo/gen/com/theindex/CuzyAdSDKDemo/R.java" changelist="02026f30-e8a8-4b15-a05f-9eb53e256d6d" time="1385368106750" ignored="false" />
     <file path="$USER_HOME$/Documents/workspace/cuzyAndroidSimpleDemo/CuzyAdSDKAndroidDemo/gen/com/theindex/CuzyAdSDKDemo/Manifest.java" changelist="02026f30-e8a8-4b15-a05f-9eb53e256d6d" time="1385368106750" ignored="false" />
-    <file path="/SearchActivity.java" changelist="02026f30-e8a8-4b15-a05f-9eb53e256d6d" time="1385474343120" ignored="false" />
+    <file path="/SearchActivity.java" changelist="02026f30-e8a8-4b15-a05f-9eb53e256d6d" time="1385474823689" ignored="false" />
     <file path="$PROJECT_DIR$/gen/com/example/taotaokanAndroid/BuildConfig.java" changelist="02026f30-e8a8-4b15-a05f-9eb53e256d6d" time="1385374932943" ignored="false" />
     <file path="/searchview.xml" changelist="02026f30-e8a8-4b15-a05f-9eb53e256d6d" time="1385462858501" ignored="false" />
     <file path="/search_tool_bar.xml" changelist="02026f30-e8a8-4b15-a05f-9eb53e256d6d" time="1385446993938" ignored="false" />
@@ -74,6 +76,9 @@
     <file path="$PROJECT_DIR$/../../meiriyiwen/meiriyiwen/SideNavigation-master/sample/src/com/devspark/sidenavigation/meiriyiwen/imageCache/ImageLoader.java" changelist="02026f30-e8a8-4b15-a05f-9eb53e256d6d" time="1385460187848" ignored="false" />
     <file path="/cuzyAdapter.java" changelist="02026f30-e8a8-4b15-a05f-9eb53e256d6d" time="1385462667817" ignored="false" />
     <file path="/shengyinglist.xml" changelist="02026f30-e8a8-4b15-a05f-9eb53e256d6d" time="1385462537410" ignored="false" />
+    <file path="$PROJECT_DIR$/../../meiriyiwen/meiriyiwen/SideNavigation-master/sample/gen/com/devspark/sidenavigation/meiriyiwen/BuildConfig.java" changelist="02026f30-e8a8-4b15-a05f-9eb53e256d6d" time="1385474701485" ignored="false" />
+    <file path="$PROJECT_DIR$/../../meiriyiwen/meiriyiwen/SideNavigation-master/sample/src/com/devspark/sidenavigation/meiriyiwen/webViewActivity.java" changelist="02026f30-e8a8-4b15-a05f-9eb53e256d6d" time="1385475065984" ignored="false" />
+    <file path="/webViewActivity.java" changelist="02026f30-e8a8-4b15-a05f-9eb53e256d6d" time="1385475276766" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -156,10 +161,43 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="SearchActivity.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="SearchActivity.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/example/taotaokanAndroid/SearchActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="68" column="60" selection-start="2650" selection-end="2650" vertical-scroll-proportion="0.80985916">
+            <state line="29" column="0" selection-start="920" selection-end="920" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="e#3715#4158#0" expanded="true" />
+                <element signature="e#4147#4148#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AndroidManifest.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/AndroidManifest.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="31" column="48" selection-start="1554" selection-end="1554" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="webview.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/res/layout/webview.xml">
+          <provider editor-type-id="android-designer">
+            <state />
+          </provider>
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="webViewActivity.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/com/example/taotaokanAndroid/webViewActivity.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="48" column="38" selection-start="1892" selection-end="1892" vertical-scroll-proportion="0.7258065">
               <folding />
             </state>
           </provider>
@@ -231,8 +269,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/AndroidManifest.xml" />
-        <option value="$PROJECT_DIR$/res/layout/setting.xml" />
         <option value="$PROJECT_DIR$/src/com/example/taotaokanAndroid/SettingActivity.java" />
         <option value="$PROJECT_DIR$/res/layout/class_part_lay.xml" />
         <option value="$PROJECT_DIR$/src/com/example/taotaokanAndroid/MainActivity.java" />
@@ -247,12 +283,14 @@
         <option value="$PROJECT_DIR$/src/com/example/taotaokanAndroid/cuzyAdapter.java" />
         <option value="$PROJECT_DIR$/res/layout/searchview.xml" />
         <option value="$PROJECT_DIR$/src/com/example/taotaokanAndroid/SearchActivity.java" />
+        <option value="$PROJECT_DIR$/AndroidManifest.xml" />
+        <option value="$PROJECT_DIR$/src/com/example/taotaokanAndroid/webViewActivity.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="66" />
-    <option name="y" value="91" />
+    <option name="x" value="73" />
+    <option name="y" value="33" />
     <option name="width" value="1446" />
     <option name="height" value="631" />
   </component>
@@ -461,7 +499,7 @@
     <property name="recentsLimit" value="5" />
     <property name="MemberChooser.sorted" value="false" />
     <property name="options.lastSelected" value="File.Encoding" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/libs/umeng_sdk.jar!/" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../meiriyiwen/meiriyiwen" />
     <property name="AndroidLayoutSelectedEditor" value="text-editor" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="MemberChooser.copyJavadoc" value="false" />
@@ -474,11 +512,14 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/res/drawable-mdpi" />
       <recent name="$PROJECT_DIR$/src/com/example/taotaokanAndroid" />
       <recent name="$PROJECT_DIR$/res/layout" />
+      <recent name="$PROJECT_DIR$/res/drawable-mdpi" />
       <recent name="$PROJECT_DIR$/res/drawable-xhdpi" />
       <recent name="$PROJECT_DIR$/res/drawable-ldpi" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.example.taotaokanAndroid" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/libs" />
@@ -486,9 +527,6 @@
       <recent name="$PROJECT_DIR$/src/com/example/taotaokanAndroid" />
       <recent name="$PROJECT_DIR$/res/drawable-hdpi" />
       <recent name="$PROJECT_DIR$/res/layout" />
-    </key>
-    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
-      <recent name="com.example.taotaokanAndroid" />
     </key>
   </component>
   <component name="RunManager" selected="Android Application.taotaokanAndroid">
@@ -677,7 +715,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="66" y="91" width="1446" height="631" extended-state="0" />
+    <frame x="73" y="33" width="1446" height="631" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.114285715" sideWeight="0.6712329" order="3" side_tool="false" content_ui="tabs" />
@@ -775,7 +813,10 @@
     <entry file="file://$PROJECT_DIR$/src/com/example/taotaokanAndroid/SearchActivity.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="40" column="0" selection-start="1029" selection-end="1029" vertical-scroll-proportion="0.0">
-          <folding />
+          <folding>
+            <element signature="e#3715#4158#0" expanded="true" />
+            <element signature="e#4147#4148#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -855,9 +896,36 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/res/layout/webview.xml">
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AndroidManifest.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="31" column="48" selection-start="1554" selection-end="1554" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/example/taotaokanAndroid/SearchActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="68" column="60" selection-start="2650" selection-end="2650" vertical-scroll-proportion="0.80985916">
+        <state line="29" column="0" selection-start="920" selection-end="920" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="e#3715#4158#0" expanded="true" />
+            <element signature="e#4147#4148#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/example/taotaokanAndroid/webViewActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="48" column="38" selection-start="1892" selection-end="1892" vertical-scroll-proportion="0.7258065">
           <folding />
         </state>
       </provider>

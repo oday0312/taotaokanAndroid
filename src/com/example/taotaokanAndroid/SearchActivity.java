@@ -2,16 +2,14 @@ package com.example.taotaokanAndroid;
 
 import android.app.Activity;
 import android.content.Context;
+import android.content.Intent;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.Gravity;
 import android.view.View;
 import android.view.inputmethod.InputMethodManager;
-import android.widget.Button;
-import android.widget.ImageButton;
-import android.widget.RelativeLayout;
-import android.widget.SearchView;
+import android.widget.*;
 import com.example.taotaokanAndroid.LoadMoreListView.LoadMoreListView;
 import com.theindex.CuzyAdSDK.CuzyAdSDK;
 import com.theindex.CuzyAdSDK.CuzyTBKItem;
@@ -27,6 +25,8 @@ import com.example.taotaokanAndroid.imageCache.*;
  * To change this template use File | Settings | File Templates.
  */
 public class SearchActivity extends Activity {
+
+    public static final String EXTRA_WEBURL = "com.devspark.sidenavigation.meiriyiwen.extra.weburl";
 
     private  SearchView search;
     private RelativeLayout searchbarView;
@@ -97,6 +97,20 @@ public class SearchActivity extends Activity {
         });
 
         testSimpleListView();
+
+        // Click on ListView Row:
+        listView.setOnItemClickListener(new AdapterView.OnItemClickListener()
+        {
+            @Override
+            public void onItemClick(AdapterView<?> arg0, View arg1, int position, long arg3)
+            {
+                Object o = listView.getItemAtPosition(position);
+                PaperItem tempItem = DataArray.get(position);
+                Log.i("alex huang ", tempItem.urlString);
+                startWebViewActivity(tempItem.urlString);
+            }
+        });
+
     }
 
     public void testSimpleListView()
@@ -109,6 +123,20 @@ public class SearchActivity extends Activity {
 
     }
 
+    public void startWebViewActivity(String urlString)
+    {
+        Intent intent = new Intent(this, webViewActivity.class);
+        intent.putExtra(EXTRA_WEBURL, urlString);
+
+        // all of the other activities on top of it will be closed and this
+        // Intent will be delivered to the (now on top) old activity as a
+        // new Intent.
+        intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+
+        startActivity(intent);
+        // no animation of transition
+        overridePendingTransition(0, 0);
+    }
     private class LongOperation extends AsyncTask<String,Void,String> {
 
         @Override

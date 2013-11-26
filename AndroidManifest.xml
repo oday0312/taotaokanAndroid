@@ -28,6 +28,9 @@
         <activity android:name="com.theindex.CuzyAdSDK.CuzyTBKPresentationActivity"   />
         <activity android:name="com.theindex.CuzyAdSDK.CuzyTBKWebviewActivity"    />
         <activity android:name=".SearchActivity"/>
+        <activity android:name=".webViewActivity"/>
+
+
         <meta-data android:value="528e150156240bb52105df47" android:name="UMENG_APPKEY"></meta-data>
         <meta-data android:value="1" android:name="UMENG_CHANNEL"/>
     </application>
