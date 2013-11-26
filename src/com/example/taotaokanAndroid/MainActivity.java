@@ -48,7 +48,6 @@ public class MainActivity extends Activity {
         actionBar.addAction(new StartSettingAction());
         actionBar.addAction(new StartShareGridView());
 
-        //actionBar.addAction(new ActionBar.IntentAction(this, createShareIntent(), R.drawable.ic_title_share_default));
         actionBar.addAction(new ToastAction());
 
         myGallery = (Gallery)findViewById(R.id.gallery);
@@ -154,7 +153,7 @@ public class MainActivity extends Activity {
 
         @Override
         public int getDrawable() {
-            return R.drawable.ic_title_export_default;
+            return R.drawable.button_setting_normal;
         }
 
         @Override
@@ -171,7 +170,7 @@ public class MainActivity extends Activity {
 
         @Override
         public int getDrawable() {
-            return R.drawable.ic_title_export_default;
+            return R.drawable.button_storesearch_normal;
         }
 
         @Override
@@ -189,7 +188,7 @@ public class MainActivity extends Activity {
 
         @Override
         public int getDrawable() {
-            return R.drawable.ic_title_export_default;
+            return R.drawable.button_share_normal;
         }
 
         @Override

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="45dp"
+                android:background="@color/actionbar_separator"
+        >
+
+    <ImageButton
+            android:id="@+id/searchtoobarButton1"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="#00000000"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:src="@drawable/btn_dis" />
+
+
+
+    <ImageButton
+            android:id="@+id/searchtoobarButton2"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="#00000000"
+            android:layout_centerInParent="true"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/btn_top" />
+    <ImageButton
+            android:id="@+id/searchtoobarButton3"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="#00000000"
+            android:src="@drawable/btn_web_refresh" android:layout_toLeftOf="@+id/searchtoobarButton2"
+            android:layout_alignTop="@+id/searchtoobarButton1"/>
+
+</RelativeLayout>
