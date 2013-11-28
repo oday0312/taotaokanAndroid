@@ -84,15 +84,7 @@ public class MainActivity extends Activity {
             }
         });
 
-        Button b = (Button)findViewById(R.id.button);
-        b.setOnClickListener(new View.OnClickListener() {
-                    public void onClick(View v)
-                    {
-                        //CuzyAdSDK.getInstance().fetchItems("1006","",0);
-                        //ArrayList<CuzyTBKItem> rawData = CuzyAdSDK.getInstance().fetchRawItems("", "手机", 0);
-                        //Log.d("cuzy data: huang alex", ""+rawData.size());
-                    }
-        });
+
     }
 
     @Override

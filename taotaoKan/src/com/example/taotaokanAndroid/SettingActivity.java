@@ -11,6 +11,8 @@ import android.widget.ListView;
 import com.example.taotaokanAndroid.ClassItem.ClassItem;
 import com.example.taotaokanAndroid.ClassItem.ClassListAdapter;
 import com.umeng.analytics.MobclickAgent;
+import com.umeng.fb.ConversationActivity;
+import com.umeng.fb.FeedbackAgent;
 
 import java.util.HashSet;
 import java.util.Set;
@@ -78,10 +80,19 @@ public class SettingActivity extends Activity {
             @Override
             public void onItemClick(AdapterView<?> arg0, View arg1, int position, long arg3)
             {
-                startWebViewActivity(faqURLstring);
+               // startWebViewActivity(faqURLstring);
+                startFeedBackUMENG();
+
             }
         });
 
+    }
+
+    public void startFeedBackUMENG()
+    {
+        Intent intent = new Intent(this, ConversationActivity.class);
+        intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+        startActivity(intent);
     }
     private void addAdapterItem(Vector<ClassItem> data){
         Vector<ClassItem> classItem = new Vector<ClassItem>();
