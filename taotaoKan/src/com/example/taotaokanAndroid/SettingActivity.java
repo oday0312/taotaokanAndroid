@@ -11,6 +11,8 @@ import android.widget.AdapterView;
 import android.widget.ListView;
 import com.example.taotaokanAndroid.ClassItem.ClassItem;
 import com.example.taotaokanAndroid.ClassItem.ClassListAdapter;
+import com.example.taotaokanAndroid.imageCache.FileCache;
+import com.example.taotaokanAndroid.imageCache.ImageLoader;
 import com.umeng.analytics.MobclickAgent;
 import com.umeng.fb.ConversationActivity;
 import com.umeng.fb.FeedbackAgent;
@@ -70,8 +72,10 @@ public class SettingActivity extends Activity {
 
         }
 
+
+        FileCache cache = new FileCache(this);
         ClassItem item0 = new ClassItem(ClassItem.classType.SETTING_LOGO,versionName );
-        ClassItem item1 = new ClassItem(1,"清理缓存文件",1,"程序","");
+        ClassItem item1 = new ClassItem(1,"清理缓存文件 " + cache.getSize(),1,"程序","");
         ClassItem item2 = new ClassItem(1,"帮助说明",1,"程序","");
         ClassItem item3 = new ClassItem(1,"设置桌面背景",1,"程序","");
         ClassItem item4 = new ClassItem(1,"给我们打分",2,"其他","");

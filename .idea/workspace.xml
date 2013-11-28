@@ -31,8 +31,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="02026f30-e8a8-4b15-a05f-9eb53e256d6d" name="Default" comment="add">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taotaoKan/src/com/example/taotaokanAndroid/DetailViewLevel1.java" afterPath="$PROJECT_DIR$/taotaoKan/src/com/example/taotaokanAndroid/DetailViewLevel1.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taotaoKan/src/com/example/taotaokanAndroid/imageCache/ImageLoader.java" afterPath="$PROJECT_DIR$/taotaoKan/src/com/example/taotaokanAndroid/imageCache/ImageLoader.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taotaoKan/src/com/example/taotaokanAndroid/imageCache/FileCache.java" afterPath="$PROJECT_DIR$/taotaoKan/src/com/example/taotaokanAndroid/imageCache/FileCache.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taotaoKan/src/com/example/taotaokanAndroid/SettingActivity.java" afterPath="$PROJECT_DIR$/taotaoKan/src/com/example/taotaokanAndroid/SettingActivity.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="taotaokanAndroid.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -43,7 +44,7 @@
     <file path="/fragment.java" changelist="02026f30-e8a8-4b15-a05f-9eb53e256d6d" time="1385611189018" ignored="false" />
     <file path="/actionbar.xml" changelist="02026f30-e8a8-4b15-a05f-9eb53e256d6d" time="1384942680881" ignored="false" />
     <file path="/GalleryImageAdapter.java" changelist="02026f30-e8a8-4b15-a05f-9eb53e256d6d" time="1385017767316" ignored="false" />
-    <file path="/SettingActivity.java" changelist="02026f30-e8a8-4b15-a05f-9eb53e256d6d" time="1385633072794" ignored="false" />
+    <file path="/SettingActivity.java" changelist="02026f30-e8a8-4b15-a05f-9eb53e256d6d" time="1385635993142" ignored="false" />
     <file path="/ClassItemAct.java" changelist="02026f30-e8a8-4b15-a05f-9eb53e256d6d" time="1385027046021" ignored="false" />
     <file path="/setting.xml" changelist="02026f30-e8a8-4b15-a05f-9eb53e256d6d" time="1385028132268" ignored="false" />
     <file path="/titlebar.xml" changelist="02026f30-e8a8-4b15-a05f-9eb53e256d6d" time="1385621113216" ignored="false" />
@@ -84,6 +85,8 @@
     <file path="/detailviewlevel1.xml" changelist="02026f30-e8a8-4b15-a05f-9eb53e256d6d" time="1385632456676" ignored="false" />
     <file path="/DetailViewLevel1.java" changelist="02026f30-e8a8-4b15-a05f-9eb53e256d6d" time="1385634606160" ignored="false" />
     <file path="/PaperItem.java" changelist="02026f30-e8a8-4b15-a05f-9eb53e256d6d" time="1385632996050" ignored="false" />
+    <file path="/FileSize.java" changelist="02026f30-e8a8-4b15-a05f-9eb53e256d6d" time="1385635407161" ignored="false" />
+    <file path="/FileCache.java" changelist="02026f30-e8a8-4b15-a05f-9eb53e256d6d" time="1385635885464" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -174,29 +177,31 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ImageLoader.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="ImageLoader.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/taotaoKan/src/com/example/taotaokanAndroid/imageCache/ImageLoader.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="113" column="92" selection-start="3490" selection-end="3490" vertical-scroll-proportion="2.7944326">
+            <state line="113" column="92" selection-start="3490" selection-end="3490" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="webViewActivity.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/taotaoKan/src/com/example/taotaokanAndroid/webViewActivity.java">
+      <file leaf-file-name="MemoryCache.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/taotaoKan/src/com/example/taotaokanAndroid/imageCache/MemoryCache.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="61" column="12" selection-start="2010" selection-end="2268" vertical-scroll-proportion="0.0">
+            <state line="20" column="13" selection-start="414" selection-end="414" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="GridViewActivity.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/taotaoKan/src/com/example/taotaokanAndroid/GridViewActivity.java">
+      <file leaf-file-name="FileCache.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/taotaoKan/src/com/example/taotaokanAndroid/imageCache/FileCache.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="13" selection-start="520" selection-end="520" vertical-scroll-proportion="0.0">
-              <folding />
+            <state line="26" column="43" selection-start="720" selection-end="720" vertical-scroll-proportion="0.52462524">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -242,19 +247,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ScrollingTextView.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/taotaoKan/src/com/example/taotaokanAndroid/ScrollingTextView.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="13" selection-start="465" selection-end="465" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="SettingActivity.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/taotaoKan/src/com/example/taotaokanAndroid/SettingActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="98" column="45" selection-start="3287" selection-end="3287" vertical-scroll-proportion="0.0">
+            <state line="80" column="76" selection-start="2743" selection-end="2743" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -278,8 +274,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/taotaoKan/res/layout/webview.xml" />
-        <option value="$PROJECT_DIR$/taotaoKan/src/com/example/taotaokanAndroid/webViewActivity.java" />
         <option value="$PROJECT_DIR$/taotaoKan/res/layout/titlebar.xml" />
         <option value="$PROJECT_DIR$/taotaoKan/res/layout/main.xml" />
         <option value="$PROJECT_DIR$/taotaoKan/src/com/example/taotaokanAndroid/MainActivity.java" />
@@ -290,16 +284,18 @@
         <option value="$PROJECT_DIR$/taotaoKan/src/com/example/taotaokanAndroid/ClassItem/ClassListAdapter.java" />
         <option value="$PROJECT_DIR$/taotaoKan/res/layout/detailviewlevel1.xml" />
         <option value="$PROJECT_DIR$/taotaoKan/src/com/example/taotaokanAndroid/PaperItem.java" />
-        <option value="$PROJECT_DIR$/taotaoKan/src/com/example/taotaokanAndroid/SettingActivity.java" />
         <option value="$PROJECT_DIR$/taotaoKan/src/com/example/taotaokanAndroid/SearchActivity.java" />
         <option value="$PROJECT_DIR$/taotaoKan/src/com/example/taotaokanAndroid/DetailViewLevel1.java" />
         <option value="$PROJECT_DIR$/taotaoKan/src/com/example/taotaokanAndroid/imageCache/ImageLoader.java" />
+        <option value="$PROJECT_DIR$/taotaoKan/src/com/example/taotaokanAndroid/imageCache/FileSize.java" />
+        <option value="$PROJECT_DIR$/taotaoKan/src/com/example/taotaokanAndroid/SettingActivity.java" />
+        <option value="$PROJECT_DIR$/taotaoKan/src/com/example/taotaokanAndroid/imageCache/FileCache.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="1157" />
-    <option name="y" value="51" />
+    <option name="x" value="82" />
+    <option name="y" value="61" />
     <option name="width" value="1600" />
     <option name="height" value="965" />
   </component>
@@ -736,7 +732,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1157" y="51" width="1600" height="965" extended-state="0" />
+    <frame x="82" y="61" width="1600" height="965" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.11389961" sideWeight="0.70414203" order="3" side_tool="false" content_ui="tabs" />
@@ -831,33 +827,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/taotaoKan/src/com/example/taotaokanAndroid/ClassItem/ClassItemAct.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="13" selection-start="265" selection-end="265" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/taotaoKan/res/layout/actionbar.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="36" selection-start="698" selection-end="913" vertical-scroll-proportion="-8.333333">
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/taotaoKan/res/layout/detailviewlevel1.xml">
-      <provider editor-type-id="text-editor">
-        <state line="54" column="53" selection-start="2379" selection-end="2379" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="android-designer">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/android-sdks/sources/android-17/android/content/Intent.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="5354" column="50" selection-start="228580" selection-end="228590" vertical-scroll-proportion="0.0">
@@ -933,13 +902,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/taotaoKan/src/com/example/taotaokanAndroid/SettingActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="98" column="45" selection-start="3287" selection-end="3287" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/taotaoKan/src/com/example/taotaokanAndroid/DetailViewLevel1.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="43" column="31" selection-start="1749" selection-end="1749" vertical-scroll-proportion="0.0">
@@ -947,10 +909,33 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/taotaoKan/src/com/example/taotaokanAndroid/imageCache/MemoryCache.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="20" column="13" selection-start="414" selection-end="414" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/taotaoKan/src/com/example/taotaokanAndroid/imageCache/ImageLoader.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="113" column="92" selection-start="3490" selection-end="3490" vertical-scroll-proportion="2.7944326">
+        <state line="113" column="92" selection-start="3490" selection-end="3490" vertical-scroll-proportion="0.0">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/taotaoKan/src/com/example/taotaokanAndroid/SettingActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="80" column="76" selection-start="2743" selection-end="2743" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/taotaoKan/src/com/example/taotaokanAndroid/imageCache/FileCache.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="26" column="43" selection-start="720" selection-end="720" vertical-scroll-proportion="0.52462524">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
