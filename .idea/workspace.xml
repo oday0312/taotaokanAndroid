@@ -26,313 +26,91 @@
     </option>
   </component>
   <component name="AndroidLogFilters">
-    <option name="TOOL_WINDOW_CUSTOM_FILTER" value="on load" />
+    <option name="TOOL_WINDOW_LOG_LEVEL" value="ERROR" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="02026f30-e8a8-4b15-a05f-9eb53e256d6d" name="Default" comment="add">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taotaoKan/out/production/taotaokanAndroid/com/example/taotaokanAndroid/ActionBar$AbstractAction.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taotaoKan/out/production/taotaokanAndroid/com/example/taotaokanAndroid/ActionBar$Action.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taotaoKan/out/production/taotaokanAndroid/com/example/taotaokanAndroid/ActionBar$ActionList.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taotaoKan/out/production/taotaokanAndroid/com/example/taotaokanAndroid/ActionBar$IntentAction.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taotaoKan/out/production/taotaokanAndroid/com/example/taotaokanAndroid/ActionBar.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taotaoKan/out/production/taotaokanAndroid/com/example/taotaokanAndroid/BuildConfig.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taotaoKan/out/production/taotaokanAndroid/com/example/taotaokanAndroid/ClassItem/ClassItem.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taotaoKan/out/production/taotaokanAndroid/com/example/taotaokanAndroid/ClassItem/ClassItemAct.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taotaoKan/out/production/taotaokanAndroid/com/example/taotaokanAndroid/ClassItem/ClassListAdapter$ViewHolder.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taotaoKan/out/production/taotaokanAndroid/com/example/taotaokanAndroid/ClassItem/ClassListAdapter.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taotaoKan/libs/CuzyAdSDKAndroid.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taotaoKan/out/production/taotaokanAndroid/com/example/taotaokanAndroid/imageCache/FileCache.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taotaoKan/out/production/taotaokanAndroid/com/example/taotaokanAndroid/gridView/GalleryImageAdapter.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taotaoKan/out/production/taotaokanAndroid/com/example/taotaokanAndroid/gridView/GridItemType1Adapter.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taotaoKan/out/production/taotaokanAndroid/com/example/taotaokanAndroid/GridViewActivity$1.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taotaoKan/out/production/taotaokanAndroid/com/example/taotaokanAndroid/GridViewActivity$2.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taotaoKan/out/production/taotaokanAndroid/com/example/taotaokanAndroid/GridViewActivity$3.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taotaoKan/out/production/taotaokanAndroid/com/example/taotaokanAndroid/GridViewActivity.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taotaoKan/out/production/taotaokanAndroid/com/example/taotaokanAndroid/imageCache/ImageLoader$BitmapDisplayer.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taotaoKan/out/production/taotaokanAndroid/com/example/taotaokanAndroid/imageCache/ImageLoader$PhotoToLoad.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taotaoKan/out/production/taotaokanAndroid/com/example/taotaokanAndroid/imageCache/ImageLoader$PhotosLoader.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taotaoKan/out/production/taotaokanAndroid/com/example/taotaokanAndroid/imageCache/ImageLoader.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taotaoKan/out/production/taotaokanAndroid/com/example/taotaokanAndroid/LoadMoreListView/LoadMoreListView$OnLoadMoreListener.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taotaoKan/out/production/taotaokanAndroid/com/example/taotaokanAndroid/LoadMoreListView/LoadMoreListView.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taotaoKan/out/production/taotaokanAndroid/com/example/taotaokanAndroid/MainActivity$1.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taotaoKan/out/production/taotaokanAndroid/com/example/taotaokanAndroid/MainActivity$2.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taotaoKan/out/production/taotaokanAndroid/com/example/taotaokanAndroid/MainActivity$StartSearchAction.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taotaoKan/out/production/taotaokanAndroid/com/example/taotaokanAndroid/MainActivity$StartSettingAction.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taotaoKan/out/production/taotaokanAndroid/com/example/taotaokanAndroid/MainActivity$StartShareGridView.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taotaoKan/out/production/taotaokanAndroid/com/example/taotaokanAndroid/MainActivity$ToastAction.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taotaoKan/out/production/taotaokanAndroid/com/example/taotaokanAndroid/MainActivity.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taotaoKan/out/production/taotaokanAndroid/com/example/taotaokanAndroid/imageCache/MemoryCache.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taotaoKan/out/production/taotaokanAndroid/com/example/taotaokanAndroid/PaperItem.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taotaoKan/out/production/taotaokanAndroid/com/example/taotaokanAndroid/LoadMoreListView/PullAndLoadListView$OnLoadMoreListener.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taotaoKan/out/production/taotaokanAndroid/com/example/taotaokanAndroid/LoadMoreListView/PullAndLoadListView.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taotaoKan/out/production/taotaokanAndroid/com/example/taotaokanAndroid/LoadMoreListView/PullToRefreshListView$1.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taotaoKan/out/production/taotaokanAndroid/com/example/taotaokanAndroid/LoadMoreListView/PullToRefreshListView$OnClickRefreshListener.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taotaoKan/out/production/taotaokanAndroid/com/example/taotaokanAndroid/LoadMoreListView/PullToRefreshListView$OnRefreshListener.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taotaoKan/out/production/taotaokanAndroid/com/example/taotaokanAndroid/LoadMoreListView/PullToRefreshListView.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taotaoKan/out/production/taotaokanAndroid/com/example/taotaokanAndroid/PullToRefresh/PullToRefreshView$OnFooterRefreshListener.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taotaoKan/out/production/taotaokanAndroid/com/example/taotaokanAndroid/PullToRefresh/PullToRefreshView$OnHeaderRefreshListener.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taotaoKan/out/production/taotaokanAndroid/com/example/taotaokanAndroid/PullToRefresh/PullToRefreshView.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taotaoKan/out/production/taotaokanAndroid/com/example/taotaokanAndroid/R$anim.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taotaoKan/out/production/taotaokanAndroid/com/example/taotaokanAndroid/R$attr.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taotaoKan/out/production/taotaokanAndroid/com/example/taotaokanAndroid/R$color.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taotaoKan/out/production/taotaokanAndroid/com/example/taotaokanAndroid/R$dimen.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taotaoKan/out/production/taotaokanAndroid/com/example/taotaokanAndroid/R$drawable.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taotaoKan/out/production/taotaokanAndroid/com/example/taotaokanAndroid/R$id.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taotaoKan/out/production/taotaokanAndroid/com/example/taotaokanAndroid/R$layout.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taotaoKan/out/production/taotaokanAndroid/com/example/taotaokanAndroid/R$string.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taotaoKan/out/production/taotaokanAndroid/com/example/taotaokanAndroid/R$style.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taotaoKan/out/production/taotaokanAndroid/com/example/taotaokanAndroid/R$styleable.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taotaoKan/out/production/taotaokanAndroid/com/example/taotaokanAndroid/R.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taotaoKan/out/production/taotaokanAndroid/com/example/taotaokanAndroid/ScrollingTextView.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taotaoKan/out/production/taotaokanAndroid/com/example/taotaokanAndroid/SearchActivity$1.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taotaoKan/out/production/taotaokanAndroid/com/example/taotaokanAndroid/SearchActivity$2.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taotaoKan/out/production/taotaokanAndroid/com/example/taotaokanAndroid/SearchActivity$3.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taotaoKan/out/production/taotaokanAndroid/com/example/taotaokanAndroid/SearchActivity$4.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taotaoKan/out/production/taotaokanAndroid/com/example/taotaokanAndroid/SearchActivity$LongOperation.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taotaoKan/out/production/taotaokanAndroid/com/example/taotaokanAndroid/SearchActivity.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taotaoKan/out/production/taotaokanAndroid/com/example/taotaokanAndroid/SettingActivity.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taotaoKan/out/production/taotaokanAndroid/com/example/taotaokanAndroid/gridView/ViewHolder.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taotaoKan/res/drawable-hdpi/actionbar_back_indicator.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taotaoKan/res/drawable-ldpi/actionbar_back_indicator.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taotaoKan/res/drawable-mdpi/actionbar_back_indicator.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taotaoKan/res/drawable-xhdpi/actionbar_back_indicator.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/library/libs/android-support-v4.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taotaoKan/res/drawable-mdpi/btn_dis.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taotaoKan/res/drawable-mdpi/btn_top.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taotaoKan/res/drawable-mdpi/btn_web_refresh.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taotaoKan/res/drawable-mdpi/button_setting_normal.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taotaoKan/res/drawable-mdpi/button_share_normal.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taotaoKan/res/drawable-mdpi/button_storesearch_normal.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taotaoKan/out/production/taotaokanAndroid/com/example/taotaokanAndroid/cuzyAdapter.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taotaoKan/res/drawable-hdpi/cuzy_layout_1_back.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taotaoKan/res/drawable-ldpi/cuzy_layout_1_back.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taotaoKan/res/drawable-mdpi/cuzy_layout_1_back.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taotaoKan/res/drawable-xhdpi/cuzy_layout_1_back.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taotaoKan/res/drawable-hdpi/cuzy_layout_1_cancel.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taotaoKan/res/drawable-ldpi/cuzy_layout_1_cancel.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taotaoKan/res/drawable-mdpi/cuzy_layout_1_cancel.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taotaoKan/res/drawable-xhdpi/cuzy_layout_1_cancel.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taotaoKan/res/drawable-hdpi/cuzy_layout_1_cell_bg.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taotaoKan/res/drawable-ldpi/cuzy_layout_1_cell_bg.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taotaoKan/res/drawable-mdpi/cuzy_layout_1_cell_bg.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taotaoKan/res/drawable-xhdpi/cuzy_layout_1_cell_bg.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taotaoKan/res/drawable-hdpi/cuzy_layout_1_line.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taotaoKan/res/drawable-ldpi/cuzy_layout_1_line.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taotaoKan/res/drawable-mdpi/cuzy_layout_1_line.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taotaoKan/res/drawable-xhdpi/cuzy_layout_1_line.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taotaoKan/res/drawable-hdpi/cuzy_layout_1_tile_bg.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taotaoKan/res/drawable-ldpi/cuzy_layout_1_tile_bg.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taotaoKan/res/drawable-mdpi/cuzy_layout_1_tile_bg.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taotaoKan/res/drawable-xhdpi/cuzy_layout_1_tile_bg.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taotaoKan/res/drawable-hdpi/cuzy_layout_2_back.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taotaoKan/res/drawable-ldpi/cuzy_layout_2_back.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taotaoKan/res/drawable-mdpi/cuzy_layout_2_back.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taotaoKan/res/drawable-xhdpi/cuzy_layout_2_back.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taotaoKan/res/drawable-hdpi/cuzy_layout_2_cancel.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taotaoKan/res/drawable-ldpi/cuzy_layout_2_cancel.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taotaoKan/res/drawable-mdpi/cuzy_layout_2_cancel.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taotaoKan/res/drawable-xhdpi/cuzy_layout_2_cancel.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taotaoKan/res/drawable-hdpi/cuzy_layout_2_cell_bg.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taotaoKan/res/drawable-ldpi/cuzy_layout_2_cell_bg.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taotaoKan/res/drawable-mdpi/cuzy_layout_2_cell_bg.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taotaoKan/res/drawable-xhdpi/cuzy_layout_2_cell_bg.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taotaoKan/res/drawable-hdpi/cuzy_layout_2_tile_bg.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taotaoKan/res/drawable-ldpi/cuzy_layout_2_tile_bg.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taotaoKan/res/drawable-mdpi/cuzy_layout_2_tile_bg.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taotaoKan/res/drawable-xhdpi/cuzy_layout_2_tile_bg.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taotaoKan/res/drawable-hdpi/default_class_icon.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taotaoKan/out/production/taotaokanAndroid/com/example/taotaokanAndroid/gridView/gridItemType1.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taotaoKan/res/drawable-hdpi/group_bg.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taotaoKan/res/drawable-hdpi/groupbuy.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taotaoKan/res/drawable-hdpi/ic_launcher.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taotaoKan/res/drawable-ldpi/ic_launcher.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taotaoKan/res/drawable-mdpi/ic_launcher.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taotaoKan/res/drawable-xhdpi/ic_launcher.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taotaoKan/res/drawable-hdpi/ic_pulltorefresh_arrow.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taotaoKan/res/drawable-ldpi/ic_pulltorefresh_arrow.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taotaoKan/res/drawable-mdpi/ic_pulltorefresh_arrow.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taotaoKan/res/drawable-xhdpi/ic_pulltorefresh_arrow.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taotaoKan/res/drawable-hdpi/ic_pulltorefresh_arrow_up.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taotaoKan/res/drawable-ldpi/ic_pulltorefresh_arrow_up.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taotaoKan/res/drawable-mdpi/ic_pulltorefresh_arrow_up.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taotaoKan/res/drawable-xhdpi/ic_pulltorefresh_arrow_up.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taotaoKan/res/drawable-hdpi/ic_title_export_default.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taotaoKan/res/drawable-ldpi/ic_title_export_default.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taotaoKan/res/drawable-mdpi/ic_title_export_default.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taotaoKan/res/drawable-hdpi/ic_title_home_default.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taotaoKan/res/drawable-ldpi/ic_title_home_default.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taotaoKan/res/drawable-mdpi/ic_title_home_default.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taotaoKan/res/drawable-hdpi/ic_title_home_demo.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taotaoKan/res/drawable-ldpi/ic_title_home_demo.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taotaoKan/res/drawable-mdpi/ic_title_home_demo.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taotaoKan/res/drawable-xhdpi/ic_title_home_demo.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taotaoKan/res/drawable-hdpi/ic_title_share_default.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taotaoKan/res/drawable-ldpi/ic_title_share_default.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taotaoKan/res/drawable-mdpi/ic_title_share_default.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taotaoKan/res/drawable-hdpi/icon.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taotaoKan/res/drawable-ldpi/icon.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taotaoKan/res/drawable-mdpi/icon.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taotaoKan/res/drawable-xhdpi/icon.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taotaoKan/res/drawable-hdpi/right_arrow.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taotaoKan/out/production/taotaokanAndroid/taotaokanAndroid.apk" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taotaoKan/out/production/taotaokanAndroid/taotaokanAndroid.unaligned.apk" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taotaoKan/libs/umeng_sdk.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/library/res/drawable-hdpi/vpi__tab_selected_focused_holo.9.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/library/res/drawable-mdpi/vpi__tab_selected_focused_holo.9.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/library/res/drawable-xhdpi/vpi__tab_selected_focused_holo.9.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/library/res/drawable-hdpi/vpi__tab_selected_holo.9.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/library/res/drawable-mdpi/vpi__tab_selected_holo.9.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/library/res/drawable-xhdpi/vpi__tab_selected_holo.9.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/library/res/drawable-hdpi/vpi__tab_selected_pressed_holo.9.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/library/res/drawable-mdpi/vpi__tab_selected_pressed_holo.9.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/library/res/drawable-xhdpi/vpi__tab_selected_pressed_holo.9.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/library/res/drawable-hdpi/vpi__tab_unselected_focused_holo.9.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/library/res/drawable-mdpi/vpi__tab_unselected_focused_holo.9.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/library/res/drawable-xhdpi/vpi__tab_unselected_focused_holo.9.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/library/res/drawable-hdpi/vpi__tab_unselected_holo.9.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/library/res/drawable-mdpi/vpi__tab_unselected_holo.9.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/library/res/drawable-xhdpi/vpi__tab_unselected_holo.9.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/library/res/drawable-hdpi/vpi__tab_unselected_pressed_holo.9.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/library/res/drawable-mdpi/vpi__tab_unselected_pressed_holo.9.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/library/res/drawable-xhdpi/vpi__tab_unselected_pressed_holo.9.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taotaoKan/out/production/taotaokanAndroid/com/example/taotaokanAndroid/webViewActivity$1.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taotaoKan/out/production/taotaokanAndroid/com/example/taotaokanAndroid/webViewActivity$Callback.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taotaoKan/out/production/taotaokanAndroid/com/example/taotaokanAndroid/webViewActivity.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taotaoKan/src/com/example/taotaokanAndroid/ActionBar.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/library/AndroidManifest.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taotaoKan/AndroidManifest.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/library/gen/com/viewpagerindicator/BuildConfig.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taotaoKan/gen/com/example/taotaokanAndroid/BuildConfig.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/library/src/com/viewpagerindicator/CirclePageIndicator.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taotaoKan/src/com/example/taotaokanAndroid/ClassItem/ClassItem.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taotaoKan/src/com/example/taotaokanAndroid/ClassItem/ClassItemAct.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taotaoKan/src/com/example/taotaokanAndroid/ClassItem/ClassListAdapter.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taotaoKan/src/com/example/taotaokanAndroid/imageCache/FileCache.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taotaoKan/src/com/example/taotaokanAndroid/gridView/GalleryImageAdapter.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taotaoKan/src/com/example/taotaokanAndroid/gridView/GridItemType1Adapter.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taotaoKan/src/com/example/taotaokanAndroid/GridViewActivity.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/library/src/com/viewpagerindicator/IconPageIndicator.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/library/src/com/viewpagerindicator/IconPagerAdapter.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/library/src/com/viewpagerindicator/IcsLinearLayout.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taotaoKan/src/com/example/taotaokanAndroid/imageCache/ImageLoader.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/library/src/com/viewpagerindicator/LinePageIndicator.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taotaoKan/src/com/example/taotaokanAndroid/LoadMoreListView/LoadMoreListView.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taotaoKan/src/com/example/taotaokanAndroid/MainActivity.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/library/gen/com/viewpagerindicator/Manifest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taotaoKan/gen/com/example/taotaokanAndroid/Manifest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taotaoKan/src/com/example/taotaokanAndroid/imageCache/MemoryCache.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/library/src/com/viewpagerindicator/PageIndicator.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taotaoKan/src/com/example/taotaokanAndroid/PaperItem.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taotaoKan/src/com/example/taotaokanAndroid/LoadMoreListView/PullAndLoadListView.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taotaoKan/src/com/example/taotaokanAndroid/LoadMoreListView/PullToRefreshListView.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taotaoKan/src/com/example/taotaokanAndroid/PullToRefresh/PullToRefreshView.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/library/gen/com/viewpagerindicator/R.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taotaoKan/gen/com/example/taotaokanAndroid/R.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taotaoKan/README.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taotaoKan/src/com/example/taotaokanAndroid/ScrollingTextView.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taotaoKan/src/com/example/taotaokanAndroid/SearchActivity.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taotaoKan/src/com/example/taotaokanAndroid/SettingActivity.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/library/src/com/viewpagerindicator/TabPageIndicator.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/library/src/com/viewpagerindicator/TitlePageIndicator.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/library/src/com/viewpagerindicator/UnderlinePageIndicator.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taotaoKan/res/layout/actionbar.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taotaoKan/res/drawable-hdpi/actionbar_background.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taotaoKan/res/drawable-ldpi/actionbar_background.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taotaoKan/res/drawable-mdpi/actionbar_background.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taotaoKan/res/drawable-xhdpi/actionbar_background.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taotaoKan/res/drawable-hdpi/actionbar_btn.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taotaoKan/res/drawable-ldpi/actionbar_btn.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taotaoKan/res/drawable-mdpi/actionbar_btn.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taotaoKan/res/drawable-xhdpi/actionbar_btn.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taotaoKan/res/drawable-hdpi/actionbar_btn_normal.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taotaoKan/res/drawable-ldpi/actionbar_btn_normal.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taotaoKan/res/drawable-mdpi/actionbar_btn_normal.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taotaoKan/res/drawable-xhdpi/actionbar_btn_normal.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taotaoKan/res/drawable-hdpi/actionbar_btn_pressed.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taotaoKan/res/drawable-ldpi/actionbar_btn_pressed.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taotaoKan/res/drawable-mdpi/actionbar_btn_pressed.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taotaoKan/res/drawable-xhdpi/actionbar_btn_pressed.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taotaoKan/res/layout/actionbar_item.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/android_support_v4.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taotaoKan/ant.properties" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taotaoKan/res/values/attrs.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taotaoKan/build.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taotaoKan/res/layout/class_list_screen.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taotaoKan/res/layout/class_part_lay.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taotaoKan/res/values/colors.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taotaoKan/res/drawable-hdpi/conner_imageview.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taotaoKan/res/drawable-ldpi/conner_imageview.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taotaoKan/res/drawable-mdpi/conner_imageview.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taotaoKan/res/drawable-xhdpi/conner_imageview.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taotaoKan/res/drawable-mdpi/costum_progress_bar.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taotaoKan/src/com/example/taotaokanAndroid/cuzyAdapter.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taotaoKan/res/layout/cuzy_item_view_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taotaoKan/res/layout/cuzy_item_view_2.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taotaoKan/res/layout/cuzy_items_presentation.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taotaoKan/res/drawable-hdpi/cuzy_layout_1_bg.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taotaoKan/res/drawable-ldpi/cuzy_layout_1_bg.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taotaoKan/res/drawable-mdpi/cuzy_layout_1_bg.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taotaoKan/res/drawable-xhdpi/cuzy_layout_1_bg.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taotaoKan/res/drawable-hdpi/cuzy_layout_2_bg.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taotaoKan/res/drawable-ldpi/cuzy_layout_2_bg.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taotaoKan/res/drawable-mdpi/cuzy_layout_2_bg.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taotaoKan/res/drawable-xhdpi/cuzy_layout_2_bg.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taotaoKan/res/layout/cuzy_list_cell_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taotaoKan/res/layout/cuzy_list_cell_2.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taotaoKan/res/layout/cuzy_tb_webview.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taotaoKan/res/values/dimens.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taotaoKan/res/drawable-hdpi/divider_style.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taotaoKan/src/com/example/taotaokanAndroid/gridView/gridItemType1.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taotaoKan/res/layout/grid_item1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taotaoKan/res/layout/gridview.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taotaoKan/res/anim/in_from_right.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taotaoKan/res/drawable-hdpi/item_bg_style.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/library/library.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/libs.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taotaoKan/res/layout/load_more_footer.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taotaoKan/local.properties" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taotaoKan/res/layout/main.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taotaoKan/res/anim/menu_bottombar_in.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taotaoKan/res/anim/menu_bottombar_out.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taotaoKan/res/anim/out_to_left.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/library/pom.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taotaoKan/proguard-project.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/library/project.properties" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taotaoKan/project.properties" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taotaoKan/res/layout/pull_to_refresh_header.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taotaoKan/res/layout/refresh_footer.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taotaoKan/res/layout/refresh_header.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taotaoKan/res/layout/search_tool_bar.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taotaoKan/res/layout/searchview.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taotaoKan/res/layout/setting.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taotaoKan/res/layout/share_popup_windows.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taotaoKan/res/layout/shengyinglist.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taotaoKan/res/anim/slide_in.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taotaoKan/res/anim/slide_out.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taotaoKan/res/anim/stay.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taotaoKan/res/values/strings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taotaoKan/res/values/styles.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taotaoKan/taotaoKan.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taotaoKan/taotaokanAndroid.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taotaoKan/res/layout/titlebar.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/library/res/values/vpi__attrs.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/library/res/values/vpi__colors.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/library/res/color/vpi__dark_theme.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/library/res/values/vpi__defaults.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/library/res/color/vpi__light_theme.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/library/res/values/vpi__styles.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/library/res/drawable/vpi__tab_indicator.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taotaoKan/src/com/example/taotaokanAndroid/webViewActivity.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taotaoKan/res/layout/webview.xml" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/AndroidManifest.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/README.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ant.properties" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/local.properties" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/proguard-project.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/project.properties" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/taotaokanAndroid.iml" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taotaoKan/libs/armeabi/libbspatch.so" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taotaoKan/res/drawable-mdpi/button_setting_normal.png" afterPath="$PROJECT_DIR$/taotaoKan/res/drawable-mdpi/button_setting_normal.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taotaoKan/res/drawable-mdpi/button_share_normal.png" afterPath="$PROJECT_DIR$/taotaoKan/res/drawable-mdpi/button_share_normal.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taotaoKan/res/drawable-mdpi/button_storesearch_normal.png" afterPath="$PROJECT_DIR$/taotaoKan/res/drawable-mdpi/button_storesearch_normal.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taotaoKan/res/drawable-hdpi/cuzy_layout_1_back.png" afterPath="$PROJECT_DIR$/taotaoKan/res/drawable-hdpi/cuzy_layout_1_back.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taotaoKan/res/drawable-ldpi/cuzy_layout_1_back.png" afterPath="$PROJECT_DIR$/taotaoKan/res/drawable-ldpi/cuzy_layout_1_back.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taotaoKan/res/drawable-mdpi/cuzy_layout_1_back.png" afterPath="$PROJECT_DIR$/taotaoKan/res/drawable-mdpi/cuzy_layout_1_back.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taotaoKan/res/drawable-xhdpi/cuzy_layout_1_back.png" afterPath="$PROJECT_DIR$/taotaoKan/res/drawable-xhdpi/cuzy_layout_1_back.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taotaoKan/res/drawable-hdpi/cuzy_layout_1_cancel.png" afterPath="$PROJECT_DIR$/taotaoKan/res/drawable-hdpi/cuzy_layout_1_cancel.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taotaoKan/res/drawable-ldpi/cuzy_layout_1_cancel.png" afterPath="$PROJECT_DIR$/taotaoKan/res/drawable-ldpi/cuzy_layout_1_cancel.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taotaoKan/res/drawable-mdpi/cuzy_layout_1_cancel.png" afterPath="$PROJECT_DIR$/taotaoKan/res/drawable-mdpi/cuzy_layout_1_cancel.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taotaoKan/res/drawable-xhdpi/cuzy_layout_1_cancel.png" afterPath="$PROJECT_DIR$/taotaoKan/res/drawable-xhdpi/cuzy_layout_1_cancel.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taotaoKan/res/drawable-hdpi/cuzy_layout_1_cell_bg.png" afterPath="$PROJECT_DIR$/taotaoKan/res/drawable-hdpi/cuzy_layout_1_cell_bg.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taotaoKan/res/drawable-ldpi/cuzy_layout_1_cell_bg.png" afterPath="$PROJECT_DIR$/taotaoKan/res/drawable-ldpi/cuzy_layout_1_cell_bg.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taotaoKan/res/drawable-mdpi/cuzy_layout_1_cell_bg.png" afterPath="$PROJECT_DIR$/taotaoKan/res/drawable-mdpi/cuzy_layout_1_cell_bg.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taotaoKan/res/drawable-xhdpi/cuzy_layout_1_cell_bg.png" afterPath="$PROJECT_DIR$/taotaoKan/res/drawable-xhdpi/cuzy_layout_1_cell_bg.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taotaoKan/res/drawable-hdpi/cuzy_layout_1_line.png" afterPath="$PROJECT_DIR$/taotaoKan/res/drawable-hdpi/cuzy_layout_1_line.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taotaoKan/res/drawable-ldpi/cuzy_layout_1_line.png" afterPath="$PROJECT_DIR$/taotaoKan/res/drawable-ldpi/cuzy_layout_1_line.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taotaoKan/res/drawable-mdpi/cuzy_layout_1_line.png" afterPath="$PROJECT_DIR$/taotaoKan/res/drawable-mdpi/cuzy_layout_1_line.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taotaoKan/res/drawable-xhdpi/cuzy_layout_1_line.png" afterPath="$PROJECT_DIR$/taotaoKan/res/drawable-xhdpi/cuzy_layout_1_line.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taotaoKan/res/drawable-hdpi/cuzy_layout_1_tile_bg.png" afterPath="$PROJECT_DIR$/taotaoKan/res/drawable-hdpi/cuzy_layout_1_tile_bg.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taotaoKan/res/drawable-ldpi/cuzy_layout_1_tile_bg.png" afterPath="$PROJECT_DIR$/taotaoKan/res/drawable-ldpi/cuzy_layout_1_tile_bg.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taotaoKan/res/drawable-mdpi/cuzy_layout_1_tile_bg.png" afterPath="$PROJECT_DIR$/taotaoKan/res/drawable-mdpi/cuzy_layout_1_tile_bg.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taotaoKan/res/drawable-xhdpi/cuzy_layout_1_tile_bg.png" afterPath="$PROJECT_DIR$/taotaoKan/res/drawable-xhdpi/cuzy_layout_1_tile_bg.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taotaoKan/res/drawable-hdpi/cuzy_layout_2_back.png" afterPath="$PROJECT_DIR$/taotaoKan/res/drawable-hdpi/cuzy_layout_2_back.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taotaoKan/res/drawable-ldpi/cuzy_layout_2_back.png" afterPath="$PROJECT_DIR$/taotaoKan/res/drawable-ldpi/cuzy_layout_2_back.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taotaoKan/res/drawable-mdpi/cuzy_layout_2_back.png" afterPath="$PROJECT_DIR$/taotaoKan/res/drawable-mdpi/cuzy_layout_2_back.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taotaoKan/res/drawable-xhdpi/cuzy_layout_2_back.png" afterPath="$PROJECT_DIR$/taotaoKan/res/drawable-xhdpi/cuzy_layout_2_back.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taotaoKan/res/drawable-hdpi/cuzy_layout_2_cancel.png" afterPath="$PROJECT_DIR$/taotaoKan/res/drawable-hdpi/cuzy_layout_2_cancel.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taotaoKan/res/drawable-ldpi/cuzy_layout_2_cancel.png" afterPath="$PROJECT_DIR$/taotaoKan/res/drawable-ldpi/cuzy_layout_2_cancel.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taotaoKan/res/drawable-mdpi/cuzy_layout_2_cancel.png" afterPath="$PROJECT_DIR$/taotaoKan/res/drawable-mdpi/cuzy_layout_2_cancel.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taotaoKan/res/drawable-xhdpi/cuzy_layout_2_cancel.png" afterPath="$PROJECT_DIR$/taotaoKan/res/drawable-xhdpi/cuzy_layout_2_cancel.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taotaoKan/res/drawable-hdpi/cuzy_layout_2_cell_bg.png" afterPath="$PROJECT_DIR$/taotaoKan/res/drawable-hdpi/cuzy_layout_2_cell_bg.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taotaoKan/res/drawable-ldpi/cuzy_layout_2_cell_bg.png" afterPath="$PROJECT_DIR$/taotaoKan/res/drawable-ldpi/cuzy_layout_2_cell_bg.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taotaoKan/res/drawable-mdpi/cuzy_layout_2_cell_bg.png" afterPath="$PROJECT_DIR$/taotaoKan/res/drawable-mdpi/cuzy_layout_2_cell_bg.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taotaoKan/res/drawable-xhdpi/cuzy_layout_2_cell_bg.png" afterPath="$PROJECT_DIR$/taotaoKan/res/drawable-xhdpi/cuzy_layout_2_cell_bg.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taotaoKan/res/drawable-hdpi/cuzy_layout_2_tile_bg.png" afterPath="$PROJECT_DIR$/taotaoKan/res/drawable-hdpi/cuzy_layout_2_tile_bg.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taotaoKan/res/drawable-ldpi/cuzy_layout_2_tile_bg.png" afterPath="$PROJECT_DIR$/taotaoKan/res/drawable-ldpi/cuzy_layout_2_tile_bg.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taotaoKan/res/drawable-mdpi/cuzy_layout_2_tile_bg.png" afterPath="$PROJECT_DIR$/taotaoKan/res/drawable-mdpi/cuzy_layout_2_tile_bg.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taotaoKan/res/drawable-xhdpi/cuzy_layout_2_tile_bg.png" afterPath="$PROJECT_DIR$/taotaoKan/res/drawable-xhdpi/cuzy_layout_2_tile_bg.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taotaoKan/res/drawable-hdpi/groupbuy.jpg" afterPath="$PROJECT_DIR$/taotaoKan/res/drawable-hdpi/groupbuy.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taotaoKan/res/drawable-hdpi/ic_launcher.png" afterPath="$PROJECT_DIR$/taotaoKan/res/drawable-hdpi/ic_launcher.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taotaoKan/res/drawable-ldpi/ic_launcher.png" afterPath="$PROJECT_DIR$/taotaoKan/res/drawable-ldpi/ic_launcher.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taotaoKan/res/drawable-mdpi/ic_launcher.png" afterPath="$PROJECT_DIR$/taotaoKan/res/drawable-mdpi/ic_launcher.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taotaoKan/res/drawable-xhdpi/ic_launcher.png" afterPath="$PROJECT_DIR$/taotaoKan/res/drawable-xhdpi/ic_launcher.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taotaoKan/libs/umeng_sdk.jar" afterPath="$PROJECT_DIR$/taotaoKan/libs/umeng_sdk.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taotaoKan/src/com/example/taotaokanAndroid/SettingActivity.java" afterPath="$PROJECT_DIR$/taotaoKan/src/com/example/taotaokanAndroid/SettingActivity.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taotaoKan/res/drawable-hdpi/conner_imageview.xml" afterPath="$PROJECT_DIR$/taotaoKan/res/drawable-hdpi/conner_imageview.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taotaoKan/res/drawable-ldpi/conner_imageview.xml" afterPath="$PROJECT_DIR$/taotaoKan/res/drawable-ldpi/conner_imageview.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taotaoKan/res/drawable-mdpi/conner_imageview.xml" afterPath="$PROJECT_DIR$/taotaoKan/res/drawable-mdpi/conner_imageview.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taotaoKan/res/drawable-xhdpi/conner_imageview.xml" afterPath="$PROJECT_DIR$/taotaoKan/res/drawable-xhdpi/conner_imageview.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taotaoKan/res/layout/cuzy_item_view_1.xml" afterPath="$PROJECT_DIR$/taotaoKan/res/layout/cuzy_item_view_1.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taotaoKan/res/layout/cuzy_item_view_2.xml" afterPath="$PROJECT_DIR$/taotaoKan/res/layout/cuzy_item_view_2.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taotaoKan/res/layout/cuzy_items_presentation.xml" afterPath="$PROJECT_DIR$/taotaoKan/res/layout/cuzy_items_presentation.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taotaoKan/res/drawable-hdpi/cuzy_layout_1_bg.xml" afterPath="$PROJECT_DIR$/taotaoKan/res/drawable-hdpi/cuzy_layout_1_bg.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taotaoKan/res/drawable-ldpi/cuzy_layout_1_bg.xml" afterPath="$PROJECT_DIR$/taotaoKan/res/drawable-ldpi/cuzy_layout_1_bg.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taotaoKan/res/drawable-mdpi/cuzy_layout_1_bg.xml" afterPath="$PROJECT_DIR$/taotaoKan/res/drawable-mdpi/cuzy_layout_1_bg.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taotaoKan/res/drawable-xhdpi/cuzy_layout_1_bg.xml" afterPath="$PROJECT_DIR$/taotaoKan/res/drawable-xhdpi/cuzy_layout_1_bg.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taotaoKan/res/drawable-hdpi/cuzy_layout_2_bg.xml" afterPath="$PROJECT_DIR$/taotaoKan/res/drawable-hdpi/cuzy_layout_2_bg.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taotaoKan/res/drawable-ldpi/cuzy_layout_2_bg.xml" afterPath="$PROJECT_DIR$/taotaoKan/res/drawable-ldpi/cuzy_layout_2_bg.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taotaoKan/res/drawable-mdpi/cuzy_layout_2_bg.xml" afterPath="$PROJECT_DIR$/taotaoKan/res/drawable-mdpi/cuzy_layout_2_bg.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taotaoKan/res/drawable-xhdpi/cuzy_layout_2_bg.xml" afterPath="$PROJECT_DIR$/taotaoKan/res/drawable-xhdpi/cuzy_layout_2_bg.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taotaoKan/res/layout/cuzy_list_cell_1.xml" afterPath="$PROJECT_DIR$/taotaoKan/res/layout/cuzy_list_cell_1.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taotaoKan/res/layout/cuzy_list_cell_2.xml" afterPath="$PROJECT_DIR$/taotaoKan/res/layout/cuzy_list_cell_2.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taotaoKan/res/layout/cuzy_tb_webview.xml" afterPath="$PROJECT_DIR$/taotaoKan/res/layout/cuzy_tb_webview.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taotaoKan/res/layout/grid_item1.xml" afterPath="$PROJECT_DIR$/taotaoKan/res/layout/grid_item1.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taotaoKan/res/layout/gridview.xml" afterPath="$PROJECT_DIR$/taotaoKan/res/layout/gridview.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taotaoKan/res/anim/in_from_right.xml" afterPath="$PROJECT_DIR$/taotaoKan/res/anim/in_from_right.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taotaoKan/res/drawable-hdpi/item_bg_style.xml" afterPath="$PROJECT_DIR$/taotaoKan/res/drawable-hdpi/item_bg_style.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taotaoKan/res/layout/main.xml" afterPath="$PROJECT_DIR$/taotaoKan/res/layout/main.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taotaoKan/res/anim/menu_bottombar_in.xml" afterPath="$PROJECT_DIR$/taotaoKan/res/anim/menu_bottombar_in.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taotaoKan/res/anim/menu_bottombar_out.xml" afterPath="$PROJECT_DIR$/taotaoKan/res/anim/menu_bottombar_out.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taotaoKan/res/anim/out_to_left.xml" afterPath="$PROJECT_DIR$/taotaoKan/res/anim/out_to_left.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taotaoKan/res/layout/search_tool_bar.xml" afterPath="$PROJECT_DIR$/taotaoKan/res/layout/search_tool_bar.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taotaoKan/res/layout/searchview.xml" afterPath="$PROJECT_DIR$/taotaoKan/res/layout/searchview.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taotaoKan/res/layout/setting.xml" afterPath="$PROJECT_DIR$/taotaoKan/res/layout/setting.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taotaoKan/res/layout/share_popup_windows.xml" afterPath="$PROJECT_DIR$/taotaoKan/res/layout/share_popup_windows.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taotaoKan/res/layout/shengyinglist.xml" afterPath="$PROJECT_DIR$/taotaoKan/res/layout/shengyinglist.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taotaoKan/res/anim/stay.xml" afterPath="$PROJECT_DIR$/taotaoKan/res/anim/stay.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taotaoKan/res/layout/titlebar.xml" afterPath="$PROJECT_DIR$/taotaoKan/res/layout/titlebar.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taotaoKan/src/com/example/taotaokanAndroid/webViewActivity.java" afterPath="$PROJECT_DIR$/taotaoKan/src/com/example/taotaokanAndroid/webViewActivity.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="taotaokanAndroid.iws" />
@@ -344,10 +122,10 @@
     <file path="/fragment.java" changelist="02026f30-e8a8-4b15-a05f-9eb53e256d6d" time="1385611189018" ignored="false" />
     <file path="/actionbar.xml" changelist="02026f30-e8a8-4b15-a05f-9eb53e256d6d" time="1384942680881" ignored="false" />
     <file path="/GalleryImageAdapter.java" changelist="02026f30-e8a8-4b15-a05f-9eb53e256d6d" time="1385017767316" ignored="false" />
-    <file path="/SettingActivity.java" changelist="02026f30-e8a8-4b15-a05f-9eb53e256d6d" time="1385387917407" ignored="false" />
+    <file path="/SettingActivity.java" changelist="02026f30-e8a8-4b15-a05f-9eb53e256d6d" time="1385619247758" ignored="false" />
     <file path="/ClassItemAct.java" changelist="02026f30-e8a8-4b15-a05f-9eb53e256d6d" time="1385027046021" ignored="false" />
     <file path="/setting.xml" changelist="02026f30-e8a8-4b15-a05f-9eb53e256d6d" time="1385028132268" ignored="false" />
-    <file path="/titlebar.xml" changelist="02026f30-e8a8-4b15-a05f-9eb53e256d6d" time="1385115893718" ignored="false" />
+    <file path="/titlebar.xml" changelist="02026f30-e8a8-4b15-a05f-9eb53e256d6d" time="1385620951510" ignored="false" />
     <file path="/AndroidManifest.xml" changelist="02026f30-e8a8-4b15-a05f-9eb53e256d6d" time="1385474909613" ignored="false" />
     <file path="/styles.xml" changelist="02026f30-e8a8-4b15-a05f-9eb53e256d6d" time="1385029668819" ignored="false" />
     <file path="/share_popup_windows.xml" changelist="02026f30-e8a8-4b15-a05f-9eb53e256d6d" time="1385108384687" ignored="false" />
@@ -377,7 +155,7 @@
     <file path="/shengyinglist.xml" changelist="02026f30-e8a8-4b15-a05f-9eb53e256d6d" time="1385462537410" ignored="false" />
     <file path="$PROJECT_DIR$/../../meiriyiwen/meiriyiwen/SideNavigation-master/sample/gen/com/devspark/sidenavigation/meiriyiwen/BuildConfig.java" changelist="02026f30-e8a8-4b15-a05f-9eb53e256d6d" time="1385474701485" ignored="false" />
     <file path="$PROJECT_DIR$/../../meiriyiwen/meiriyiwen/SideNavigation-master/sample/src/com/devspark/sidenavigation/meiriyiwen/webViewActivity.java" changelist="02026f30-e8a8-4b15-a05f-9eb53e256d6d" time="1385475065984" ignored="false" />
-    <file path="/webViewActivity.java" changelist="02026f30-e8a8-4b15-a05f-9eb53e256d6d" time="1385475276766" ignored="false" />
+    <file path="/webViewActivity.java" changelist="02026f30-e8a8-4b15-a05f-9eb53e256d6d" time="1385620045623" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -443,10 +221,70 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="AsyncTask.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$USER_HOME$/android-sdks/sources/android-17/android/os/AsyncTask.java">
+      <file leaf-file-name="SettingActivity.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/taotaoKan/src/com/example/taotaokanAndroid/SettingActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="176" column="56" selection-start="8591" selection-end="8597" vertical-scroll-proportion="-0.44217688">
+            <state line="116" column="40" selection-start="3895" selection-end="3911" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SearchActivity.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/taotaoKan/src/com/example/taotaokanAndroid/SearchActivity.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="31" column="26" selection-start="965" selection-end="979" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ScrollingTextView.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/taotaoKan/src/com/example/taotaokanAndroid/ScrollingTextView.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="16" column="13" selection-start="465" selection-end="465" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="webViewActivity.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/taotaoKan/src/com/example/taotaokanAndroid/webViewActivity.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="59" column="70" selection-start="2204" selection-end="2213" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="searchview.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/taotaoKan/res/layout/searchview.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0">
+              <folding />
+            </state>
+          </provider>
+          <provider editor-type-id="android-designer">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="titlebar.xml" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/taotaoKan/res/layout/titlebar.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="26" column="34" selection-start="1030" selection-end="1030" vertical-scroll-proportion="0.64362854">
+              <folding />
+            </state>
+          </provider>
+          <provider editor-type-id="android-designer">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SearchView.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/android-sdks/sources/android-17/android/widget/SearchView.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="91" column="13" selection-start="3509" selection-end="3509" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -470,10 +308,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/com/example/taotaokanAndroid/SettingActivity.java" />
-        <option value="$PROJECT_DIR$/res/layout/class_part_lay.xml" />
-        <option value="$PROJECT_DIR$/src/com/example/taotaokanAndroid/MainActivity.java" />
-        <option value="$PROJECT_DIR$/res/layout/search_tool_bar.xml" />
         <option value="$PROJECT_DIR$/src/com/example/taotaokanAndroid/imageCache/ImageLoader.java" />
         <option value="$PROJECT_DIR$/src/com/example/taotaokanAndroid/LoadMoreListView/LoadMoreListView.java" />
         <option value="$PROJECT_DIR$/res/values/strings.xml" />
@@ -486,14 +320,18 @@
         <option value="$PROJECT_DIR$/src/com/example/taotaokanAndroid/webViewActivity.java" />
         <option value="$PROJECT_DIR$/src/com/example/taotaokanAndroid/SearchActivity.java" />
         <option value="$PROJECT_DIR$/res/layout/searchview.xml" />
+        <option value="$PROJECT_DIR$/taotaoKan/src/com/example/taotaokanAndroid/SettingActivity.java" />
+        <option value="$PROJECT_DIR$/taotaoKan/res/layout/webview.xml" />
+        <option value="$PROJECT_DIR$/taotaoKan/src/com/example/taotaokanAndroid/webViewActivity.java" />
+        <option value="$PROJECT_DIR$/taotaoKan/res/layout/titlebar.xml" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="480" />
-    <option name="y" value="40" />
-    <option name="width" value="1446" />
-    <option name="height" value="886" />
+    <option name="x" value="682" />
+    <option name="y" value="88" />
+    <option name="width" value="1600" />
+    <option name="height" value="965" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -546,6 +384,184 @@
               <option name="myItemId" value="taotaokanAndroid" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="External Libraries" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="taotaokanAndroid" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="taotaoKan" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="taotaokanAndroid" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="taotaoKan" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="taotaokanAndroid" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="taotaokanAndroid" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="taotaoKan" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="res" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="taotaokanAndroid" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="taotaoKan" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="res" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="layout" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="taotaokanAndroid" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="taotaoKan" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="res" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="drawable-xhdpi" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="taotaokanAndroid" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="taotaoKan" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="res" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="drawable-mdpi" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="taotaokanAndroid" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="taotaoKan" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="res" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="drawable-ldpi" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="taotaokanAndroid" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="taotaoKan" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="res" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="anim" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="taotaokanAndroid" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="taotaoKan" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="libs" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="taotaokanAndroid" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="taotaoKan" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="libs" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="armeabi" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="taotaokanAndroid" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="library" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
@@ -553,7 +569,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="GoToFile.includeJavaFiles" value="false" />
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="ChangesBrowser.SHOW_FLATTEN" value="false" />
@@ -579,15 +595,15 @@
       <recent name="$PROJECT_DIR$/res/drawable-xhdpi" />
       <recent name="$PROJECT_DIR$/res/drawable-ldpi" />
     </key>
-    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
-      <recent name="com.example.taotaokanAndroid" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/libs" />
       <recent name="$PROJECT_DIR$/src/com/example/taotaokanAndroid/PullToRefresh" />
       <recent name="$PROJECT_DIR$/src/com/example/taotaokanAndroid" />
       <recent name="$PROJECT_DIR$/res/drawable-hdpi" />
       <recent name="$PROJECT_DIR$/res/layout" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.example.taotaokanAndroid" />
     </key>
   </component>
   <component name="RunManager" selected="Android Application.taotaokanAndroid">
@@ -776,29 +792,29 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="480" y="40" width="1446" height="886" extended-state="0" />
-    <editor active="false" />
+    <frame x="682" y="88" width="1600" height="965" extended-state="0" />
+    <editor active="true" />
     <layout>
+      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.11389961" sideWeight="0.61301774" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.31917632" sideWeight="0.61301774" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32906976" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32955772" sideWeight="0.6709302" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3994778" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.46783626" sideWeight="0.105714284" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32906976" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.31984335" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3268229" sideWeight="0.89428574" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3195266" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.295858" sideWeight="0.89428574" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24928571" sideWeight="0.6705653" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24892704" sideWeight="0.61227155" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32428572" sideWeight="0.61227155" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.38772845" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.114285715" sideWeight="0.6712329" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2905928" sideWeight="0.61301774" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.38698226" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32" sideWeight="0.6712329" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32955772" sideWeight="0.6709302" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
@@ -874,15 +890,115 @@
     <entry file="file://$USER_HOME$/android-sdks/sources/android-17/android/os/AsyncTask.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
+          <folding>
+            <element signature="e#9193#9203#0" expanded="true" />
+            <element signature="e#10423#10433#0" expanded="true" />
+            <element signature="e#10550#10787#0" expanded="true" />
+            <element signature="e#10772#10773#0" expanded="true" />
+            <element signature="e#11944#12279#0" expanded="true" />
+            <element signature="e#12268#12269#0" expanded="true" />
+            <element signature="e#13163#13193#1" expanded="true" />
+            <element signature="e#14766#14806#0" expanded="true" />
+            <element signature="e#15159#15199#0" expanded="true" />
+            <element signature="e#15829#15868#0" expanded="true" />
+            <element signature="e#26181#26229#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$USER_HOME$/android-sdks/sources/android-17/android/os/AsyncTask.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="176" column="56" selection-start="8591" selection-end="8597" vertical-scroll-proportion="-0.44217688">
+        <state line="197" column="28" selection-start="9328" selection-end="9328" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="e#9193#9203#0" expanded="true" />
+            <element signature="e#10423#10433#0" expanded="true" />
+            <element signature="e#10550#10787#0" expanded="true" />
+            <element signature="e#10772#10773#0" expanded="true" />
+            <element signature="e#11944#12279#0" expanded="true" />
+            <element signature="e#12268#12269#0" expanded="true" />
+            <element signature="e#13163#13193#1" expanded="true" />
+            <element signature="e#14766#14806#0" expanded="true" />
+            <element signature="e#15159#15199#0" expanded="true" />
+            <element signature="e#15829#15868#0" expanded="true" />
+            <element signature="e#26181#26229#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/taotaoKan/src/com/example/taotaokanAndroid/ClassItem/ClassItemAct.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="13" selection-start="265" selection-end="265" vertical-scroll-proportion="0.0">
           <folding />
         </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/taotaoKan/src/com/example/taotaokanAndroid/ClassItem/ClassItem.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="13" selection-start="92" selection-end="92" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/taotaoKan/src/com/example/taotaokanAndroid/ClassItem/ClassListAdapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="66" column="35" selection-start="1432" selection-end="1432" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/taotaoKan/src/com/example/taotaokanAndroid/ScrollingTextView.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="13" selection-start="465" selection-end="465" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/android-sdks/sources/android-17/android/widget/SearchView.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="91" column="13" selection-start="3509" selection-end="3509" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/taotaoKan/src/com/example/taotaokanAndroid/SearchActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="31" column="26" selection-start="965" selection-end="979" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/taotaoKan/src/com/example/taotaokanAndroid/SettingActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="116" column="40" selection-start="3895" selection-end="3911" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/taotaoKan/res/layout/searchview.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/taotaoKan/src/com/example/taotaokanAndroid/webViewActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="59" column="70" selection-start="2204" selection-end="2213" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/taotaoKan/res/layout/titlebar.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="26" column="34" selection-start="1030" selection-end="1030" vertical-scroll-proportion="0.64362854">
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer">
+        <state />
       </provider>
     </entry>
   </component>
@@ -950,7 +1066,7 @@
       </state>
       <state key="ProjectLibrariesConfigurable.UI">
         <settings>
-          <last-edited>umeng_sdk</last-edited>
+          <last-edited>libs</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

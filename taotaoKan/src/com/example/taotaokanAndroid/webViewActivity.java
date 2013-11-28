@@ -10,6 +10,9 @@ import android.webkit.WebSettings;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
 import android.widget.ProgressBar;
+import android.widget.RelativeLayout;
+import android.widget.SearchView;
+import android.widget.TextView;
 
 /**
  * Created with IntelliJ IDEA.
@@ -22,6 +25,9 @@ public class webViewActivity extends Activity {
 
 
     public static final String EXTRA_WEBURL = "com.devspark.sidenavigation.meiriyiwen.extra.weburl";
+    public static final String EXTRA_TITLE_SHOW = "com.devspark.sidenavigation.meiriyiwen.extra.title.show";
+    public static final String EXTRA_TITLE_TEXT = "com.devspark.sidenavigation.meiriyiwen.extra.title.text";
+
 
     public ProgressBar progressBar = null;
     public void onCreate(Bundle savedInstanceState) {
@@ -35,6 +41,27 @@ public class webViewActivity extends Activity {
                 .detectDiskWrites().detectNetwork().penaltyLog().build());
         StrictMode.setVmPolicy(new StrictMode.VmPolicy.Builder().detectLeakedSqlLiteObjects()
                 .detectLeakedClosableObjects().penaltyLog().penaltyDeath().build());
+
+
+        if (getIntent().hasExtra(EXTRA_TITLE_SHOW))
+        {
+            RelativeLayout titleBar = (RelativeLayout)findViewById(R.id.include);
+            titleBar.setVisibility(View.VISIBLE);
+        }
+        else
+        {
+            RelativeLayout titleBar = (RelativeLayout)findViewById(R.id.include);
+            titleBar.setVisibility(View.INVISIBLE);
+        }
+
+        if (getIntent().hasExtra(EXTRA_TITLE_TEXT))
+        {
+            String textString = getIntent().getStringExtra(EXTRA_TITLE_TEXT);
+            TextView titleView = (TextView)findViewById(R.id.titleText);
+            titleView.setText(textString);
+        }
+
+
         if (getIntent().hasExtra(EXTRA_WEBURL)) {
             String title = getIntent().getStringExtra(EXTRA_WEBURL);
             //setTitle(title);
@@ -45,11 +72,17 @@ public class webViewActivity extends Activity {
             uiwebview.getSettings().setPluginsEnabled(true);
             uiwebview.getSettings().setPluginState(WebSettings.PluginState.ON);
 
+            if (title.contains("http"))
+            {
 
-            title = "http://" + title;
+            }
+            else
+            {
+                title = "http://" + title;
+
+            }
             uiwebview.loadUrl(title);
             uiwebview.setBackgroundColor(Color.BLACK);
-            //uiwebview.getUrl();
             Log.v("huangzf", "the url is "+ title);
         }
 
@@ -65,17 +98,15 @@ public class webViewActivity extends Activity {
         public void onPageStarted(WebView view, String url, android.graphics.Bitmap favicon){
 
             progressBar.setVisibility(View.VISIBLE);
-            Log.d("CuzyAdSDK","started " + url);
         }
         @Override
         public void onPageFinished(WebView view, String url) {
             progressBar.setVisibility(View.INVISIBLE);
-            Log.d("CuzyAdSDK","finished " + url);
         }
         @Override
         public void onReceivedError(WebView view, int errorCode, String description, String failingUrl){
             progressBar.setVisibility(View.INVISIBLE);
-            Log.d("CuzyAdSDK","error " + failingUrl + " " + description);
+
         }
 //        @Override
 //        public void onLoadResource(android.webkit.WebView view, java.lang.String url) {

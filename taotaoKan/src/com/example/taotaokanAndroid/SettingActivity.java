@@ -1,8 +1,12 @@
 package com.example.taotaokanAndroid;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
+import android.view.View;
 import android.view.Window;
+import android.widget.AdapterView;
 import android.widget.ListView;
 import com.example.taotaokanAndroid.ClassItem.ClassItem;
 import com.example.taotaokanAndroid.ClassItem.ClassListAdapter;
@@ -20,10 +24,16 @@ import java.util.Vector;
  * To change this template use File | Settings | File Templates.
  */
 public class SettingActivity extends Activity {
+    public static final String EXTRA_WEBURL = "com.devspark.sidenavigation.meiriyiwen.extra.weburl";
+    public static final String EXTRA_TITLE_SHOW = "com.devspark.sidenavigation.meiriyiwen.extra.title.show";
+    public static final String EXTRA_TITLE_TEXT = "com.devspark.sidenavigation.meiriyiwen.extra.title.text";
+
+
 
     private ListView classItemList;
     private ClassListAdapter classListAdapter;
 
+    private String faqURLstring = "http://iminitao.com/app/fq.html";
 
 
     public void onCreate(Bundle savedInstanceState) {
@@ -62,7 +72,15 @@ public class SettingActivity extends Activity {
 
         addAdapterItem(data);
 
-
+        // Click on ListView Row:
+        classItemList.setOnItemClickListener(new AdapterView.OnItemClickListener()
+        {
+            @Override
+            public void onItemClick(AdapterView<?> arg0, View arg1, int position, long arg3)
+            {
+                startWebViewActivity(faqURLstring);
+            }
+        });
 
     }
     private void addAdapterItem(Vector<ClassItem> data){
@@ -88,6 +106,25 @@ public class SettingActivity extends Activity {
             }
         }
     }
+
+
+
+    public void startWebViewActivity(String urlString)
+    {
+        Intent intent = new Intent(this, webViewActivity.class);
+        intent.putExtra(EXTRA_WEBURL, urlString);
+        intent.putExtra(EXTRA_TITLE_SHOW,"true");
+        intent.putExtra(EXTRA_TITLE_TEXT, "帮助");
+        // all of the other activities on top of it will be closed and this
+        // Intent will be delivered to the (now on top) old activity as a
+        // new Intent.
+        intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+
+        startActivity(intent);
+        // no animation of transition
+        overridePendingTransition(0, 0);
+    }
+
     public void onBackPressed() {
        finish();
         overridePendingTransition(R.anim.slide_in, R.anim.slide_out);
