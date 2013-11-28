@@ -2,6 +2,7 @@ package com.example.taotaokanAndroid;
 
 import android.app.Activity;
 import android.content.Intent;
+import android.content.pm.PackageInfo;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -56,6 +57,20 @@ public class SettingActivity extends Activity {
          *              String partName,
          *              String classIcon)
          */
+        String versionName = "";
+        try
+        {
+            PackageInfo pinfo;
+            pinfo = getPackageManager().getPackageInfo(getPackageName(), 0);
+            int versionNumber = pinfo.versionCode;
+            versionName = pinfo.versionName;
+        }
+        catch (Exception e)
+        {
+
+        }
+
+        ClassItem item0 = new ClassItem(ClassItem.classType.SETTING_LOGO,versionName );
         ClassItem item1 = new ClassItem(1,"清理缓存文件",1,"程序","");
         ClassItem item2 = new ClassItem(1,"帮助说明",1,"程序","");
         ClassItem item3 = new ClassItem(1,"设置桌面背景",1,"程序","");
@@ -64,7 +79,7 @@ public class SettingActivity extends Activity {
         ClassItem item6 = new ClassItem(1,"反馈和建议",2,"其他","");
 
 
-
+        data.addElement(item0);
         data.addElement(item1);
         data.addElement(item2);
         data.addElement(item3);

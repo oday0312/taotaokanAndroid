@@ -5,6 +5,15 @@ import java.io.Serializable;
 public class ClassItem implements Serializable{
     private static final long serialVersionUID = 1L;
 
+    public enum classType
+    {
+       SETTING_LOGO,
+       NORMAL_TYPE
+    }
+    public classType currentCellType = classType.NORMAL_TYPE;
+    public String AppVersionString= "";
+
+
     public int classId = 0;
     public String classIcon = "";
     public String className = "";
@@ -12,9 +21,15 @@ public class ClassItem implements Serializable{
     public String partName = "";
     public boolean ifTop = false;
 
-    public ClassItem() {
+
+
+
+    public ClassItem(classType settingLogo, String appVersionString) {
         super();
+        this.AppVersionString = appVersionString;
+        this.currentCellType = classType.SETTING_LOGO;
     }
+
 
     /**
      *
