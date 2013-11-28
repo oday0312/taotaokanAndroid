@@ -52,7 +52,7 @@ public class SearchActivity extends Activity {
             public boolean onQueryTextSubmit(String query) {
                 onSearchRequested();
                 Log.d("huang alex" , "begin search " + query);
-                rawData = CuzyAdSDK.getInstance().fetchRawItems("", "手机", 0);
+                rawData = CuzyAdSDK.getInstance().fetchRawItems("", "女装", 0);
                 Log.d("huang alex", ""+rawData.size());
                 for (int i = 0; i< rawData.size();i++)
                 {
@@ -92,7 +92,8 @@ public class SearchActivity extends Activity {
             public void onLoadMore() {
                 // Do the work to load more items at the end of list
                 // here
-                //new LoadDataTask().execute();
+                Log.v("alex huang", "on load more called");
+                new LongOperation().execute();
             }
         });
 
@@ -123,6 +124,10 @@ public class SearchActivity extends Activity {
 
     }
 
+    public void reloadListView()
+    {
+        adapter.notifyDataSetChanged();
+    }
     public void startWebViewActivity(String urlString)
     {
         Intent intent = new Intent(this, webViewActivity.class);
@@ -137,20 +142,43 @@ public class SearchActivity extends Activity {
         // no animation of transition
         overridePendingTransition(0, 0);
     }
-    private class LongOperation extends AsyncTask<String,Void,String> {
+    static int pageIndex = 1;
+    private class LongOperation extends AsyncTask<Void,Void,Void> {
 
         @Override
-        protected String doInBackground(String...params){
+        protected Void doInBackground(Void...params){
 
+            rawData.clear();
+            rawData = CuzyAdSDK.getInstance().fetchRawItems("", "女装", pageIndex);
+            pageIndex++;
+            Log.d("huang alex", ""+rawData.size());
+            for (int i = 0; i< rawData.size();i++)
+            {
+                CuzyTBKItem cuzyData = rawData.get(i);
+                PaperItem temp = new PaperItem();
+                temp.urlString =  cuzyData.getItemClickURLString();
+                temp.contentString = cuzyData.getItemDescription();
+                temp.titleString = cuzyData.getItemPrice();
+                temp.imageString = cuzyData.getItemImageURLString();
+                DataArray.add(temp);
+            }
 
-
-
-            return"Executed";
+            return null;
         }
 
         @Override
-        protected void onPostExecute(String result){
-            //reloadListView();
+        protected void onPostExecute(Void result) {
+
+            reloadListView();
+            //adapter.notifyDataSetChanged();
+            listView.onLoadMoreComplete();
+        }
+
+        @Override
+        protected void onCancelled() {
+            // Notify the loading more operation has finished
+            //((LoadMoreListView) getListView()).onLoadMoreComplete();
+            listView.onLoadMoreComplete();;
         }
 
         @Override
