@@ -27,6 +27,7 @@ import com.example.taotaokanAndroid.imageCache.*;
 public class SearchActivity extends Activity {
 
     public static final String EXTRA_WEBURL = "com.devspark.sidenavigation.meiriyiwen.extra.weburl";
+    public static final String EXTRA_PAPERITEM = "com.devspark.sidenavigation.meiriyiwen.extra.paperitem";
 
     private  SearchView search;
     private RelativeLayout searchbarView;
@@ -108,7 +109,8 @@ public class SearchActivity extends Activity {
                 Object o = listView.getItemAtPosition(position);
                 PaperItem tempItem = DataArray.get(position);
                 Log.i("alex huang ", tempItem.urlString);
-                startWebViewActivity(tempItem.urlString);
+                //startWebViewActivity(tempItem.urlString);
+                startDetailViewLevel1(tempItem);
             }
         });
 
@@ -128,6 +130,21 @@ public class SearchActivity extends Activity {
     {
         adapter.notifyDataSetChanged();
     }
+
+
+    public void startDetailViewLevel1(PaperItem item)
+    {
+        Intent intent = new Intent(this, DetailViewLevel1.class);
+        intent.putExtra(EXTRA_PAPERITEM, item);
+
+        intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+
+        startActivity(intent);
+        // no animation of transition
+        overridePendingTransition(0, 0);
+    }
+
+
     public void startWebViewActivity(String urlString)
     {
         Intent intent = new Intent(this, webViewActivity.class);

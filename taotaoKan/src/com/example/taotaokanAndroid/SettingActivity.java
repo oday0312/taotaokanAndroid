@@ -134,7 +134,6 @@ public class SettingActivity extends Activity {
     }
 
 
-
     public void startWebViewActivity(String urlString)
     {
         Intent intent = new Intent(this, webViewActivity.class);

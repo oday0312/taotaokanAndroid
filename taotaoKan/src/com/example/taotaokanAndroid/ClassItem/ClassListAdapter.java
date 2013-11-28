@@ -89,18 +89,18 @@ public class ClassListAdapter extends BaseAdapter {
 
     public View createSettingLogoCell(View convertView,  ClassItem classItem)
     {
-        final SettingLogoHolder holder;
+        final ViewHolder holder;
 
         if (convertView == null) {
             convertView = mInflater.inflate(R.layout.class_list_logo_head, null);
-            holder = new SettingLogoHolder();
+            holder = new ViewHolder();
 
             holder.appName = (TextView) convertView.findViewById(R.id.settingAppName);
             holder.appVersion = (TextView)convertView.findViewById(R.id.settingAppVersion);
 
             convertView.setTag(holder);
         } else {
-            holder = (SettingLogoHolder) convertView.getTag();
+            holder = (ViewHolder) convertView.getTag();
         }
 
         if(classItem != null){
@@ -157,13 +157,12 @@ public class ClassListAdapter extends BaseAdapter {
 		TextView partName;
 		TextView className;
 		ImageView mIcon;
-	}
 
 
-    public class SettingLogoHolder{
         TextView appName;
         TextView appVersion;
         ImageView logoImage;
-    }
+	}
+
 
 }

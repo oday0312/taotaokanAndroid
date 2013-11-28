@@ -33,6 +33,7 @@
 
         <activity android:name="com.umeng.fb.ConversationActivity"/>
         <activity android:name="com.umeng.fb.ContactActivity"/>
+        <activity android:name=".DetailViewLevel1"/>
         <meta-data android:value="528e150156240bb52105df47" android:name="UMENG_APPKEY"></meta-data>
         <meta-data android:value="1" android:name="UMENG_CHANNEL"/>
     </application>
