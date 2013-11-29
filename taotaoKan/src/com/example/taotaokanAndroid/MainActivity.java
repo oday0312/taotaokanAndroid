@@ -48,7 +48,7 @@ public class MainActivity extends Activity {
         actionBar.addAction(new StartSettingAction());
         actionBar.addAction(new StartShareGridView());
 
-        actionBar.addAction(new ToastAction());
+        actionBar.addAction(new StartFavorViewAction());
 
         myGallery = (Gallery)findViewById(R.id.gallery);
         //这段代码是杨丰盛老师的《android开发揭秘》中这样写的
@@ -111,34 +111,19 @@ public class MainActivity extends Activity {
         return t;
     }
 
-    private class ToastAction implements ActionBar.Action {
-
+    private class StartFavorViewAction implements ActionBar.Action{
         @Override
         public int getDrawable() {
-            return R.drawable.ic_title_export_default;
+            return R.drawable.button_setting_normal;
         }
 
         @Override
         public void performAction(View view) {
-
-            rawData = CuzyAdSDK.getInstance().fetchRawItems("", "手机", 0);
-            Log.d("huang alex", ""+rawData.size());
-            //CuzyAdSDK.getInstance().("6","",0);
-
-            //mPopupWindow.showAtLocation(findViewById(R.id.mainlayout), Gravity.BOTTOM, 0, 0);
-
-
-//            Intent t = new Intent();
-//            t.setClass(MainActivity.this,SettingActivity.class);
-//            startActivity(t);
-//            overridePendingTransition(R.anim.slide_in, R.anim.slide_out);
-
-
-            //overridePendingTransition(R.anim.in_from_right, R.anim.out_to_left);
-
-
+            Intent t = new Intent();
+            t.setClass(MainActivity.this,SettingActivity.class);
+            startActivity(t);
+            overridePendingTransition(R.anim.slide_in, R.anim.slide_out);
         }
-
     }
 
     private class StartSettingAction implements ActionBar.Action {

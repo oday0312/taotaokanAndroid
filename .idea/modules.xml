@@ -4,7 +4,6 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/library/library.iml" filepath="$PROJECT_DIR$/library/library.iml" />
       <module fileurl="file://$PROJECT_DIR$/taotaoKan/taotaoKan.iml" filepath="$PROJECT_DIR$/taotaoKan/taotaoKan.iml" />
-      <module fileurl="file://$PROJECT_DIR$/taotaokanAndroid.iml" filepath="$PROJECT_DIR$/taotaokanAndroid.iml" />
     </modules>
   </component>
 </project>
