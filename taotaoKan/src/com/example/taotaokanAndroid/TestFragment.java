@@ -11,8 +11,11 @@ import android.widget.LinearLayout.LayoutParams;
 import com.example.taotaokanAndroid.PullToRefresh.PullToRefreshView;
 import com.example.taotaokanAndroid.gridView.GridItemType1Adapter;
 
-public final class TestFragment extends Fragment {
+public final class TestFragment extends Fragment implements PullToRefreshView.OnHeaderRefreshListener,PullToRefreshView.OnFooterRefreshListener {
+
     private static final String KEY_CONTENT = "TestFragment:Content";
+
+    PullToRefreshView mPullToRefreshView;
     private GridView gridView;
     //图片的第一行文字
     private String[] titles = new String[]
@@ -74,6 +77,10 @@ public final class TestFragment extends Fragment {
         View v =  inflater.inflate(R.layout.gridview, container, false);
         gridView = (GridView)v.findViewById(R.id.gridview);
 
+        mPullToRefreshView = (PullToRefreshView)v.findViewById(R.id.main_pull_refresh_view);
+        mPullToRefreshView.setOnHeaderRefreshListener(this);
+        mPullToRefreshView.setOnFooterRefreshListener(this);
+
         GridItemType1Adapter adapter = new GridItemType1Adapter(titles, images,description,v.getContext());
         gridView.setAdapter(adapter);
 
@@ -111,5 +118,30 @@ public final class TestFragment extends Fragment {
     public void onSaveInstanceState(Bundle outState) {
         super.onSaveInstanceState(outState);
         outState.putString(KEY_CONTENT, mContent);
+    }
+
+    @Override
+    public void onFooterRefresh(PullToRefreshView view) {
+        mPullToRefreshView.postDelayed(new Runnable() {
+
+            @Override
+            public void run() {
+
+                mPullToRefreshView.onFooterRefreshComplete();
+            }
+        }, 1000);
+    }
+    @Override
+    public void onHeaderRefresh(PullToRefreshView view) {
+        mPullToRefreshView.postDelayed(new Runnable() {
+
+            @Override
+            public void run() {
+                // 璁剧疆鏇存柊鏃堕棿
+                //mPullToRefreshView.onHeaderRefreshComplete("鏈�繎鏇存柊:01-23 12:01");
+                mPullToRefreshView.onHeaderRefreshComplete();
+            }
+        },1000);
+
     }
 }

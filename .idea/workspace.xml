@@ -31,27 +31,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="02026f30-e8a8-4b15-a05f-9eb53e256d6d" name="Default" comment="add">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taotaoKan/res/drawable/perm_group_calendar_normal.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taotaoKan/res/drawable/perm_group_calendar_selected.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taotaoKan/res/drawable/perm_group_camera_normal.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taotaoKan/res/drawable/perm_group_camera_selected.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taotaoKan/res/drawable/perm_group_device_alarms_normal.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taotaoKan/res/drawable/perm_group_device_alarms_selected.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taotaoKan/res/drawable/perm_group_location_normal.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taotaoKan/res/drawable/perm_group_location_selected.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taotaoKan/src/com/example/taotaokanAndroid/BaseSampleActivity.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taotaoKan/src/com/example/taotaokanAndroid/TestFragment.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taotaoKan/src/com/example/taotaokanAndroid/TestFragmentAdapter.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taotaoKan/res/menu/menu.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taotaoKan/res/drawable/perm_group_calendar.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taotaoKan/res/drawable/perm_group_camera.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taotaoKan/res/drawable/perm_group_device_alarms.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taotaoKan/res/drawable/perm_group_location.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taotaoKan/src/com/example/taotaokanAndroid/MainActivity.java" afterPath="$PROJECT_DIR$/taotaoKan/src/com/example/taotaokanAndroid/MainActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/library.iml" afterPath="$PROJECT_DIR$/library/library.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taotaoKan/res/layout/main.xml" afterPath="$PROJECT_DIR$/taotaoKan/res/layout/main.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taotaoKan/taotaoKan.iml" afterPath="$PROJECT_DIR$/taotaoKan/taotaoKan.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taotaoKan/src/com/example/taotaokanAndroid/TestFragment.java" afterPath="$PROJECT_DIR$/taotaoKan/src/com/example/taotaokanAndroid/TestFragment.java" />
     </list>
     <ignored path="taotaokanAndroid.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -105,7 +85,7 @@
     <file path="/PaperItem.java" changelist="02026f30-e8a8-4b15-a05f-9eb53e256d6d" time="1385632996050" ignored="false" />
     <file path="/FileSize.java" changelist="02026f30-e8a8-4b15-a05f-9eb53e256d6d" time="1385635407161" ignored="false" />
     <file path="/FileCache.java" changelist="02026f30-e8a8-4b15-a05f-9eb53e256d6d" time="1385635885464" ignored="false" />
-    <file path="/TestFragment.java" changelist="02026f30-e8a8-4b15-a05f-9eb53e256d6d" time="1385817793064" ignored="false" />
+    <file path="/TestFragment.java" changelist="02026f30-e8a8-4b15-a05f-9eb53e256d6d" time="1385818188769" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -211,7 +191,19 @@
       <file leaf-file-name="TestFragment.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/taotaoKan/src/com/example/taotaokanAndroid/TestFragment.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="77" column="105" selection-start="2496" selection-end="2496" vertical-scroll-proportion="0.5701754">
+            <state line="79" column="49" selection-start="2539" selection-end="2539" vertical-scroll-proportion="0.11854103">
+              <folding>
+                <element signature="e#2893#3199#0" expanded="true" />
+                <element signature="e#3188#3189#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PullToRefreshView.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/taotaoKan/src/com/example/taotaokanAndroid/PullToRefresh/PullToRefreshView.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="547" column="16" selection-start="15150" selection-end="15150" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -232,7 +224,7 @@
       <file leaf-file-name="GridViewActivity.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/taotaoKan/src/com/example/taotaokanAndroid/GridViewActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="56" column="13" selection-start="1411" selection-end="2159" vertical-scroll-proportion="0.0">
+            <state line="45" column="6" selection-start="1468" selection-end="1675" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -279,15 +271,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AndroidManifest.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/library/AndroidManifest.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="3" column="35" selection-start="126" selection-end="144" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
     </leaf>
   </component>
   <component name="FindManager">
@@ -326,8 +309,8 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-16" />
-    <option name="y" value="22" />
+    <option name="x" value="11" />
+    <option name="y" value="24" />
     <option name="width" value="1600" />
     <option name="height" value="628" />
   </component>
@@ -804,7 +787,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-16" y="22" width="1600" height="628" extended-state="0" />
+    <frame x="11" y="24" width="1600" height="628" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.11389961" sideWeight="0.77362204" order="3" side_tool="false" content_ui="tabs" />
@@ -819,7 +802,7 @@
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32906976" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.31692913" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.15944882" sideWeight="0.89428574" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.37204725" sideWeight="0.89428574" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24892704" sideWeight="0.61227155" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -899,13 +882,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/taotaoKan/src/com/example/taotaokanAndroid/PaperItem.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="62" selection-start="490" selection-end="490" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/taotaoKan/src/com/example/taotaokanAndroid/SearchActivity.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="178" column="65" selection-start="6324" selection-end="6345" vertical-scroll-proportion="0.0">
@@ -997,13 +973,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/taotaoKan/src/com/example/taotaokanAndroid/GridViewActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="56" column="13" selection-start="1411" selection-end="2159" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/taotaoKan/res/layout/gridview.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="1.1538461">
@@ -1014,10 +983,27 @@
         <state />
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/taotaoKan/src/com/example/taotaokanAndroid/PullToRefresh/PullToRefreshView.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="547" column="16" selection-start="15150" selection-end="15150" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/taotaoKan/src/com/example/taotaokanAndroid/GridViewActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="45" column="6" selection-start="1468" selection-end="1675" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/taotaoKan/src/com/example/taotaokanAndroid/TestFragment.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="77" column="105" selection-start="2496" selection-end="2496" vertical-scroll-proportion="0.5701754">
-          <folding />
+        <state line="79" column="49" selection-start="2539" selection-end="2539" vertical-scroll-proportion="0.11854103">
+          <folding>
+            <element signature="e#2893#3199#0" expanded="true" />
+            <element signature="e#3188#3189#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
