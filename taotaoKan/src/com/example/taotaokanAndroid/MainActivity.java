@@ -30,7 +30,6 @@ public class MainActivity extends BaseSampleActivity {
 
 
     private PopupWindow mPopupWindow;
-    private Gallery myGallery;
 
     public ArrayList<CuzyTBKItem> rawData = new ArrayList<CuzyTBKItem>();
 
@@ -60,17 +59,9 @@ public class MainActivity extends BaseSampleActivity {
         actionBar.addAction(new StartSearchAction());
         actionBar.addAction(new StartSettingAction());
         actionBar.addAction(new StartShareGridView());
-
         actionBar.addAction(new StartFavorViewAction());
 
-        myGallery = (Gallery)findViewById(R.id.gallery);
-        //这段代码是杨丰盛老师的《android开发揭秘》中这样写的
-        //myGallery.setBackgroundResource(R.drawable.bg0);
-        GalleryImageAdapter adapter = new GalleryImageAdapter(this);
-        //设置背景风格。Gallery背景风格定义在attrs.xml中
-        TypedArray typedArray = obtainStyledAttributes(R.styleable.Gallery);
-        adapter.setmGalleryItemBackground(typedArray.getResourceId(R.styleable.Gallery_android_galleryItemBackground, 0));
-        myGallery.setAdapter(adapter);
+
 
 
 

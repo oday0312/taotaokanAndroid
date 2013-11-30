@@ -23,7 +23,16 @@ class TestFragmentAdapter extends FragmentPagerAdapter implements IconPagerAdapt
     @Override
     public Fragment getItem(int position) {
 
-        return TestFragment.newInstance(CONTENT[position % CONTENT.length]);
+        Fragment f;
+        if (position == 0)
+        {
+            f =  TestFragmentFirstPage.newInstance(CONTENT[position % CONTENT.length]);
+        }
+        else
+        {
+            f = TestFragment.newInstance(CONTENT[position % CONTENT.length]);
+        }
+        return f;
     }
 
     @Override

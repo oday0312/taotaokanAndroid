@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<com.example.taotaokanAndroid.PullToRefresh.PullToRefreshView xmlns:android="http://schemas.android.com/apk/res/android"
+                                                              android:id="@+id/main_pull_refresh_view"
+                                                              android:background="@android:color/white"
+                                                              android:layout_width="fill_parent"
+                                                              android:layout_height="fill_parent"
+                                                              android:orientation="vertical">
+    <!-- 这里放置listview,gridview或者scrollview的布局 ,PullToRefreshView
+    要设置android:orientation="vertical"属性
+    否则,显示不正确-->
+    <Gallery
+            android:layout_width="fill_parent"
+            android:layout_height="121dp"
+            android:id="@+id/gallery"/>
+
+    <GridView xmlns:android="http://schemas.android.com/apk/res/android"
+              android:id="@+id/gridview_firstpage"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:columnWidth="90dp"
+              android:verticalSpacing="10dp"
+              android:horizontalSpacing="10dp"
+              android:stretchMode="columnWidth"
+              android:gravity="center"
+              android:numColumns="1"/>
+</com.example.taotaokanAndroid.PullToRefresh.PullToRefreshView>
