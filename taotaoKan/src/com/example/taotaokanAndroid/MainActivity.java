@@ -7,22 +7,27 @@ import android.content.res.TypedArray;
 import android.graphics.Bitmap;
 import android.graphics.drawable.BitmapDrawable;
 import android.os.Bundle;
+import android.support.v4.view.ViewPager;
 import android.util.Log;
 import android.view.*;
-import android.widget.Button;
-import android.widget.Gallery;
-import android.widget.PopupWindow;
+import android.widget.*;
+import com.example.taotaokanAndroid.PullToRefresh.PullToRefreshView;
 import com.example.taotaokanAndroid.gridView.GalleryImageAdapter;
+import com.example.taotaokanAndroid.gridView.GridItemType1Adapter;
 import com.theindex.CuzyAdSDK.CuzyAdSDK;
 import com.theindex.CuzyAdSDK.CuzyTBKItem;
 import com.umeng.analytics.MobclickAgent;
+import com.viewpagerindicator.UnderlinePageIndicator;
 
 import java.util.ArrayList;
 
-public class MainActivity extends Activity {
+public class MainActivity extends BaseSampleActivity {
+
+
     /**
      * Called when the activity is first created.
      */
+
 
     private PopupWindow mPopupWindow;
     private Gallery myGallery;
@@ -33,6 +38,14 @@ public class MainActivity extends Activity {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main);
+
+        mAdapter = new TestFragmentAdapter(getSupportFragmentManager());
+
+        mPager = (ViewPager)findViewById(R.id.pager);
+        mPager.setAdapter(mAdapter);
+
+        mIndicator = (UnderlinePageIndicator)findViewById(R.id.indicator);
+        mIndicator.setViewPager(mPager);
 
         CuzyAdSDK.getInstance().setContext(this);
         CuzyAdSDK.getInstance().registerApp("200003","208f53acd6d396867c2a721be6c807eb");
@@ -85,14 +98,13 @@ public class MainActivity extends Activity {
         });
 
 
+
+
     }
 
     @Override
     public boolean onKeyDown(int keyCode, KeyEvent event) {
         if (keyCode == KeyEvent.KEYCODE_MENU && event.getRepeatCount() == 0) {
-            if (mPopupWindow != null && !mPopupWindow.isShowing()) {
-                mPopupWindow.showAtLocation(findViewById(R.layout.main), Gravity.BOTTOM, 0, 0);
-            }
             return true;
         }
         return super.onKeyDown(keyCode, event);
@@ -120,7 +132,7 @@ public class MainActivity extends Activity {
         @Override
         public void performAction(View view) {
             Intent t = new Intent();
-            t.setClass(MainActivity.this,SettingActivity.class);
+            t.setClass(MainActivity.this,FavorView.class);
             startActivity(t);
             overridePendingTransition(R.anim.slide_in, R.anim.slide_out);
         }
