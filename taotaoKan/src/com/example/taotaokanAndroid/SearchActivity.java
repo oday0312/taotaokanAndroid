@@ -6,7 +6,6 @@ import android.content.Intent;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.util.Log;
-import android.view.Gravity;
 import android.view.View;
 import android.view.inputmethod.InputMethodManager;
 import android.widget.*;
@@ -34,7 +33,7 @@ public class SearchActivity extends Activity {
     public ArrayList<CuzyTBKItem> rawData = new ArrayList<CuzyTBKItem>();
 
     public LoadMoreListView listView;
-    public ArrayList<PaperItem> DataArray = new ArrayList<PaperItem>();
+    public ArrayList<WaresItems> DataArray = new ArrayList<WaresItems>();
     public  cuzyAdapter adapter = null;
     public ImageLoader imageLoader=  null;
 
@@ -58,7 +57,7 @@ public class SearchActivity extends Activity {
                 for (int i = 0; i< rawData.size();i++)
                 {
                     CuzyTBKItem cuzyData = rawData.get(i);
-                    PaperItem temp = new PaperItem();
+                    WaresItems temp = new WaresItems();
                     temp.urlString =  cuzyData.getItemClickURLString();
                     temp.contentString = cuzyData.getItemDescription();
                     temp.titleString = cuzyData.getItemPrice();
@@ -107,7 +106,7 @@ public class SearchActivity extends Activity {
             public void onItemClick(AdapterView<?> arg0, View arg1, int position, long arg3)
             {
                 Object o = listView.getItemAtPosition(position);
-                PaperItem tempItem = DataArray.get(position);
+                WaresItems tempItem = DataArray.get(position);
                 Log.i("alex huang ", tempItem.urlString);
                 //startWebViewActivity(tempItem.urlString);
                 startDetailViewLevel1(tempItem);
@@ -132,7 +131,7 @@ public class SearchActivity extends Activity {
     }
 
 
-    public void startDetailViewLevel1(PaperItem item)
+    public void startDetailViewLevel1(WaresItems item)
     {
         Intent intent = new Intent(this, DetailViewLevel1.class);
         intent.putExtra(EXTRA_PAPERITEM, item);
@@ -172,7 +171,7 @@ public class SearchActivity extends Activity {
             for (int i = 0; i< rawData.size();i++)
             {
                 CuzyTBKItem cuzyData = rawData.get(i);
-                PaperItem temp = new PaperItem();
+                WaresItems temp = new WaresItems();
                 temp.urlString =  cuzyData.getItemClickURLString();
                 temp.contentString = cuzyData.getItemDescription();
                 temp.titleString = cuzyData.getItemPrice();

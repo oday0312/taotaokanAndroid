@@ -27,7 +27,7 @@ public class DetailViewLevel1 extends Activity {
         imageLoader = new ImageLoader(this);
         if (getIntent().hasExtra(EXTRA_PAPERITEM))
         {
-            PaperItem item = getIntent().getParcelableExtra(EXTRA_PAPERITEM);
+            WaresItems item = getIntent().getParcelableExtra(EXTRA_PAPERITEM);
             ImageView imageView = (ImageView)findViewById(R.id.detailviewlevel1_imageview);
 
             TextView description = (TextView)findViewById(R.id.detailviewlevel1_description);

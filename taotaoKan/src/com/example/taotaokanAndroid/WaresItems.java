@@ -10,7 +10,7 @@ import android.os.Parcelable;
  * Time: AM11:01
  * To change this template use File | Settings | File Templates.
  */
-public class PaperItem implements Parcelable {
+public class WaresItems implements Parcelable {
     public String imageString;
     public String titleString;
     public String contentString;
@@ -31,11 +31,11 @@ public class PaperItem implements Parcelable {
         dest.writeString(contentString);
         dest.writeString(urlString);
     }
-    public static final Parcelable.Creator<PaperItem> CREATOR = new Parcelable.Creator<PaperItem>() {
+    public static final Parcelable.Creator<WaresItems> CREATOR = new Parcelable.Creator<WaresItems>() {
 
         @Override
-        public PaperItem createFromParcel(Parcel source) {
-            PaperItem p = new PaperItem();
+        public WaresItems createFromParcel(Parcel source) {
+            WaresItems p = new WaresItems();
             p.imageString=source.readString();
             p.titleString =source.readString();
             p.contentString = source.readString();
@@ -44,7 +44,7 @@ public class PaperItem implements Parcelable {
         }
 
         @Override
-        public PaperItem[] newArray(int size) {
+        public WaresItems[] newArray(int size) {
             // TODO Auto-generated method stub
             return null;
         }

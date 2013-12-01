@@ -25,7 +25,7 @@ import android.widget.TextView;
 import com.example.taotaokanAndroid.imageCache.*;
 public class cuzyAdapter extends BaseAdapter {
 
-    private ArrayList<PaperItem> items = null;
+    private ArrayList<WaresItems> items = null;
     private Context             context       = null;
     private Activity thisActivity = null;
 
@@ -38,7 +38,7 @@ public class cuzyAdapter extends BaseAdapter {
      * @param items
      * @param context
      */
-    public cuzyAdapter(ArrayList<PaperItem> items,
+    public cuzyAdapter(ArrayList<WaresItems> items,
                        Context context,
                        Activity adapterActivity,
                        ImageLoader imageLoader,
@@ -111,7 +111,7 @@ public class cuzyAdapter extends BaseAdapter {
         RelativeLayout layout = (RelativeLayout)view.findViewById(R.id.secondlevellayout);
 
 
-        final  PaperItem paperItem = (PaperItem) getItem(position);
+        final WaresItems waresItems = (WaresItems) getItem(position);
         //获取控件
         final ImageView itemImageView = (ImageView) view.findViewById(R.id.listImageView);
         TextView listTitle = (TextView) view.findViewById(R.id.listTitle);
@@ -119,9 +119,9 @@ public class cuzyAdapter extends BaseAdapter {
 
 
         final Bitmap temp = getRes("");
-        imageLoader.DisplayImage(paperItem.imageString , itemImageView);
-        listTitle.setText(paperItem.titleString);
-        listContent.setText("" + paperItem.contentString);
+        imageLoader.DisplayImage(waresItems.imageString , itemImageView);
+        listTitle.setText(waresItems.titleString);
+        listContent.setText("" + waresItems.contentString);
 
 
         return view;
