@@ -15,6 +15,7 @@ import android.database.SQLException;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 import android.util.Log;
+import com.example.taotaokanAndroid.WaresItems;
 
 public class WaresItemsDataUtil {
 
@@ -130,29 +131,19 @@ public class WaresItemsDataUtil {
      * This method is used to create/insert new record Student record.
      * @return long
      */
-    public long createStudent(String itemImageURLString,
-                              String itemClickURLString,
-                              String itemDescription,
-
-                              String itemFreePostage,
-                              String itemName,
-                              String itemPrice,
-
-                              String itemPromotionPrice,
-                              String itemType,
-                              String tradingVolumeInThirtyDays) {
+    public long createStudent(WaresItems waresItems ) {
         ContentValues initialValues = new ContentValues();
-        initialValues.put(KEY_itemClickURLString,itemClickURLString);
-        initialValues.put(KEY_itemImageURLString,itemImageURLString);
-        initialValues.put(KEY_itemDescription,itemDescription);
+        initialValues.put(KEY_itemClickURLString,waresItems.itemClickURLString);
+        initialValues.put(KEY_itemImageURLString,waresItems.itemImageURLString);
+        initialValues.put(KEY_itemDescription,waresItems.itemDescription);
 
-        initialValues.put(KEY_itemFreePostage,itemFreePostage);
-        initialValues.put(KEY_itemName,itemName);
-        initialValues.put(KEY_itemPrice,itemPrice);
+        initialValues.put(KEY_itemFreePostage,waresItems.itemFreePostage);
+        initialValues.put(KEY_itemName,waresItems.itemName);
+        initialValues.put(KEY_itemPrice,waresItems.itemPrice);
 
-        initialValues.put(KEY_itemPromotionPrice,itemPromotionPrice);
-        initialValues.put(KEY_itemType,itemType);
-        initialValues.put(KEY_tradingVolumeInThirtyDays,tradingVolumeInThirtyDays);
+        initialValues.put(KEY_itemPromotionPrice,waresItems.itemPromotionPrice);
+        initialValues.put(KEY_itemType,waresItems.itemType);
+        initialValues.put(KEY_tradingVolumeInThirtyDays,waresItems.tradingVolumeInThirtyDays);
 
         return mDb.insert(DATABASE_TABLE, null, initialValues);
     }
@@ -169,7 +160,8 @@ public class WaresItemsDataUtil {
      * @return Cursor
      */
     public Cursor fetchAllStudents() {
-        return mDb.query(DATABASE_TABLE, new String[] {KEY_ROWID,
+        return mDb.query(DATABASE_TABLE, new String[] {
+                KEY_ROWID,
                 KEY_itemClickURLString,
                 KEY_itemDescription,
                 KEY_itemFreePostage,

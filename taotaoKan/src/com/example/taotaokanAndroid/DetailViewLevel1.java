@@ -35,11 +35,11 @@ public class DetailViewLevel1 extends Activity {
             TextView sourceType = (TextView)findViewById(R.id.detailviewlevel1_item_sourceType);
             TextView MonthlyAmount = (TextView)findViewById(R.id.detailviewlevel1_30day_sellamount);
 
-            description.setText(item.titleString);
+            description.setText(item.itemName);
 
 
             //http:\/\/img01.taobaocdn.com\/bao\/uploaded\/i1\/16244030445984444\/T1KDESXfdbXXXXXXXX_!!0-item_pic.jpg_240x240.jpg"
-            String bigImageString = item.imageString.replace("240x240", "400x400");
+            String bigImageString = item.itemImageURLString.replace("240x240", "400x400");
             Log.d("alex huang" , bigImageString);
             imageLoader.DisplayImage(bigImageString, imageView);
         }

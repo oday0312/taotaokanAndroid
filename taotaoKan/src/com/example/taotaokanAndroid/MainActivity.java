@@ -17,6 +17,10 @@ import com.example.taotaokanAndroid.gridView.GridItemType1Adapter;
 import com.theindex.CuzyAdSDK.CuzyAdSDK;
 import com.theindex.CuzyAdSDK.CuzyTBKItem;
 import com.umeng.analytics.MobclickAgent;
+import com.umeng.socialize.controller.RequestType;
+import com.umeng.socialize.controller.UMServiceFactory;
+import com.umeng.socialize.controller.UMSocialService;
+import com.umeng.socialize.media.UMImage;
 import com.viewpagerindicator.UnderlinePageIndicator;
 
 import java.util.ArrayList;
@@ -37,6 +41,8 @@ public class MainActivity extends BaseSampleActivity {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main);
+
+        addSNSshare();
 
         mAdapter = new TestFragmentAdapter(getSupportFragmentManager());
 
@@ -103,7 +109,20 @@ public class MainActivity extends BaseSampleActivity {
 
 
 
+    final UMSocialService mController = UMServiceFactory.getUMSocialService("com.umeng.share",
+            RequestType.SOCIAL);
+    public void addSNSshare()
+    {
 
+        mController.setShareContent("友盟社会化组件（SDK）让移动应用快速整合社交分享功能，http://www.umeng.com/social");
+         // 设置分享图片, 参数2为图片的地址
+        mController.setShareMedia(new UMImage(this,"http://www.umeng.com/images/pic/banner_module_social.png"));
+        //设置分享图片，参数2为本地图片的资源引用
+        //mController.setShareMedia(new UMImage(getActivity(), R.drawable.icon));
+        //设置分享图片，参数2为本地图片的路径(绝对路径)
+        //mController.setShareMedia(new UMImage(getActivity(),
+        //BitmapFactory.decodeFile("/mnt/sdcard/icon.png")));
+    }
 
     public Intent createIntent(Context context)
     {
@@ -117,7 +136,7 @@ public class MainActivity extends BaseSampleActivity {
     private class StartFavorViewAction implements ActionBar.Action{
         @Override
         public int getDrawable() {
-            return R.drawable.button_setting_normal;
+            return R.drawable.button_shoppingcar;
         }
 
         @Override
@@ -173,7 +192,8 @@ public class MainActivity extends BaseSampleActivity {
 
         @Override
         public void performAction(View view) {
-           mPopupWindow.showAtLocation(findViewById(R.id.mainlayout), Gravity.BOTTOM, 0, 0);
+           //mPopupWindow.showAtLocation(findViewById(R.id.mainlayout), Gravity.BOTTOM, 0, 0);
+            mController.openShare(MainActivity.this, false);
 
         }
 

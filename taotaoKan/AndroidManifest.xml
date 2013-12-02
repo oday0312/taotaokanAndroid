@@ -9,7 +9,8 @@
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
     <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
-
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />  <!-- 用于评论模块分享位置信息 -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" /><!-- 用于评论模块分享位置信息 -->
     <application android:label="@string/app_name" android:icon="@drawable/ic_launcher"
                  android:theme="@android:style/Theme.NoTitleBar"
                  android:screenOrientation="portrait">
@@ -35,7 +36,22 @@
         <activity android:name="com.umeng.fb.ContactActivity"/>
         <activity android:name=".DetailViewLevel1"/>
         <activity android:name=".FavorView"/>
+
+        <!-- ###################注册SDK使用的Activity###################### -->
+        <!--分享编辑页-->
+        <activity
+                android:name="com.umeng.socialize.view.ShareActivity"
+                android:configChanges="orientation|keyboard"
+                android:launchMode="singleTask"
+                android:noHistory="true"
+                android:theme="@style/Theme.UMDialog"
+                android:windowSoftInputMode="stateVisible|adjustResize" >
+        </activity>
+
+        <!-- ############ QQ空间和QQ SSO授权的Activity注册 ############ -->
+        <activity android:name="com.tencent.tauth.AuthActivity" />
         <activity android:name=".TestFragmentFirstPage"/>
+
         <meta-data android:value="528e150156240bb52105df47" android:name="UMENG_APPKEY"></meta-data>
         <meta-data android:value="1" android:name="UMENG_CHANNEL"/>
     </application>

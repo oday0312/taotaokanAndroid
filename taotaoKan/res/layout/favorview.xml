@@ -3,6 +3,22 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
               android:orientation="vertical"
               android:layout_width="match_parent"
-              android:layout_height="match_parent">
+              android:layout_height="match_parent" android:background="@drawable/bg_source_0">
+
+    <include android:layout_width="wrap_content"
+             android:layout_height="45dp"
+             layout="@layout/titlebar" android:id="@+id/include"
+             android:layout_alignLeft="@+id/classItemListView" android:layout_alignTop="@+id/view"/>
+
+    <GridView xmlns:android="http://schemas.android.com/apk/res/android"
+              android:id="@+id/favorview_gridview"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:columnWidth="90dp"
+              android:verticalSpacing="10dp"
+              android:horizontalSpacing="10dp"
+              android:stretchMode="columnWidth"
+              android:gravity="center"
+              android:numColumns="2"/>
 
 </LinearLayout>

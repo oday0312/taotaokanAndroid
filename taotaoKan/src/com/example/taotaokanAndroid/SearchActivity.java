@@ -10,6 +10,7 @@ import android.view.View;
 import android.view.inputmethod.InputMethodManager;
 import android.widget.*;
 import com.example.taotaokanAndroid.LoadMoreListView.LoadMoreListView;
+import com.example.taotaokanAndroid.SQLiteHelper.WaresItemsDataUtil;
 import com.theindex.CuzyAdSDK.CuzyAdSDK;
 import com.theindex.CuzyAdSDK.CuzyTBKItem;
 import com.umeng.analytics.MobclickAgent;
@@ -36,12 +37,15 @@ public class SearchActivity extends Activity {
     public ArrayList<WaresItems> DataArray = new ArrayList<WaresItems>();
     public  cuzyAdapter adapter = null;
     public ImageLoader imageLoader=  null;
-
+    public WaresItemsDataUtil dbUtil;
 
 
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.searchview);
+
+        dbUtil = new WaresItemsDataUtil(this);
+        dbUtil.open();
 
         search = (SearchView)findViewById(R.id.searchView);
         search.setFocusable(true);
@@ -54,16 +58,30 @@ public class SearchActivity extends Activity {
                 Log.d("huang alex" , "begin search " + query);
                 rawData = CuzyAdSDK.getInstance().fetchRawItems("", "女装", 0);
                 Log.d("huang alex", ""+rawData.size());
+
                 for (int i = 0; i< rawData.size();i++)
                 {
                     CuzyTBKItem cuzyData = rawData.get(i);
                     WaresItems temp = new WaresItems();
-                    temp.urlString =  cuzyData.getItemClickURLString();
-                    temp.contentString = cuzyData.getItemDescription();
-                    temp.titleString = cuzyData.getItemPrice();
-                    temp.imageString = cuzyData.getItemImageURLString();
+                    temp.itemClickURLString =  cuzyData.getItemClickURLString();
+                    temp.itemDescription = cuzyData.getItemDescription();
+                    temp.itemPrice = cuzyData.getItemPrice();
+
+                    temp.itemImageURLString = cuzyData.getItemImageURLString();
+                    temp.itemFreePostage= cuzyData.getItemFreePostage();
+                    temp.itemName = cuzyData.getItemName();
+
+                    temp.itemPromotionPrice = cuzyData.getItemPromotionPrice();
+                    temp.itemType = cuzyData.getItemType();
+                    temp.tradingVolumeInThirtyDays= cuzyData.getTradingVolumeInThirtyDays();
+
                     DataArray.add(temp);
+
+                    dbUtil.createStudent(temp );
+
                 }
+
+
 
                 InputMethodManager imm = (InputMethodManager)getSystemService(Context.INPUT_METHOD_SERVICE);
                 imm.hideSoftInputFromWindow(search.getWindowToken(), 0);
@@ -107,7 +125,7 @@ public class SearchActivity extends Activity {
             {
                 Object o = listView.getItemAtPosition(position);
                 WaresItems tempItem = DataArray.get(position);
-                Log.i("alex huang ", tempItem.urlString);
+                Log.i("alex huang ", tempItem.itemClickURLString);
                 //startWebViewActivity(tempItem.urlString);
                 startDetailViewLevel1(tempItem);
             }
@@ -172,10 +190,17 @@ public class SearchActivity extends Activity {
             {
                 CuzyTBKItem cuzyData = rawData.get(i);
                 WaresItems temp = new WaresItems();
-                temp.urlString =  cuzyData.getItemClickURLString();
-                temp.contentString = cuzyData.getItemDescription();
-                temp.titleString = cuzyData.getItemPrice();
-                temp.imageString = cuzyData.getItemImageURLString();
+                temp.itemClickURLString =  cuzyData.getItemClickURLString();
+                temp.itemDescription = cuzyData.getItemDescription();
+                temp.itemPrice = cuzyData.getItemPrice();
+
+                temp.itemImageURLString = cuzyData.getItemImageURLString();
+                temp.itemFreePostage= cuzyData.getItemFreePostage();
+                temp.itemName = cuzyData.getItemName();
+
+                temp.itemPromotionPrice = cuzyData.getItemPromotionPrice();
+                temp.itemType = cuzyData.getItemType();
+                temp.tradingVolumeInThirtyDays= cuzyData.getTradingVolumeInThirtyDays();
                 DataArray.add(temp);
             }
 
@@ -207,6 +232,7 @@ public class SearchActivity extends Activity {
         }
     }
     public void onBackPressed() {
+        dbUtil.close();
         finish();
         overridePendingTransition(R.anim.slide_in, R.anim.slide_out);
     }

@@ -9,6 +9,7 @@ import android.view.View;
 import android.view.Window;
 import android.widget.AdapterView;
 import android.widget.ListView;
+import android.widget.TextView;
 import com.example.taotaokanAndroid.ClassItem.ClassItem;
 import com.example.taotaokanAndroid.ClassItem.ClassListAdapter;
 import com.example.taotaokanAndroid.imageCache.FileCache;
@@ -45,6 +46,9 @@ public class SettingActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.setting);
 
+
+        TextView tv = (TextView)findViewById(R.id.titleText);
+        tv.setText("设置");
 
         classItemList = (ListView) findViewById(R.id.classItemListView);
         classListAdapter = new ClassListAdapter(this);

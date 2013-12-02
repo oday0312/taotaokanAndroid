@@ -119,9 +119,9 @@ public class cuzyAdapter extends BaseAdapter {
 
 
         final Bitmap temp = getRes("");
-        imageLoader.DisplayImage(waresItems.imageString , itemImageView);
-        listTitle.setText(waresItems.titleString);
-        listContent.setText("" + waresItems.contentString);
+        imageLoader.DisplayImage(waresItems.itemImageURLString , itemImageView);
+        listTitle.setText(waresItems.itemName);
+        listContent.setText("" + waresItems.itemDescription);
 
 
         return view;
