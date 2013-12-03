@@ -25,13 +25,13 @@ public class TestFragment extends Fragment implements PullToRefreshView.OnHeader
             { "啦啦啦", "嘎嘎嘎", "哇哇哇", "喵喵喵", "刚刚刚", "当当当", "咔咔咔"};
     //图片ID数组
     public int[] images = {
-            R.drawable.groupbuy,
-            R.drawable.groupbuy,
-            R.drawable.groupbuy,
-            R.drawable.groupbuy,
-            R.drawable.groupbuy,
-            R.drawable.groupbuy,
-            R.drawable.groupbuy };
+            R.drawable.ca_custom0,
+            R.drawable.ca_custom1,
+            R.drawable.ca_custom10,
+            R.drawable.ca_custom11,
+            R.drawable.ca_custom12,
+            R.drawable.ca_custom13,
+            R.drawable.ca_custom14 };
 
 
 

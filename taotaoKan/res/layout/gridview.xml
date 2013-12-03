@@ -19,5 +19,5 @@
               android:horizontalSpacing="10dp"
               android:stretchMode="columnWidth"
               android:gravity="center"
-              android:numColumns="1"/>
+              android:numColumns="3"/>
 </com.example.taotaokanAndroid.PullToRefresh.PullToRefreshView>
