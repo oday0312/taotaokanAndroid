@@ -9,7 +9,12 @@
             android:layout_width="wrap_content"
             android:layout_height="fill_parent"
             android:id="@+id/webView" android:layout_alignParentLeft="true" android:layout_alignParentTop="true"
-            android:layout_alignParentRight="true"/>
+            android:layout_alignParentRight="true" android:layout_marginTop="45dp"/>
+
+    <include android:layout_width="wrap_content"
+             android:layout_height="45dp"
+             layout="@layout/titlebar" android:id="@+id/include"
+             android:layout_alignLeft="@+id/classItemListView" android:layout_alignTop="@+id/view"/>
     <ProgressBar
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"

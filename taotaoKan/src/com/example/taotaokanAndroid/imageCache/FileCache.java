@@ -63,7 +63,7 @@ public class FileCache {
 
         }
 
-        DecimalFormat df = new DecimalFormat("#.00");
+        DecimalFormat df = new DecimalFormat("#0.00");
         String fileSizeString = "";
         if (size < 1024)
         {

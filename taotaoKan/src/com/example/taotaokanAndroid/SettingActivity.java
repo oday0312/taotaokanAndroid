@@ -10,6 +10,7 @@ import android.view.Window;
 import android.widget.AdapterView;
 import android.widget.ListView;
 import android.widget.TextView;
+import android.widget.Toast;
 import com.example.taotaokanAndroid.ClassItem.ClassItem;
 import com.example.taotaokanAndroid.ClassItem.ClassListAdapter;
 import com.example.taotaokanAndroid.imageCache.FileCache;
@@ -41,7 +42,7 @@ public class SettingActivity extends Activity {
 
     private String faqURLstring = "http://iminitao.com/app/fq.html";
 
-
+    public Vector<ClassItem> data;
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.setting);
@@ -54,15 +55,49 @@ public class SettingActivity extends Activity {
         classListAdapter = new ClassListAdapter(this);
         classItemList.setAdapter(classListAdapter);
 
-        Vector<ClassItem> data = new Vector<ClassItem>();
+        data = new Vector<ClassItem>();
+        createData();
 
-        /**
-         * ClassItem(int classId,
-         *              String className,
-         *              int partId,
-         *              String partName,
-         *              String classIcon)
-         */
+
+        // Click on ListView Row:
+        classItemList.setOnItemClickListener(new AdapterView.OnItemClickListener()
+        {
+            @Override
+            public void onItemClick(AdapterView<?> arg0, View arg1, int position, long arg3)
+            {
+               //
+                switch (position)
+                {
+                    case 1:
+                        clearCacheFile();
+                        break;
+                    case 2:
+                        startWebViewActivity(faqURLstring);
+                        break;
+                    case 3:
+                        break;
+
+                    ///////////////////////////////
+                    case 4:
+                        break;
+                    case 5:
+                        startFeedBackUMENG();
+                        break;
+                    case 6:
+                        break;
+                    default:
+                        break;
+                }
+
+
+            }
+        });
+
+    }
+
+    public void createData()
+    {
+        data.clear();
         String versionName = "";
         try
         {
@@ -82,7 +117,7 @@ public class SettingActivity extends Activity {
         ClassItem item1 = new ClassItem(1,"清理缓存文件 " + cache.getSize(),1,"程序","");
         ClassItem item2 = new ClassItem(1,"帮助说明",1,"程序","");
         ClassItem item3 = new ClassItem(1,"设置桌面背景",1,"程序","");
-        ClassItem item4 = new ClassItem(1,"给我们打分",2,"其他","");
+        //ClassItem item4 = new ClassItem(1,"给我们打分",2,"其他","");
         ClassItem item5 = new ClassItem(1,"版本更新",2,"其他","");
         ClassItem item6 = new ClassItem(1,"反馈和建议",2,"其他","");
 
@@ -91,26 +126,23 @@ public class SettingActivity extends Activity {
         data.addElement(item1);
         data.addElement(item2);
         data.addElement(item3);
-        data.addElement(item4);
+        //data.addElement(item4);
         data.addElement(item5);
         data.addElement(item6);
 
         addAdapterItem(data);
-
-        // Click on ListView Row:
-        classItemList.setOnItemClickListener(new AdapterView.OnItemClickListener()
-        {
-            @Override
-            public void onItemClick(AdapterView<?> arg0, View arg1, int position, long arg3)
-            {
-               // startWebViewActivity(faqURLstring);
-                startFeedBackUMENG();
-
-            }
-        });
-
     }
 
+    public void clearCacheFile()
+    {
+        FileCache cache = new FileCache(this);
+        cache.clear();
+        Toast.makeText(this, "缓存已经清除", Toast.LENGTH_SHORT).show();
+        createData();
+        classListAdapter.notifyDataSetChanged();
+
+
+    }
     public void startFeedBackUMENG()
     {
         Intent intent = new Intent(this, ConversationActivity.class);

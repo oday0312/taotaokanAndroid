@@ -125,10 +125,10 @@ public class ClassListAdapter extends BaseAdapter {
             holder = new ViewHolder();
 
             holder.partLayout = (LinearLayout)convertView.findViewById(R.id.classGroupLayout);
-            holder.partId = (TextView) convertView.findViewById(R.id.class_part_id);
+            //holder.partId = (TextView) convertView.findViewById(R.id.class_part_id);
             holder.partName = (TextView) convertView.findViewById(R.id.class_part_name);
             holder.className = (TextView) convertView.findViewById(R.id.class_item_name);
-            holder.mIcon = (ImageView)convertView.findViewById(R.id.class_item_img);
+            //holder.mIcon = (ImageView)convertView.findViewById(R.id.class_item_img);
 
             convertView.setTag(holder);
         } else {
@@ -146,17 +146,17 @@ public class ClassListAdapter extends BaseAdapter {
                 holder.className.setText(classItem.className);
             }
 
-            holder.mIcon.setBackgroundResource(R.drawable.default_class_icon);
+            //holder.mIcon.setBackgroundResource(R.drawable.default_class_icon);
         }
         return convertView;
     }
 
 	public class ViewHolder {
 		LinearLayout partLayout;
-		TextView partId;
+		//TextView partId;
 		TextView partName;
 		TextView className;
-		ImageView mIcon;
+		//ImageView mIcon;
 
 
         TextView appName;
