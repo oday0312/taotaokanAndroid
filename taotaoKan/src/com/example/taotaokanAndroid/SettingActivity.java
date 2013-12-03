@@ -13,6 +13,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 import com.example.taotaokanAndroid.ClassItem.ClassItem;
 import com.example.taotaokanAndroid.ClassItem.ClassListAdapter;
+import com.example.taotaokanAndroid.Coverflow.SimpleExample;
 import com.example.taotaokanAndroid.imageCache.FileCache;
 import com.example.taotaokanAndroid.imageCache.ImageLoader;
 import com.umeng.analytics.MobclickAgent;
@@ -75,6 +76,8 @@ public class SettingActivity extends Activity {
                         startWebViewActivity(faqURLstring);
                         break;
                     case 3:
+                        startSettingbg();
+
                         break;
 
                     ///////////////////////////////
@@ -93,6 +96,12 @@ public class SettingActivity extends Activity {
             }
         });
 
+    }
+    public void startSettingbg()
+    {
+        Intent intent = new Intent(this, SimpleExample.class);
+        intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+        startActivity(intent);
     }
 
     public void createData()

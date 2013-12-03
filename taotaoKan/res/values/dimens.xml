@@ -17,4 +17,8 @@
     <dimen name="actionbar_height">45dip</dimen>
     <dimen name="actionbar_item_height">45dip</dimen>
     <dimen name="actionbar_item_width">45dip</dimen>
+
+
+    <dimen name="mainActivityListItemHeight">200dp</dimen>
+    <dimen name="mainActivityListItemPadding">12dp</dimen>
 </resources>
