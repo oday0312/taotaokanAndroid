@@ -75,10 +75,12 @@ public class SettingActivity extends Activity {
                         startWebViewActivity(faqURLstring);
                         break;
                     case 3:
+                        startSetDesktopBackground();
                         break;
 
                     ///////////////////////////////
                     case 4:
+                        startVersionCheck();
                         break;
                     case 5:
                         startFeedBackUMENG();
@@ -95,6 +97,17 @@ public class SettingActivity extends Activity {
 
     }
 
+    public void startSetDesktopBackground()
+    {
+        Intent intent = new Intent(this, SettingSelectingBG.class);
+        intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+        startActivity(intent);
+    }
+
+    public void startVersionCheck()
+    {
+        Toast.makeText(this, "当前已经是最新版本", Toast.LENGTH_SHORT).show();
+    }
     public void createData()
     {
         data.clear();
