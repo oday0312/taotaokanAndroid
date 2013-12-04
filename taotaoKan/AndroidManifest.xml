@@ -36,6 +36,7 @@
         <activity android:name="com.umeng.fb.ContactActivity"/>
         <activity android:name=".DetailViewLevel1"/>
         <activity android:name=".FavorView"/>
+        <activity android:name=".Coverflow.SimpleExample"/>
 
         <!-- ###################注册SDK使用的Activity###################### -->
         <!--分享编辑页-->
