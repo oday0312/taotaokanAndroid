@@ -23,21 +23,35 @@
             </intent-filter>
         </activity>
         <activity android:name=".SettingActivity"
+                  android:screenOrientation="portrait"
 
                 />
-        <activity android:name=".GridViewActivity"/>
+        <activity android:name=".GridViewActivity"
+                  android:screenOrientation="portrait"/>
 
-        <activity android:name="com.theindex.CuzyAdSDK.CuzyTBKPresentationActivity"   />
-        <activity android:name="com.theindex.CuzyAdSDK.CuzyTBKWebviewActivity"    />
-        <activity android:name=".SearchActivity"/>
-        <activity android:name=".webViewActivity"/>
+        <activity android:name="com.theindex.CuzyAdSDK.CuzyTBKPresentationActivity"
+                  android:screenOrientation="portrait"/>
+        <activity android:name="com.theindex.CuzyAdSDK.CuzyTBKWebviewActivity"
+                  android:screenOrientation="portrait"/>
+        <activity android:name=".SearchActivity"
+                  android:screenOrientation="portrait"/>
+        <activity android:name=".webViewActivity"
+                  android:screenOrientation="portrait"/>
 
-        <activity android:name="com.umeng.fb.ConversationActivity"/>
-        <activity android:name="com.umeng.fb.ContactActivity"/>
-        <activity android:name=".DetailViewLevel1"/>
-        <activity android:name=".FavorView"/>
-        <activity android:name=".Coverflow.SimpleExample"/>
-
+        <activity android:name="com.umeng.fb.ConversationActivity"
+                  android:screenOrientation="portrait"/>
+        <activity android:name="com.umeng.fb.ContactActivity"
+                  android:screenOrientation="portrait"/>
+        <activity android:name=".DetailViewLevel1"
+                  android:screenOrientation="portrait"/>
+        <activity android:name=".FavorView"
+                  android:screenOrientation="portrait"/>
+        <activity android:name=".Coverflow.SimpleExample"
+                  android:screenOrientation="portrait"/>
+        <activity android:name=".TestFragmentFirstPage"
+                  android:screenOrientation="portrait"/>
+        <activity android:name=".SettingSelectingBG"
+                  android:screenOrientation="portrait"/>
         <!-- ###################注册SDK使用的Activity###################### -->
         <!--分享编辑页-->
         <activity
@@ -46,13 +60,13 @@
                 android:launchMode="singleTask"
                 android:noHistory="true"
                 android:theme="@style/Theme.UMDialog"
+                android:screenOrientation="portrait"
                 android:windowSoftInputMode="stateVisible|adjustResize" >
         </activity>
 
         <!-- ############ QQ空间和QQ SSO授权的Activity注册 ############ -->
         <activity android:name="com.tencent.tauth.AuthActivity" />
-        <activity android:name=".TestFragmentFirstPage"/>
-        <activity android:name=".SettingSelectingBG"/>
+
 
         <meta-data android:value="528e150156240bb52105df47" android:name="UMENG_APPKEY"></meta-data>
         <meta-data android:value="1" android:name="UMENG_CHANNEL"/>
