@@ -1,7 +1,5 @@
 package com.example.taotaokanAndroid;
 
-import android.app.Activity;
-import android.content.SharedPreferences;
 import android.content.res.TypedArray;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
@@ -11,10 +9,11 @@ import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.Gallery;
 import android.widget.GridView;
+import android.widget.Toast;
 import com.example.taotaokanAndroid.PullToRefresh.PullToRefreshView;
 import com.example.taotaokanAndroid.gridView.GalleryImageAdapter;
 import com.example.taotaokanAndroid.gridView.GridItemType1Adapter;
-import android.content.res.TypedArray;
+
 /**
  * Created with IntelliJ IDEA.
  * User: apple
@@ -22,7 +21,7 @@ import android.content.res.TypedArray;
  * Time: 下午10:17
  * To change this template use File | Settings | File Templates.
  */
-public class TestFragmentFirstPage extends TestFragment {
+public class MainAcitivtyFragmentFirstPage extends MainAcitivtyFragment {
     public Gallery myGallery;
 
 
@@ -42,8 +41,8 @@ public class TestFragmentFirstPage extends TestFragment {
             R.drawable.ca_custom13,
             R.drawable.ca_custom14 };
 
-    public static TestFragmentFirstPage newInstance(String content) {
-        TestFragmentFirstPage fragment = new TestFragmentFirstPage();
+    public static MainAcitivtyFragmentFirstPage newInstance(String content) {
+        MainAcitivtyFragmentFirstPage fragment = new MainAcitivtyFragmentFirstPage();
 
         StringBuilder builder = new StringBuilder();
         for (int i = 0; i < 20; i++) {
@@ -104,7 +103,7 @@ public class TestFragmentFirstPage extends TestFragment {
             @Override
             public void onItemClick(AdapterView<?> parent, View v, int position, long id)
             {
-                // Toast.makeText(GridViewActivity.this, "item" + (position + 1), Toast.LENGTH_SHORT).show();
+                Toast.makeText(getActivity(), "item" + (position + 1), Toast.LENGTH_SHORT).show();
             }
         });
 

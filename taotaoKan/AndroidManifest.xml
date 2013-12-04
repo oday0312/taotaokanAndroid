@@ -48,7 +48,7 @@
                   android:screenOrientation="portrait"/>
         <activity android:name=".Coverflow.SimpleExample"
                   android:screenOrientation="portrait"/>
-        <activity android:name=".TestFragmentFirstPage"
+        <activity android:name=".MainAcitivtyFragmentFirstPage"
                   android:screenOrientation="portrait"/>
         <!-- ###################注册SDK使用的Activity###################### -->
         <!--分享编辑页-->

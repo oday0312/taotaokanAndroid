@@ -12,9 +12,9 @@ import android.widget.LinearLayout.LayoutParams;
 import com.example.taotaokanAndroid.PullToRefresh.PullToRefreshView;
 import com.example.taotaokanAndroid.gridView.GridItemType1Adapter;
 
-public class TestFragment extends Fragment implements PullToRefreshView.OnHeaderRefreshListener,PullToRefreshView.OnFooterRefreshListener {
+public class MainAcitivtyFragment extends Fragment implements PullToRefreshView.OnHeaderRefreshListener,PullToRefreshView.OnFooterRefreshListener {
 
-    public static final String KEY_CONTENT = "TestFragment:Content";
+    public static final String KEY_CONTENT = "MainAcitivtyFragment:Content";
 
     PullToRefreshView mPullToRefreshView;
     public GridView gridView;
@@ -37,8 +37,8 @@ public class TestFragment extends Fragment implements PullToRefreshView.OnHeader
 
 
 
-    public static TestFragment newInstance(String content) {
-        TestFragment fragment = new TestFragment();
+    public static MainAcitivtyFragment newInstance(String content) {
+        MainAcitivtyFragment fragment = new MainAcitivtyFragment();
 
         StringBuilder builder = new StringBuilder();
         for (int i = 0; i < 20; i++) {
@@ -71,7 +71,7 @@ public class TestFragment extends Fragment implements PullToRefreshView.OnHeader
 
         return v;
 
-      }
+    }
 
     public View viewCreator2(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState)
     {
@@ -83,9 +83,6 @@ public class TestFragment extends Fragment implements PullToRefreshView.OnHeader
         v.setBackground(d);
 
 
-        mPullToRefreshView = (PullToRefreshView)v.findViewById(R.id.main_pull_refresh_view);
-        mPullToRefreshView.setOnHeaderRefreshListener(this);
-        mPullToRefreshView.setOnFooterRefreshListener(this);
 
         GridItemType1Adapter adapter = new GridItemType1Adapter(titles, images,description,v.getContext());
         gridView.setAdapter(adapter);
@@ -95,7 +92,7 @@ public class TestFragment extends Fragment implements PullToRefreshView.OnHeader
             @Override
             public void onItemClick(AdapterView<?> parent, View v, int position, long id)
             {
-               // Toast.makeText(GridViewActivity.this, "item" + (position + 1), Toast.LENGTH_SHORT).show();
+                Toast.makeText(getActivity(), "item" + (position + 1), Toast.LENGTH_SHORT).show();
             }
         });
 
@@ -151,3 +148,8 @@ public class TestFragment extends Fragment implements PullToRefreshView.OnHeader
 
     }
 }
+
+
+//mPullToRefreshView = (PullToRefreshView)v.findViewById(R.id.main_pull_refresh_view);
+//mPullToRefreshView.setOnHeaderRefreshListener(this);
+//mPullToRefreshView.setOnFooterRefreshListener(this);

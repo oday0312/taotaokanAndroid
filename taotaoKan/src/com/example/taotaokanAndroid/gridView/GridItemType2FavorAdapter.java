@@ -72,16 +72,16 @@ public class GridItemType2FavorAdapter extends BaseAdapter
         {
             convertView = inflater.inflate(R.layout.grid_item1, null);
             viewHolder = new ViewHolder();
-            viewHolder.title = (TextView) convertView.findViewById(R.id.title);
+            //viewHolder.title = (TextView) convertView.findViewById(R.id.title);
             viewHolder.image = (ImageView) convertView.findViewById(R.id.image);
-            viewHolder.time = (TextView) convertView.findViewById(R.id.description);
+            //viewHolder.time = (TextView) convertView.findViewById(R.id.description);
             convertView.setTag(viewHolder);
         } else
         {
             viewHolder = (ViewHolder) convertView.getTag();
         }
-        viewHolder.title.setText(gridItemList.get(position).itemName);
-        viewHolder.time.setText(gridItemList.get(position).itemPrice);
+        //viewHolder.title.setText(gridItemList.get(position).itemName);
+        //viewHolder.time.setText(gridItemList.get(position).itemPrice);
         //final Bitmap temp = getRes("");
         imageLoader.DisplayImage(gridItemList.get(position).itemImageURLString , viewHolder.image);
         return convertView;
