@@ -28,7 +28,7 @@ public class GridItemType2FavorAdapter extends BaseAdapter
 {
 
     private LayoutInflater inflater;
-    private List<WaresItems> gridItemList;
+    public List<WaresItems> gridItemList;
     public ImageLoader imageLoader=  null;
 
     public GridItemType2FavorAdapter(ArrayList<WaresItems> inputList,ImageLoader inputImageloader, Context context)

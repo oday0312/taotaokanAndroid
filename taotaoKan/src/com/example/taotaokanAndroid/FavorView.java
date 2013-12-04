@@ -1,6 +1,7 @@
 package com.example.taotaokanAndroid;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.database.Cursor;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
@@ -27,6 +28,11 @@ import java.util.Random;
  * To change this template use File | Settings | File Templates.
  */
 public class FavorView extends Activity {
+    public static final String EXTRA_WEBURL = "com.devspark.sidenavigation.meiriyiwen.extra.weburl";
+    public static final String EXTRA_TITLE_SHOW = "com.devspark.sidenavigation.meiriyiwen.extra.title.show";
+    public static final String EXTRA_TITLE_TEXT = "com.devspark.sidenavigation.meiriyiwen.extra.title.text";
+
+
     private GridView gridView;
     //图片的第一行文字
     private String[] titles = new String[]
@@ -73,7 +79,9 @@ public class FavorView extends Activity {
             @Override
             public void onItemClick(AdapterView<?> parent, View v, int position, long id)
             {
-                Toast.makeText(FavorView.this, "item" + (position + 1), Toast.LENGTH_SHORT).show();
+                //Toast.makeText(FavorView.this, "item" + (position + 1), Toast.LENGTH_SHORT).show();
+                WaresItems w =  adapter2.gridItemList.get(position);
+                startWebViewActivity(w.itemClickURLString);
             }
         });
 
@@ -131,5 +139,23 @@ public class FavorView extends Activity {
             //do not have any data
             Toast.makeText(this, "你还没有收藏任何商品", Toast.LENGTH_SHORT).show();
         }
+    }
+
+
+
+    public void startWebViewActivity(String urlString)
+    {
+        Intent intent = new Intent(this, webViewActivity.class);
+        intent.putExtra(EXTRA_WEBURL, urlString);
+        intent.putExtra(EXTRA_TITLE_SHOW,"true");
+        intent.putExtra(EXTRA_TITLE_TEXT, "");
+        // all of the other activities on top of it will be closed and this
+        // Intent will be delivered to the (now on top) old activity as a
+        // new Intent.
+        intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+
+        startActivity(intent);
+        // no animation of transition
+        overridePendingTransition(0, 0);
     }
 }
