@@ -2,6 +2,7 @@ package com.example.taotaokanAndroid;
 
 import android.app.Activity;
 import android.database.Cursor;
+import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -16,6 +17,7 @@ import com.example.taotaokanAndroid.gridView.GridItemType2FavorAdapter;
 import com.example.taotaokanAndroid.imageCache.ImageLoader;
 
 import java.util.ArrayList;
+import java.util.Random;
 
 /**
  * Created with IntelliJ IDEA.
@@ -51,6 +53,13 @@ public class FavorView extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.favorview);
 
+        View v = this.findViewById(android.R.id.content).getRootView();
+        TaoTaoMainApplication application = (TaoTaoMainApplication)getApplication();
+        Random random = new Random();
+        int t =  Math.abs(random.nextInt()) % (application.images.length);
+        Drawable d = getResources().getDrawable(application.images[t]);
+        v.setBackground(d);
+
         TextView tv = (TextView)findViewById(R.id.titleText);
         tv.setText("收藏");
 
@@ -67,6 +76,8 @@ public class FavorView extends Activity {
                 Toast.makeText(FavorView.this, "item" + (position + 1), Toast.LENGTH_SHORT).show();
             }
         });
+
+
         testSQLite();
     }
 
@@ -115,5 +126,10 @@ public class FavorView extends Activity {
         adapter2 = new GridItemType2FavorAdapter(t, imageLoader,this);
         gridView.setAdapter(adapter2);
         dbUtil.close();
+        if(t.size()==0)
+        {
+            //do not have any data
+            Toast.makeText(this, "你还没有收藏任何商品", Toast.LENGTH_SHORT).show();
+        }
     }
 }

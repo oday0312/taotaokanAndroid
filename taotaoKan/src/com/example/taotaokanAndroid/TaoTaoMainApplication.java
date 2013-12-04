@@ -15,6 +15,21 @@ public class TaoTaoMainApplication extends Application {
     public final String SHARE_FILE_NAME = "taotaokan";
     public final String BACKGROUND_KEY = "desktop background";
 
+    public int[] images = {
+            R.drawable.bg_source_0,
+            R.drawable.bg_source_1,
+            R.drawable.bg_source_2,
+            R.drawable.bg_source_3,
+            R.drawable.bg_source_4,
+            R.drawable.bg_source_5,
+            R.drawable.bg_source_6,
+            R.drawable.bg_source_7,
+            R.drawable.bg_source_8,
+            R.drawable.bg_source_9,
+            R.drawable.bg_source_10,
+            R.drawable.bg_source_11,
+            R.drawable.bg_source_12,
+    };
 
     public int backgroundResourceID= R.drawable.bg_source_1;
 
