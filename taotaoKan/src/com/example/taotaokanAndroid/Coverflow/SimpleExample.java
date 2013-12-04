@@ -18,8 +18,14 @@
 package com.example.taotaokanAndroid.Coverflow;
 
 import android.app.Activity;
+import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.AdapterView;
+import android.widget.TextView;
+import android.widget.Toast;
 import com.example.taotaokanAndroid.R;
+import com.example.taotaokanAndroid.TaoTaoMainApplication;
 
 public class SimpleExample extends Activity {
 
@@ -29,6 +35,7 @@ public class SimpleExample extends Activity {
 
     private FancyCoverFlow fancyCoverFlow;
 
+    private FancyCoverFlowAdapter adapter;
     // =============================================================================
     // Supertype overrides
     // =============================================================================
@@ -41,9 +48,14 @@ public class SimpleExample extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.setting_desktopbg);
 
+
+        TextView tv = (TextView)findViewById(R.id.titleText);
+        tv.setText("设置桌面背景");
+
         this.fancyCoverFlow = (FancyCoverFlow) this.findViewById(R.id.fancyCoverFlow);
 
-        this.fancyCoverFlow.setAdapter(new FancyCoverFlowSampleAdapter());
+        adapter = new FancyCoverFlowSampleAdapter();
+        this.fancyCoverFlow.setAdapter(adapter);
         this.fancyCoverFlow.setUnselectedAlpha(1.0f);
         this.fancyCoverFlow.setUnselectedSaturation(0.0f);
         this.fancyCoverFlow.setUnselectedScale(0.5f);
@@ -51,6 +63,27 @@ public class SimpleExample extends Activity {
         this.fancyCoverFlow.setMaxRotation(0);
         this.fancyCoverFlow.setScaleDownGravity(0.2f);
         this.fancyCoverFlow.setActionDistance(FancyCoverFlow.ACTION_DISTANCE_AUTO);
+
+
+       fancyCoverFlow.setOnItemClickListener(  new AdapterView.OnItemClickListener()
+       {
+           public void onItemClick(AdapterView adapterView, View view,int arg2, long arg3)
+           {
+               int selectedPosition = adapterView.getSelectedItemPosition();
+               Toast.makeText(SimpleExample.this, "选择图片"+selectedPosition, Toast.LENGTH_SHORT).show();
+
+
+               Integer ResourceID  = (Integer)adapter.getItem(selectedPosition);
+               TaoTaoMainApplication application = (TaoTaoMainApplication)getApplication();
+               application.backgroundResourceID = ResourceID;
+               SharedPreferences sp = getSharedPreferences(application.SHARE_FILE_NAME, MODE_PRIVATE);
+               SharedPreferences.Editor editor = sp.edit();
+               editor.putString(application.BACKGROUND_KEY, ""+ResourceID);
+               editor.commit();
+
+               onBackPressed();
+           }
+       } );
     }
 
     // =============================================================================

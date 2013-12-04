@@ -27,6 +27,7 @@ class TestFragmentAdapter extends FragmentPagerAdapter implements IconPagerAdapt
         if (position == 0)
         {
             f =  TestFragmentFirstPage.newInstance(CONTENT[position % CONTENT.length]);
+
         }
         else
         {

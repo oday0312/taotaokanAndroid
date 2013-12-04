@@ -1,5 +1,6 @@
 package com.example.taotaokanAndroid;
 
+import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.view.Gravity;
@@ -76,6 +77,11 @@ public class TestFragment extends Fragment implements PullToRefreshView.OnHeader
     {
         View v =  inflater.inflate(R.layout.gridview, container, false);
         gridView = (GridView)v.findViewById(R.id.gridview);
+
+        TaoTaoMainApplication application = (TaoTaoMainApplication)getActivity().getApplication();
+        Drawable d =getResources().getDrawable(application.backgroundResourceID );
+        v.setBackground(d);
+
 
         mPullToRefreshView = (PullToRefreshView)v.findViewById(R.id.main_pull_refresh_view);
         mPullToRefreshView.setOnHeaderRefreshListener(this);

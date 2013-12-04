@@ -28,8 +28,21 @@ public class FancyCoverFlowSampleAdapter extends FancyCoverFlowAdapter {
     // Private members
     // =============================================================================
 
-    private int[] images = {R.drawable.bg_source_0, R.drawable.bg_source_0, R.drawable.bg_source_0, R.drawable.bg_source_0,
-            R.drawable.bg_source_0, R.drawable.bg_source_0,};
+    private int[] images = {
+            R.drawable.bg_source_0,
+            R.drawable.bg_source_1,
+            R.drawable.bg_source_2,
+            R.drawable.bg_source_3,
+            R.drawable.bg_source_4,
+            R.drawable.bg_source_5,
+            R.drawable.bg_source_6,
+            R.drawable.bg_source_7,
+            R.drawable.bg_source_8,
+            R.drawable.bg_source_9,
+            R.drawable.bg_source_10,
+            R.drawable.bg_source_11,
+            R.drawable.bg_source_12,
+           };
 
     // =============================================================================
     // Supertype overrides
@@ -60,7 +73,7 @@ public class FancyCoverFlowSampleAdapter extends FancyCoverFlowAdapter {
             imageView = new ImageView(viewGroup.getContext());
             imageView.setScaleType(ImageView.ScaleType.CENTER_INSIDE);
             imageView.setLayoutParams(new FancyCoverFlow.LayoutParams(600, 800));
-
+            //imageView.setOnClickListener();
         }
 
         imageView.setImageResource(this.getItem(i));

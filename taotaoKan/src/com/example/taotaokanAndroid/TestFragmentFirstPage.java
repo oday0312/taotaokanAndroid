@@ -1,7 +1,9 @@
 package com.example.taotaokanAndroid;
 
 import android.app.Activity;
+import android.content.SharedPreferences;
 import android.content.res.TypedArray;
+import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -50,6 +52,11 @@ public class TestFragmentFirstPage extends TestFragment {
         builder.deleteCharAt(builder.length() - 1);
         fragment.mContent = builder.toString();
 
+
+
+
+
+
         return fragment;
     }
     @Override
@@ -70,6 +77,9 @@ public class TestFragmentFirstPage extends TestFragment {
         gridView = (GridView)v.findViewById(R.id.gridview_firstpage);
 
 
+        TaoTaoMainApplication application = (TaoTaoMainApplication)getActivity().getApplication();
+        Drawable d =getResources().getDrawable(application.backgroundResourceID );
+        v.setBackground(d);
 
         myGallery = (Gallery)v.findViewById(R.id.gallery);
         //这段代码是杨丰盛老师的《android开发揭秘》中这样写的

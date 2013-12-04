@@ -69,34 +69,6 @@ public class MainActivity extends BaseSampleActivity {
 
 
 
-
-
-
-        View popupView = getLayoutInflater().inflate(R.layout.share_popup_windows, null);
-        mPopupWindow = new PopupWindow(popupView, ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.WRAP_CONTENT, true);
-        mPopupWindow.setTouchable(true);
-        mPopupWindow.setOutsideTouchable(true);
-        mPopupWindow.setBackgroundDrawable(new BitmapDrawable(getResources(), (Bitmap) null));
-
-        mPopupWindow.getContentView().setFocusableInTouchMode(true);
-        mPopupWindow.getContentView().setFocusable(true);
-        mPopupWindow.getContentView().setOnKeyListener(new View.OnKeyListener() {
-            @Override
-            public boolean onKey(View v, int keyCode, KeyEvent event) {
-                if (keyCode == KeyEvent.KEYCODE_MENU && event.getRepeatCount() == 0
-                        && event.getAction() == KeyEvent.ACTION_DOWN) {
-                    if (mPopupWindow != null && mPopupWindow.isShowing()) {
-                        mPopupWindow.dismiss();
-                    }
-                    return true;
-                }
-                return false;
-            }
-        });
-
-
-
-
     }
 
     @Override
@@ -109,31 +81,6 @@ public class MainActivity extends BaseSampleActivity {
 
 
 
-    final UMSocialService mController = UMServiceFactory.getUMSocialService("com.umeng.share",
-            RequestType.SOCIAL);
-    public void addSNSshare()
-    {
-        // wx967daebe835fbeac是你在微信开发平台注册应用的AppID, 这里需要替换成你注册的AppID
-        String appID = "wx775e75a07668f1a1";
-// 微信图文分享必须设置一个url
-        String contentUrl = "http://.umeng.com/social";
-// 添加微信平台，参数1为当前Activity, 参数2为用户申请的AppID, 参数3为点击分享内容跳转到的目标url
-        mController.getConfig().supportWXPlatform(this,appID, contentUrl);
-// 支持微信朋友圈
-        mController.getConfig().supportWXCirclePlatform(this,appID, contentUrl) ;
-
-
-
-
-        mController.setShareContent("友盟社会化组件（SDK）让移动应用快速整合社交分享功能，http://www.umeng.com/social");
-         // 设置分享图片, 参数2为图片的地址
-        mController.setShareMedia(new UMImage(this,"http://www.umeng.com/images/pic/banner_module_social.png"));
-        //设置分享图片，参数2为本地图片的资源引用
-        //mController.setShareMedia(new UMImage(getActivity(), R.drawable.icon));
-        //设置分享图片，参数2为本地图片的路径(绝对路径)
-        //mController.setShareMedia(new UMImage(getActivity(),
-        //BitmapFactory.decodeFile("/mnt/sdcard/icon.png")));
-    }
 
     public Intent createIntent(Context context)
     {
@@ -208,6 +155,22 @@ public class MainActivity extends BaseSampleActivity {
 
         }
 
+    }
+    final UMSocialService mController = UMServiceFactory.getUMSocialService("com.umeng.share",
+            RequestType.SOCIAL);
+    public void addSNSshare()
+    {
+        // wx967daebe835fbeac是你在微信开发平台注册应用的AppID, 这里需要替换成你注册的AppID
+        String appID = "wx775e75a07668f1a1";
+        // 微信图文分享必须设置一个url
+        String contentUrl = "http://.umeng.com/social";
+        // 添加微信平台，参数1为当前Activity, 参数2为用户申请的AppID, 参数3为点击分享内容跳转到的目标url
+        mController.getConfig().supportWXPlatform(this,appID, contentUrl);
+        // 支持微信朋友圈
+        mController.getConfig().supportWXCirclePlatform(this,appID, contentUrl) ;
+
+        mController.setShareContent("友盟社会化组件（SDK）让移动应用快速整合社交分享功能，http://www.umeng.com/social");
+        mController.setShareMedia(new UMImage(this,"http://www.umeng.com/images/pic/banner_module_social.png"));
     }
 
 

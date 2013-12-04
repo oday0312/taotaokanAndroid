@@ -23,6 +23,12 @@
               android:background="#ffededed"
         >
 
+
+    <include android:layout_width="wrap_content"
+             android:layout_height="45dp"
+             layout="@layout/titlebar" android:id="@+id/include"
+             android:layout_alignLeft="@+id/classItemListView" android:layout_alignTop="@+id/view"/>
+
     <com.example.taotaokanAndroid.Coverflow.FancyCoverFlow
             android:id="@+id/fancyCoverFlow"
             android:layout_width="match_parent"
