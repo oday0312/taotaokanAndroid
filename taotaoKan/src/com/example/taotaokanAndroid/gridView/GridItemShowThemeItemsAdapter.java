@@ -8,6 +8,7 @@ import android.widget.BaseAdapter;
 import android.widget.ImageView;
 import com.example.taotaokanAndroid.R;
 import com.example.taotaokanAndroid.WaresItems;
+import com.example.taotaokanAndroid.imageCache.ImageLoader;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -25,13 +26,14 @@ public class GridItemShowThemeItemsAdapter extends BaseAdapter
 {
 
     private LayoutInflater inflater;
-
-    private ArrayList<WaresItems> gridItemList;
-    public GridItemShowThemeItemsAdapter(ArrayList<WaresItems>inputList,Context context)
+    public ImageLoader imageLoader;
+    private ArrayList<WaresItems> gridItemList  =null;
+    public GridItemShowThemeItemsAdapter(ArrayList<WaresItems>inputList,ImageLoader inputImageloader,Context context)
     {
         super();
-        gridItemList = new ArrayList<WaresItems>();
-        gridItemList.addAll(inputList);
+        inflater = LayoutInflater.from(context);
+        gridItemList = inputList;
+        imageLoader = inputImageloader;
     }
     @Override
     public int getCount( )
@@ -77,7 +79,8 @@ public class GridItemShowThemeItemsAdapter extends BaseAdapter
         //viewHolder.title.setText(gridItemList.get(position).getTitle());
         //viewHolder.time.setText(gridItemList.get(position).getTime());
         WaresItems item = gridItemList.get(position);
-        viewHolder.image.setImageResource(item.itemImageURLString);
+        imageLoader.DisplayImage(item.itemImageURLString, viewHolder.image);
+
         return convertView;
     }
 }

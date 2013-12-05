@@ -64,7 +64,8 @@
 
         <!-- ############ QQ空间和QQ SSO授权的Activity注册 ############ -->
         <activity android:name="com.tencent.tauth.AuthActivity" />
-        <activity android:name=".showThemeItemsActivity"/>
+        <activity android:name=".showThemeItemsActivity"
+                  android:screenOrientation="portrait"/>
 
 
         <meta-data android:value="528e150156240bb52105df47" android:name="UMENG_APPKEY"></meta-data>

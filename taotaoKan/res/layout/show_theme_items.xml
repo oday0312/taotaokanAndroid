@@ -6,6 +6,11 @@
                                                               android:layout_width="fill_parent"
                                                               android:layout_height="fill_parent"
                                                               android:orientation="vertical">
+        <include android:layout_width="wrap_content"
+             android:layout_height="45dp"
+             layout="@layout/titlebar" android:id="@+id/include"
+             android:layout_alignLeft="@+id/classItemListView" android:layout_alignTop="@+id/view"/>
+
         <GridView xmlns:android="http://schemas.android.com/apk/res/android"
               android:id="@+id/gridview_show_theme_items"
               android:layout_width="fill_parent"

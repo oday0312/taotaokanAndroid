@@ -1,16 +1,22 @@
 package com.example.taotaokanAndroid;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.GridView;
+import android.widget.TextView;
 import android.widget.Toast;
 import com.example.taotaokanAndroid.PullToRefresh.PullToRefreshView;
+import com.example.taotaokanAndroid.gridView.GridItemShowThemeItemsAdapter;
 import com.example.taotaokanAndroid.gridView.GridItemType1Adapter;
+import com.example.taotaokanAndroid.imageCache.ImageLoader;
 import com.theindex.CuzyAdSDK.CuzyAdSDK;
 import com.theindex.CuzyAdSDK.CuzyTBKItem;
+
+import java.util.ArrayList;
 
 /**
  * Created with IntelliJ IDEA.
@@ -20,52 +26,55 @@ import com.theindex.CuzyAdSDK.CuzyTBKItem;
  * To change this template use File | Settings | File Templates.
  */
 public class showThemeItemsActivity extends Activity implements PullToRefreshView.OnHeaderRefreshListener,PullToRefreshView.OnFooterRefreshListener{
+
+    public static final String EXTRA_WEBURL = "com.devspark.sidenavigation.meiriyiwen.extra.weburl";
+    public static final String EXTRA_TITLE_SHOW = "com.devspark.sidenavigation.meiriyiwen.extra.title.show";
+    public static final String EXTRA_TITLE_TEXT = "com.devspark.sidenavigation.meiriyiwen.extra.title.text";
+
+    public String SearchKeyString;
+    public String ThemeString;
+
     PullToRefreshView mPullToRefreshView;
     public GridView gridView;
-
-    //图片的第一行文字
-    private String[] titles = new String[]
-            { "美女卷珠帘", "美女回眸", "美女很有趣", "美女醉酒", "美女微笑", "美女如脱兔", "美女柳叶弯眉"};
-    //图片的第二行文字
-    private String[] description = new String[]
-            { "啦啦啦", "嘎嘎嘎", "哇哇哇", "喵喵喵", "刚刚刚", "当当当", "咔咔咔"};
-    //图片ID数组
-    private int[] images = {
-            R.drawable.groupbuy,
-            R.drawable.groupbuy,
-            R.drawable.groupbuy,
-            R.drawable.groupbuy,
-            R.drawable.groupbuy,
-            R.drawable.groupbuy,
-            R.drawable.groupbuy };
+    public ArrayList<CuzyTBKItem> rawData = new ArrayList<CuzyTBKItem>();
+    public ArrayList<WaresItems> DataArray = new ArrayList<WaresItems>();
 
 
 
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.show_theme_items);
+        TextView tv = (TextView)findViewById(R.id.titleText);
+        tv.setText("主题详情");
+
+
         mPullToRefreshView = (PullToRefreshView)findViewById(R.id.main_pull_refresh_view);
         mPullToRefreshView.setOnHeaderRefreshListener(this);
         mPullToRefreshView.setOnFooterRefreshListener(this);
 
         gridView  = (GridView)findViewById(R.id.gridview_show_theme_items);
-        GridItemType1Adapter Gridadapter = new GridItemType1Adapter(titles, images,description,this);
-        gridView.setAdapter(Gridadapter);
 
         gridView.setOnItemClickListener(new AdapterView.OnItemClickListener()
         {
             @Override
             public void onItemClick(AdapterView<?> parent, View v, int position, long id)
             {
-                Toast.makeText(showThemeItemsActivity.this, "item" + (position + 1), Toast.LENGTH_SHORT).show();
+                //Toast.makeText(showThemeItemsActivity.this, "item" + (position + 1), Toast.LENGTH_SHORT).show();
+                WaresItems wareitem = DataArray.get(position);
+                startWebViewActivity( wareitem.itemClickURLString );
             }
         });
 
+        getThemeItems();
+
     }
 
+    public ImageLoader imageLoader = new ImageLoader(this);
+    public int pageIndex = 0;
+    public GridItemShowThemeItemsAdapter adapter;
     public void getThemeItems()
     {
-        rawData = CuzyAdSDK.getInstance().fetchRawItems("", "女装", 0);
+        rawData = CuzyAdSDK.getInstance().fetchRawItems("", "女装", pageIndex);
         Log.d("huang alex", "" + rawData.size());
 
         for (int i = 0; i< rawData.size();i++)
@@ -89,6 +98,40 @@ public class showThemeItemsActivity extends Activity implements PullToRefreshVie
 
 
         }
+        adapter = new GridItemShowThemeItemsAdapter(DataArray,imageLoader,this);
+        gridView.setAdapter(adapter);
+    }
+
+    public void getMoreThemeItems()
+    {
+        pageIndex++;
+        rawData = CuzyAdSDK.getInstance().fetchRawItems("", "女装", pageIndex);
+        Log.d("huang alex", "" + rawData.size());
+
+        for (int i = 0; i< rawData.size();i++)
+        {
+            CuzyTBKItem cuzyData = rawData.get(i);
+            WaresItems temp = new WaresItems();
+            temp.itemClickURLString =  cuzyData.getItemClickURLString();
+            temp.itemDescription = cuzyData.getItemDescription();
+            temp.itemPrice = cuzyData.getItemPrice();
+
+            temp.itemImageURLString = cuzyData.getItemImageURLString();
+            temp.itemFreePostage= cuzyData.getItemFreePostage();
+            temp.itemName = cuzyData.getItemName();
+
+            temp.itemPromotionPrice = cuzyData.getItemPromotionPrice();
+            temp.itemType = cuzyData.getItemType();
+            temp.tradingVolumeInThirtyDays= cuzyData.getTradingVolumeInThirtyDays();
+
+            DataArray.add(temp);
+
+
+
+        }
+        Log.d("cuzy ", "data array count is"+DataArray.size());
+        adapter.notifyDataSetChanged();
+
 
     }
 
@@ -100,12 +143,14 @@ public class showThemeItemsActivity extends Activity implements PullToRefreshVie
             @Override
             public void run() {
 
+                getMoreThemeItems();
                 mPullToRefreshView.onFooterRefreshComplete();
             }
         }, 1000);
     }
     @Override
     public void onHeaderRefresh(PullToRefreshView view) {
+
         mPullToRefreshView.postDelayed(new Runnable() {
 
             @Override
@@ -118,6 +163,20 @@ public class showThemeItemsActivity extends Activity implements PullToRefreshVie
 
     }
 
+    public void startWebViewActivity(String urlString)
+    {
+        Intent intent = new Intent(this, webViewActivity.class);
+        intent.putExtra(EXTRA_WEBURL, urlString);
+        intent.putExtra(EXTRA_TITLE_SHOW,"true");
+        intent.putExtra(EXTRA_TITLE_TEXT, "");
+        // all of the other activities on top of it will be closed and this
+        // Intent will be delivered to the (now on top) old activity as a
+        // new Intent.
+        intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
 
+        startActivity(intent);
+        // no animation of transition
+        overridePendingTransition(0, 0);
+    }
 
 }
