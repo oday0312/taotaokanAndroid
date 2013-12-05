@@ -1,5 +1,6 @@
 package com.example.taotaokanAndroid;
 
+import android.content.Intent;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
@@ -26,13 +27,13 @@ public class MainAcitivtyFragment extends Fragment implements PullToRefreshView.
             { "啦啦啦", "嘎嘎嘎", "哇哇哇", "喵喵喵", "刚刚刚", "当当当", "咔咔咔"};
     //图片ID数组
     public int[] images = {
-            R.drawable.ca_custom0,
-            R.drawable.ca_custom1,
-            R.drawable.ca_custom10,
-            R.drawable.ca_custom11,
-            R.drawable.ca_custom12,
-            R.drawable.ca_custom13,
-            R.drawable.ca_custom14 };
+            R.drawable.ca_diy,
+            R.drawable.ca_female_shoe,
+            R.drawable.ca_baby,
+            R.drawable.ca_9,
+            R.drawable.ca_sport,
+            R.drawable.ca_cosmetic,
+            R.drawable.ca_29 };
 
 
 
@@ -92,13 +93,25 @@ public class MainAcitivtyFragment extends Fragment implements PullToRefreshView.
             @Override
             public void onItemClick(AdapterView<?> parent, View v, int position, long id)
             {
-                Toast.makeText(getActivity(), "item" + (position + 1), Toast.LENGTH_SHORT).show();
+                //Toast.makeText(getActivity(), "item" + (position + 1), Toast.LENGTH_SHORT).show();
+                startShowThemeItems();
             }
         });
 
         return v;
 
 
+    }
+
+    public void startShowThemeItems()
+    {
+        Intent intent = new Intent(getActivity(), showThemeItemsActivity.class);
+
+        intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+
+        startActivity(intent);
+        // no animation of transition
+        getActivity().overridePendingTransition(0, 0);
     }
 
     public View viewCreator1()

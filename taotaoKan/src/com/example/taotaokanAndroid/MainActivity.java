@@ -52,10 +52,6 @@ public class MainActivity extends BaseSampleActivity {
         mIndicator = (UnderlinePageIndicator)findViewById(R.id.indicator);
         mIndicator.setViewPager(mPager);
 
-        CuzyAdSDK.getInstance().setContext(this);
-        CuzyAdSDK.getInstance().registerApp("200003","208f53acd6d396867c2a721be6c807eb");
-
-
 
         ActionBar actionBar = (ActionBar) findViewById(R.id.actionbar);
 

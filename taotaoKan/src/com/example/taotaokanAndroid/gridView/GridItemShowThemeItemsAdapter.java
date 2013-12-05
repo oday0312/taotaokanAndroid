@@ -1,0 +1,83 @@
+package com.example.taotaokanAndroid.gridView;
+
+import android.content.Context;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.BaseAdapter;
+import android.widget.ImageView;
+import com.example.taotaokanAndroid.R;
+import com.example.taotaokanAndroid.WaresItems;
+
+import java.util.ArrayList;
+import java.util.List;
+
+/**
+ * Created with IntelliJ IDEA.
+ * User: alex
+ * Date: 13-12-5
+ * Time: PM5:24
+ * To change this template use File | Settings | File Templates.
+ */
+
+
+public class GridItemShowThemeItemsAdapter extends BaseAdapter
+{
+
+    private LayoutInflater inflater;
+
+    private ArrayList<WaresItems> gridItemList;
+    public GridItemShowThemeItemsAdapter(ArrayList<WaresItems>inputList,Context context)
+    {
+        super();
+        gridItemList = new ArrayList<WaresItems>();
+        gridItemList.addAll(inputList);
+    }
+    @Override
+    public int getCount( )
+    {
+        if (null != gridItemList)
+        {
+            return gridItemList.size();
+        }
+        else
+        {
+            return 0;
+        }
+    }
+
+    @Override
+    public Object getItem( int position )
+    {
+        return gridItemList.get(position);
+    }
+
+    @Override
+    public long getItemId( int position )
+    {
+        return position;
+    }
+
+    @Override
+    public View getView( int position, View convertView, ViewGroup parent )
+    {
+        ViewHolder viewHolder;
+        if (convertView == null)
+        {
+            convertView = inflater.inflate(R.layout.grid_item1, null);
+            viewHolder = new ViewHolder();
+            //viewHolder.title = (TextView) convertView.findViewById(R.id.title);
+            viewHolder.image = (ImageView) convertView.findViewById(R.id.image);
+            //viewHolder.time = (TextView) convertView.findViewById(R.id.description);
+            convertView.setTag(viewHolder);
+        } else
+        {
+            viewHolder = (ViewHolder) convertView.getTag();
+        }
+        //viewHolder.title.setText(gridItemList.get(position).getTitle());
+        //viewHolder.time.setText(gridItemList.get(position).getTime());
+        WaresItems item = gridItemList.get(position);
+        viewHolder.image.setImageResource(item.itemImageURLString);
+        return convertView;
+    }
+}

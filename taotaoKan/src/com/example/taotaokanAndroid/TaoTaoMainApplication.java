@@ -2,6 +2,8 @@ package com.example.taotaokanAndroid;
 
 import android.app.Application;
 import android.content.SharedPreferences;
+import com.example.taotaokanAndroid.imageCache.ImageLoader;
+import com.theindex.CuzyAdSDK.CuzyAdSDK;
 
 /**
  * Created with IntelliJ IDEA.
@@ -14,6 +16,8 @@ public class TaoTaoMainApplication extends Application {
 
     public final String SHARE_FILE_NAME = "taotaokan";
     public final String BACKGROUND_KEY = "desktop background";
+    public ImageLoader imageLoader=  null;
+
 
     public int[] images = {
             R.drawable.bg_source_0,
@@ -31,12 +35,48 @@ public class TaoTaoMainApplication extends Application {
             R.drawable.bg_source_12,
     };
 
+
+    public int[] categoryImages = {
+            R.drawable.ca_19,
+            R.drawable.ca_29,
+            R.drawable.ca_9,
+            R.drawable.ca_baby,
+            R.drawable.ca_bag,
+            R.drawable.ca_cosmetic,
+            R.drawable.ca_diy,
+            R.drawable.ca_fashion,
+            R.drawable.ca_female_shoe,
+            R.drawable.ca_figure,
+            R.drawable.ca_food,
+
+            R.drawable.ca_gift,
+            R.drawable.ca_home,
+            R.drawable.ca_jewelry,
+            R.drawable.ca_male,
+            R.drawable.ca_new,
+            R.drawable.ca_outdoors,
+            R.drawable.ca_redwine,
+
+            R.drawable.ca_select,
+            R.drawable.ca_shoe,
+            R.drawable.ca_skirt,
+            R.drawable.ca_socks,
+            R.drawable.ca_sport,
+            R.drawable.ca_tops,
+            R.drawable.ca_underskirt,
+
+
+    };
+
+
+
     public int backgroundResourceID= R.drawable.bg_source_1;
 
     @Override
     public void onCreate() {
         super.onCreate();
-
+        CuzyAdSDK.getInstance().setContext(this);
+        CuzyAdSDK.getInstance().registerApp("200003","208f53acd6d396867c2a721be6c807eb");
         SharedPreferences sp = getSharedPreferences(SHARE_FILE_NAME, MODE_PRIVATE);
         String backString  = sp.getString(BACKGROUND_KEY,"");
         if (backString.length()>0)
