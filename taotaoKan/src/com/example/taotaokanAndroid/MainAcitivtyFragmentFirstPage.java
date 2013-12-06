@@ -92,9 +92,6 @@ public class MainAcitivtyFragmentFirstPage extends MainAcitivtyFragment {
 
 
 
-        mPullToRefreshView = (PullToRefreshView)v.findViewById(R.id.main_pull_refresh_view);
-        mPullToRefreshView.setOnHeaderRefreshListener(this);
-        mPullToRefreshView.setOnFooterRefreshListener(this);
 
         GridItemType1Adapter Gridadapter = new GridItemType1Adapter(titles, images,description,v.getContext());
         gridView.setAdapter(Gridadapter);

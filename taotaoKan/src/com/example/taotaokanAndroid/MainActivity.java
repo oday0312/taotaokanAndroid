@@ -146,24 +146,19 @@ public class MainActivity extends BaseSampleActivity {
 
         @Override
         public void performAction(View view) {
-           //mPopupWindow.showAtLocation(findViewById(R.id.mainlayout), Gravity.BOTTOM, 0, 0);
             mController.openShare(MainActivity.this, false);
-
-        }
+         }
 
     }
     final UMSocialService mController = UMServiceFactory.getUMSocialService("com.umeng.share",
             RequestType.SOCIAL);
     public void addSNSshare()
     {
-        // wx967daebe835fbeac是你在微信开发平台注册应用的AppID, 这里需要替换成你注册的AppID
-        String appID = "wx775e75a07668f1a1";
-        // 微信图文分享必须设置一个url
-        String contentUrl = "http://.umeng.com/social";
-        // 添加微信平台，参数1为当前Activity, 参数2为用户申请的AppID, 参数3为点击分享内容跳转到的目标url
-        mController.getConfig().supportWXPlatform(this,appID, contentUrl);
-        // 支持微信朋友圈
-        mController.getConfig().supportWXCirclePlatform(this,appID, contentUrl) ;
+        //hidden weixin
+        //String appID = "wx775e75a07668f1a1";
+        //String contentUrl = "http://.umeng.com/social";
+        //mController.getConfig().supportWXPlatform(this,appID, contentUrl);
+       // mController.getConfig().supportWXCirclePlatform(this,appID, contentUrl) ;
 
         mController.setShareContent("友盟社会化组件（SDK）让移动应用快速整合社交分享功能，http://www.umeng.com/social");
         mController.setShareMedia(new UMImage(this,"http://www.umeng.com/images/pic/banner_module_social.png"));
