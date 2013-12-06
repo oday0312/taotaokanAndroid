@@ -31,8 +31,11 @@ public class showThemeItemsActivity extends Activity implements PullToRefreshVie
     public static final String EXTRA_TITLE_SHOW = "com.devspark.sidenavigation.meiriyiwen.extra.title.show";
     public static final String EXTRA_TITLE_TEXT = "com.devspark.sidenavigation.meiriyiwen.extra.title.text";
 
-    public String SearchKeyString;
-    public String ThemeString;
+    public static final String EXTRA_Theme_String = "THEME_STRING";
+
+
+    public String SearchKeyString = "";
+    public String ThemeString = "1";
 
     PullToRefreshView mPullToRefreshView;
     public GridView gridView;
@@ -47,6 +50,10 @@ public class showThemeItemsActivity extends Activity implements PullToRefreshVie
         TextView tv = (TextView)findViewById(R.id.titleText);
         tv.setText("主题详情");
 
+        if (getIntent().hasExtra(EXTRA_Theme_String))
+        {
+            ThemeString = getIntent().getStringExtra(EXTRA_Theme_String);
+        }
 
         mPullToRefreshView = (PullToRefreshView)findViewById(R.id.main_pull_refresh_view);
         mPullToRefreshView.setOnHeaderRefreshListener(this);
@@ -74,7 +81,7 @@ public class showThemeItemsActivity extends Activity implements PullToRefreshVie
     public GridItemShowThemeItemsAdapter adapter;
     public void getThemeItems()
     {
-        rawData = CuzyAdSDK.getInstance().fetchRawItems("", "女装", pageIndex);
+        rawData = CuzyAdSDK.getInstance().fetchRawItems(ThemeString, "", pageIndex);
         Log.d("huang alex", "" + rawData.size());
 
         for (int i = 0; i< rawData.size();i++)
@@ -105,7 +112,7 @@ public class showThemeItemsActivity extends Activity implements PullToRefreshVie
     public void getMoreThemeItems()
     {
         pageIndex++;
-        rawData = CuzyAdSDK.getInstance().fetchRawItems("", "女装", pageIndex);
+        rawData = CuzyAdSDK.getInstance().fetchRawItems(ThemeString, "", pageIndex);
         Log.d("huang alex", "" + rawData.size());
 
         for (int i = 0; i< rawData.size();i++)

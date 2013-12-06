@@ -18,6 +18,8 @@ import java.util.ArrayList;
 public class MainAcitivtyFragment extends Fragment {
 
     public static final String KEY_CONTENT = "MainAcitivtyFragment:Content";
+    public static final String EXTRA_Theme_String = "THEME_STRING";
+
 
     public GridView gridView;
     //图片的第一行文字
@@ -87,7 +89,7 @@ public class MainAcitivtyFragment extends Fragment {
             public void onItemClick(AdapterView<?> parent, View v, int position, long id)
             {
                 //Toast.makeText(getActivity(), "item" + (position + 1), Toast.LENGTH_SHORT).show();
-                startShowThemeItems();
+                startShowThemeItems(position);
             }
         });
 
@@ -96,9 +98,11 @@ public class MainAcitivtyFragment extends Fragment {
 
     }
 
-    public void startShowThemeItems()
+    public void startShowThemeItems(int position)
     {
         Intent intent = new Intent(getActivity(), showThemeItemsActivity.class);
+
+        intent.putExtra(EXTRA_Theme_String, description.get(position));
 
         intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
 

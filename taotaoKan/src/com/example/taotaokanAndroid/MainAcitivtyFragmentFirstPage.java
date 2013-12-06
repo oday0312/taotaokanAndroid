@@ -95,7 +95,7 @@ public class MainAcitivtyFragmentFirstPage extends MainAcitivtyFragment {
             public void onItemClick(AdapterView<?> parent, View v, int position, long id)
             {
                 //Toast.makeText(getActivity(), "item" + (position + 1), Toast.LENGTH_SHORT).show();
-                startShowThemeItems();
+                startShowThemeItems(position);
             }
         });
 
@@ -105,9 +105,10 @@ public class MainAcitivtyFragmentFirstPage extends MainAcitivtyFragment {
     }
 
 
-    public void startShowThemeItems()
+    public void startShowThemeItems(int position)
     {
         Intent intent = new Intent(getActivity(), showThemeItemsActivity.class);
+        intent.putExtra(EXTRA_Theme_String, description.get(position));
 
         intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
 
