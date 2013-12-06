@@ -33,14 +33,8 @@ public class MainAcitivtyFragmentFirstPage extends MainAcitivtyFragment {
     //图片的第二行文字
     public ArrayList<String> description = new ArrayList<String>();
     //图片ID数组
-    public int[] images = {
+    public ArrayList<Integer>images = new ArrayList<Integer>();
 
-            R.drawable.ca_female_shoe,
-            R.drawable.ca_baby,
-            R.drawable.ca_9,
-            R.drawable.ca_sport,
-            R.drawable.ca_cosmetic,
-            R.drawable.ca_29 };
 
     public static MainAcitivtyFragmentFirstPage newInstance(String content) {
         MainAcitivtyFragmentFirstPage fragment = new MainAcitivtyFragmentFirstPage();
@@ -133,7 +127,7 @@ public class MainAcitivtyFragmentFirstPage extends MainAcitivtyFragment {
         {
             titles.add(application.categoryStrings[i]);
             description.add(application.categoryThemeIDStrings[i]);
-            this.images[i] = application.categoryImages[i];
+            images.add(application.categoryImages[i]);
         }
     }
 }

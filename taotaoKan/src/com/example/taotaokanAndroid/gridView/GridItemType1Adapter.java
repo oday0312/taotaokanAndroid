@@ -25,14 +25,14 @@ public class GridItemType1Adapter extends BaseAdapter
     private LayoutInflater inflater;
     private List<gridItemType1> gridItemList;
 
-    public GridItemType1Adapter(ArrayList<String> titles, int[] images,ArrayList<String> description, Context context)
+    public GridItemType1Adapter(ArrayList<String> titles, ArrayList<Integer> images,ArrayList<String> description, Context context)
     {
         super();
         gridItemList = new ArrayList<gridItemType1>();
         inflater = LayoutInflater.from(context);
-        for (int i = 0; i < images.length; i++)
+        for (int i = 0; i < images.size(); i++)
         {
-            gridItemType1 picture = new gridItemType1(titles.get(i), images[i],description.get(i));
+            gridItemType1 picture = new gridItemType1(titles.get(i), images.get(i),description.get(i));
             gridItemList.add(picture);
         }
     }

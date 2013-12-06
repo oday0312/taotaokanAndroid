@@ -25,18 +25,8 @@ public class MainAcitivtyFragment extends Fragment {
     //图片的第二行文字
     public ArrayList<String> description = new ArrayList<String>();
     //图片ID数组
-    public int[] images = {
-            R.drawable.ca_diy,
-            R.drawable.ca_female_shoe,
-            R.drawable.ca_baby
-            ,
-            R.drawable.ca_9,
-            R.drawable.ca_sport,
-            R.drawable.ca_cosmetic,
+    public ArrayList<Integer>images = new ArrayList<Integer>();
 
-            R.drawable.ca_29,
-            R.drawable.ca_sport,
-            R.drawable.ca_cosmetic,};
 
 
 
@@ -141,14 +131,14 @@ public class MainAcitivtyFragment extends Fragment {
 
     public void startInit()
     {
-        int size= 9;
+        int size= 15;
         TaoTaoMainApplication application = (TaoTaoMainApplication)getActivity().getApplication();
 
         for (int i = 0;i< size;i++)
         {
             titles.add(application.categoryStrings[i]);
             description.add(application.categoryThemeIDStrings[i]);
-            this.images[i] = application.categoryImages[i];
+            images.add( application.categoryImages[i]);
         }
     }
 
