@@ -85,7 +85,6 @@ public class MainAcitivtyFragmentFirstPage extends MainAcitivtyFragment {
         myGallery.setAdapter(adapter);
 
 
-
         startInit();
         GridItemType1Adapter Gridadapter = new GridItemType1Adapter(titles, images,description,v.getContext());
         gridView.setAdapter(Gridadapter);
@@ -121,6 +120,10 @@ public class MainAcitivtyFragmentFirstPage extends MainAcitivtyFragment {
     public void startInit()
     {
         int size= 6;
+        titles.clear();
+        description.clear();
+        images.clear();
+
         TaoTaoMainApplication application = (TaoTaoMainApplication)getActivity().getApplication();
 
         for (int i = 0;i<size;i++)

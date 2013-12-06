@@ -132,6 +132,10 @@ public class MainAcitivtyFragment extends Fragment {
     public void startInit()
     {
         int size= 15;
+        titles.clear();
+        description.clear();
+        images.clear();
+
         TaoTaoMainApplication application = (TaoTaoMainApplication)getActivity().getApplication();
 
         for (int i = 0;i< size;i++)
