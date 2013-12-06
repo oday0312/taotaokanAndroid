@@ -13,26 +13,30 @@ import android.widget.LinearLayout.LayoutParams;
 import com.example.taotaokanAndroid.PullToRefresh.PullToRefreshView;
 import com.example.taotaokanAndroid.gridView.GridItemType1Adapter;
 
+import java.util.ArrayList;
+
 public class MainAcitivtyFragment extends Fragment {
 
     public static final String KEY_CONTENT = "MainAcitivtyFragment:Content";
 
     public GridView gridView;
     //图片的第一行文字
-    public String[] titles = new String[]
-            { "美女卷珠帘", "美女回眸", "美女很有趣", "美女醉酒", "美女微笑", "美女如脱兔", "美女柳叶弯眉"};
+    public ArrayList<String> titles = new ArrayList<String>();
     //图片的第二行文字
-    public String[] description = new String[]
-            { "啦啦啦", "嘎嘎嘎", "哇哇哇", "喵喵喵", "刚刚刚", "当当当", "咔咔咔"};
+    public ArrayList<String> description = new ArrayList<String>();
     //图片ID数组
     public int[] images = {
             R.drawable.ca_diy,
             R.drawable.ca_female_shoe,
-            R.drawable.ca_baby,
+            R.drawable.ca_baby
+            ,
             R.drawable.ca_9,
             R.drawable.ca_sport,
             R.drawable.ca_cosmetic,
-            R.drawable.ca_29 };
+
+            R.drawable.ca_29,
+            R.drawable.ca_sport,
+            R.drawable.ca_cosmetic,};
 
 
 
@@ -83,7 +87,7 @@ public class MainAcitivtyFragment extends Fragment {
         v.setBackground(d);
 
 
-
+        startInit();
         GridItemType1Adapter adapter = new GridItemType1Adapter(titles, images,description,v.getContext());
         gridView.setAdapter(adapter);
 
@@ -135,6 +139,18 @@ public class MainAcitivtyFragment extends Fragment {
         outState.putString(KEY_CONTENT, mContent);
     }
 
+    public void startInit()
+    {
+        int size= 9;
+        TaoTaoMainApplication application = (TaoTaoMainApplication)getActivity().getApplication();
+
+        for (int i = 0;i< size;i++)
+        {
+            titles.add(application.categoryStrings[i]);
+            description.add(application.categoryThemeIDStrings[i]);
+            this.images[i] = application.categoryImages[i];
+        }
+    }
 
 }
 

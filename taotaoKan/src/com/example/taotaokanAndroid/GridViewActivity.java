@@ -9,6 +9,8 @@ import android.widget.Toast;
 import com.example.taotaokanAndroid.PullToRefresh.PullToRefreshView;
 import com.example.taotaokanAndroid.gridView.GridItemType1Adapter;
 
+import java.util.ArrayList;
+
 /**
  * Created with IntelliJ IDEA.
  * User: apple
@@ -20,20 +22,22 @@ public class GridViewActivity extends Activity implements PullToRefreshView.OnHe
     PullToRefreshView mPullToRefreshView;
     private GridView gridView;
     //图片的第一行文字
-    private String[] titles = new String[]
-            { "美女卷珠帘", "美女回眸", "美女很有趣", "美女醉酒", "美女微笑", "美女如脱兔", "美女柳叶弯眉"};
+    public ArrayList<String> titles = new ArrayList<String>();
     //图片的第二行文字
-    private String[] description = new String[]
-            { "啦啦啦", "嘎嘎嘎", "哇哇哇", "喵喵喵", "刚刚刚", "当当当", "咔咔咔"};
+    public ArrayList<String> description = new ArrayList<String>();
     //图片ID数组
-    private int[] images = {
-            R.drawable.groupbuy,
-            R.drawable.groupbuy,
-            R.drawable.groupbuy,
-            R.drawable.groupbuy,
-            R.drawable.groupbuy,
-            R.drawable.groupbuy,
-            R.drawable.groupbuy };
+    public int[] images = {
+            R.drawable.ca_diy,
+            R.drawable.ca_female_shoe,
+            R.drawable.ca_baby
+            ,
+            R.drawable.ca_9,
+            R.drawable.ca_sport,
+            R.drawable.ca_cosmetic,
+
+            R.drawable.ca_29,
+            R.drawable.ca_sport,
+            R.drawable.ca_cosmetic,};
 
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

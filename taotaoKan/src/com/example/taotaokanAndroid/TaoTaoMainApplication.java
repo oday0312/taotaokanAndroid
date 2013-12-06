@@ -35,7 +35,47 @@ public class TaoTaoMainApplication extends Application {
             R.drawable.bg_source_12,
     };
 
-    public String[] categoryStrings = {
+    public String[] categoryThemeIDStrings = new String[]
+            {
+                    "3",
+                    "4",
+                    "2",
+                    "209",
+                    "210",
+
+                    "206",
+                    "202",
+                    "208",
+                    "207",
+
+                    "214",
+                    "215",
+                    "212",
+                    "201",
+
+
+                    "1",
+                    "213",
+                    "203",
+
+                    "216",
+                    "205",
+                    "217",
+                    "211",
+
+                    ///////
+                    "",
+                    "精美DIY",
+                    "精选推荐",
+                    "",
+
+
+
+
+
+            };
+
+    public String[] categoryStrings = new String[]{
             "19.9包邮",
             "29.9包邮",
             "9.9包邮",
@@ -43,7 +83,6 @@ public class TaoTaoMainApplication extends Application {
             "精美女包",
 
             "美容护肤",
-            "精美DIY",
             "潮流女装",
             "时尚女鞋",
             "数码配件",
@@ -51,21 +90,25 @@ public class TaoTaoMainApplication extends Application {
             "美食特产",
             "精美礼物",
             "家具建材",
-            "",
             "个性男装",
 
 
             "最新商品",
             "户外运动",
+            "精品男鞋",
+
+            "女生裤袜",
+            "运动健生",
+            "女生上衣",
+            "舒适内衣",
+            ///////
             "",
-            "",
+            "精美DIY",
+            "精选推荐",
             "",
 
-            "",
-            "",
-            "",
-            "",
-            "",
+
+
 
 
     };
@@ -77,7 +120,6 @@ public class TaoTaoMainApplication extends Application {
             R.drawable.ca_bag,
 
             R.drawable.ca_cosmetic,
-            R.drawable.ca_diy,
             R.drawable.ca_fashion,
             R.drawable.ca_female_shoe,
             R.drawable.ca_figure,
@@ -85,20 +127,25 @@ public class TaoTaoMainApplication extends Application {
             R.drawable.ca_food,
             R.drawable.ca_gift,
             R.drawable.ca_home,
-            R.drawable.ca_jewelry,
             R.drawable.ca_male,
 
             R.drawable.ca_new,
             R.drawable.ca_outdoors,
-            R.drawable.ca_redwine,
-            R.drawable.ca_select,
             R.drawable.ca_shoe,
 
-            R.drawable.ca_skirt,
             R.drawable.ca_socks,
             R.drawable.ca_sport,
             R.drawable.ca_tops,
             R.drawable.ca_underskirt,
+
+
+            /////
+            R.drawable.ca_redwine,
+            R.drawable.ca_diy,
+            R.drawable.ca_select,
+            R.drawable.ca_jewelry,
+
+
 
 
     };
