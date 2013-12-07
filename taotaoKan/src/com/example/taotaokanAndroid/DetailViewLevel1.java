@@ -23,6 +23,9 @@ public class DetailViewLevel1 extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.detailviewlevel1);
 
+        TextView tv = (TextView)findViewById(R.id.titleText);
+        tv.setText("商品详情");
+
 
         imageLoader = new ImageLoader(this);
         if (getIntent().hasExtra(EXTRA_PAPERITEM))
