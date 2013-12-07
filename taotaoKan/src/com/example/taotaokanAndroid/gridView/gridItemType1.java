@@ -50,4 +50,8 @@ class ViewHolder
     public ImageView image;
     public TextView title;
     public TextView time;
+
+
+    public TextView priceView;
+    public TextView sellAmount;
 }

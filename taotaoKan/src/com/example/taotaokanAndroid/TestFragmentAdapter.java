@@ -6,7 +6,7 @@ import android.support.v4.app.FragmentPagerAdapter;
 import com.viewpagerindicator.IconPagerAdapter;
 
 class TestFragmentAdapter extends FragmentPagerAdapter implements IconPagerAdapter {
-    protected static final String[] CONTENT = new String[] { "This", "Is", "A", "Test", };
+    protected static final String[] CONTENT = new String[] { "Main", "2",   };
     protected static final int[] ICONS = new int[] {
             R.drawable.perm_group_calendar,
             R.drawable.perm_group_camera,
@@ -26,12 +26,12 @@ class TestFragmentAdapter extends FragmentPagerAdapter implements IconPagerAdapt
         Fragment f;
         if (position == 0)
         {
-            f =  MainAcitivtyFragmentFirstPage.newInstance(CONTENT[position % CONTENT.length]);
+            f =  MainAcitivtyFragmentFirstPage.newInstance(CONTENT[position % CONTENT.length],position);
 
         }
         else
         {
-            f = MainAcitivtyFragment.newInstance(CONTENT[position % CONTENT.length]);
+            f = MainAcitivtyFragment.newInstance(CONTENT[position % CONTENT.length],position);
         }
         return f;
     }

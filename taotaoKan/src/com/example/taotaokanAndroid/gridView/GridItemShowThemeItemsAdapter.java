@@ -6,6 +6,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.ImageView;
+import android.widget.TextView;
 import com.example.taotaokanAndroid.R;
 import com.example.taotaokanAndroid.WaresItems;
 import com.example.taotaokanAndroid.imageCache.ImageLoader;
@@ -66,11 +67,14 @@ public class GridItemShowThemeItemsAdapter extends BaseAdapter
         ViewHolder viewHolder;
         if (convertView == null)
         {
-            convertView = inflater.inflate(R.layout.grid_item1, null);
+            convertView = inflater.inflate(R.layout.grid_item2_themedetail, null);
             viewHolder = new ViewHolder();
             //viewHolder.title = (TextView) convertView.findViewById(R.id.title);
-            viewHolder.image = (ImageView) convertView.findViewById(R.id.image);
+            viewHolder.image = (ImageView) convertView.findViewById(R.id.theme_detail_image);
             //viewHolder.time = (TextView) convertView.findViewById(R.id.description);
+
+            viewHolder.priceView = (TextView)convertView.findViewById(R.id.theme_detail_price);
+            viewHolder.sellAmount = (TextView)convertView.findViewById(R.id.theme_detail_sell_amount);
             convertView.setTag(viewHolder);
         } else
         {
@@ -79,7 +83,10 @@ public class GridItemShowThemeItemsAdapter extends BaseAdapter
         //viewHolder.title.setText(gridItemList.get(position).getTitle());
         //viewHolder.time.setText(gridItemList.get(position).getTime());
         WaresItems item = gridItemList.get(position);
+        viewHolder.priceView.setText(item.itemPromotionPrice);
+        viewHolder.sellAmount.setText(item.tradingVolumeInThirtyDays);
         imageLoader.DisplayImage(item.itemImageURLString, viewHolder.image);
+
 
         return convertView;
     }

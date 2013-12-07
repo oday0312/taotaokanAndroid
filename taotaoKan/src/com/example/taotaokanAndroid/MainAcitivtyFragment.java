@@ -31,17 +31,14 @@ public class MainAcitivtyFragment extends Fragment {
 
 
 
+    public int index = 0;
 
-
-    public static MainAcitivtyFragment newInstance(String content) {
+    public static MainAcitivtyFragment newInstance(String content, int inputIndex) {
         MainAcitivtyFragment fragment = new MainAcitivtyFragment();
+        fragment.index = inputIndex;
+        fragment.mContent = "";
 
-        StringBuilder builder = new StringBuilder();
-        for (int i = 0; i < 20; i++) {
-            builder.append(content).append(" ");
-        }
-        builder.deleteCharAt(builder.length() - 1);
-        fragment.mContent = builder.toString();
+
 
         return fragment;
     }
@@ -135,14 +132,27 @@ public class MainAcitivtyFragment extends Fragment {
 
     public void startInit()
     {
-        int size= 15;
+        int startIndex = 0;
+        int endIndex = 0;
+
+        if (index == 1)
+        {
+            startIndex = 6;
+            endIndex = 6+ 15;
+        }
+        else if (index == 2)
+        {
+            startIndex = 21;
+            endIndex = 21+ 15;
+        }
+
         titles.clear();
         description.clear();
         images.clear();
 
         TaoTaoMainApplication application = (TaoTaoMainApplication)getActivity().getApplication();
 
-        for (int i = 0;i< size;i++)
+        for (int i = startIndex ;i< endIndex && i<application.categoryImages.length-4;i++)
         {
             titles.add(application.categoryStrings[i]);
             description.add(application.categoryThemeIDStrings[i]);

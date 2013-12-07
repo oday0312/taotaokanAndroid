@@ -36,15 +36,13 @@ public class MainAcitivtyFragmentFirstPage extends MainAcitivtyFragment {
     public ArrayList<Integer>images = new ArrayList<Integer>();
 
 
-    public static MainAcitivtyFragmentFirstPage newInstance(String content) {
+    public int index = 0;
+    public static MainAcitivtyFragmentFirstPage newInstance(String content, int inputIndex) {
         MainAcitivtyFragmentFirstPage fragment = new MainAcitivtyFragmentFirstPage();
 
-        StringBuilder builder = new StringBuilder();
-        for (int i = 0; i < 20; i++) {
-            builder.append(content).append(" ");
-        }
-        builder.deleteCharAt(builder.length() - 1);
-        fragment.mContent = builder.toString();
+        fragment.mContent = "";
+
+        fragment.index = inputIndex;
 
 
 

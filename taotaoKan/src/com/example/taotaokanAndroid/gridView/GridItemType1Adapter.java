@@ -71,6 +71,7 @@ public class GridItemType1Adapter extends BaseAdapter
             viewHolder = new ViewHolder();
             //viewHolder.title = (TextView) convertView.findViewById(R.id.title);
             viewHolder.image = (ImageView) convertView.findViewById(R.id.image);
+            viewHolder.title = (TextView)convertView.findViewById(R.id.grid_view1_textView);
             //viewHolder.time = (TextView) convertView.findViewById(R.id.description);
             convertView.setTag(viewHolder);
         } else
@@ -80,6 +81,7 @@ public class GridItemType1Adapter extends BaseAdapter
         //viewHolder.title.setText(gridItemList.get(position).getTitle());
         //viewHolder.time.setText(gridItemList.get(position).getTime());
         viewHolder.image.setImageResource(gridItemList.get(position).getImageId());
+        viewHolder.title.setText(gridItemList.get(position).getTitle()+"        ");
         return convertView;
     }
 }
