@@ -70,7 +70,7 @@ public class GridItemType2FavorAdapter extends BaseAdapter
         ViewHolder viewHolder;
         if (convertView == null)
         {
-            convertView = inflater.inflate(R.layout.grid_item1, null);
+            convertView = inflater.inflate(R.layout.grid_item_favor, null);
             viewHolder = new ViewHolder();
             //viewHolder.title = (TextView) convertView.findViewById(R.id.title);
             viewHolder.image = (ImageView) convertView.findViewById(R.id.image);
