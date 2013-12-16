@@ -1,6 +1,9 @@
 package com.example.taotaokanAndroid;
 
+import android.content.BroadcastReceiver;
+import android.content.Context;
 import android.content.Intent;
+import android.content.IntentFilter;
 import android.content.res.TypedArray;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
@@ -132,4 +135,32 @@ public class MainAcitivtyFragmentFirstPage extends MainAcitivtyFragment {
             images.add(application.categoryImages[i]);
         }
     }
+
+    public class MyBroadcastReceiver extends BroadcastReceiver
+
+    {
+
+        public void onReceive(Context context, Intent intent)
+
+        {
+
+            String action = intent.getAction();
+
+
+
+        }
+
+    }
+    public void onStart()
+    {
+        super.onStart();
+
+    }
+
+
+    public void onStop()
+    {
+        super.onStop();
+    }
+
 }

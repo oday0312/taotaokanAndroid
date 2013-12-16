@@ -4,6 +4,9 @@ import android.app.Application;
 import android.content.SharedPreferences;
 import com.example.taotaokanAndroid.imageCache.ImageLoader;
 import com.theindex.CuzyAdSDK.CuzyAdSDK;
+import com.theindex.CuzyAdSDK.CuzyTBKItem;
+
+import java.util.ArrayList;
 
 /**
  * Created with IntelliJ IDEA.
@@ -153,6 +156,9 @@ public class TaoTaoMainApplication extends Application {
 
 
     public int backgroundResourceID= R.drawable.bg_source_1;
+
+    public ArrayList<WaresItems> wareItemsArray = new ArrayList<WaresItems>();
+
 
     @Override
     public void onCreate() {

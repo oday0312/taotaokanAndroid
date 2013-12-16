@@ -6,6 +6,7 @@ import android.content.Intent;
 import android.content.res.TypedArray;
 import android.graphics.Bitmap;
 import android.graphics.drawable.BitmapDrawable;
+import android.os.AsyncTask;
 import android.os.Bundle;
 import android.support.v4.view.ViewPager;
 import android.util.Log;
@@ -64,7 +65,8 @@ public class MainActivity extends BaseSampleActivity {
         actionBar.addAction(new StartFavorViewAction());
 
 
-
+        //start to get the big picture information
+        new LongOperation().execute();
     }
 
     @Override
@@ -175,6 +177,55 @@ public class MainActivity extends BaseSampleActivity {
     }
 
 
+    private class LongOperation extends AsyncTask<Void,Void,Void> {
 
+        @Override
+        protected Void doInBackground(Void...params){
+
+            TaoTaoMainApplication application = (TaoTaoMainApplication)getApplication();
+            rawData.clear();
+            rawData = CuzyAdSDK.getInstance().fetchRawItems("1669", "", 0);
+            application.wareItemsArray.clear();
+
+            Log.d("huang alex", ""+rawData.size());
+            for (int i = 0; i< rawData.size();i++)
+            {
+                CuzyTBKItem cuzyData = rawData.get(i);
+                WaresItems temp = new WaresItems();
+                temp.itemClickURLString =  cuzyData.getItemClickURLString();
+                temp.itemDescription = cuzyData.getItemDescription();
+                temp.itemPrice = cuzyData.getItemPrice();
+
+                temp.itemImageURLString = cuzyData.getItemImageURLString();
+                temp.itemFreePostage= cuzyData.getItemFreePostage();
+                temp.itemName = cuzyData.getItemName();
+
+                temp.itemPromotionPrice = cuzyData.getItemPromotionPrice();
+                temp.itemType = cuzyData.getItemType();
+                temp.tradingVolumeInThirtyDays= cuzyData.getTradingVolumeInThirtyDays();
+                application.wareItemsArray.add(temp);
+            }
+            mAdapter.notifyDataSetChanged();
+
+            return null;
+        }
+
+        @Override
+        protected void onPostExecute(Void result) {
+
+        }
+
+        @Override
+        protected void onCancelled() {
+        }
+
+        @Override
+        protected void onPreExecute(){
+        }
+
+        @Override
+        protected void onProgressUpdate(Void... values){
+        }
+    }
 
 }

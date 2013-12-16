@@ -29,6 +29,7 @@ public class webViewActivity extends Activity {
     public static final String EXTRA_TITLE_TEXT = "com.devspark.sidenavigation.meiriyiwen.extra.title.text";
 
 
+    public WebView uiwebview;
     public ProgressBar progressBar = null;
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -65,7 +66,7 @@ public class webViewActivity extends Activity {
         if (getIntent().hasExtra(EXTRA_WEBURL)) {
             String title = getIntent().getStringExtra(EXTRA_WEBURL);
             //setTitle(title);
-            WebView uiwebview = (WebView)findViewById(R.id.webView);
+            uiwebview = (WebView)findViewById(R.id.webView);
             uiwebview.setWebViewClient(new Callback());
             uiwebview.getSettings().setBuiltInZoomControls(true);
             uiwebview.getSettings().setJavaScriptEnabled(true);
@@ -88,6 +89,10 @@ public class webViewActivity extends Activity {
 
     }
 
+    public void removeSmartTAOBAOad()
+    {
+        uiwebview.loadUrl("javascript:var J_wrapper = document.getElementById('smartAd');  document.body.removeChild(J_wrapper);");
+    }
     private class Callback extends WebViewClient {
         @Override
         public boolean shouldOverrideUrlLoading(WebView view,String url){
@@ -102,12 +107,15 @@ public class webViewActivity extends Activity {
         @Override
         public void onPageFinished(WebView view, String url) {
             progressBar.setVisibility(View.INVISIBLE);
+            removeSmartTAOBAOad();
         }
         @Override
         public void onReceivedError(WebView view, int errorCode, String description, String failingUrl){
             progressBar.setVisibility(View.INVISIBLE);
 
         }
+
+
 //        @Override
 //        public void onLoadResource(android.webkit.WebView view, java.lang.String url) {
 //
