@@ -205,14 +205,17 @@ public class MainActivity extends BaseSampleActivity {
                 temp.tradingVolumeInThirtyDays= cuzyData.getTradingVolumeInThirtyDays();
                 application.wareItemsArray.add(temp);
             }
-            mAdapter = new TestFragmentAdapter(getSupportFragmentManager());
-            mAdapter.notifyDataSetChanged();
+
+
+
+
             return null;
         }
 
         @Override
         protected void onPostExecute(Void result) {
-
+            //mAdapter = new TestFragmentAdapter(getSupportFragmentManager());
+            mAdapter.notifyDataSetChanged();
         }
 
         @Override

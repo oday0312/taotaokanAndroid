@@ -2,6 +2,7 @@ package com.example.taotaokanAndroid;
 
 import android.app.Activity;
 import android.content.Intent;
+import android.os.AsyncTask;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -72,8 +73,11 @@ public class showThemeItemsActivity extends Activity implements PullToRefreshVie
             }
         });
 
-        getThemeItems();
 
+        adapter = new GridItemShowThemeItemsAdapter(DataArray,imageLoader,this);
+        gridView.setAdapter(adapter);
+
+        new LongOperation().execute();
     }
 
     public ImageLoader imageLoader = new ImageLoader(this);
@@ -105,8 +109,8 @@ public class showThemeItemsActivity extends Activity implements PullToRefreshVie
 
 
         }
-        adapter = new GridItemShowThemeItemsAdapter(DataArray,imageLoader,this);
-        gridView.setAdapter(adapter);
+        //adapter = new GridItemShowThemeItemsAdapter(DataArray,imageLoader,this);
+        //gridView.setAdapter(adapter);
     }
 
     public void getMoreThemeItems()
@@ -138,6 +142,7 @@ public class showThemeItemsActivity extends Activity implements PullToRefreshVie
         }
         Log.d("cuzy ", "data array count is"+DataArray.size());
         adapter.notifyDataSetChanged();
+
 
 
     }
@@ -186,4 +191,33 @@ public class showThemeItemsActivity extends Activity implements PullToRefreshVie
         overridePendingTransition(0, 0);
     }
 
+
+
+    private class LongOperation extends AsyncTask<Void,Void,Void> {
+
+        @Override
+        protected Void doInBackground(Void...params){
+
+            getThemeItems();
+
+            return null;
+        }
+
+        @Override
+        protected void onPostExecute(Void result) {
+            adapter.notifyDataSetChanged();
+        }
+
+        @Override
+        protected void onCancelled() {
+        }
+
+        @Override
+        protected void onPreExecute(){
+        }
+
+        @Override
+        protected void onProgressUpdate(Void... values){
+        }
+    }
 }

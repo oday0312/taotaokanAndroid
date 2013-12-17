@@ -3,6 +3,7 @@ package com.example.taotaokanAndroid;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
+import com.example.taotaokanAndroid.gridView.GalleryImageAdapter;
 import com.viewpagerindicator.IconPagerAdapter;
 
 class TestFragmentAdapter extends FragmentPagerAdapter implements IconPagerAdapter {
@@ -16,8 +17,13 @@ class TestFragmentAdapter extends FragmentPagerAdapter implements IconPagerAdapt
 
     private int mCount = CONTENT.length;
 
+
+    public MainAcitivtyFragment f2;
+    public MainAcitivtyFragmentFirstPage f1;
     public TestFragmentAdapter(FragmentManager fm) {
         super(fm);
+        f1 =  MainAcitivtyFragmentFirstPage.newInstance("",0);
+        f2 =  MainAcitivtyFragment.newInstance("",1);
     }
 
     @Override
@@ -26,12 +32,13 @@ class TestFragmentAdapter extends FragmentPagerAdapter implements IconPagerAdapt
         Fragment f;
         if (position == 0)
         {
-            f =  MainAcitivtyFragmentFirstPage.newInstance(CONTENT[position % CONTENT.length],position);
+            f =  MainAcitivtyFragmentFirstPage.newInstance("",position);
 
         }
         else
         {
-            f = MainAcitivtyFragment.newInstance(CONTENT[position % CONTENT.length],position);
+            f = MainAcitivtyFragment.newInstance("",position);
+
         }
         return f;
     }

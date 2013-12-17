@@ -170,7 +170,7 @@ public class FancyCoverFlow extends Gallery {
 
     /**
      * Use this to provide a {@link FancyCoverFlowAdapter} to the coverflow. This
-     * method will throw an {@link ClassCastException} if the passed adapter does not
+     * method will throw an {@link ClassCastException} if the passed simpleWindowADadapter does not
      * subclass {@link FancyCoverFlowAdapter}.
      *
      * @param adapter

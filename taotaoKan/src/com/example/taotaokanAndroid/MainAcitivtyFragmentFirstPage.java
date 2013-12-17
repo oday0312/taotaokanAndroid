@@ -1,9 +1,6 @@
 package com.example.taotaokanAndroid;
 
-import android.content.BroadcastReceiver;
-import android.content.Context;
 import android.content.Intent;
-import android.content.IntentFilter;
 import android.content.res.TypedArray;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
@@ -13,8 +10,6 @@ import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.Gallery;
 import android.widget.GridView;
-import android.widget.Toast;
-import com.example.taotaokanAndroid.PullToRefresh.PullToRefreshView;
 import com.example.taotaokanAndroid.gridView.GalleryImageAdapter;
 import com.example.taotaokanAndroid.gridView.GridItemType1Adapter;
 
@@ -40,15 +35,18 @@ public class MainAcitivtyFragmentFirstPage extends MainAcitivtyFragment {
 
 
     public int index = 0;
+    public GalleryImageAdapter simpleWindowADadapter;
+    public MainAcitivtyFragmentFirstPage()
+    {
+        super();
+
+    }
     public static MainAcitivtyFragmentFirstPage newInstance(String content, int inputIndex) {
         MainAcitivtyFragmentFirstPage fragment = new MainAcitivtyFragmentFirstPage();
 
         fragment.mContent = "";
 
         fragment.index = inputIndex;
-
-
-
 
 
 
@@ -77,11 +75,11 @@ public class MainAcitivtyFragmentFirstPage extends MainAcitivtyFragment {
         v.setBackground(d);
 
         myGallery = (Gallery)v.findViewById(R.id.gallery);
-        GalleryImageAdapter adapter = new GalleryImageAdapter(v.getContext(), application.wareItemsArray);
-        myGallery.setAdapter(adapter);
+        simpleWindowADadapter = new GalleryImageAdapter(v.getContext(), application.wareItemsArray);
+        myGallery.setAdapter(simpleWindowADadapter);
 
         TypedArray typedArray = v.getContext().obtainStyledAttributes(R.styleable.Gallery);
-        adapter.setmGalleryItemBackground(typedArray.getResourceId(R.styleable.Gallery_android_galleryItemBackground, 0));
+        simpleWindowADadapter.setmGalleryItemBackground(typedArray.getResourceId(R.styleable.Gallery_android_galleryItemBackground, 0));
 
 
 
@@ -136,21 +134,7 @@ public class MainAcitivtyFragmentFirstPage extends MainAcitivtyFragment {
         }
     }
 
-    public class MyBroadcastReceiver extends BroadcastReceiver
 
-    {
-
-        public void onReceive(Context context, Intent intent)
-
-        {
-
-            String action = intent.getAction();
-
-
-
-        }
-
-    }
     public void onStart()
     {
         super.onStart();

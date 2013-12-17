@@ -211,7 +211,7 @@ public class SearchActivity extends Activity {
         protected void onPostExecute(Void result) {
 
             reloadListView();
-            //adapter.notifyDataSetChanged();
+            //simpleWindowADadapter.notifyDataSetChanged();
             listView.onLoadMoreComplete();
         }
 
