@@ -33,7 +33,10 @@ class TestFragmentAdapter extends FragmentPagerAdapter implements IconPagerAdapt
         if (position == 0)
         {
             f =  MainAcitivtyFragmentFirstPage.newInstance("",position);
-
+            if (f1.simpleWindowADadapter!=null)
+            {
+                 f1.simpleWindowADadapter.notifyDataSetChanged();
+            }
         }
         else
         {
