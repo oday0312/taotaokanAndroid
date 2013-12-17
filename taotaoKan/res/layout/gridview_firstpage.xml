@@ -17,24 +17,25 @@
             android:layout_alignRight="@+id/linearLayout">
     <Gallery
             android:layout_width="fill_parent"
-            android:layout_height="121dp"
+            android:layout_height="wrap_content"
             android:id="@+id/gallery"/>
         </LinearLayout>
 
     <LinearLayout
             xmlns:android="http://schemas.android.com/apk/res/android"
             android:layout_width="fill_parent"
-            android:layout_height="match_parent"
-            android:id="@+id/linearLayout" android:layout_alignParentTop="true" android:layout_marginTop="121dp">
+            android:layout_height="wrap_content"
+            android:id="@+id/linearLayout" android:layout_alignParentTop="false"
+            android:layout_alignParentBottom="true" android:gravity="bottom">
     <GridView xmlns:android="http://schemas.android.com/apk/res/android"
               android:id="@+id/gridview_firstpage"
               android:layout_width="fill_parent"
-              android:layout_height="fill_parent"
+              android:layout_height="wrap_content"
               android:columnWidth="90dp"
               android:verticalSpacing="10dp"
               android:horizontalSpacing="10dp"
               android:stretchMode="columnWidth"
-              android:gravity="center"
+              android:gravity="center|bottom"
               android:numColumns="3"/>
     </LinearLayout>
 

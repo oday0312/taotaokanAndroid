@@ -77,15 +77,15 @@ public class MainAcitivtyFragmentFirstPage extends MainAcitivtyFragment {
         v.setBackground(d);
 
         myGallery = (Gallery)v.findViewById(R.id.gallery);
-        //这段代码是杨丰盛老师的《android开发揭秘》中这样写的
-        //myGallery.setBackgroundResource(R.drawable.bg0);
-        GalleryImageAdapter adapter = new GalleryImageAdapter(v.getContext());
-        //设置背景风格。Gallery背景风格定义在attrs.xml中
-        TypedArray typedArray = v.getContext().obtainStyledAttributes(R.styleable.Gallery);
-        adapter.setmGalleryItemBackground(typedArray.getResourceId(R.styleable.Gallery_android_galleryItemBackground, 0));
+        GalleryImageAdapter adapter = new GalleryImageAdapter(v.getContext(), application.wareItemsArray);
         myGallery.setAdapter(adapter);
 
+        TypedArray typedArray = v.getContext().obtainStyledAttributes(R.styleable.Gallery);
+        adapter.setmGalleryItemBackground(typedArray.getResourceId(R.styleable.Gallery_android_galleryItemBackground, 0));
 
+
+
+        ///this is for GridView adpter..
         startInit();
         GridItemType1Adapter Gridadapter = new GridItemType1Adapter(titles, images,description,v.getContext());
         gridView.setAdapter(Gridadapter);

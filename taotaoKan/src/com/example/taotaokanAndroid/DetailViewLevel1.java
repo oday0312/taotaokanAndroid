@@ -42,7 +42,7 @@ public class DetailViewLevel1 extends Activity {
 
 
             //http:\/\/img01.taobaocdn.com\/bao\/uploaded\/i1\/16244030445984444\/T1KDESXfdbXXXXXXXX_!!0-item_pic.jpg_240x240.jpg"
-            String bigImageString = item.itemImageURLString.replace("240x240", "400x400");
+            String bigImageString = item.itemImageURLString.replace("240x240", "600x600");
             Log.d("alex huang" , bigImageString);
             imageLoader.DisplayImage(bigImageString, imageView);
         }
