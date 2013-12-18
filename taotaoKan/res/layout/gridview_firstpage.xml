@@ -10,33 +10,37 @@
     <!-- 这里放置listview,gridview或者scrollview的布局 ,PullToRefreshView
     要设置android:orientation="vertical"属性
     否则,显示不正确-->
-    <LinearLayout
-            xmlns:android="http://schemas.android.com/apk/res/android"
-            android:layout_width="match_parent"
+
+    <ScrollView
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignRight="@+id/linearLayout">
-    <Gallery
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/gallery"/>
+            android:id="@+id/scrollView"
+            >
+
+
+        <LinearLayout
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:id="@+id/linearLayout1">
+            <Gallery
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/gallery"/>
+            <GridView xmlns:android="http://schemas.android.com/apk/res/android"
+                      android:id="@+id/gridview_firstpage"
+                      android:layout_width="fill_parent"
+                      android:layout_height="wrap_content"
+                      android:columnWidth="90dp"
+                      android:verticalSpacing="10dp"
+                      android:horizontalSpacing="10dp"
+                      android:stretchMode="columnWidth"
+                      android:gravity="center|bottom"
+                      android:numColumns="3"/>
         </LinearLayout>
 
-    <LinearLayout
-            xmlns:android="http://schemas.android.com/apk/res/android"
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/linearLayout" android:layout_alignParentTop="false"
-            android:layout_alignParentBottom="true" android:gravity="bottom">
-    <GridView xmlns:android="http://schemas.android.com/apk/res/android"
-              android:id="@+id/gridview_firstpage"
-              android:layout_width="fill_parent"
-              android:layout_height="wrap_content"
-              android:columnWidth="90dp"
-              android:verticalSpacing="10dp"
-              android:horizontalSpacing="10dp"
-              android:stretchMode="columnWidth"
-              android:gravity="center|bottom"
-              android:numColumns="3"/>
-    </LinearLayout>
+    </ScrollView>
 
-    </RelativeLayout>
+
+</RelativeLayout>

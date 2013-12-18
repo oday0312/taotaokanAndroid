@@ -20,9 +20,12 @@
              layout="@layout/titlebar" android:id="@+id/include"
              android:layout_alignLeft="@+id/classItemListView" android:layout_alignTop="@+id/view"/>
     <ImageView
-            android:layout_width="300dp"
-            android:layout_height="300dp"
-            android:id="@+id/detailviewlevel1_imageview" android:layout_gravity="center" android:src="@drawable/ca_29"/>
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@drawable/ttk_image_border"
+            android:padding="3dp"
+            android:id="@+id/detailviewlevel1_imageview" android:layout_gravity="center" android:src="@drawable/ca_29"
+            android:layout_marginTop="10dp"/>
     <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -35,7 +38,20 @@
                 android:text="item introduction"
                 android:id="@+id/detailviewlevel1_description" android:textColor="@android:color/black"
                 android:gravity="center_vertical" android:background="@android:color/background_light"
-                android:layout_gravity="left|center_vertical"/>
+                android:layout_gravity="left|center_vertical" android:clickable="true"/>
+    </RelativeLayout>
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/detailviewlevel1_relateLayout5"
+                    android:orientation="horizontal">
+        <TextView
+                android:layout_width="113dp"
+                android:layout_height="43dp"
+                android:text="点击收藏"
+                android:id="@+id/detailviewlevel1_item_add_favor_list" android:textColor="@android:color/black"
+                android:gravity="center_vertical" android:clickable="true"/>
     </RelativeLayout>
     <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
                     android:layout_width="wrap_content"
@@ -73,6 +89,8 @@
             android:layout_alignParentEnd="false" android:textColor="@android:color/black"
             android:gravity="center_vertical"/>
     </RelativeLayout>
+
+
 
 </LinearLayout>
     </ScrollView>

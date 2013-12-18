@@ -7,6 +7,7 @@ import android.widget.BaseAdapter;
 import android.widget.Gallery;
 import android.widget.ImageView;
 import com.example.taotaokanAndroid.R;
+import com.example.taotaokanAndroid.TaoTaoMainApplication;
 import com.example.taotaokanAndroid.WaresItems;
 import com.example.taotaokanAndroid.imageCache.ImageLoader;
 
@@ -25,6 +26,9 @@ public class GalleryImageAdapter extends BaseAdapter  {
 
     ImageLoader imageLoader;
     private Context context;
+
+    public int GalleryImageSize = 800;
+
     //图片的资源ID
     private Integer[] mImageIds = {
             R.drawable.groupbuy,
@@ -77,7 +81,8 @@ public class GalleryImageAdapter extends BaseAdapter  {
         //设置ImageView的伸缩规格，用了自带的属性值
         imageView.setScaleType(ImageView.ScaleType.FIT_CENTER);
         //设置布局参数
-        imageView.setLayoutParams(new Gallery.LayoutParams(800, 800));
+
+        imageView.setLayoutParams(new Gallery.LayoutParams(GalleryImageSize, GalleryImageSize));
         //设置风格，此风格的配置是在xml中
         imageView.setBackgroundResource(mGalleryItemBackground);
         return imageView;

@@ -2,6 +2,8 @@ package com.example.taotaokanAndroid;
 
 import android.app.Application;
 import android.content.SharedPreferences;
+import android.util.DisplayMetrics;
+import android.util.Log;
 import com.example.taotaokanAndroid.imageCache.ImageLoader;
 import com.theindex.CuzyAdSDK.CuzyAdSDK;
 import com.theindex.CuzyAdSDK.CuzyTBKItem;
@@ -160,6 +162,9 @@ public class TaoTaoMainApplication extends Application {
     public ArrayList<WaresItems> wareItemsArray = new ArrayList<WaresItems>();
 
 
+    public int screenWidth = 0;
+    public int screenHeight = 0;
+
     @Override
     public void onCreate() {
         super.onCreate();
@@ -172,6 +177,12 @@ public class TaoTaoMainApplication extends Application {
             backgroundResourceID = Integer.parseInt(backString);
         }
 
+        DisplayMetrics dm = new DisplayMetrics();
+        dm = getResources().getDisplayMetrics();
+        screenWidth = dm.widthPixels;
+        screenHeight = dm.heightPixels;
+
+        Log.d("cuzy  ", " the screen size is " + screenWidth +" " + screenHeight);
     }
     @Override
     public void onTerminate() {

@@ -145,14 +145,20 @@ public class WaresItemsDataUtil {
         initialValues.put(KEY_itemType,waresItems.itemType);
         initialValues.put(KEY_tradingVolumeInThirtyDays,waresItems.tradingVolumeInThirtyDays);
 
-        return mDb.insert(DATABASE_TABLE, null, initialValues);
+        Cursor cursor = fetchStudent(waresItems.itemImageURLString);
+        long lResult = 0;
+        if (cursor == null)
+        {
+            lResult = mDb.insert(DATABASE_TABLE, null, initialValues);
+        }
+        return lResult;
     }
     /**
      * This method will delete Student record.
      * @return boolean
      */
     public boolean deleteStudent(String ImageUrlString) {
-        return mDb.delete(DATABASE_TABLE, KEY_itemImageURLString + "=" + ImageUrlString, null) > 0;
+        return mDb.delete(DATABASE_TABLE, KEY_itemImageURLString + "=" + ImageUrlString , null) > 0;
     }
 
     /**
@@ -190,7 +196,7 @@ public class WaresItemsDataUtil {
                                 KEY_itemPrice,
                                 KEY_itemPromotionPrice,
                                 KEY_itemType,
-                                KEY_tradingVolumeInThirtyDays}, KEY_itemImageURLString + "=" + imageURLstring, null,
+                                KEY_tradingVolumeInThirtyDays}, KEY_itemImageURLString + "=" +"\""+ imageURLstring+"\"", null,
                         null, null, null, null);
         if (mCursor != null) {
             mCursor.moveToFirst();

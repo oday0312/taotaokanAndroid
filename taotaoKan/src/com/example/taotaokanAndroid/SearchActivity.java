@@ -77,7 +77,7 @@ public class SearchActivity extends Activity {
 
                     DataArray.add(temp);
 
-                    dbUtil.createStudent(temp );
+                    //dbUtil.createStudent(temp );
 
                 }
 

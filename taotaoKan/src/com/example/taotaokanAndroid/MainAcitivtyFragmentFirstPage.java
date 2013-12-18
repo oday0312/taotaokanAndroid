@@ -10,6 +10,7 @@ import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.Gallery;
 import android.widget.GridView;
+import android.widget.Toast;
 import com.example.taotaokanAndroid.gridView.GalleryImageAdapter;
 import com.example.taotaokanAndroid.gridView.GridItemType1Adapter;
 
@@ -23,6 +24,8 @@ import java.util.ArrayList;
  * To change this template use File | Settings | File Templates.
  */
 public class MainAcitivtyFragmentFirstPage extends MainAcitivtyFragment {
+    public static final String EXTRA_PAPERITEM = "com.devspark.sidenavigation.meiriyiwen.extra.paperitem";
+
     public Gallery myGallery;
 
 
@@ -70,13 +73,26 @@ public class MainAcitivtyFragmentFirstPage extends MainAcitivtyFragment {
         gridView = (GridView)v.findViewById(R.id.gridview_firstpage);
 
 
-        TaoTaoMainApplication application = (TaoTaoMainApplication)getActivity().getApplication();
+        final TaoTaoMainApplication application = (TaoTaoMainApplication)getActivity().getApplication();
         Drawable d =getResources().getDrawable(application.backgroundResourceID );
         v.setBackground(d);
 
         myGallery = (Gallery)v.findViewById(R.id.gallery);
+
         simpleWindowADadapter = new GalleryImageAdapter(v.getContext(), application.wareItemsArray);
+        simpleWindowADadapter.GalleryImageSize = application.screenWidth - 10;
         myGallery.setAdapter(simpleWindowADadapter);
+        myGallery.setOnItemClickListener(new AdapterView.OnItemClickListener()
+        {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View v, int position, long id)
+            {
+                //Toast.makeText(getActivity(), "item" + (position + 1), Toast.LENGTH_SHORT).show();
+                WaresItems temp =  application.wareItemsArray.get(position);
+                startDetailViewLevel1(temp);
+
+            }
+        });
 
         TypedArray typedArray = v.getContext().obtainStyledAttributes(R.styleable.Gallery);
         simpleWindowADadapter.setmGalleryItemBackground(typedArray.getResourceId(R.styleable.Gallery_android_galleryItemBackground, 0));
@@ -95,6 +111,7 @@ public class MainAcitivtyFragmentFirstPage extends MainAcitivtyFragment {
             {
                 //Toast.makeText(getActivity(), "item" + (position + 1), Toast.LENGTH_SHORT).show();
                 startShowThemeItems(position);
+
             }
         });
 
@@ -104,6 +121,23 @@ public class MainAcitivtyFragmentFirstPage extends MainAcitivtyFragment {
     }
 
 
+    public void startDetailViewLevel1(WaresItems item)
+    {
+        Intent intent = new Intent(this.getActivity(), DetailViewLevel1.class);
+        intent.putExtra(EXTRA_PAPERITEM, item);
+
+        intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+
+        startActivity(intent);
+        // no animation of transition
+        getActivity().overridePendingTransition(0, 0);
+    }
+
+
+    public void startBigWindows(int position)
+    {
+
+    }
     public void startShowThemeItems(int position)
     {
         Intent intent = new Intent(getActivity(), showThemeItemsActivity.class);
