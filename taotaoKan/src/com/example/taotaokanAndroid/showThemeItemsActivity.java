@@ -31,6 +31,9 @@ public class showThemeItemsActivity extends Activity implements PullToRefreshVie
     public static final String EXTRA_WEBURL = "com.devspark.sidenavigation.meiriyiwen.extra.weburl";
     public static final String EXTRA_TITLE_SHOW = "com.devspark.sidenavigation.meiriyiwen.extra.title.show";
     public static final String EXTRA_TITLE_TEXT = "com.devspark.sidenavigation.meiriyiwen.extra.title.text";
+    public static final String EXTRA_PAPERITEM = "com.devspark.sidenavigation.meiriyiwen.extra.paperitem";
+
+
 
     public static final String EXTRA_Theme_String = "THEME_STRING";
 
@@ -69,7 +72,7 @@ public class showThemeItemsActivity extends Activity implements PullToRefreshVie
             {
                 //Toast.makeText(showThemeItemsActivity.this, "item" + (position + 1), Toast.LENGTH_SHORT).show();
                 WaresItems wareitem = DataArray.get(position);
-                startWebViewActivity( wareitem.itemClickURLString );
+                startDetailViewLevel1(wareitem);
             }
         });
 
@@ -190,7 +193,17 @@ public class showThemeItemsActivity extends Activity implements PullToRefreshVie
         // no animation of transition
         overridePendingTransition(0, 0);
     }
+    public void startDetailViewLevel1(WaresItems item)
+    {
+        Intent intent = new Intent(this, DetailViewLevel1.class);
+        intent.putExtra(EXTRA_PAPERITEM, item);
 
+        intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+
+        startActivity(intent);
+        // no animation of transition
+        overridePendingTransition(0, 0);
+    }
 
 
     private class LongOperation extends AsyncTask<Void,Void,Void> {

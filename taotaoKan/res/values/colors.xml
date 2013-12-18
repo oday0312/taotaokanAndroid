@@ -34,4 +34,10 @@
     <color name="gray_1">#C0C0C0</color>
     <color name="black">#000000</color>
 
+    <color name="ttk_white">#FFFFFF</color>
+    <color name="ttk_light_white">#F6F6F6</color>
+    <color name="ttk_title_font_color">#BEBEBE</color>
+    <color name="ttk_sell_price_color">#E4534B</color>
+
+
 </resources>

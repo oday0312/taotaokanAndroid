@@ -147,9 +147,17 @@ public class WaresItemsDataUtil {
 
         Cursor cursor = fetchStudent(waresItems.itemImageURLString);
         long lResult = 0;
-        if (cursor == null)
+        if(cursor != null)
         {
-            lResult = mDb.insert(DATABASE_TABLE, null, initialValues);
+            if (cursor.getCount()!=0)
+            {
+
+            }
+            else
+            {
+                lResult = mDb.insert(DATABASE_TABLE, null, initialValues);
+
+            }
         }
         return lResult;
     }
@@ -158,7 +166,7 @@ public class WaresItemsDataUtil {
      * @return boolean
      */
     public boolean deleteStudent(String ImageUrlString) {
-        return mDb.delete(DATABASE_TABLE, KEY_itemImageURLString + "=" + ImageUrlString , null) > 0;
+        return mDb.delete(DATABASE_TABLE, KEY_itemImageURLString + "=" + "\"" +ImageUrlString+"\"" , null) > 0;
     }
 
     /**

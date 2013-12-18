@@ -39,9 +39,14 @@ public class FavorView extends Activity {
     public GridItemType2FavorAdapter adapter2;
     public ImageLoader imageLoader;
 
+    public WaresItemsDataUtil dbUtil;
+
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.favorview);
+
+        dbUtil = new WaresItemsDataUtil(this);
+        dbUtil.open();
 
         View v = this.findViewById(android.R.id.content).getRootView();
         TaoTaoMainApplication application = (TaoTaoMainApplication)getApplication();
@@ -68,10 +73,31 @@ public class FavorView extends Activity {
             }
         });
 
+        gridView.setLongClickable(true);
+        gridView.setOnItemLongClickListener(new AdapterView.OnItemLongClickListener() {
+
+            public boolean onItemLongClick(AdapterView<?> arg0, View arg1,
+                                           int position, long arg3) {
+
+                 WaresItems temp = adapter2.gridItemList.get(position);
+                 removeItems(temp, position);
+
+                //set the image as wallpaper
+                return true;
+            }
+        });
 
         testSQLite();
     }
 
+    public void removeItems(WaresItems temp,int position)
+    {
+        dbUtil.deleteStudent(temp.itemImageURLString);
+
+        adapter2.gridItemList.remove(position);
+        adapter2.notifyDataSetChanged();
+        Toast.makeText(this, "收藏已经删除", Toast.LENGTH_SHORT).show();
+    }
 
 
     /*KEY_ROWID,
@@ -88,8 +114,7 @@ public class FavorView extends Activity {
     public void testSQLite()
     {
         //插入
-        WaresItemsDataUtil dbUtil = new WaresItemsDataUtil(this);
-        dbUtil.open();
+
         Cursor cursor = dbUtil.fetchAllStudents();
 
 
@@ -116,7 +141,6 @@ public class FavorView extends Activity {
         }
         adapter2 = new GridItemType2FavorAdapter(t, imageLoader,this);
         gridView.setAdapter(adapter2);
-        dbUtil.close();
         if(t.size()==0)
         {
             //do not have any data
@@ -125,7 +149,11 @@ public class FavorView extends Activity {
     }
 
 
-
+    public void onBackPressed() {
+        dbUtil.close();
+        finish();
+        overridePendingTransition(R.anim.slide_in, R.anim.slide_out);
+    }
     public void startWebViewActivity(String urlString)
     {
         Intent intent = new Intent(this, webViewActivity.class);

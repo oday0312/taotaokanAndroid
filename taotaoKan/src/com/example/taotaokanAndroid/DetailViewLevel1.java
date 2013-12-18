@@ -2,6 +2,7 @@ package com.example.taotaokanAndroid;
 
 import android.app.Activity;
 import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -21,6 +22,10 @@ import com.example.taotaokanAndroid.imageCache.ImageLoader;
  * To change this template use File | Settings | File Templates.
  */
 public class DetailViewLevel1 extends Activity {
+    public static final String EXTRA_WEBURL = "com.devspark.sidenavigation.meiriyiwen.extra.weburl";
+
+    public static final String EXTRA_TITLE_SHOW = "com.devspark.sidenavigation.meiriyiwen.extra.title.show";
+    public static final String EXTRA_TITLE_TEXT = "com.devspark.sidenavigation.meiriyiwen.extra.title.text";
 
     public static final String EXTRA_PAPERITEM = "com.devspark.sidenavigation.meiriyiwen.extra.paperitem";
     public ImageLoader imageLoader;
@@ -49,6 +54,13 @@ public class DetailViewLevel1 extends Activity {
             ps.width = application.screenWidth -10;
             ps.height = application.screenWidth -10;
             imageView.setLayoutParams(ps);
+            imageView.setClickable(true);
+            imageView.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    startWebViewActivity(item.itemClickURLString);
+                }
+            });
 
 
             TextView description = (TextView)findViewById(R.id.detailviewlevel1_description);
@@ -57,6 +69,60 @@ public class DetailViewLevel1 extends Activity {
             TextView MonthlyAmount = (TextView)findViewById(R.id.detailviewlevel1_30day_sellamount);
 
             description.setText(item.itemName);
+            TextView priceView = (TextView)findViewById(R.id.priceTextView);
+            priceView.setText(item.itemPromotionPrice+"元");
+            description.setClickable(true);
+            description.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    //To change body of implemented methods use File | Settings | File Templates.
+                    startWebViewActivity(item.itemClickURLString);
+                }
+            });
+
+            priceView.setClickable(true);
+            priceView.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    startWebViewActivity(item.itemClickURLString);
+                }
+            });
+
+
+            TextView freePostView = (TextView)findViewById(R.id.freePostValue);
+
+
+
+
+            if (item.itemFreePostage.equals("0") )
+            {
+                freePostView.setText("不包邮");
+            }
+            else
+            {
+                freePostView.setText("包邮");
+            }
+
+            TextView wareItemType = (TextView)findViewById(R.id.wareItemTypeValue);
+            if (item.itemType.equals("0"))
+            {
+                wareItemType.setText("未知");
+            }
+            else if(item.itemType.equals("1"))
+            {
+                wareItemType.setText("淘宝");
+            }
+            else
+            {
+                wareItemType.setText("天猫");
+            }
+
+            TextView sellAmount = (TextView)findViewById(R.id.sellAmountValue);
+            sellAmount.setText(item.tradingVolumeInThirtyDays);
+
+
+
+
             final Context currentContent = this;
 
             TextView addToFavor = (TextView)findViewById(R.id.detailviewlevel1_item_add_favor_list);
@@ -86,5 +152,21 @@ public class DetailViewLevel1 extends Activity {
         dbUtil.close();
         finish();
         overridePendingTransition(R.anim.slide_in, R.anim.slide_out);
+    }
+
+    public void startWebViewActivity(String urlString)
+    {
+        Intent intent = new Intent(this, webViewActivity.class);
+        intent.putExtra(EXTRA_WEBURL, urlString);
+        intent.putExtra(EXTRA_TITLE_SHOW,"true");
+        intent.putExtra(EXTRA_TITLE_TEXT, "");
+        // all of the other activities on top of it will be closed and this
+        // Intent will be delivered to the (now on top) old activity as a
+        // new Intent.
+        intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+
+        startActivity(intent);
+        // no animation of transition
+        overridePendingTransition(0, 0);
     }
 }

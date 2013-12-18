@@ -26,35 +26,53 @@
             android:padding="3dp"
             android:id="@+id/detailviewlevel1_imageview" android:layout_gravity="center" android:src="@drawable/ca_29"
             android:layout_marginTop="10dp"/>
+
+
     <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                    android:layout_width="wrap_content"
+                    android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
                     android:id="@+id/detailviewlevel1_relateLayout1"
-                    android:orientation="horizontal" android:clickable="true">
+                    android:orientation="horizontal"
+                    android:clickable="true">
 
         <TextView
                 android:layout_width="180dp"
                 android:layout_height="57dp"
                 android:text="item introduction"
-                android:id="@+id/detailviewlevel1_description" android:textColor="@android:color/black"
-                android:gravity="center_vertical" android:background="@android:color/background_light"
-                android:layout_gravity="left|center_vertical" android:clickable="true"/>
+                android:id="@+id/detailviewlevel1_description"
+                android:textColor="@color/ttk_title_font_color"
+                android:gravity="center_vertical"
+                android:layout_gravity="left|center_vertical"
+                android:clickable="true" android:layout_marginLeft="5dp" android:maxLines="2"/>
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="57dp"
+                android:textColor="@color/ttk_sell_price_color"
+                android:text="New Text"
+                android:id="@+id/priceTextView" android:layout_alignParentLeft="false"
+                android:layout_alignParentRight="true" android:layout_marginRight="15dp"
+                android:gravity="center_vertical"/>
+
     </RelativeLayout>
 
     <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                    android:layout_width="wrap_content"
+                    android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
                     android:id="@+id/detailviewlevel1_relateLayout5"
+                    android:background="@color/ttk_white"
                     android:orientation="horizontal">
         <TextView
-                android:layout_width="113dp"
+                android:layout_width="fill_parent"
                 android:layout_height="43dp"
                 android:text="点击收藏"
-                android:id="@+id/detailviewlevel1_item_add_favor_list" android:textColor="@android:color/black"
-                android:gravity="center_vertical" android:clickable="true"/>
+                android:id="@+id/detailviewlevel1_item_add_favor_list"
+                android:textColor="@color/ttk_title_font_color"
+                android:gravity="center|center_vertical"
+                android:clickable="true" android:layout_marginLeft="5dp"/>
     </RelativeLayout>
+
     <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                    android:layout_width="wrap_content"
+                    android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
                     android:id="@+id/detailviewlevel1_relateLayout2"
                     android:orientation="horizontal">
@@ -62,32 +80,67 @@
             android:layout_width="241dp"
             android:layout_height="41dp"
             android:text="是否包邮"
-            android:id="@+id/detailviewlevel1_postfree" android:layout_gravity="center"
-            android:textColor="@android:color/black" android:gravity="center_vertical"/>
+            android:id="@+id/detailviewlevel1_postfree"
+            android:layout_gravity="center"
+            android:textColor="@color/ttk_title_font_color"
+            android:gravity="center_vertical" android:layout_marginLeft="5dp"/>
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="41dp"
+                android:text="New Text"
+                android:id="@+id/freePostValue" android:layout_alignParentLeft="false"
+                android:layout_centerVertical="true" android:layout_marginRight="15dp"
+                android:layout_alignParentRight="true" android:gravity="center"/>
     </RelativeLayout>
+
+
     <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                    android:layout_width="wrap_content"
+                    android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
                     android:id="@+id/detailviewlevel1_relateLayout3"
+                    android:background="@color/ttk_white"
                     android:orientation="horizontal">
-    <TextView
+         <TextView
             android:layout_width="113dp"
             android:layout_height="43dp"
             android:text="所属商城"
-            android:id="@+id/detailviewlevel1_item_sourceType" android:textColor="@android:color/black"
-            android:gravity="center_vertical"/>
+            android:id="@+id/detailviewlevel1_item_sourceType"
+            android:textColor="@color/ttk_title_font_color"
+            android:gravity="center_vertical" android:layout_marginLeft="5dp"/>
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="41dp"
+                android:text="New Text"
+                android:id="@+id/wareItemTypeValue"
+                android:layout_centerVertical="true" android:layout_marginRight="15dp"
+                android:layout_alignParentEnd="true" android:gravity="center"/>
     </RelativeLayout>
+
+
+
+
     <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                    android:layout_width="wrap_content"
+                    android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
                     android:orientation="horizontal">
     <TextView
             android:layout_width="wrap_content"
             android:layout_height="45dp"
             android:text="30天售出"
-            android:id="@+id/detailviewlevel1_30day_sellamount" android:layout_gravity="center"
-            android:layout_alignParentEnd="false" android:textColor="@android:color/black"
-            android:gravity="center_vertical"/>
+            android:id="@+id/detailviewlevel1_30day_sellamount"
+            android:layout_gravity="center"
+            android:layout_alignParentEnd="false"
+
+            android:textColor="@color/ttk_title_font_color"
+            android:gravity="center_vertical" android:layout_marginLeft="5dp"/>
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="41dp"
+                android:text="New Text"
+                android:id="@+id/sellAmountValue" android:layout_alignParentLeft="false"
+                android:layout_centerVertical="true" android:layout_alignParentRight="true"
+                android:layout_marginRight="15dp" android:gravity="center"/>
+
     </RelativeLayout>
 
 
