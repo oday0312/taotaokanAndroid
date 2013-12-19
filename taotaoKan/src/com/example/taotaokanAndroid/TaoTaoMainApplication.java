@@ -7,7 +7,15 @@ import android.util.Log;
 import com.example.taotaokanAndroid.imageCache.ImageLoader;
 import com.theindex.CuzyAdSDK.CuzyAdSDK;
 import com.theindex.CuzyAdSDK.CuzyTBKItem;
+import org.apache.http.HttpEntity;
+import org.apache.http.HttpResponse;
+import org.apache.http.client.ClientProtocolException;
+import org.apache.http.client.methods.HttpGet;
+import org.apache.http.impl.client.DefaultHttpClient;
+import org.apache.http.protocol.HTTP;
+import org.apache.http.util.EntityUtils;
 
+import java.io.IOException;
 import java.util.ArrayList;
 
 /**
@@ -168,6 +176,9 @@ public class TaoTaoMainApplication extends Application {
     @Override
     public void onCreate() {
         super.onCreate();
+
+        initDefaultList();
+
         CuzyAdSDK.getInstance().setContext(this);
         CuzyAdSDK.getInstance().registerApp("200003","208f53acd6d396867c2a721be6c807eb");
         SharedPreferences sp = getSharedPreferences(SHARE_FILE_NAME, MODE_PRIVATE);
@@ -184,8 +195,36 @@ public class TaoTaoMainApplication extends Application {
 
         Log.d("cuzy  ", " the screen size is " + screenWidth +" " + screenHeight);
     }
+
+
+
+
+    public void initDefaultList()
+    {
+        WaresItems temp1 = new WaresItems();
+        temp1.itemImageURLString= "http://img03.taobaocdn.com/bao/uploaded/i3/18580019886278757/T11wXvXC4bXXXXXXXX_!!0-item_pic.jpg_240x240.jpg";
+        temp1.itemClickURLString = "b6d767d2f8e.cuzy.com/stat/jump?url=U2ZKOTdmSDhGSkRrM1BqRThNbXBwYjIxdWVqTXJNajhJQ3dkWlZGTlZVRnRkV1ZSWVgxWldFQUlESHhBUFNrcEpTa3RNVGowcTJ0amQwOWJLek1MTDNRPT0=";
+
+        WaresItems temp2 = new WaresItems();
+        temp2.itemClickURLString = "b6d767d2f8e.cuzy.com/stat/jump?url=U0pDRjljWElMUFNJdUlTZ25LMjFnWkdSaGN6Z2lOUVl6TWpoZ2IyWlVXRnRTVmxCVlUxcFBDeHNjQmdzV1RVTkNRMFJGUlRRdEl5TWtMQzh4TmNYQzFnPT0=";
+        temp2.itemImageURLString = "http://img02.taobaocdn.com/bao/uploaded/i2/19339027074070349/T1r6OyFghfXXXXXXXX_!!0-item_pic.jpg_240x240.jpg";
+
+
+        WaresItems temp3 = new WaresItems();
+        temp3.itemClickURLString = "b6d767d2f8e.cuzy.com/stat/jump?url=SGREUjNKQzROUGlNcElDc21OR3hqWldOZ2NEa3ROQVV5TlRsamJWWlhWVnBUVlZKZlVGaE1DaHdkQlFvSlRFQkRSRVZHUkRzc0lDSWpMU3d3eXNUQjF3PT0=";
+        temp3.itemImageURLString = "http://img04.taobaocdn.com/bao/uploaded/i4/11484025967603452/T13TF2Fg4XXXXXXXXX_!!0-item_pic.jpg_240x240.jpg";
+
+        wareItemsArray.add(temp1);
+        wareItemsArray.add(temp2);
+        wareItemsArray.add(temp3);
+
+
+    }
     @Override
     public void onTerminate() {
         super.onTerminate();
     }
+
+
+
 }

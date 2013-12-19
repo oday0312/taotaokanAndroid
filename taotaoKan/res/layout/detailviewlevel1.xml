@@ -28,6 +28,25 @@
             android:layout_marginTop="10dp"/>
 
 
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/detailviewlevel1_relateLayout6"
+                    android:background="@color/ttk_white"
+                    android:orientation="horizontal">
+        <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="43dp"
+                android:text="点击购买"
+                android:id="@+id/detailviewlevel1_item_buy"
+                android:textColor="@color/ttk_sell_price_color"
+                android:gravity="center|center_vertical"
+                android:clickable="true" android:layout_marginLeft="5dp"/>
+
+    </RelativeLayout>
+
+
     <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
@@ -66,7 +85,7 @@
                 android:layout_height="43dp"
                 android:text="点击收藏"
                 android:id="@+id/detailviewlevel1_item_add_favor_list"
-                android:textColor="@color/ttk_title_font_color"
+                android:textColor="@color/ttk_sell_price_color"
                 android:gravity="center|center_vertical"
                 android:clickable="true" android:layout_marginLeft="5dp"/>
     </RelativeLayout>
@@ -88,8 +107,10 @@
                 android:layout_width="wrap_content"
                 android:layout_height="41dp"
                 android:text="New Text"
-                android:id="@+id/freePostValue" android:layout_alignParentLeft="false"
+                android:id="@+id/freePostValue"
+                android:layout_alignParentLeft="false"
                 android:layout_centerVertical="true" android:layout_marginRight="15dp"
+                android:textColor="@color/ttk_sell_price_color"
                 android:layout_alignParentRight="true" android:gravity="center"/>
     </RelativeLayout>
 
@@ -112,6 +133,7 @@
                 android:layout_height="41dp"
                 android:text="New Text"
                 android:id="@+id/wareItemTypeValue"
+                android:textColor="@color/ttk_sell_price_color"
                 android:layout_centerVertical="true" android:layout_marginRight="15dp"
                 android:layout_alignParentEnd="true" android:gravity="center"/>
     </RelativeLayout>
@@ -137,6 +159,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="41dp"
                 android:text="New Text"
+                android:textColor="@color/ttk_sell_price_color"
                 android:id="@+id/sellAmountValue" android:layout_alignParentLeft="false"
                 android:layout_centerVertical="true" android:layout_alignParentRight="true"
                 android:layout_marginRight="15dp" android:gravity="center"/>

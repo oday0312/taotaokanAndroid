@@ -3,6 +3,7 @@ package com.example.taotaokanAndroid;
 import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
+import android.graphics.Color;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.util.Log;
@@ -37,26 +38,31 @@ public class SearchActivity extends Activity {
     public ArrayList<WaresItems> DataArray = new ArrayList<WaresItems>();
     public  cuzyAdapter adapter = null;
     public ImageLoader imageLoader=  null;
-    public WaresItemsDataUtil dbUtil;
 
+    public String queryString = "";
 
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.searchview);
 
-        dbUtil = new WaresItemsDataUtil(this);
-        dbUtil.open();
 
         search = (SearchView)findViewById(R.id.searchView);
         search.setFocusable(true);
         search.setIconified(false);
         search.requestFocusFromTouch();
+
+        int id = search.getContext().getResources().getIdentifier("android:id/search_src_text", null, null);
+        TextView textView = (TextView) search.findViewById(id);
+        textView.setTextColor(Color.WHITE);
+
         search.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
             @Override
             public boolean onQueryTextSubmit(String query) {
                 onSearchRequested();
                 Log.d("huang alex" , "begin search " + query);
-                rawData = CuzyAdSDK.getInstance().fetchRawItems("", "女装", 0);
+                rawData = CuzyAdSDK.getInstance().fetchRawItems("",  query, 0);
+                queryString = query;
+                DataArray.clear();
                 Log.d("huang alex", ""+rawData.size());
 
                 for (int i = 0; i< rawData.size();i++)
@@ -77,7 +83,6 @@ public class SearchActivity extends Activity {
 
                     DataArray.add(temp);
 
-                    //dbUtil.createStudent(temp );
 
                 }
 
@@ -95,16 +100,9 @@ public class SearchActivity extends Activity {
             }
         });
 
-       ImageButton bt1 = (ImageButton)findViewById(R.id.searchtoobarButton1);
-        bt1.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View v)
-            {
-                Log.d("huang alex", "iamge button 1 pressed");
-            }
-        });
-
 
         listView = (LoadMoreListView)findViewById(R.id.searchview_listview);
+        listView.setCacheColorHint(Color.TRANSPARENT);
         listView.setDividerHeight(0);
         listView.setOnLoadMoreListener(new LoadMoreListView.OnLoadMoreListener() {
             public void onLoadMore() {
@@ -162,20 +160,7 @@ public class SearchActivity extends Activity {
     }
 
 
-    public void startWebViewActivity(String urlString)
-    {
-        Intent intent = new Intent(this, webViewActivity.class);
-        intent.putExtra(EXTRA_WEBURL, urlString);
 
-        // all of the other activities on top of it will be closed and this
-        // Intent will be delivered to the (now on top) old activity as a
-        // new Intent.
-        intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-
-        startActivity(intent);
-        // no animation of transition
-        overridePendingTransition(0, 0);
-    }
     static int pageIndex = 1;
     private class LongOperation extends AsyncTask<Void,Void,Void> {
 
@@ -183,7 +168,7 @@ public class SearchActivity extends Activity {
         protected Void doInBackground(Void...params){
 
             rawData.clear();
-            rawData = CuzyAdSDK.getInstance().fetchRawItems("", "女装", pageIndex);
+            rawData = CuzyAdSDK.getInstance().fetchRawItems("", queryString, pageIndex);
             pageIndex++;
             Log.d("huang alex", ""+rawData.size());
             for (int i = 0; i< rawData.size();i++)
@@ -232,7 +217,6 @@ public class SearchActivity extends Activity {
         }
     }
     public void onBackPressed() {
-        dbUtil.close();
         finish();
         overridePendingTransition(R.anim.slide_in, R.anim.slide_out);
     }

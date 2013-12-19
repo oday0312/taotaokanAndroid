@@ -8,6 +8,7 @@ import android.graphics.Bitmap;
 import android.graphics.drawable.BitmapDrawable;
 import android.os.AsyncTask;
 import android.os.Bundle;
+import android.os.SystemClock;
 import android.support.v4.view.ViewPager;
 import android.util.Log;
 import android.view.*;
@@ -25,6 +26,7 @@ import com.umeng.socialize.media.UMImage;
 import com.viewpagerindicator.UnderlinePageIndicator;
 
 import java.util.ArrayList;
+import java.util.Random;
 
 public class MainActivity extends BaseSampleActivity {
 
@@ -33,7 +35,7 @@ public class MainActivity extends BaseSampleActivity {
      * Called when the activity is first created.
      */
 
-
+    private static final Random RANDOM = new Random();
     private PopupWindow mPopupWindow;
 
     public ArrayList<CuzyTBKItem> rawData = new ArrayList<CuzyTBKItem>();
@@ -184,7 +186,19 @@ public class MainActivity extends BaseSampleActivity {
 
             TaoTaoMainApplication application = (TaoTaoMainApplication)getApplication();
             rawData.clear();
-            rawData = CuzyAdSDK.getInstance().fetchRawItems("1669", "", 0);
+            SystemClock.sleep(1000);
+
+            int tempInter = RANDOM.nextInt(100);
+            if (tempInter%2 == 1)
+            {
+                rawData = CuzyAdSDK.getInstance().fetchRawItems("1675", "", 0);
+            }
+            else
+            {
+                rawData = CuzyAdSDK.getInstance().fetchRawItems("1676", "", 0);
+
+            }
+
             application.wareItemsArray.clear();
 
             Log.d("huang alex", ""+rawData.size());
@@ -203,7 +217,15 @@ public class MainActivity extends BaseSampleActivity {
                 temp.itemPromotionPrice = cuzyData.getItemPromotionPrice();
                 temp.itemType = cuzyData.getItemType();
                 temp.tradingVolumeInThirtyDays= cuzyData.getTradingVolumeInThirtyDays();
-                application.wareItemsArray.add(temp);
+
+
+                int tempRandint2 = RANDOM.nextInt(100);
+                if (tempRandint2 % 2 == 0)
+                {
+                    application.wareItemsArray.add(temp);
+
+                }
+                Log.d("huang alex", ""+ temp.itemClickURLString + " \n" + temp.itemImageURLString );
             }
 
 

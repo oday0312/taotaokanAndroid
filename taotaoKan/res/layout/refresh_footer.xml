@@ -36,9 +36,9 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:gravity="center"
-        android:textColor="#000000"
+        android:textColor="@color/ttk_sell_price_color"
         android:text="@string/pull_to_refresh_footer_pull_label"
         android:textAppearance="?android:attr/textAppearanceMedium"
-        android:textStyle="bold" />
+         />
 
 </RelativeLayout>

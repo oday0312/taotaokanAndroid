@@ -4,21 +4,17 @@ import android.app.Activity;
 import android.content.Intent;
 import android.content.pm.PackageInfo;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
-import android.view.Window;
 import android.widget.AdapterView;
 import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
 import com.example.taotaokanAndroid.ClassItem.ClassItem;
 import com.example.taotaokanAndroid.ClassItem.ClassListAdapter;
-import com.example.taotaokanAndroid.Coverflow.SimpleExample;
+import com.example.taotaokanAndroid.Coverflow.settingchooseDesktopbackground;
 import com.example.taotaokanAndroid.imageCache.FileCache;
-import com.example.taotaokanAndroid.imageCache.ImageLoader;
 import com.umeng.analytics.MobclickAgent;
 import com.umeng.fb.ConversationActivity;
-import com.umeng.fb.FeedbackAgent;
 
 import java.util.HashSet;
 import java.util.Set;
@@ -100,7 +96,7 @@ public class SettingActivity extends Activity {
 
     public void startSetDesktopBackground()
     {
-        Intent intent = new Intent(this, SimpleExample.class);
+        Intent intent = new Intent(this, settingchooseDesktopbackground.class);
         intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
         startActivity(intent);
     }

@@ -27,7 +27,7 @@ import android.widget.Toast;
 import com.example.taotaokanAndroid.R;
 import com.example.taotaokanAndroid.TaoTaoMainApplication;
 
-public class SimpleExample extends Activity {
+public class settingchooseDesktopbackground extends Activity {
 
     // =============================================================================
     // Child views
@@ -70,7 +70,7 @@ public class SimpleExample extends Activity {
            public void onItemClick(AdapterView adapterView, View view,int arg2, long arg3)
            {
                int selectedPosition = adapterView.getSelectedItemPosition();
-               Toast.makeText(SimpleExample.this, "选择图片"+selectedPosition, Toast.LENGTH_SHORT).show();
+               Toast.makeText(settingchooseDesktopbackground.this, "选择图片"+selectedPosition, Toast.LENGTH_SHORT).show();
 
 
                Integer ResourceID  = (Integer)adapter.getItem(selectedPosition);

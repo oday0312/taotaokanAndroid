@@ -91,7 +91,11 @@ public class webViewActivity extends Activity {
 
     public void removeSmartTAOBAOad()
     {
-        uiwebview.loadUrl("javascript:var J_wrapper = document.getElementById('smartAd');  document.body.removeChild(J_wrapper);");
+        //uiwebview.loadUrl("javascript:var J_wrapper = document.getElementById('smartAd');  document.body.removeChild(J_wrapper);");
+
+        uiwebview.loadUrl("javascript: var SmartbannerJSON=0;");
+
+
     }
     private class Callback extends WebViewClient {
         @Override

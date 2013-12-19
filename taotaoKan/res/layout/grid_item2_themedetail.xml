@@ -14,14 +14,16 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/theme_detail_price" android:layout_gravity="left"
-                android:textColor="@android:color/secondary_text_light_nodisable" android:text="price"
-                android:layout_alignParentLeft="true"/>
+                android:textColor="@color/ttk_sell_price_color"
+                android:text="price"
+                android:layout_alignParentLeft="true" android:layout_marginLeft="10dp"/>
         <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="New Text"
+                android:textColor="@color/ttk_sell_price_color"
                 android:id="@+id/theme_detail_sell_amount" android:layout_gravity="right"
-                android:layout_alignParentRight="true"/>
+                android:layout_alignParentRight="true" android:layout_marginRight="10dp"/>
     </RelativeLayout>
 
 </LinearLayout>

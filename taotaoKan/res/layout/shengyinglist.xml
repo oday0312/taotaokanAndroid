@@ -21,28 +21,42 @@
                 android:scaleType="fitXY"
                 android:background="@color/actionbar_background_end"/>
         <ImageView
-                android:layout_width="100dp"
-                android:layout_height="50dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:descendantFocusability="blocksDescendants"
                 android:id="@+id/listImageView" android:layout_alignParentLeft="true" android:layout_marginLeft="12dp"
                 android:layout_alignParentTop="true" android:layout_marginTop="12dp"
                 android:src="@drawable/ic_launcher"/>
         <TextView
-                android:layout_width="313dp"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:descendantFocusability="blocksDescendants"
                 android:text="hello world title"
                 android:id="@+id/listTitle"
-                android:layout_alignParentLeft="true" android:layout_marginLeft="116dp"
-                android:layout_marginTop="8dp" android:phoneNumber="false" android:maxLines="1"
-                android:gravity="center_horizontal"/>
+                android:textColor="@color/ttk_title_font_color"
+                android:phoneNumber="false" android:maxLines="3"
+                android:gravity="center_horizontal" android:layout_toRightOf="@+id/listImageView"
+                android:layout_alignLeft="@+id/listContent" android:layout_alignTop="@+id/listImageView"
+                android:layout_marginTop="2dp"/>
         <TextView
                 android:layout_width="wrap_content"
-                android:layout_height="69dp"
+                android:layout_height="wrap_content"
                 android:text="content"
                 android:id="@+id/listContent"
                 android:descendantFocusability="blocksDescendants"
-                android:layout_below="@+id/listTitle" android:layout_alignRight="@+id/bottomBackground"
-                android:layout_toRightOf="@+id/listImageView" android:textSize="10dp" android:maxLines="3"/>
+                android:textColor="@color/ttk_sell_price_color"
+                android:layout_toRightOf="@+id/listImageView" android:textSize="14dp" android:maxLines="1"
+                android:layout_alignBottom="@+id/listImageView" android:layout_marginLeft="5dp"/>
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="content"
+                android:id="@+id/listContent2"
+                android:descendantFocusability="blocksDescendants"
+                android:textColor="@color/ttk_sell_price_color"
+                android:textSize="14dp" android:maxLines="1"
+                android:layout_alignBottom="@+id/listImageView"
+                android:layout_alignParentRight="true" android:layout_marginRight="5dp"/>
     </RelativeLayout>
 </RelativeLayout>

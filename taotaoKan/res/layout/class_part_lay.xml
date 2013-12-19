@@ -13,14 +13,14 @@
 			android:id="@+id/classPartNameLay"
 			android:layout_width="fill_parent"
 			android:layout_height="30.0dip"
-			android:background="@drawable/group_bg"
+			android:background="@android:color/holo_red_dark"
 			android:gravity="center">
             <TextView
 				android:id="@+id/class_part_name"
 				android:layout_width="wrap_content"
 				android:layout_height="wrap_content"
 				android:ellipsize="end"
-				android:textColor="#253441"
+				android:textColor="@color/default_title_indicator_text_color"
 				android:layout_centerVertical="true"
 				android:singleLine="true"
 				android:textSize="17sp"
@@ -50,10 +50,10 @@
 					android:layout_height="wrap_content"
 					android:layout_centerVertical="true"
 					android:ellipsize="marquee"
-					android:text="设置"
+					android:text="内容"
 					android:textSize="16dp"
 					android:textColor="#666666"
-					android:textStyle="bold"></TextView>
+					></TextView>
 			</RelativeLayout>
 		</LinearLayout>
 		<ImageView

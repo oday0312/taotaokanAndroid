@@ -49,6 +49,8 @@ public class DetailViewLevel1 extends Activity {
         if (getIntent().hasExtra(EXTRA_PAPERITEM))
         {
             final WaresItems item = getIntent().getParcelableExtra(EXTRA_PAPERITEM);
+            final Context currentContent = this;
+
             ImageView imageView = (ImageView)findViewById(R.id.detailviewlevel1_imageview);
             ViewGroup.LayoutParams ps = imageView.getLayoutParams();
             ps.width = application.screenWidth -10;
@@ -59,6 +61,16 @@ public class DetailViewLevel1 extends Activity {
                 @Override
                 public void onClick(View v) {
                     startWebViewActivity(item.itemClickURLString);
+                }
+            });
+
+
+            TextView buyView= (TextView)findViewById(R.id.detailviewlevel1_item_buy);
+            buyView.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    startWebViewActivity(item.itemClickURLString);
+
                 }
             });
 
@@ -123,7 +135,6 @@ public class DetailViewLevel1 extends Activity {
 
 
 
-            final Context currentContent = this;
 
             TextView addToFavor = (TextView)findViewById(R.id.detailviewlevel1_item_add_favor_list);
             addToFavor.setOnClickListener(new View.OnClickListener() {

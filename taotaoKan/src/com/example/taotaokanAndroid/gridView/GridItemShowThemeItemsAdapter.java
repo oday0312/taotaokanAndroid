@@ -83,8 +83,8 @@ public class GridItemShowThemeItemsAdapter extends BaseAdapter
         //viewHolder.title.setText(gridItemList.get(position).getTitle());
         //viewHolder.time.setText(gridItemList.get(position).getTime());
         WaresItems item = gridItemList.get(position);
-        viewHolder.priceView.setText(item.itemPromotionPrice);
-        viewHolder.sellAmount.setText(item.tradingVolumeInThirtyDays);
+        viewHolder.priceView.setText(""+item.itemPromotionPrice+"元");
+        viewHolder.sellAmount.setText(""+item.tradingVolumeInThirtyDays+"件");
         imageLoader.DisplayImage(item.itemImageURLString, viewHolder.image);
 
 

@@ -27,22 +27,38 @@
     </option>
   </component>
   <component name="AndroidLogFilters">
-    <option name="TOOL_WINDOW_LOG_LEVEL" value="ERROR" />
+    <option name="TOOL_WINDOW_CUSTOM_FILTER" value="huang" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="02026f30-e8a8-4b15-a05f-9eb53e256d6d" name="Default" comment="">
+      <change type="MOVED" beforePath="$PROJECT_DIR$/taotaoKan/res/layout/setting_desktopBG.xml" afterPath="$PROJECT_DIR$/taotaoKan/res/layout/setting_desktopbg.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/taotaoKan/src/com/example/taotaokanAndroid/Coverflow/SimpleExample.java" afterPath="$PROJECT_DIR$/taotaoKan/src/com/example/taotaokanAndroid/Coverflow/settingchooseDesktopbackground.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taotaoKan/libs/CuzyAdSDKAndroid.jar" afterPath="$PROJECT_DIR$/taotaoKan/libs/CuzyAdSDKAndroid.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taotaoKan/AndroidManifest.xml" afterPath="$PROJECT_DIR$/taotaoKan/AndroidManifest.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taotaoKan/src/com/example/taotaokanAndroid/DetailViewLevel1.java" afterPath="$PROJECT_DIR$/taotaoKan/src/com/example/taotaokanAndroid/DetailViewLevel1.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taotaoKan/src/com/example/taotaokanAndroid/FavorView.java" afterPath="$PROJECT_DIR$/taotaoKan/src/com/example/taotaokanAndroid/FavorView.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taotaoKan/src/com/example/taotaokanAndroid/SQLiteHelper/WaresItemsDataUtil.java" afterPath="$PROJECT_DIR$/taotaoKan/src/com/example/taotaokanAndroid/SQLiteHelper/WaresItemsDataUtil.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taotaoKan/res/values/colors.xml" afterPath="$PROJECT_DIR$/taotaoKan/res/values/colors.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taotaoKan/src/com/example/taotaokanAndroid/gridView/GridItemShowThemeItemsAdapter.java" afterPath="$PROJECT_DIR$/taotaoKan/src/com/example/taotaokanAndroid/gridView/GridItemShowThemeItemsAdapter.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taotaoKan/src/com/example/taotaokanAndroid/MainActivity.java" afterPath="$PROJECT_DIR$/taotaoKan/src/com/example/taotaokanAndroid/MainActivity.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taotaoKan/src/com/example/taotaokanAndroid/SearchActivity.java" afterPath="$PROJECT_DIR$/taotaoKan/src/com/example/taotaokanAndroid/SearchActivity.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taotaoKan/src/com/example/taotaokanAndroid/SettingActivity.java" afterPath="$PROJECT_DIR$/taotaoKan/src/com/example/taotaokanAndroid/SettingActivity.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taotaoKan/src/com/example/taotaokanAndroid/TaoTaoMainApplication.java" afterPath="$PROJECT_DIR$/taotaoKan/src/com/example/taotaokanAndroid/TaoTaoMainApplication.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taotaoKan/res/layout/class_list_logo_head.xml" afterPath="$PROJECT_DIR$/taotaoKan/res/layout/class_list_logo_head.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taotaoKan/res/layout/class_part_lay.xml" afterPath="$PROJECT_DIR$/taotaoKan/res/layout/class_part_lay.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taotaoKan/src/com/example/taotaokanAndroid/cuzyAdapter.java" afterPath="$PROJECT_DIR$/taotaoKan/src/com/example/taotaokanAndroid/cuzyAdapter.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taotaoKan/res/layout/detailviewlevel1.xml" afterPath="$PROJECT_DIR$/taotaoKan/res/layout/detailviewlevel1.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taotaoKan/src/com/example/taotaokanAndroid/showThemeItemsActivity.java" afterPath="$PROJECT_DIR$/taotaoKan/src/com/example/taotaokanAndroid/showThemeItemsActivity.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taotaoKan/res/layout/grid_item1.xml" afterPath="$PROJECT_DIR$/taotaoKan/res/layout/grid_item1.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taotaoKan/res/layout/grid_item2_themedetail.xml" afterPath="$PROJECT_DIR$/taotaoKan/res/layout/grid_item2_themedetail.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taotaoKan/res/layout/refresh_footer.xml" afterPath="$PROJECT_DIR$/taotaoKan/res/layout/refresh_footer.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taotaoKan/res/layout/searchview.xml" afterPath="$PROJECT_DIR$/taotaoKan/res/layout/searchview.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taotaoKan/res/layout/shengyinglist.xml" afterPath="$PROJECT_DIR$/taotaoKan/res/layout/shengyinglist.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taotaoKan/res/drawable/ttk_image_border.xml" afterPath="$PROJECT_DIR$/taotaoKan/res/drawable/ttk_image_border.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taotaoKan/src/com/example/taotaokanAndroid/webViewActivity.java" afterPath="$PROJECT_DIR$/taotaoKan/src/com/example/taotaokanAndroid/webViewActivity.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="taotaokanAndroid.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="02026f30-e8a8-4b15-a05f-9eb53e256d6d" time="1387333318112" ignored="false" />
+    <file path="/Dummy.txt" changelist="02026f30-e8a8-4b15-a05f-9eb53e256d6d" time="1387442465951" ignored="false" />
     <file path="/main.xml" changelist="02026f30-e8a8-4b15-a05f-9eb53e256d6d" time="1385108325847" ignored="false" />
-    <file path="/MainActivity.java" changelist="02026f30-e8a8-4b15-a05f-9eb53e256d6d" time="1387288301369" ignored="false" />
+    <file path="/MainActivity.java" changelist="02026f30-e8a8-4b15-a05f-9eb53e256d6d" time="1387446302830" ignored="false" />
     <file path="/ActionBar.java" changelist="02026f30-e8a8-4b15-a05f-9eb53e256d6d" time="1384942417332" ignored="false" />
     <file path="/fragment.java" changelist="02026f30-e8a8-4b15-a05f-9eb53e256d6d" time="1386253807776" ignored="false" />
     <file path="/actionbar.xml" changelist="02026f30-e8a8-4b15-a05f-9eb53e256d6d" time="1384942680881" ignored="false" />
@@ -62,9 +78,9 @@
     <file path="$USER_HOME$/Documents/workspace/cuzyAndroidSimpleDemo/CuzyAdSDKAndroidDemo/gen/com/theindex/CuzyAdSDKDemo/BuildConfig.java" changelist="02026f30-e8a8-4b15-a05f-9eb53e256d6d" time="1385368163346" ignored="false" />
     <file path="$USER_HOME$/Documents/workspace/cuzyAndroidSimpleDemo/CuzyAdSDKAndroidDemo/gen/com/theindex/CuzyAdSDKDemo/R.java" changelist="02026f30-e8a8-4b15-a05f-9eb53e256d6d" time="1385368106750" ignored="false" />
     <file path="$USER_HOME$/Documents/workspace/cuzyAndroidSimpleDemo/CuzyAdSDKAndroidDemo/gen/com/theindex/CuzyAdSDKDemo/Manifest.java" changelist="02026f30-e8a8-4b15-a05f-9eb53e256d6d" time="1385368106750" ignored="false" />
-    <file path="/SearchActivity.java" changelist="02026f30-e8a8-4b15-a05f-9eb53e256d6d" time="1387190522283" ignored="false" />
+    <file path="/SearchActivity.java" changelist="02026f30-e8a8-4b15-a05f-9eb53e256d6d" time="1387457995121" ignored="false" />
     <file path="$PROJECT_DIR$/gen/com/example/taotaokanAndroid/BuildConfig.java" changelist="02026f30-e8a8-4b15-a05f-9eb53e256d6d" time="1385374932943" ignored="false" />
-    <file path="/searchview.xml" changelist="02026f30-e8a8-4b15-a05f-9eb53e256d6d" time="1385549322235" ignored="false" />
+    <file path="/searchview.xml" changelist="02026f30-e8a8-4b15-a05f-9eb53e256d6d" time="1387455815947" ignored="false" />
     <file path="/search_tool_bar.xml" changelist="02026f30-e8a8-4b15-a05f-9eb53e256d6d" time="1385446993938" ignored="false" />
     <file path="$PROJECT_DIR$/../../meiriyiwen/meiriyiwen/SideNavigation-master/sample/src/com/devspark/sidenavigation/meiriyiwen/cuzyAdapter.java" changelist="02026f30-e8a8-4b15-a05f-9eb53e256d6d" time="1385460221176" ignored="false" />
     <file path="$PROJECT_DIR$/../../meiriyiwen/meiriyiwen/SideNavigation-master/sample/src/com/devspark/sidenavigation/meiriyiwen/baseMenuActivity3.java" changelist="02026f30-e8a8-4b15-a05f-9eb53e256d6d" time="1385458972640" ignored="false" />
@@ -76,17 +92,17 @@
     <file path="$PROJECT_DIR$/../../meiriyiwen/meiriyiwen/SideNavigation-master/sample/src/com/devspark/sidenavigation/meiriyiwen/imageCache/MemoryCache.java" changelist="02026f30-e8a8-4b15-a05f-9eb53e256d6d" time="1385460187847" ignored="false" />
     <file path="$PROJECT_DIR$/../../meiriyiwen/meiriyiwen/SideNavigation-master/sample/src/com/devspark/sidenavigation/meiriyiwen/imageCache/FileCache.java" changelist="02026f30-e8a8-4b15-a05f-9eb53e256d6d" time="1385460187847" ignored="false" />
     <file path="$PROJECT_DIR$/../../meiriyiwen/meiriyiwen/SideNavigation-master/sample/src/com/devspark/sidenavigation/meiriyiwen/imageCache/ImageLoader.java" changelist="02026f30-e8a8-4b15-a05f-9eb53e256d6d" time="1385460187848" ignored="false" />
-    <file path="/cuzyAdapter.java" changelist="02026f30-e8a8-4b15-a05f-9eb53e256d6d" time="1385969889084" ignored="false" />
-    <file path="/shengyinglist.xml" changelist="02026f30-e8a8-4b15-a05f-9eb53e256d6d" time="1385462537410" ignored="false" />
+    <file path="/cuzyAdapter.java" changelist="02026f30-e8a8-4b15-a05f-9eb53e256d6d" time="1387457395453" ignored="false" />
+    <file path="/shengyinglist.xml" changelist="02026f30-e8a8-4b15-a05f-9eb53e256d6d" time="1387456747814" ignored="false" />
     <file path="$PROJECT_DIR$/../../meiriyiwen/meiriyiwen/SideNavigation-master/sample/gen/com/devspark/sidenavigation/meiriyiwen/BuildConfig.java" changelist="02026f30-e8a8-4b15-a05f-9eb53e256d6d" time="1385474701485" ignored="false" />
     <file path="$PROJECT_DIR$/../../meiriyiwen/meiriyiwen/SideNavigation-master/sample/src/com/devspark/sidenavigation/meiriyiwen/webViewActivity.java" changelist="02026f30-e8a8-4b15-a05f-9eb53e256d6d" time="1385475065984" ignored="false" />
-    <file path="/webViewActivity.java" changelist="02026f30-e8a8-4b15-a05f-9eb53e256d6d" time="1387176536696" ignored="false" />
-    <file path="/class_list_logo_head.xml" changelist="02026f30-e8a8-4b15-a05f-9eb53e256d6d" time="1385623958006" ignored="false" />
+    <file path="/webViewActivity.java" changelist="02026f30-e8a8-4b15-a05f-9eb53e256d6d" time="1387419465123" ignored="false" />
+    <file path="/class_list_logo_head.xml" changelist="02026f30-e8a8-4b15-a05f-9eb53e256d6d" time="1387447104967" ignored="false" />
     <file path="/ClassItem.java" changelist="02026f30-e8a8-4b15-a05f-9eb53e256d6d" time="1385627443362" ignored="false" />
     <file path="/ClassListAdapter.java" changelist="02026f30-e8a8-4b15-a05f-9eb53e256d6d" time="1385629171368" ignored="false" />
     <file path="/strings.xml" changelist="02026f30-e8a8-4b15-a05f-9eb53e256d6d" time="1385626889944" ignored="false" />
-    <file path="/detailviewlevel1.xml" changelist="02026f30-e8a8-4b15-a05f-9eb53e256d6d" time="1387372711413" ignored="false" />
-    <file path="/DetailViewLevel1.java" changelist="02026f30-e8a8-4b15-a05f-9eb53e256d6d" time="1387373386758" ignored="false" />
+    <file path="/detailviewlevel1.xml" changelist="02026f30-e8a8-4b15-a05f-9eb53e256d6d" time="1387419867854" ignored="false" />
+    <file path="/DetailViewLevel1.java" changelist="02026f30-e8a8-4b15-a05f-9eb53e256d6d" time="1387419901119" ignored="false" />
     <file path="/PaperItem.java" changelist="02026f30-e8a8-4b15-a05f-9eb53e256d6d" time="1385898963308" ignored="false" />
     <file path="/FileSize.java" changelist="02026f30-e8a8-4b15-a05f-9eb53e256d6d" time="1385635407161" ignored="false" />
     <file path="/FileCache.java" changelist="02026f30-e8a8-4b15-a05f-9eb53e256d6d" time="1385635885464" ignored="false" />
@@ -103,7 +119,7 @@
     <file path="/GridItemType2FavorAdapter.java" changelist="02026f30-e8a8-4b15-a05f-9eb53e256d6d" time="1386511047378" ignored="false" />
     <file path="/FancyCoverFlowSampleAdapter.java" changelist="02026f30-e8a8-4b15-a05f-9eb53e256d6d" time="1386144325967" ignored="false" />
     <file path="/SimpleExample.java" changelist="02026f30-e8a8-4b15-a05f-9eb53e256d6d" time="1386150940867" ignored="false" />
-    <file path="/TaoTaoMainApplication.java" changelist="02026f30-e8a8-4b15-a05f-9eb53e256d6d" time="1387336092760" ignored="false" />
+    <file path="/TaoTaoMainApplication.java" changelist="02026f30-e8a8-4b15-a05f-9eb53e256d6d" time="1387445991325" ignored="false" />
     <file path="/a.dummy" changelist="02026f30-e8a8-4b15-a05f-9eb53e256d6d" time="1386224565115" ignored="false" />
     <file path="$PROJECT_DIR$/../../Intelij_Important/cuzySeniorSDK/gen/com/example/cuzyseniorsdk/BuildConfig.java" changelist="02026f30-e8a8-4b15-a05f-9eb53e256d6d" time="1386224000942" ignored="false" />
     <file path="$PROJECT_DIR$/../../SeniorCuzy3.3/.idea/workspace.xml" changelist="02026f30-e8a8-4b15-a05f-9eb53e256d6d" time="1386234350198" ignored="false" />
@@ -112,15 +128,15 @@
     <file path="/MainAcitivtyFragmentFirstPage.java" changelist="02026f30-e8a8-4b15-a05f-9eb53e256d6d" time="1387344857327" ignored="false" />
     <file path="$PROJECT_DIR$/../../SeniorCuzy3.3/src/com/cuzysdk/CuzyDataCenter.java" changelist="02026f30-e8a8-4b15-a05f-9eb53e256d6d" time="1386233173463" ignored="false" />
     <file path="/CuzyDataCenter.java" changelist="02026f30-e8a8-4b15-a05f-9eb53e256d6d" time="1386233168529" ignored="false" />
-    <file path="/*.regexp" changelist="02026f30-e8a8-4b15-a05f-9eb53e256d6d" time="1387373873092" ignored="false" />
+    <file path="/*.regexp" changelist="02026f30-e8a8-4b15-a05f-9eb53e256d6d" time="1387454238409" ignored="false" />
     <file path="/show_theme_items.xml" changelist="02026f30-e8a8-4b15-a05f-9eb53e256d6d" time="1386235308718" ignored="false" />
     <file path="/showThemeItemsActivity.java" changelist="02026f30-e8a8-4b15-a05f-9eb53e256d6d" time="1387373946739" ignored="false" />
     <file path="/MainAcitivtyFragment.java" changelist="02026f30-e8a8-4b15-a05f-9eb53e256d6d" time="1386421823312" ignored="false" />
-    <file path="/GridItemShowThemeItemsAdapter.java" changelist="02026f30-e8a8-4b15-a05f-9eb53e256d6d" time="1386425086955" ignored="false" />
+    <file path="/GridItemShowThemeItemsAdapter.java" changelist="02026f30-e8a8-4b15-a05f-9eb53e256d6d" time="1387448389549" ignored="false" />
     <file path="/ImageLoader.java" changelist="02026f30-e8a8-4b15-a05f-9eb53e256d6d" time="1386346022639" ignored="false" />
-    <file path="/grid_item1.xml" changelist="02026f30-e8a8-4b15-a05f-9eb53e256d6d" time="1386423222872" ignored="false" />
+    <file path="/grid_item1.xml" changelist="02026f30-e8a8-4b15-a05f-9eb53e256d6d" time="1387446632216" ignored="false" />
     <file path="/gridItem2_themedetail.xml" changelist="02026f30-e8a8-4b15-a05f-9eb53e256d6d" time="1386423962898" ignored="false" />
-    <file path="/grid_item2_themedetail.xml" changelist="02026f30-e8a8-4b15-a05f-9eb53e256d6d" time="1386424852244" ignored="false" />
+    <file path="/grid_item2_themedetail.xml" changelist="02026f30-e8a8-4b15-a05f-9eb53e256d6d" time="1387448060162" ignored="false" />
     <file path="/tilebg.xml" changelist="02026f30-e8a8-4b15-a05f-9eb53e256d6d" time="1386431173575" ignored="false" />
     <file path="/grid_item_favor.xml" changelist="02026f30-e8a8-4b15-a05f-9eb53e256d6d" time="1386510980218" ignored="false" />
     <file path="$USER_HOME$/Documents/workspace/cuzyAndroid/CuzyAdSDKAndroidDemo/src/com/theindex/CuzyAdSDKDemo/firstView.java" changelist="02026f30-e8a8-4b15-a05f-9eb53e256d6d" time="1386660272227" ignored="false" />
@@ -141,6 +157,12 @@
     <file path="$USER_HOME$/Documents/workspace/cuzyAndroid/CuzyAdSDKAndroid/src/com/theindex/CuzyAdSDK/CuzyItemView.java" changelist="02026f30-e8a8-4b15-a05f-9eb53e256d6d" time="1386664417806" ignored="false" />
     <file path="/CuzyItemView.java" changelist="02026f30-e8a8-4b15-a05f-9eb53e256d6d" time="1386664266756" ignored="false" />
     <file path="/colors.xml" changelist="02026f30-e8a8-4b15-a05f-9eb53e256d6d" time="1387372560367" ignored="false" />
+    <file path="$USER_HOME$/Documents/workspace/cuzyAndroid/CuzyAdSDKAndroid/src/com/theindex/CuzyAdSDK/CuzyNetCenter.java" changelist="02026f30-e8a8-4b15-a05f-9eb53e256d6d" time="1387443058170" ignored="false" />
+    <file path="/CuzyNetCenter.java" changelist="02026f30-e8a8-4b15-a05f-9eb53e256d6d" time="1387443056844" ignored="false" />
+    <file path="$USER_HOME$/Documents/workspace/cuzyAndroid/CuzyAdSDKAndroid/gen/com/theindex/CuzyAdSDK/BuildConfig.java" changelist="02026f30-e8a8-4b15-a05f-9eb53e256d6d" time="1387441798002" ignored="false" />
+    <file path="/class_part_lay.xml" changelist="02026f30-e8a8-4b15-a05f-9eb53e256d6d" time="1387446989979" ignored="false" />
+    <file path="/refresh_footer.xml" changelist="02026f30-e8a8-4b15-a05f-9eb53e256d6d" time="1387454351522" ignored="false" />
+    <file path="/ttk_image_border.xml" changelist="02026f30-e8a8-4b15-a05f-9eb53e256d6d" time="1387457781822" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -160,7 +182,53 @@
     <disable_hints />
   </component>
   <component name="DebuggerManager">
-    <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
+    <line_breakpoints default_suspend_policy="SuspendAll" default_condition_enabled="true">
+      <breakpoint url="file://$PROJECT_DIR$/taotaoKan/src/com/example/taotaokanAndroid/DetailViewLevel1.java" line="149" class="com.example.taotaokanAndroid.DetailViewLevel1" package="com.example.taotaokanAndroid">
+        <option name="ENABLED" value="true" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="REMOVE_AFTER_HIT" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="SUSPEND" value="true" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="true" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="&#13;&#13;JAVA" />
+        <option name="LOG_MESSAGE" value="&#13;&#13;JAVA" />
+      </breakpoint>
+      <breakpoint url="file://$PROJECT_DIR$/taotaoKan/src/com/example/taotaokanAndroid/MainActivity.java" line="232" class="com.example.taotaokanAndroid.MainActivity.LongOperation" package="com.example.taotaokanAndroid">
+        <option name="ENABLED" value="true" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="REMOVE_AFTER_HIT" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="SUSPEND" value="true" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="true" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+      <breakpoint url="file://$PROJECT_DIR$/taotaoKan/src/com/example/taotaokanAndroid/MainActivity.java" line="200" class="com.example.taotaokanAndroid.MainActivity.LongOperation" package="com.example.taotaokanAndroid">
+        <option name="ENABLED" value="true" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="REMOVE_AFTER_HIT" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="SUSPEND" value="true" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="true" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+    </line_breakpoints>
     <breakpoint_any default_suspend_policy="SuspendAll" default_condition_enabled="true">
       <breakpoint>
         <option name="NOTIFY_CAUGHT" value="true" />
@@ -197,38 +265,7 @@
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
     </breakpoint_any>
-    <line_breakpoints default_suspend_policy="SuspendAll" default_condition_enabled="true">
-      <breakpoint url="file://$PROJECT_DIR$/taotaoKan/src/com/example/taotaokanAndroid/DetailViewLevel1.java" line="138" class="com.example.taotaokanAndroid.DetailViewLevel1" package="com.example.taotaokanAndroid">
-        <option name="ENABLED" value="true" />
-        <option name="LOG_ENABLED" value="false" />
-        <option name="LOG_EXPRESSION_ENABLED" value="false" />
-        <option name="REMOVE_AFTER_HIT" value="false" />
-        <option name="SUSPEND_POLICY" value="SuspendAll" />
-        <option name="SUSPEND" value="true" />
-        <option name="COUNT_FILTER_ENABLED" value="false" />
-        <option name="COUNT_FILTER" value="0" />
-        <option name="CONDITION_ENABLED" value="true" />
-        <option name="CLASS_FILTERS_ENABLED" value="false" />
-        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
-        <option name="CONDITION" value="&#13;&#13;JAVA" />
-        <option name="LOG_MESSAGE" value="&#13;&#13;JAVA" />
-      </breakpoint>
-      <breakpoint url="file://$PROJECT_DIR$/taotaoKan/src/com/example/taotaokanAndroid/MainActivity.java" line="210" class="com.example.taotaokanAndroid.MainActivity.LongOperation" package="com.example.taotaokanAndroid">
-        <option name="ENABLED" value="true" />
-        <option name="LOG_ENABLED" value="false" />
-        <option name="LOG_EXPRESSION_ENABLED" value="false" />
-        <option name="REMOVE_AFTER_HIT" value="false" />
-        <option name="SUSPEND_POLICY" value="SuspendAll" />
-        <option name="SUSPEND" value="true" />
-        <option name="COUNT_FILTER_ENABLED" value="false" />
-        <option name="COUNT_FILTER" value="0" />
-        <option name="CONDITION_ENABLED" value="true" />
-        <option name="CLASS_FILTERS_ENABLED" value="false" />
-        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
-        <option name="CONDITION" value="" />
-        <option name="LOG_MESSAGE" value="" />
-      </breakpoint>
-    </line_breakpoints>
+    <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <breakpoint_rules />
     <ui_properties />
   </component>
@@ -238,65 +275,49 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="MainAcitivtyFragmentFirstPage.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/taotaoKan/src/com/example/taotaokanAndroid/MainAcitivtyFragmentFirstPage.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="133" column="8" selection-start="3970" selection-end="4344" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="DetailViewLevel1.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/taotaoKan/src/com/example/taotaokanAndroid/DetailViewLevel1.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="30" column="4" selection-start="1020" selection-end="1127" vertical-scroll-proportion="-3.8181818">
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#2187#2386#0" expanded="true" />
-                <element signature="e#2371#2372#0" expanded="true" />
-                <element signature="e#3044#3341#0" expanded="true" />
-                <element signature="e#3326#3327#0" expanded="true" />
-                <element signature="e#3428#3627#0" expanded="true" />
-                <element signature="e#3612#3613#0" expanded="true" />
-                <element signature="e#4679#4950#0" expanded="true" />
-                <element signature="e#4935#4936#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="showThemeItemsActivity.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/taotaoKan/src/com/example/taotaokanAndroid/showThemeItemsActivity.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="74" column="46" selection-start="2938" selection-end="2938" vertical-scroll-proportion="0.29173988">
+            <state line="35" column="39" selection-start="1335" selection-end="1335" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Object.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/android-sdks/sources/android-17/java/lang/Object.java">
+      <file leaf-file-name="SearchActivity.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/taotaoKan/src/com/example/taotaokanAndroid/SearchActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="189" column="19" selection-start="7951" selection-end="7951" vertical-scroll-proportion="0.0">
+            <state line="62" column="14" selection-start="2290" selection-end="2290" vertical-scroll-proportion="0.14285715">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="WaresItems.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/taotaoKan/src/com/example/taotaokanAndroid/WaresItems.java">
+      <file leaf-file-name="cuzyAdapter.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/taotaoKan/src/com/example/taotaokanAndroid/cuzyAdapter.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="18" selection-start="399" selection-end="399" vertical-scroll-proportion="0.0">
+            <state line="131" column="50" selection-start="3586" selection-end="3586" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MainActivity.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/taotaoKan/src/com/example/taotaokanAndroid/MainActivity.java">
+      <file leaf-file-name="shengyinglist.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/taotaoKan/res/layout/shengyinglist.xml">
+          <provider selected="true" editor-type-id="android-designer">
+            <state />
+          </provider>
+          <provider editor-type-id="text-editor">
+            <state line="52" column="52" selection-start="2843" selection-end="2843" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TextView.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/android-sdks/sources/android-17/android/widget/TextView.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="28" column="13" selection-start="1050" selection-end="1050" vertical-scroll-proportion="0.0">
+            <state line="2364" column="16" selection-start="87650" selection-end="87650" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -308,38 +329,47 @@
             <state />
           </provider>
           <provider selected="true" editor-type-id="text-editor">
-            <state line="49" column="63" selection-start="2238" selection-end="2238" vertical-scroll-proportion="-11.0">
+            <state line="24" column="51" selection-start="998" selection-end="998" vertical-scroll-proportion="-11.111111">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SearchActivity.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/taotaoKan/src/com/example/taotaokanAndroid/SearchActivity.java">
+      <file leaf-file-name="ttk_image_border.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/taotaoKan/res/drawable/ttk_image_border.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="29" column="4" selection-start="863" selection-end="964" vertical-scroll-proportion="0.0">
+            <state line="7" column="88" selection-start="359" selection-end="359" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="colors.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/taotaoKan/res/values/colors.xml">
+      <file leaf-file-name="tilebg.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/taotaoKan/res/drawable/tilebg.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="33" column="81" selection-start="1336" selection-end="1336" vertical-scroll-proportion="0.0">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="FavorView.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/taotaoKan/src/com/example/taotaokanAndroid/FavorView.java">
+      <file leaf-file-name="SearchView.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/android-sdks/sources/android-17/android/widget/SearchView.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="33" column="4" selection-start="1071" selection-end="1285" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="e#2746#3153#0" expanded="true" />
-                <element signature="e#3142#3143#0" expanded="true" />
-              </folding>
+            <state line="119" column="73" selection-start="4575" selection-end="4575" vertical-scroll-proportion="2.2692308">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="searchview.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/taotaoKan/res/layout/searchview.xml">
+          <provider editor-type-id="android-designer">
+            <state />
+          </provider>
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="15" column="10" selection-start="583" selection-end="583" vertical-scroll-proportion="-7.851852">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -350,6 +380,11 @@
     <FindUsagesManager>
       <setting name="OPEN_NEW_TAB" value="false" />
     </FindUsagesManager>
+  </component>
+  <component name="GenerateSignedApkSettings">
+    <option name="KEY_STORE_PATH" value="$USER_HOME$/AndroidStudioProjects/taotaokan_key" />
+    <option name="KEY_ALIAS" value="taotaokan_key" />
+    <option name="REMEMBER_PASSWORDS" value="true" />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -362,28 +397,28 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/taotaoKan/src/com/example/taotaokanAndroid/gridView/GridItemType2FavorAdapter.java" />
-        <option value="$PROJECT_DIR$/taotaoKan/src/com/example/taotaokanAndroid/webViewActivity.java" />
-        <option value="$PROJECT_DIR$/taotaoKan/src/com/example/taotaokanAndroid/TestFragmentAdapter.java" />
-        <option value="$PROJECT_DIR$/taotaoKan/src/com/example/taotaokanAndroid/MainActivity.java" />
+        <option value="$PROJECT_DIR$/taotaoKan/src/com/example/taotaokanAndroid/DetailViewLevel1.java" />
         <option value="$PROJECT_DIR$/taotaoKan/src/com/example/taotaokanAndroid/TaoTaoMainApplication.java" />
-        <option value="$PROJECT_DIR$/taotaoKan/src/com/example/taotaokanAndroid/gridView/GalleryImageAdapter.java" />
-        <option value="$PROJECT_DIR$/taotaoKan/res/layout/gridview_firstpage.xml" />
-        <option value="$PROJECT_DIR$/taotaoKan/src/com/example/taotaokanAndroid/MainAcitivtyFragmentFirstPage.java" />
+        <option value="$PROJECT_DIR$/taotaoKan/src/com/example/taotaokanAndroid/MainActivity.java" />
+        <option value="$PROJECT_DIR$/taotaoKan/res/layout/grid_item1.xml" />
+        <option value="$PROJECT_DIR$/taotaoKan/res/layout/class_part_lay.xml" />
+        <option value="$PROJECT_DIR$/taotaoKan/res/layout/setting_desktopbg.xml" />
+        <option value="$PROJECT_DIR$/taotaoKan/res/layout/class_list_logo_head.xml" />
+        <option value="$PROJECT_DIR$/taotaoKan/res/layout/detailviewlevel1.xml" />
+        <option value="$PROJECT_DIR$/taotaoKan/res/layout/grid_item2_themedetail.xml" />
+        <option value="$PROJECT_DIR$/taotaoKan/src/com/example/taotaokanAndroid/gridView/GridItemShowThemeItemsAdapter.java" />
+        <option value="$PROJECT_DIR$/taotaoKan/res/layout/refresh_footer.xml" />
+        <option value="$PROJECT_DIR$/taotaoKan/res/layout/searchview.xml" />
+        <option value="$PROJECT_DIR$/taotaoKan/res/layout/shengyinglist.xml" />
+        <option value="$PROJECT_DIR$/taotaoKan/src/com/example/taotaokanAndroid/cuzyAdapter.java" />
         <option value="$PROJECT_DIR$/taotaoKan/res/drawable/ttk_image_border.xml" />
         <option value="$PROJECT_DIR$/taotaoKan/src/com/example/taotaokanAndroid/SearchActivity.java" />
-        <option value="$PROJECT_DIR$/taotaoKan/src/com/example/taotaokanAndroid/SQLiteHelper/WaresItemsDataUtil.java" />
-        <option value="$PROJECT_DIR$/taotaoKan/src/com/example/taotaokanAndroid/FavorView.java" />
-        <option value="$PROJECT_DIR$/taotaoKan/res/values/colors.xml" />
-        <option value="$PROJECT_DIR$/taotaoKan/res/layout/detailviewlevel1.xml" />
-        <option value="$PROJECT_DIR$/taotaoKan/src/com/example/taotaokanAndroid/DetailViewLevel1.java" />
-        <option value="$PROJECT_DIR$/taotaoKan/src/com/example/taotaokanAndroid/showThemeItemsActivity.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="459" />
-    <option name="y" value="76" />
+    <option name="x" value="610" />
+    <option name="y" value="212" />
     <option name="width" value="1783" />
     <option name="height" value="907" />
   </component>
@@ -429,6 +464,8 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -462,28 +499,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="taotaokanAndroid" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="taotaokanAndroid" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="taotaoKan" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="taotaokanAndroid" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SQLiteHelper" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -549,156 +564,12 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="imageCache" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="taotaokanAndroid" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="taotaoKan" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="taotaokanAndroid" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="gridView" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="taotaokanAndroid" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="taotaoKan" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="taotaokanAndroid" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="gridView" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="gridItemType1.java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.ClassesTreeStructureProvider$PsiClassOwnerTreeNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="taotaokanAndroid" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="taotaoKan" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="taotaokanAndroid" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Coverflow" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="taotaokanAndroid" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="taotaoKan" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="taotaokanAndroid" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ClassItem" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="taotaokanAndroid" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="taotaoKan" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="res" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="taotaokanAndroid" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="taotaoKan" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="res" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="values" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="taotaokanAndroid" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="taotaoKan" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="res" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="drawable" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -706,15 +577,18 @@
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="options.splitter.main.proportions" value="0.3" />
+    <property name="ExportedApkPath" value="$PROJECT_DIR$/taotaoKan/taotaoKan.apk" />
     <property name="ChangesBrowser.SHOW_FLATTEN" value="false" />
     <property name="recentsLimit" value="5" />
     <property name="MemberChooser.sorted" value="false" />
     <property name="options.lastSelected" value="reference.settingsdialog.IDE.editor.colors.Custom" />
+    <property name="ExportedModule" value="taotaoKan" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/taotaoKan/libs/umeng_social_sdk.jar!/" />
     <property name="AndroidLayoutSelectedEditor" value="text-editor" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="MemberChooser.copyJavadoc" value="false" />
     <property name="GoToClass.toSaveIncludeLibraries" value="false" />
+    <property name="AndroidRunProguardForReleaseBuild" value="false" />
     <property name="restartRequiresConfirmation" value="true" />
     <property name="FullScreen" value="false" />
     <property name="MemberChooser.showClasses" value="true" />
@@ -953,7 +827,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="459" y="76" width="1783" height="907" extended-state="0" />
+    <frame x="610" y="212" width="1783" height="907" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33909038" sideWeight="0.7878018" order="3" side_tool="false" content_ui="tabs" />
@@ -968,14 +842,14 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.46783626" sideWeight="0.105714284" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32906976" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.29987293" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3939009" sideWeight="0.89428574" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.29733163" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.317662" sideWeight="0.89428574" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24699937" sideWeight="0.7027559" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22394934" sideWeight="0.7878018" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21219823" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22279793" sideWeight="0.70266837" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.21219823" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
@@ -1052,68 +926,105 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/taotaoKan/res/values/styles.xml">
+    <entry file="file://$PROJECT_DIR$/taotaoKan/src/com/example/taotaokanAndroid/SettingActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="42" column="25" selection-start="1776" selection-end="1888" vertical-scroll-proportion="0.0">
+        <state line="37" column="21" selection-start="1313" selection-end="1313" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/taotaoKan/res/drawable/ttk_image_border.xml">
+    <entry file="file://$PROJECT_DIR$/taotaoKan/src/com/example/taotaokanAndroid/ClassItem/ClassListAdapter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="33" selection-start="139" selection-end="139" vertical-scroll-proportion="0.0">
+        <state line="123" column="62" selection-start="3006" selection-end="3006" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/taotaoKan/src/com/example/taotaokanAndroid/SQLiteHelper/WaresItemsDataUtil.java">
+    <entry file="file://$PROJECT_DIR$/taotaoKan/res/layout/class_part_lay.xml">
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
       <provider selected="true" editor-type-id="text-editor">
-        <state line="154" column="54" selection-start="5322" selection-end="5322" vertical-scroll-proportion="0.0">
+        <state line="0" column="0" selection-start="0" selection-end="39" vertical-scroll-proportion="-0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/taotaoKan/src/com/example/taotaokanAndroid/gridView/GridItemType2FavorAdapter.java">
+    <entry file="file://$PROJECT_DIR$/taotaoKan/res/layout/search_tool_bar.xml">
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
       <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="13" selection-start="671" selection-end="671" vertical-scroll-proportion="0.0">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/android-sdks/platforms/android-17/data/res/values/colors.xml">
+    <entry file="file://$USER_HOME$/android-sdks/sources/android-17/android/view/View.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="38" column="17" selection-start="1966" selection-end="1966" vertical-scroll-proportion="0.0">
+        <state line="5762" column="16" selection-start="222120" selection-end="222120" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/taotaoKan/res/layout/titlebar.xml">
+    <entry file="file://$USER_HOME$/android-sdks/sources/android-17/android/app/Activity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3163" column="4" selection-start="134242" selection-end="134242" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/android-sdks/sources/android-17/android/widget/SearchView.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="119" column="73" selection-start="4575" selection-end="4575" vertical-scroll-proportion="2.2692308">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/android-sdks/sources/android-17/android/widget/TextView.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2364" column="16" selection-start="87650" selection-end="87650" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/taotaoKan/res/layout/searchview.xml">
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="10" selection-start="583" selection-end="583" vertical-scroll-proportion="-7.851852">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/taotaoKan/res/layout/shengyinglist.xml">
       <provider selected="true" editor-type-id="android-designer">
         <state />
       </provider>
       <provider editor-type-id="text-editor">
-        <state line="22" column="29" selection-start="927" selection-end="930" vertical-scroll-proportion="0.0">
+        <state line="52" column="52" selection-start="2843" selection-end="2843" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/taotaoKan/src/com/example/taotaokanAndroid/WaresItems.java">
+    <entry file="file://$PROJECT_DIR$/taotaoKan/src/com/example/taotaokanAndroid/cuzyAdapter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="18" selection-start="399" selection-end="399" vertical-scroll-proportion="0.0">
+        <state line="131" column="50" selection-start="3586" selection-end="3586" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/android-sdks/sources/android-17/java/lang/Object.java">
+    <entry file="file://$PROJECT_DIR$/taotaoKan/src/com/example/taotaokanAndroid/DetailViewLevel1.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="189" column="19" selection-start="7951" selection-end="7951" vertical-scroll-proportion="0.0">
+        <state line="35" column="39" selection-start="1335" selection-end="1335" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/taotaoKan/res/values/colors.xml">
+    <entry file="file://$PROJECT_DIR$/taotaoKan/res/drawable/tilebg.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="33" column="81" selection-start="1336" selection-end="1336" vertical-scroll-proportion="0.0">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -1123,62 +1034,21 @@
         <state />
       </provider>
       <provider selected="true" editor-type-id="text-editor">
-        <state line="49" column="63" selection-start="2238" selection-end="2238" vertical-scroll-proportion="-11.0">
+        <state line="24" column="51" selection-start="998" selection-end="998" vertical-scroll-proportion="-11.111111">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/taotaoKan/res/drawable/ttk_image_border.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="88" selection-start="359" selection-end="359" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/taotaoKan/src/com/example/taotaokanAndroid/SearchActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="4" selection-start="863" selection-end="964" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/taotaoKan/src/com/example/taotaokanAndroid/FavorView.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="33" column="4" selection-start="1071" selection-end="1285" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="e#2746#3153#0" expanded="true" />
-            <element signature="e#3142#3143#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/taotaoKan/src/com/example/taotaokanAndroid/MainActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="13" selection-start="1050" selection-end="1050" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/taotaoKan/src/com/example/taotaokanAndroid/MainAcitivtyFragmentFirstPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="133" column="8" selection-start="3970" selection-end="4344" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/taotaoKan/src/com/example/taotaokanAndroid/DetailViewLevel1.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="4" selection-start="1020" selection-end="1127" vertical-scroll-proportion="-3.8181818">
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#2187#2386#0" expanded="true" />
-            <element signature="e#2371#2372#0" expanded="true" />
-            <element signature="e#3044#3341#0" expanded="true" />
-            <element signature="e#3326#3327#0" expanded="true" />
-            <element signature="e#3428#3627#0" expanded="true" />
-            <element signature="e#3612#3613#0" expanded="true" />
-            <element signature="e#4679#4950#0" expanded="true" />
-            <element signature="e#4935#4936#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/taotaoKan/src/com/example/taotaokanAndroid/showThemeItemsActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="74" column="46" selection-start="2938" selection-end="2938" vertical-scroll-proportion="0.29173988">
+        <state line="62" column="14" selection-start="2290" selection-end="2290" vertical-scroll-proportion="0.14285715">
           <folding />
         </state>
       </provider>

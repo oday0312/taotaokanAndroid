@@ -116,12 +116,15 @@ public class cuzyAdapter extends BaseAdapter {
         final ImageView itemImageView = (ImageView) view.findViewById(R.id.listImageView);
         TextView listTitle = (TextView) view.findViewById(R.id.listTitle);
         TextView listContent = (TextView) view.findViewById(R.id.listContent);
-
+        TextView listContent2 =(TextView)view.findViewById(R.id.listContent2);
 
         final Bitmap temp = getRes("");
         imageLoader.DisplayImage(waresItems.itemImageURLString , itemImageView);
         listTitle.setText(waresItems.itemName);
-        listContent.setText("" + waresItems.itemDescription);
+        listContent2.setText("" + waresItems.itemPromotionPrice +"元" );
+
+        listContent.setText("30天销售"+ waresItems.tradingVolumeInThirtyDays+"件");
+
 
 
         return view;

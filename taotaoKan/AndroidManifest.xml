@@ -46,7 +46,7 @@
                   android:screenOrientation="portrait"/>
         <activity android:name=".FavorView"
                   android:screenOrientation="portrait"/>
-        <activity android:name=".Coverflow.SimpleExample"
+        <activity android:name=".Coverflow.settingchooseDesktopbackground"
                   android:screenOrientation="portrait"/>
         <activity android:name=".MainAcitivtyFragmentFirstPage"
                   android:screenOrientation="portrait"/>
