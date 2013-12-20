@@ -75,7 +75,18 @@ public class MainAcitivtyFragmentFirstPage extends MainAcitivtyFragment {
 
         final TaoTaoMainApplication application = (TaoTaoMainApplication)getActivity().getApplication();
         Drawable d =getResources().getDrawable(application.backgroundResourceID );
-        v.setBackground(d);
+        try
+        {
+            int sdk = android.os.Build.VERSION.SDK_INT;
+            if(sdk < android.os.Build.VERSION_CODES.JELLY_BEAN) {
+                v.setBackgroundDrawable(d);
+            } else {
+                v.setBackground(d);
+            }
+        }catch (Exception e)
+        {
+            ;
+        }
 
         myGallery = (Gallery)v.findViewById(R.id.gallery);
 

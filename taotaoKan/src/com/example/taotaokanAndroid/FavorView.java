@@ -53,7 +53,19 @@ public class FavorView extends Activity {
         Random random = new Random();
         int t =  Math.abs(random.nextInt()) % (application.images.length);
         Drawable d = getResources().getDrawable(application.images[t]);
-        v.setBackground(d);
+        try
+        {
+            int sdk = android.os.Build.VERSION.SDK_INT;
+            if(sdk < android.os.Build.VERSION_CODES.JELLY_BEAN) {
+                v.setBackgroundDrawable(d);
+            } else {
+                v.setBackground(d);
+            }
+        }catch (Exception e)
+        {
+            ;
+        }
+
 
         TextView tv = (TextView)findViewById(R.id.titleText);
         tv.setText("收藏");

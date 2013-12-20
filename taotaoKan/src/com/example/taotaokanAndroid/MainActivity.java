@@ -236,12 +236,11 @@ public class MainActivity extends BaseSampleActivity {
 
         @Override
         protected void onPostExecute(Void result) {
-          //  mAdapter = new TestFragmentAdapter(getSupportFragmentManager());
-          //  mAdapter.notifyDataSetChanged();
-            mAdapter = new TestFragmentAdapter(getSupportFragmentManager());
+            //mAdapter = new TestFragmentAdapter(getSupportFragmentManager());
 
+            mAdapter.notifyDataSetChanged();
             mPager = (ViewPager)findViewById(R.id.pager);
-            mPager.setAdapter(mAdapter);
+            //mPager.setAdapter(mAdapter);
 
 
         }
