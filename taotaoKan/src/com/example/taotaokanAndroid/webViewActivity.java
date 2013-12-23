@@ -73,6 +73,13 @@ public class webViewActivity extends Activity {
             uiwebview.getSettings().setPluginsEnabled(true);
             uiwebview.getSettings().setPluginState(WebSettings.PluginState.ON);
 
+
+
+
+            //String userAgentString = "Mozilla/5.0 (Linux; Android 4.1.1; M040 Build/JRO03H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.59 Mobile Safari/537.36";
+            //uiwebview.getSettings().setUserAgentString("" +
+                  // userAgentString);
+
             if (title.contains("http"))
             {
 
@@ -83,7 +90,7 @@ public class webViewActivity extends Activity {
 
             }
             uiwebview.loadUrl(title);
-            uiwebview.setBackgroundColor(Color.BLACK);
+            //uiwebview.loadUrl(title);
             Log.v("huangzf", "the url is "+ title);
         }
 
@@ -91,9 +98,9 @@ public class webViewActivity extends Activity {
 
     public void removeSmartTAOBAOad()
     {
-        //uiwebview.loadUrl("javascript:var J_wrapper = document.getElementById('smartAd');  document.body.removeChild(J_wrapper);");
+        uiwebview.loadUrl("javascript:var J_wrapper = document.getElementById('smartAd');  document.body.removeChild(J_wrapper);");
 
-        uiwebview.loadUrl("javascript: var SmartbannerJSON=0;");
+        //uiwebview.loadUrl("javascript: var SmartbannerJSON=0;");
 
 
     }

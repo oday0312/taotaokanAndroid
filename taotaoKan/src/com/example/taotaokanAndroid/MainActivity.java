@@ -164,7 +164,7 @@ public class MainActivity extends BaseSampleActivity {
         //mController.getConfig().supportWXPlatform(this,appID, contentUrl);
        // mController.getConfig().supportWXCirclePlatform(this,appID, contentUrl) ;
 
-        mController.setShareContent("友盟社会化组件（SDK）让移动应用快速整合社交分享功能，http://www.umeng.com/social");
+        mController.setShareContent("淘淘看 由cuzysdk提供购物导航数据 http://www.cuzy.com");
         mController.setShareMedia(new UMImage(this,"http://www.umeng.com/images/pic/banner_module_social.png"));
     }
 
@@ -186,7 +186,11 @@ public class MainActivity extends BaseSampleActivity {
 
             TaoTaoMainApplication application = (TaoTaoMainApplication)getApplication();
             rawData.clear();
-            SystemClock.sleep(1000);
+            SystemClock.sleep(500);
+            while(CuzyAdSDK.getInstance().registerResult==0)
+            {
+                 SystemClock.sleep(100);
+            }
 
             int tempInter = RANDOM.nextInt(100);
             if (tempInter%2 == 1)
@@ -240,7 +244,7 @@ public class MainActivity extends BaseSampleActivity {
 
             mAdapter.notifyDataSetChanged();
             mPager = (ViewPager)findViewById(R.id.pager);
-            //mPager.setAdapter(mAdapter);
+            mPager.setAdapter(mAdapter);
 
 
         }

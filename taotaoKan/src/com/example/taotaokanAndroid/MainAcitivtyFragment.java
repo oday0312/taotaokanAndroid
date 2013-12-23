@@ -52,6 +52,7 @@ public class MainAcitivtyFragment extends Fragment {
         if ((savedInstanceState != null) && savedInstanceState.containsKey(KEY_CONTENT)) {
             mContent = savedInstanceState.getString(KEY_CONTENT);
         }
+        startInit();
     }
 
     @Override
