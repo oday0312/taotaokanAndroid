@@ -44,7 +44,7 @@ public class ImageLoader {
     }
 
     // 当进入listview时默认的图片，可换成你自己的默认图片
-    final int stub_id = R.drawable.ic_launcher;
+    final int stub_id = R.drawable.cuzy;
 
     // 最主要的方法
     public void DisplayImage(String url, ImageView imageView) {
