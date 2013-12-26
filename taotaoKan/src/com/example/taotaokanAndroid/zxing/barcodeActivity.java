@@ -41,6 +41,7 @@ public class barcodeActivity extends Activity {
 				startActivityForResult(intent, SCANNIN_GREQUEST_CODE);
 			}
 		});
+
 	}
 	
 	
