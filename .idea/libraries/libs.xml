@@ -10,6 +10,7 @@
       <root url="jar://$PROJECT_DIR$/taotaoKan/libs/SocialSDK_tencentWB_2.jar!/" />
       <root url="jar://$PROJECT_DIR$/taotaoKan/libs/SocialSDK_WeiXin.jar!/" />
       <root url="jar://$PROJECT_DIR$/taotaoKan/libs/umeng_social_sdk.jar!/" />
+      <root url="jar://$PROJECT_DIR$/taotaoKan/libs/zxing.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />

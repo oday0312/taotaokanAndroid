@@ -16,6 +16,7 @@ import android.widget.*;
 import com.example.taotaokanAndroid.PullToRefresh.PullToRefreshView;
 import com.example.taotaokanAndroid.gridView.GalleryImageAdapter;
 import com.example.taotaokanAndroid.gridView.GridItemType1Adapter;
+import com.example.taotaokanAndroid.zxing.barcodeActivity;
 import com.theindex.CuzyAdSDK.CuzyAdSDK;
 import com.theindex.CuzyAdSDK.CuzyTBKItem;
 import com.umeng.analytics.MobclickAgent;
@@ -61,6 +62,9 @@ public class MainActivity extends BaseSampleActivity {
 
         actionBar.setTitle("淘淘看");
         //actionBar.setHomeAction(new ActionBar.IntentAction(this, createIntent(this), R.drawable.ic_title_home_default));
+
+
+        actionBar.addAction(new startBarCodeAction());
         actionBar.addAction(new StartSearchAction());
         actionBar.addAction(new StartSettingAction());
         actionBar.addAction(new StartShareGridView());
@@ -85,12 +89,28 @@ public class MainActivity extends BaseSampleActivity {
     public Intent createIntent(Context context)
     {
         Intent t = new Intent();
-        //t.setClass(MainActivity.this, GridViewActivity.class);
+        //t.setClass(barcodeActivity.this, GridViewActivity.class);
         t.setClass(MainActivity.this, SearchActivity.class);
 
         return t;
     }
 
+
+    private class startBarCodeAction implements ActionBar.Action
+    {
+        @Override
+        public int getDrawable() {
+            return R.drawable.button_barcode;
+        }
+
+        @Override
+        public void performAction(View view) {
+            Intent t = new Intent();
+            t.setClass(MainActivity.this,barcodeActivity.class);
+            startActivity(t);
+            overridePendingTransition(R.anim.slide_in, R.anim.slide_out);
+        }
+    }
     private class StartFavorViewAction implements ActionBar.Action{
         @Override
         public int getDrawable() {
