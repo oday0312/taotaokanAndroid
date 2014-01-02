@@ -109,11 +109,7 @@ public class SNS_login extends Activity {
                     String date = new SimpleDateFormat("yyyy/MM/dd HH:mm:ss")
                             .format(new java.util.Date(mAccessToken
                                     .getExpiresTime()));
-                    System.out.println("认证成功: access_token: " + access_token);
-                    System.out.println("expires_in: " + expires_in);
-                    System.out.println("有效期：" + date);
-                    Toast.makeText(SNS_login.this, "认证成功" + uidString+ " ; " +userName, Toast.LENGTH_SHORT)
-                            .show();
+
                  }
                 startMainAcitivty();
 
@@ -224,6 +220,7 @@ public class SNS_login extends Activity {
         startActivity(intent);
         // no animation of transition
         overridePendingTransition(0, 0);
+        finish();
     }
 
 
