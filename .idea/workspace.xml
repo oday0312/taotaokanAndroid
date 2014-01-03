@@ -31,10 +31,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="02026f30-e8a8-4b15-a05f-9eb53e256d6d" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taotaoKan/src/com/example/taotaokanAndroid/ActionBar.java" afterPath="$PROJECT_DIR$/taotaoKan/src/com/example/taotaokanAndroid/ActionBar.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taotaoKan/src/com/example/taotaokanAndroid/MainActivity.java" afterPath="$PROJECT_DIR$/taotaoKan/src/com/example/taotaokanAndroid/MainActivity.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taotaoKan/src/com/example/taotaokanAndroid/weibo/GetUserInfoTask.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taotaoKan/src/com/example/taotaokanAndroid/weibo/Userparser.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taotaoKan/src/com/example/taotaokanAndroid/weibo/updateWeibo.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taotaoKan/src/com/example/taotaokanAndroid/weibo/weiboUser.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taotaoKan/src/com/example/taotaokanAndroid/SNS_login.java" afterPath="$PROJECT_DIR$/taotaoKan/src/com/example/taotaokanAndroid/SNS_login.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taotaoKan/src/com/example/taotaokanAndroid/TaoTaoMainApplication.java" afterPath="$PROJECT_DIR$/taotaoKan/src/com/example/taotaokanAndroid/TaoTaoMainApplication.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="taotaokanAndroid.iws" />
@@ -153,10 +154,14 @@
     <file path="$USER_HOME$/Documents/workspace/Cuzy-Android-demo/.idea/workspace.xml" changelist="02026f30-e8a8-4b15-a05f-9eb53e256d6d" time="1387789229669" ignored="false" />
     <file path="/MipcaActivityCapture.java" changelist="02026f30-e8a8-4b15-a05f-9eb53e256d6d" time="1388040614927" ignored="false" />
     <file path="/activity_capture.xml" changelist="02026f30-e8a8-4b15-a05f-9eb53e256d6d" time="1388042266342" ignored="false" />
-    <file path="/SNS_login.java" changelist="02026f30-e8a8-4b15-a05f-9eb53e256d6d" time="1388737742635" ignored="false" />
+    <file path="/SNS_login.java" changelist="02026f30-e8a8-4b15-a05f-9eb53e256d6d" time="1388745349035" ignored="false" />
     <file path="/barcodeActivity.java" changelist="02026f30-e8a8-4b15-a05f-9eb53e256d6d" time="1388641019843" ignored="false" />
     <file path="/tile2bg.xml" changelist="02026f30-e8a8-4b15-a05f-9eb53e256d6d" time="1388656138036" ignored="false" />
     <file path="/sns_login.xml" changelist="02026f30-e8a8-4b15-a05f-9eb53e256d6d" time="1388656789269" ignored="false" />
+    <file path="/weiboUser.java" changelist="02026f30-e8a8-4b15-a05f-9eb53e256d6d" time="1388743590191" ignored="false" />
+    <file path="/Userparser.java" changelist="02026f30-e8a8-4b15-a05f-9eb53e256d6d" time="1388744096090" ignored="false" />
+    <file path="/GetUserInfoTask.java" changelist="02026f30-e8a8-4b15-a05f-9eb53e256d6d" time="1388744031586" ignored="false" />
+    <file path="/updateWeibo.java" changelist="02026f30-e8a8-4b15-a05f-9eb53e256d6d" time="1388745332780" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -237,7 +242,22 @@
         <option name="CONDITION" value="" />
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
-      <breakpoint url="file://$PROJECT_DIR$/taotaoKan/src/com/example/taotaokanAndroid/SNS_login.java" line="106" class="com.example.taotaokanAndroid.SNS_login.AuthDialogListener" package="com.example.taotaokanAndroid">
+      <breakpoint url="file://$PROJECT_DIR$/taotaoKan/src/com/example/taotaokanAndroid/SNS_login.java" line="123" class="com.example.taotaokanAndroid.SNS_login.AuthDialogListener" package="com.example.taotaokanAndroid">
+        <option name="ENABLED" value="true" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="REMOVE_AFTER_HIT" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="SUSPEND" value="true" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="true" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+      <breakpoint url="file://$PROJECT_DIR$/taotaoKan/src/com/example/taotaokanAndroid/SNS_login.java" line="118" class="com.example.taotaokanAndroid.SNS_login.AuthDialogListener" package="com.example.taotaokanAndroid">
         <option name="ENABLED" value="true" />
         <option name="LOG_ENABLED" value="false" />
         <option name="LOG_EXPRESSION_ENABLED" value="false" />
@@ -302,7 +322,7 @@
       <file leaf-file-name="SNS_login.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/taotaoKan/src/com/example/taotaokanAndroid/SNS_login.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="93" column="40" selection-start="2630" selection-end="2630" vertical-scroll-proportion="0.12290503">
+            <state line="130" column="65" selection-start="4328" selection-end="4328" vertical-scroll-proportion="0.82122904">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -310,38 +330,54 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="WeiboParameters.class" pinned="false" current="false" current-in-tab="false">
-        <entry file="jar://$PROJECT_DIR$/taotaoKan/libs/weibosdkcore.jar!/com/sina/weibo/sdk/auth/WeiboParameters.class">
+      <file leaf-file-name="AsyncTask.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/android-sdks/sources/android-17/android/os/AsyncTask.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="13" selection-start="166" selection-end="166" vertical-scroll-proportion="0.52">
+            <state line="532" column="53" selection-start="21397" selection-end="21397" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="WBConstants.class" pinned="false" current="false" current-in-tab="false">
-        <entry file="jar://$PROJECT_DIR$/taotaoKan/libs/weibosdkcore.jar!/com/sina/weibo/sdk/constant/WBConstants.class">
+      <file leaf-file-name="updateWeibo.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/taotaoKan/src/com/example/taotaokanAndroid/weibo/updateWeibo.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="13" selection-start="170" selection-end="170" vertical-scroll-proportion="27.52">
+            <state line="54" column="90" selection-start="1627" selection-end="1627" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#1534#1549#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="weiboUser.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/taotaoKan/src/com/example/taotaokanAndroid/weibo/weiboUser.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="19" column="73" selection-start="513" selection-end="513" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="WeiboShareException.class" pinned="false" current="false" current-in-tab="false">
-        <entry file="jar://$PROJECT_DIR$/taotaoKan/libs/weibosdkcore.jar!/com/sina/weibo/sdk/exception/WeiboShareException.class">
+      <file leaf-file-name="Userparser.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/taotaoKan/src/com/example/taotaokanAndroid/weibo/Userparser.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="13" selection-start="171" selection-end="171" vertical-scroll-proportion="-3.0">
-              <folding />
+            <state line="21" column="20" selection-start="412" selection-end="412" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BaseMediaObject.class" pinned="false" current="false" current-in-tab="false">
-        <entry file="jar://$PROJECT_DIR$/taotaoKan/libs/weibosdkcore.jar!/com/sina/weibo/sdk/api/BaseMediaObject.class">
+      <file leaf-file-name="GetUserInfoTask.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/taotaoKan/src/com/example/taotaokanAndroid/weibo/GetUserInfoTask.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="22" selection-start="174" selection-end="174" vertical-scroll-proportion="-3.0">
-              <folding />
+            <state line="28" column="23" selection-start="619" selection-end="619" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -382,15 +418,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MainAcitivtyFragment.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/taotaoKan/src/com/example/taotaokanAndroid/MainAcitivtyFragment.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="13" selection-start="554" selection-end="554" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
     </leaf>
   </component>
   <component name="FindManager">
@@ -414,10 +441,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/taotaoKan/src/com/example/taotaokanAndroid/zxing/MipcaActivityCapture.java" />
-        <option value="$PROJECT_DIR$/taotaoKan/src/com/example/taotaokanAndroid/zxing/MainActivity.java" />
-        <option value="$PROJECT_DIR$/taotaoKan/src/com/example/taotaokanAndroid/zxing/decoding/DecodeThread.java" />
-        <option value="$PROJECT_DIR$/taotaoKan/src/com/example/taotaokanAndroid/zxing/decoding/DecodeHandler.java" />
         <option value="$PROJECT_DIR$/taotaoKan/src/com/example/taotaokanAndroid/zxing/decoding/CaptureActivityHandler.java" />
         <option value="$PROJECT_DIR$/taotaoKan/src/com/example/taotaokanAndroid/zxing/view/ViewfinderView.java" />
         <option value="$PROJECT_DIR$/taotaoKan/res/layout/activity_capture.xml" />
@@ -429,13 +452,17 @@
         <option value="$PROJECT_DIR$/taotaoKan/src/com/example/taotaokanAndroid/TaoTaoMainApplication.java" />
         <option value="$PROJECT_DIR$/taotaoKan/src/com/example/taotaokanAndroid/ActionBar.java" />
         <option value="$PROJECT_DIR$/taotaoKan/src/com/example/taotaokanAndroid/MainActivity.java" />
+        <option value="$PROJECT_DIR$/taotaoKan/src/com/example/taotaokanAndroid/weibo/weiboUser.java" />
+        <option value="$PROJECT_DIR$/taotaoKan/src/com/example/taotaokanAndroid/weibo/Userparser.java" />
+        <option value="$PROJECT_DIR$/taotaoKan/src/com/example/taotaokanAndroid/weibo/GetUserInfoTask.java" />
+        <option value="$PROJECT_DIR$/taotaoKan/src/com/example/taotaokanAndroid/weibo/updateWeibo.java" />
         <option value="$PROJECT_DIR$/taotaoKan/src/com/example/taotaokanAndroid/SNS_login.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="504" />
-    <option name="y" value="65" />
+    <option name="x" value="87" />
+    <option name="y" value="57" />
     <option name="width" value="1783" />
     <option name="height" value="977" />
   </component>
@@ -515,6 +542,28 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="taotaokanAndroid" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="taotaokanAndroid" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="taotaoKan" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="taotaokanAndroid" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="weibo" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -778,8 +827,8 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="504" y="65" width="1783" height="977" extended-state="0" />
-    <editor active="true" />
+    <frame x="87" y="57" width="1783" height="977" extended-state="0" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3269962" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -790,7 +839,7 @@
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32906976" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2882147" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.31388566" sideWeight="0.89428574" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Android" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.31388566" sideWeight="0.89428574" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24668588" sideWeight="0.7027559" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -877,41 +926,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/taotaoKan/src/com/example/taotaokanAndroid/gridView/GridItemType1Adapter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="82" column="18" selection-start="2466" selection-end="2476" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/taotaoKan/src/com/example/taotaokanAndroid/DetailViewLevel1.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="35" selection-start="1126" selection-end="1158" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/taotaoKan/src/com/example/taotaokanAndroid/ActionBar.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="311" column="27" selection-start="9417" selection-end="9417" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/taotaoKan/src/com/example/taotaokanAndroid/imageCache/ImageLoader.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="49" column="16" selection-start="1315" selection-end="1315" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/taotaoKan/src/com/example/taotaokanAndroid/TestFragmentAdapter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="6" selection-start="299" selection-end="299" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/taotaoKan/src/com/example/taotaokanAndroid/MainActivity.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="49" column="41" selection-start="1620" selection-end="1620" vertical-scroll-proportion="0.0">
@@ -982,9 +996,51 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/taotaoKan/src/com/example/taotaokanAndroid/weibo/weiboUser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="19" column="73" selection-start="513" selection-end="513" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/taotaoKan/src/com/example/taotaokanAndroid/weibo/Userparser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="20" selection-start="412" selection-end="412" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/taotaoKan/src/com/example/taotaokanAndroid/weibo/GetUserInfoTask.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="28" column="23" selection-start="619" selection-end="619" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/android-sdks/sources/android-17/android/os/AsyncTask.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="532" column="53" selection-start="21397" selection-end="21397" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/taotaoKan/src/com/example/taotaokanAndroid/weibo/updateWeibo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="54" column="90" selection-start="1627" selection-end="1627" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1534#1549#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/taotaoKan/src/com/example/taotaokanAndroid/SNS_login.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="93" column="40" selection-start="2630" selection-end="2630" vertical-scroll-proportion="0.12290503">
+        <state line="130" column="65" selection-start="4328" selection-end="4328" vertical-scroll-proportion="0.82122904">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

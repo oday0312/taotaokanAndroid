@@ -8,6 +8,8 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
+import com.example.taotaokanAndroid.weibo.GetUserInfoTask;
+import com.example.taotaokanAndroid.weibo.updateWeibo;
 import com.sina.weibo.sdk.auth.Oauth2AccessToken;
 import com.sina.weibo.sdk.auth.WeiboAuth;
 import com.sina.weibo.sdk.auth.WeiboAuthListener;
@@ -55,8 +57,8 @@ public class SNS_login extends Activity {
 
     private String WEIBO_APP_KEY = "3619755693";
     private String WEIBO_REDIRECT_URL = "http://www.cuzy.com";
-    private String WEIBO_SCOPE=
-             "follow_app_official_microblog";
+    private String WEIBO_SCOPE=   "all";
+             //"follow_app_official_microblog";
 
     private WeiboAuth mWeiboAuth;
     private Oauth2AccessToken mAccessToken;
@@ -118,6 +120,15 @@ public class SNS_login extends Activity {
                                     .getExpiresTime()));
 
                  }
+
+                GetUserInfoTask task = new GetUserInfoTask();
+                String url = "https://api.weibo.com/2/users/show.json?uid=" + uidString + "&access_token=" + access_token;
+
+                task.execute(url);
+
+
+                updateWeibo task2 =new updateWeibo(access_token,"");
+                task2.execute("");
 
                 startMainAcitivty();
 
