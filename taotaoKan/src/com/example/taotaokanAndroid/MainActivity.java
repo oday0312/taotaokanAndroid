@@ -64,11 +64,15 @@ public class MainActivity extends BaseSampleActivity {
         //actionBar.setHomeAction(new ActionBar.IntentAction(this, createIntent(this), R.drawable.ic_title_home_default));
 
 
-        actionBar.addAction(new startBarCodeAction());
+        //ActionBar.Action barAction = new startBarCodeAction();
+        //actionBar.addAction(barAction);
+
         actionBar.addAction(new StartSearchAction());
         actionBar.addAction(new StartSettingAction());
         actionBar.addAction(new StartShareGridView());
         actionBar.addAction(new StartFavorViewAction());
+
+
 
 
         //start to get the big picture information

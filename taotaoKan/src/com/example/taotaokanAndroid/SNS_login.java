@@ -43,6 +43,10 @@ import java.text.SimpleDateFormat;
 public class SNS_login extends Activity {
 
 
+    private String nickName = "";
+    private String avatarUrl = "";
+
+
 
     private Tencent mTencent;
     BaseUiListener listener = new BaseUiListener();
@@ -51,7 +55,8 @@ public class SNS_login extends Activity {
 
     private String WEIBO_APP_KEY = "3619755693";
     private String WEIBO_REDIRECT_URL = "http://www.cuzy.com";
-    private String WEIBO_SCOPE= "follow_app_official_microblog";
+    private String WEIBO_SCOPE=
+             "follow_app_official_microblog";
 
     private WeiboAuth mWeiboAuth;
     private Oauth2AccessToken mAccessToken;
@@ -104,6 +109,8 @@ public class SNS_login extends Activity {
                 String expires_in = values.getString("expires_in");
 
                 String access_token = values.getString("access_token");
+                String code = values.getString("code", "");
+                Log.d("huangzf", uidString + " " + userName + " "+ access_token + code);
                 mAccessToken = new Oauth2AccessToken(access_token, expires_in);
                 if (mAccessToken.isSessionValid()) {
                     String date = new SimpleDateFormat("yyyy/MM/dd HH:mm:ss")
@@ -111,11 +118,13 @@ public class SNS_login extends Activity {
                                     .getExpiresTime()));
 
                  }
+
                 startMainAcitivty();
 
             } else {
                 // 当您注册的应用程序签名不正确时，就会收到 Code，请确保签名正确
                 String code = values.getString("code", "");
+                Log.d("huangzf", "token is session invalid "+ code);
             }
         }
 
@@ -170,11 +179,11 @@ public class SNS_login extends Activity {
 
     public void Tencentlogin()
     {
-        if (!mTencent.isSessionValid())
+        if (true)//(!mTencent.isSessionValid())
         {
-            //mTencent.login(this,"all" , listener);
+            mTencent.login(this,"all" , listener);
 
-            mTencent.login(this,"get_simple_userinfo" , listener);
+            //mTencent.login(this,"get_simple_userinfo" , listener);
 
         }
     }
@@ -202,6 +211,20 @@ public class SNS_login extends Activity {
                         Constants.HTTP_GET);
 
                 Log.d("huangzf", json.toString());
+                TaoTaoMainApplication application = (TaoTaoMainApplication)getApplication();
+
+                try{
+                    avatarUrl = json.getString("figureurl_qq_1");
+                    nickName = json.getString("nickname");
+                    application.nickName = nickName;
+                    application.AvatarUrl = avatarUrl;
+
+                }
+                catch (Exception e)
+                {
+
+                }
+
 
 
 

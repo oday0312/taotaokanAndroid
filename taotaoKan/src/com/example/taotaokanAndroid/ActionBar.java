@@ -34,6 +34,7 @@ import android.widget.ProgressBar;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
+import com.example.taotaokanAndroid.imageCache.ImageLoader;
 
 public class ActionBar extends RelativeLayout implements OnClickListener {
 
@@ -48,8 +49,15 @@ public class ActionBar extends RelativeLayout implements OnClickListener {
     private RelativeLayout mHomeLayout;
     private ProgressBar mProgress;
 
+
+    public ImageLoader imageLoader;
+
+
     public ActionBar(Context context, AttributeSet attrs) {
         super(context, attrs);
+
+
+        imageLoader = new ImageLoader(context);
 
         mInflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
 
@@ -289,6 +297,20 @@ public class ActionBar extends RelativeLayout implements OnClickListener {
                         Toast.LENGTH_SHORT).show();
             }
         }
+    }
+
+
+
+
+    public void setActionDrawableByUrl(String url)
+    {
+
+        View view = mInflater.inflate(R.layout.actionbar_item, mActionsView, false);
+
+        ImageButton labelView =
+                (ImageButton) view.findViewById(R.id.actionbar_item);
+        imageLoader.DisplayImage(url,labelView);
+
     }
 
     /*

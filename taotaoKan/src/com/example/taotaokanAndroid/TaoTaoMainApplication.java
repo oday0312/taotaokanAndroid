@@ -27,6 +27,10 @@ import java.util.ArrayList;
  */
 public class TaoTaoMainApplication extends Application {
 
+
+    public String nickName = "";
+    public String AvatarUrl = "";
+
     public final String SHARE_FILE_NAME = "taotaokan";
     public final String BACKGROUND_KEY = "desktop background";
     public ImageLoader imageLoader=  null;
