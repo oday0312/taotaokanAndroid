@@ -36,7 +36,7 @@ public class MainActivity extends BaseSampleActivity {
      * Called when the activity is first created.
      */
 
-    private static final Random RANDOM = new Random();
+    private Random RANDOM = new Random();
     private PopupWindow mPopupWindow;
 
     public ArrayList<CuzyTBKItem> rawData = new ArrayList<CuzyTBKItem>();
@@ -217,13 +217,12 @@ public class MainActivity extends BaseSampleActivity {
             }
 
             int tempInter = RANDOM.nextInt(100);
-            if (tempInter%2 == 1)
+            int offset = tempInter% application.wareItemsArray.size();
+            String cuzyThemeString = application.cuzyThemeStrings[0+offset];
+            Log.d("huang", "the cuzytheme string is " + cuzyThemeString );
+
             {
-                rawData = CuzyAdSDK.getInstance().fetchRawItems("1675", "", 0);
-            }
-            else
-            {
-                rawData = CuzyAdSDK.getInstance().fetchRawItems("1676", "", 0);
+                rawData = CuzyAdSDK.getInstance().fetchRawItems(cuzyThemeString, "", 0);
 
             }
 
@@ -248,7 +247,7 @@ public class MainActivity extends BaseSampleActivity {
 
 
                 int tempRandint2 = RANDOM.nextInt(100);
-                if (tempRandint2 % 2 == 0)
+                //if (tempRandint2 % 2 == 0)
                 {
                     application.wareItemsArray.add(temp);
 

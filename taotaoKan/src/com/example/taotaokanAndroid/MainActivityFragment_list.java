@@ -9,17 +9,15 @@ package com.example.taotaokanAndroid;
  */
 
 import android.content.Intent;
-import android.content.res.TypedArray;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
-import android.widget.Gallery;
 import android.widget.GridView;
-import com.example.taotaokanAndroid.gridView.GalleryImageAdapter;
-import com.example.taotaokanAndroid.gridView.GridItemType1Adapter;
+import com.example.taotaokanAndroid.gridView.MainListGridAdapter;
+import com.example.taotaokanAndroid.imageCache.ImageLoader;
 
 import java.util.ArrayList;
 
@@ -35,16 +33,10 @@ public class MainActivityFragment_list extends MainAcitivtyFragment {
     public static final String EXTRA_PAPERITEM = "com.devspark.sidenavigation.meiriyiwen.extra.paperitem";
 
 
-    //图片的第一行文字
-    public ArrayList<String> titles = new ArrayList<String>();
-    //图片的第二行文字
-    public ArrayList<String> description = new ArrayList<String>();
-    //图片ID数组
-    public ArrayList<Integer>images = new ArrayList<Integer>();
 
 
+    public ImageLoader imageLoader ;
     public int index = 0;
-    public GalleryImageAdapter simpleWindowADadapter;
     public MainActivityFragment_list()
     {
         super();
@@ -89,17 +81,12 @@ public class MainActivityFragment_list extends MainAcitivtyFragment {
         }
 
 
-        simpleWindowADadapter = new GalleryImageAdapter(v.getContext(), application.wareItemsArray);
-        simpleWindowADadapter.GalleryImageSize = application.screenWidth - 10;
+        gridView = (GridView)v.findViewById(R.id.mainlistgridview);
 
-        TypedArray typedArray = v.getContext().obtainStyledAttributes(R.styleable.Gallery);
-        simpleWindowADadapter.setmGalleryItemBackground(typedArray.getResourceId(R.styleable.Gallery_android_galleryItemBackground, 0));
-
-
-
-        ///this is for GridView adpter..
         startInit();
-        GridItemType1Adapter Gridadapter = new GridItemType1Adapter(titles, images,description,v.getContext());
+        imageLoader = new ImageLoader(v.getContext());
+
+        MainListGridAdapter Gridadapter = new MainListGridAdapter(application.wareItemsArray,imageLoader ,v.getContext());
         gridView.setAdapter(Gridadapter);
 
         gridView.setOnItemClickListener(new AdapterView.OnItemClickListener()
@@ -108,8 +95,8 @@ public class MainActivityFragment_list extends MainAcitivtyFragment {
             public void onItemClick(AdapterView<?> parent, View v, int position, long id)
             {
                 //Toast.makeText(getActivity(), "item" + (position + 1), Toast.LENGTH_SHORT).show();
-                startShowThemeItems(position);
-
+                WaresItems item = application.wareItemsArray.get(position);
+                startDetailViewLevel1(item);
             }
         });
 
@@ -132,21 +119,7 @@ public class MainActivityFragment_list extends MainAcitivtyFragment {
     }
 
 
-    public void startBigWindows(int position)
-    {
 
-    }
-    public void startShowThemeItems(int position)
-    {
-        Intent intent = new Intent(getActivity(), showThemeItemsActivity.class);
-        intent.putExtra(EXTRA_Theme_String, description.get(position));
-
-        intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-
-        startActivity(intent);
-        // no animation of transition
-        getActivity().overridePendingTransition(0, 0);
-    }
 
 
 

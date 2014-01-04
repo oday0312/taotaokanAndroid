@@ -33,9 +33,10 @@ class TestFragmentAdapter extends FragmentPagerAdapter implements IconPagerAdapt
         if (position == 0)
         {
             f =  MainActivityFragment_list.newInstance("",position);
-            if (f1.simpleWindowADadapter!=null)
+            if (true)
             {
-                 f1.simpleWindowADadapter.notifyDataSetChanged();
+                //todo huangzf
+                 //f1.simpleWindowADadapter.notifyDataSetChanged();
             }
         }
         else

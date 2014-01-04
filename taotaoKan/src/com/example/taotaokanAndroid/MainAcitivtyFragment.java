@@ -143,7 +143,7 @@ public class MainAcitivtyFragment extends Fragment {
 
         if (index == 1)
         {
-            startIndex = 6;
+            startIndex = 0;
             endIndex = 6+ 15;
         }
         else if (index == 2)

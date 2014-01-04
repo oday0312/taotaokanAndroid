@@ -231,4 +231,17 @@ public class TaoTaoMainApplication extends Application {
 
 
 
+
+
+
+    public String[] cuzyThemeStrings = new String[]
+            {
+
+                    "219",
+                    "220",
+                    "221",
+                    "222","223","224","225","226","227", "228",
+
+            };
+
 }
