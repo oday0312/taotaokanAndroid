@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent" android:layout_height="match_parent"
+              android:layout_marginTop="2dp"
+              android:orientation="vertical"
+              android:background="@color/ttk_white"
+        >
+    <ImageView android:id="@+id/theme_detail_image" android:layout_width="match_parent"
+               android:layout_height="200dp" android:layout_gravity="center|top"
+               android:src="@drawable/ca_custom14">
+    </ImageView>
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/ttk_white"
+            >
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/theme_detail_price" android:layout_gravity="left"
+                android:textColor="@color/ttk_sell_price_color"
+                android:text="price"
+                android:layout_alignParentLeft="true" android:layout_marginLeft="10dp"/>
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="New Text"
+                android:textColor="@color/ttk_sell_price_color"
+                android:id="@+id/theme_detail_sell_amount" android:layout_gravity="right"
+                android:layout_alignParentRight="true" android:layout_marginRight="10dp"/>
+    </RelativeLayout>
+
+</LinearLayout>

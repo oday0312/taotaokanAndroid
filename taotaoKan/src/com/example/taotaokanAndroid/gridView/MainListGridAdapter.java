@@ -67,7 +67,7 @@ public class MainListGridAdapter extends BaseAdapter
         ViewHolder viewHolder;
         if (convertView == null)
         {
-            convertView = inflater.inflate(R.layout.grid_item2_themedetail, null);
+            convertView = inflater.inflate(R.layout.grid_item_mainlist, null);
             viewHolder = new ViewHolder();
             //viewHolder.title = (TextView) convertView.findViewById(R.id.title);
             viewHolder.image = (ImageView) convertView.findViewById(R.id.theme_detail_image);
@@ -85,7 +85,9 @@ public class MainListGridAdapter extends BaseAdapter
         WaresItems item = gridItemList.get(position);
         viewHolder.priceView.setText(""+item.itemPromotionPrice+"元");
         viewHolder.sellAmount.setText(""+item.tradingVolumeInThirtyDays+"件");
-        imageLoader.DisplayImage(item.itemImageURLString, viewHolder.image);
+        String bigImageString = item.itemImageURLString.replace("240x240", "400x400");
+
+        imageLoader.DisplayImage(bigImageString, viewHolder.image);
 
 
         return convertView;
