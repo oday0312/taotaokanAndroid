@@ -19,10 +19,10 @@ class TestFragmentAdapter extends FragmentPagerAdapter implements IconPagerAdapt
 
 
     public MainAcitivtyFragment f2;
-    public MainAcitivtyFragmentFirstPage f1;
+    public MainActivityFragment_list f1;
     public TestFragmentAdapter(FragmentManager fm) {
         super(fm);
-        f1 =  MainAcitivtyFragmentFirstPage.newInstance("",0);
+        f1 =  MainActivityFragment_list.newInstance("",0);
         f2 =  MainAcitivtyFragment.newInstance("",1);
     }
 
@@ -32,7 +32,7 @@ class TestFragmentAdapter extends FragmentPagerAdapter implements IconPagerAdapt
         Fragment f;
         if (position == 0)
         {
-            f =  MainAcitivtyFragmentFirstPage.newInstance("",position);
+            f =  MainActivityFragment_list.newInstance("",position);
             if (f1.simpleWindowADadapter!=null)
             {
                  f1.simpleWindowADadapter.notifyDataSetChanged();
