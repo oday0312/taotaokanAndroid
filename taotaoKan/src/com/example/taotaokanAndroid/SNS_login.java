@@ -1,19 +1,16 @@
 package com.example.taotaokanAndroid;
 
 import android.app.Activity;
-import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
-import android.widget.Toast;
-import com.example.taotaokanAndroid.weibo.GetUserInfoTask;
+import com.example.taotaokanAndroid.weibo.WeiboGetUserInfoTask;
 import com.example.taotaokanAndroid.weibo.updateWeibo;
 import com.sina.weibo.sdk.auth.Oauth2AccessToken;
 import com.sina.weibo.sdk.auth.WeiboAuth;
 import com.sina.weibo.sdk.auth.WeiboAuthListener;
-import com.sina.weibo.sdk.auth.WeiboParameters;
 import com.sina.weibo.sdk.exception.WeiboException;
 import com.tencent.open.HttpStatusException;
 import com.tencent.open.NetworkUnavailableException;
@@ -121,7 +118,9 @@ public class SNS_login extends Activity {
 
                  }
 
-                GetUserInfoTask task = new GetUserInfoTask();
+                //TaoTaoMainApplication application = (TaoTaoMainApplication)getApplication();
+
+                WeiboGetUserInfoTask task = new WeiboGetUserInfoTask();
                 String url = "https://api.weibo.com/2/users/show.json?uid=" + uidString + "&access_token=" + access_token;
 
                 task.execute(url);
@@ -145,6 +144,7 @@ public class SNS_login extends Activity {
 
         @Override
         public void onWeiboException(WeiboException e) {
+            Log.d("huangzf", "weibo exception" + e.toString());
         }
     }
 
@@ -166,7 +166,7 @@ public class SNS_login extends Activity {
 
         protected void doComplete(JSONObject values) {
             Log.v("huangzf do complete", values.toString());
-            getUserInfoInThread();
+            TencentGetUserInfoInThread();
 
         }
 
@@ -213,7 +213,7 @@ public class SNS_login extends Activity {
         //        Constants.HTTP_GET, new BaseApiListener("get_simple_userinfo", false), null);
     }
 
-    public void getUserInfoInThread()
+    public void TencentGetUserInfoInThread()
     {
         new Thread(){
             @Override

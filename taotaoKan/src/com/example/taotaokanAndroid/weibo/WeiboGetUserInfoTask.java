@@ -17,14 +17,18 @@ import java.net.URL;
 import android.os.AsyncTask;
 import android.util.Log;
 import android.widget.TextView;
+import com.example.taotaokanAndroid.TaoTaoMainApplication;
 
-public class GetUserInfoTask extends AsyncTask<String, Void, Boolean> {
+public class WeiboGetUserInfoTask extends AsyncTask<String, Void, Boolean> {
 
     //private TextView userInfo;
     private String result = "";
+    private TaoTaoMainApplication application;
 
-    public GetUserInfoTask() {
+    public WeiboGetUserInfoTask() {
         //this.userInfo = userInfo;
+        //application = inputApplicaiton;
+
     }
 
     @Override
@@ -61,6 +65,9 @@ public class GetUserInfoTask extends AsyncTask<String, Void, Boolean> {
         if (isGetInfo) {
             Userparser userparser = new Userparser();
             weiboUser bean = userparser.userInfoParser(result);
+
+            //application.nickName = bean.getScreen_name();
+            //application.AvatarUrl = bean.getProfile_image_url();
             //userInfo.setText(bean.toString());
         } else {
             //userInfo.setText("false --- ");

@@ -65,24 +65,24 @@ public class SettingActivity extends Activity {
                //
                 switch (position)
                 {
-                    case 1:
+                    case 2:
                         clearCacheFile();
                         break;
-                    case 2:
+                    case 3:
                         startWebViewActivity(faqURLstring);
                         break;
-                    case 3:
+                    case 4:
                         startSetDesktopBackground();
                         break;
 
                     ///////////////////////////////
-                    case 4:
+                    case 5:
                         startVersionCheck();
                         break;
-                    case 5:
+                    case 6:
                         startFeedBackUMENG();
                         break;
-                    case 6:
+                    case 7:
                         break;
                     default:
                         break;
@@ -124,6 +124,11 @@ public class SettingActivity extends Activity {
 
         FileCache cache = new FileCache(this);
         ClassItem item0 = new ClassItem(ClassItem.classType.SETTING_LOGO,versionName );
+
+        TaoTaoMainApplication application = (TaoTaoMainApplication)getApplication();
+
+        ClassItem item01 = new ClassItem(1, "当前用户("+application.nickName +")", 1, "程序","");
+
         ClassItem item1 = new ClassItem(1,"清理缓存文件 " + cache.getSize(),1,"程序","");
         ClassItem item2 = new ClassItem(1,"帮助说明",1,"程序","");
         ClassItem item3 = new ClassItem(1,"设置桌面背景",1,"程序","");
@@ -133,6 +138,7 @@ public class SettingActivity extends Activity {
 
 
         data.addElement(item0);
+        data.addElement(item01);
         data.addElement(item1);
         data.addElement(item2);
         data.addElement(item3);
