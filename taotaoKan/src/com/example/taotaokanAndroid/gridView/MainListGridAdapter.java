@@ -75,6 +75,7 @@ public class MainListGridAdapter extends BaseAdapter
 
             viewHolder.priceView = (TextView)convertView.findViewById(R.id.theme_detail_price);
             viewHolder.sellAmount = (TextView)convertView.findViewById(R.id.theme_detail_sell_amount);
+            viewHolder.itemDescription = (TextView)convertView.findViewById(R.id.textView_itemdescription);
             convertView.setTag(viewHolder);
         } else
         {
@@ -84,7 +85,8 @@ public class MainListGridAdapter extends BaseAdapter
         //viewHolder.time.setText(gridItemList.get(position).getTime());
         WaresItems item = gridItemList.get(position);
         viewHolder.priceView.setText(""+item.itemPromotionPrice+"元");
-        viewHolder.sellAmount.setText(""+item.tradingVolumeInThirtyDays+"件");
+        //viewHolder.sellAmount.setText(""+item.tradingVolumeInThirtyDays+"件");
+        viewHolder.itemDescription.setText(""+item.itemName);
         String bigImageString = item.itemImageURLString.replace("240x240", "400x400");
 
         imageLoader.DisplayImage(bigImageString, viewHolder.image);

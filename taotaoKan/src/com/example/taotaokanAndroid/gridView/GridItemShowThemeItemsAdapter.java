@@ -75,6 +75,7 @@ public class GridItemShowThemeItemsAdapter extends BaseAdapter
 
             viewHolder.priceView = (TextView)convertView.findViewById(R.id.theme_detail_price);
             viewHolder.sellAmount = (TextView)convertView.findViewById(R.id.theme_detail_sell_amount);
+            viewHolder.itemDescription = (TextView)convertView.findViewById(R.id.textView_itemdescription);
             convertView.setTag(viewHolder);
         } else
         {
@@ -85,6 +86,7 @@ public class GridItemShowThemeItemsAdapter extends BaseAdapter
         WaresItems item = gridItemList.get(position);
         viewHolder.priceView.setText(""+item.itemPromotionPrice+"元");
         viewHolder.sellAmount.setText(""+item.tradingVolumeInThirtyDays+"件");
+        viewHolder.itemDescription.setText(""+item.itemName);
         imageLoader.DisplayImage(item.itemImageURLString, viewHolder.image);
 
 

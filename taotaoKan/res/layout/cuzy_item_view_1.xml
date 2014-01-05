@@ -29,7 +29,7 @@
               android:layout_height="wrap_content"
               android:layout_alignParentLeft="true"
               android:layout_alignBottom="@id/boundImage"
-              android:text="itemDescriptionasdfasjdkflajsdlkfajslkdfasdfasdfasxcv"
+              android:text="itemDescription"
               android:paddingBottom="5dp"
               android:maxLines="2"/>
     <TextView android:id="@+id/itemName"

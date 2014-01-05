@@ -252,7 +252,7 @@ public class MainActivity extends BaseSampleActivity {
                     application.wareItemsArray.add(temp);
 
                 }
-                Log.d("huang alex", ""+ temp.itemClickURLString + " \n" + temp.itemImageURLString );
+                Log.d("huang alex", ""+ temp.toString() );
             }
 
 
