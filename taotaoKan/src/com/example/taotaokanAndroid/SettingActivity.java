@@ -127,7 +127,7 @@ public class SettingActivity extends Activity {
 
         TaoTaoMainApplication application = (TaoTaoMainApplication)getApplication();
 
-        ClassItem item01 = new ClassItem(1, "当前用户("+application.nickName +")", 1, "程序","");
+        ClassItem item01 = new ClassItem(1, "当前用户("+application.nickName +")" + "     当前积分100", 1, "程序","");
 
         ClassItem item1 = new ClassItem(1,"清理缓存文件 " + cache.getSize(),1,"程序","");
         ClassItem item2 = new ClassItem(1,"帮助说明",1,"程序","");

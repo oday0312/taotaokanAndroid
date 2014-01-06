@@ -55,4 +55,6 @@ class ViewHolder
     public TextView priceView;
     public TextView sellAmount;
     public TextView itemDescription;
+
+    public TextView originalPriceView;
 }

@@ -170,7 +170,7 @@ public class DetailViewLevel1 extends Activity {
         Intent intent = new Intent(this, webViewActivity.class);
         intent.putExtra(EXTRA_WEBURL, urlString);
         intent.putExtra(EXTRA_TITLE_SHOW,"true");
-        intent.putExtra(EXTRA_TITLE_TEXT, "");
+        intent.putExtra(EXTRA_TITLE_TEXT, "手机淘宝");
         // all of the other activities on top of it will be closed and this
         // Intent will be delivered to the (now on top) old activity as a
         // new Intent.

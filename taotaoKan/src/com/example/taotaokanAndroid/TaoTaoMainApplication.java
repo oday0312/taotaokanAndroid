@@ -28,7 +28,7 @@ import java.util.ArrayList;
 public class TaoTaoMainApplication extends Application {
 
 
-    public String nickName = "";
+    public String nickName = "匿名用户";
     public String AvatarUrl = "";
 
     public final String SHARE_FILE_NAME = "taotaokan";

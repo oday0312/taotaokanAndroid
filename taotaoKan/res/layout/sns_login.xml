@@ -11,10 +11,22 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/button" android:layout_gravity="center"
-            android:background="@drawable/qq_login"/>
+            android:background="@drawable/qq_login" android:layout_marginBottom="5dp"/>
     <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/button1" android:layout_gravity="center"
-            android:background="@drawable/weibo_login"/>
+            android:background="@drawable/weibo_login" android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"/>
+
+    <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/button3" android:layout_gravity="center"
+            android:background="@drawable/login_button3" android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"/>
+
+
+
+
 </LinearLayout>

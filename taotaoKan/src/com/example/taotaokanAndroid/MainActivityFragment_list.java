@@ -87,6 +87,7 @@ public class MainActivityFragment_list extends MainAcitivtyFragment {
         imageLoader = new ImageLoader(v.getContext());
 
         MainListGridAdapter Gridadapter = new MainListGridAdapter(application.wareItemsArray,imageLoader ,v.getContext());
+        Gridadapter.screenWidth = application.screenWidth;
         gridView.setAdapter(Gridadapter);
 
         gridView.setOnItemClickListener(new AdapterView.OnItemClickListener()

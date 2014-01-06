@@ -85,6 +85,13 @@ public class SNS_login extends Activity {
             }
         });
 
+        Button bt3 = (Button)findViewById(R.id.button3);
+        bt3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startMainAcitivty();
+            }
+        });
 
     }
 
@@ -118,9 +125,9 @@ public class SNS_login extends Activity {
 
                  }
 
-                //TaoTaoMainApplication application = (TaoTaoMainApplication)getApplication();
+                TaoTaoMainApplication application = (TaoTaoMainApplication)getApplication();
 
-                WeiboGetUserInfoTask task = new WeiboGetUserInfoTask();
+                WeiboGetUserInfoTask task = new WeiboGetUserInfoTask(application);
                 String url = "https://api.weibo.com/2/users/show.json?uid=" + uidString + "&access_token=" + access_token;
 
                 task.execute(url);

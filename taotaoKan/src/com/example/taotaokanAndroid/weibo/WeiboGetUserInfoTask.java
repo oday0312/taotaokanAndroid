@@ -25,9 +25,9 @@ public class WeiboGetUserInfoTask extends AsyncTask<String, Void, Boolean> {
     private String result = "";
     private TaoTaoMainApplication application;
 
-    public WeiboGetUserInfoTask() {
+    public WeiboGetUserInfoTask(TaoTaoMainApplication inputApplicaiton) {
         //this.userInfo = userInfo;
-        //application = inputApplicaiton;
+        application = inputApplicaiton;
 
     }
 
@@ -66,8 +66,8 @@ public class WeiboGetUserInfoTask extends AsyncTask<String, Void, Boolean> {
             Userparser userparser = new Userparser();
             weiboUser bean = userparser.userInfoParser(result);
 
-            //application.nickName = bean.getScreen_name();
-            //application.AvatarUrl = bean.getProfile_image_url();
+            application.nickName = bean.getScreen_name();
+            application.AvatarUrl = bean.getProfile_image_url();
             //userInfo.setText(bean.toString());
         } else {
             //userInfo.setText("false --- ");
