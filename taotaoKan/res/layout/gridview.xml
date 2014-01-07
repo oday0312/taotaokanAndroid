@@ -6,7 +6,7 @@
               android:layout_width="fill_parent"
               android:layout_height="fill_parent"
         >
-<!--<com.example.taotaokanAndroid.PullToRefresh.PullToRefreshView xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--<com.theindex.taotaokanAndroid.PullToRefresh.PullToRefreshView xmlns:android="http://schemas.android.com/apk/res/android"-->
                                                     <!--android:id="@+id/main_pull_refresh_view"-->
                                                     <!--android:background="@drawable/bg_source_5"-->
                                                     <!--android:layout_width="fill_parent"-->
@@ -15,7 +15,7 @@
     <!-- 这里放置listview,gridview或者scrollview的布局 ,PullToRefreshView
     要设置android:orientation="vertical"属性
     否则,显示不正确-->
-<!--</com.example.taotaokanAndroid.PullToRefresh.PullToRefreshView>-->
+<!--</com.theindex.taotaokanAndroid.PullToRefresh.PullToRefreshView>-->
 
 
     <GridView xmlns:android="http://schemas.android.com/apk/res/android"

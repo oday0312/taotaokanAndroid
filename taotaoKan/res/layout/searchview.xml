@@ -16,7 +16,7 @@
 
            />
 
-    <com.example.taotaokanAndroid.LoadMoreListView.LoadMoreListView
+    <com.theindex.taotaokanAndroid.LoadMoreListView.LoadMoreListView
             android:layout_width="fill_parent"
             android:layout_height="fill_parent"
             android:id="@+id/searchview_listview"

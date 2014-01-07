@@ -30,7 +30,7 @@
              layout="@layout/titlebar" android:id="@+id/include"
              android:layout_alignLeft="@+id/classItemListView" android:layout_alignTop="@+id/view"/>
 
-    <com.example.taotaokanAndroid.Coverflow.FancyCoverFlow
+    <com.theindex.taotaokanAndroid.Coverflow.FancyCoverFlow
             android:id="@+id/fancyCoverFlow"
             android:layout_width="match_parent"
             android:layout_height="match_parent"/>

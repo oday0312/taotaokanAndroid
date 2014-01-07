@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-              xmlns:app="http://schemas.android.com/apk/res/com.example.taotaokanAndroid"
+              xmlns:app="http://schemas.android.com/apk/res/com.theindex.taotaokanAndroid"
               android:orientation="vertical"
               android:layout_width="fill_parent"
               android:layout_height="fill_parent"
@@ -8,7 +8,7 @@
         >
 
 
-    <com.example.taotaokanAndroid.ActionBar
+    <com.theindex.taotaokanAndroid.ActionBar
             android:id="@+id/actionbar"
             style="@style/ActionBar"
             />
