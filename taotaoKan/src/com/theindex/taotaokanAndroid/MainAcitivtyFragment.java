@@ -42,7 +42,7 @@ public class MainAcitivtyFragment extends Fragment {
         return fragment;
     }
 
-    public String mContent = "???";
+    public String mContent = "MainActivityFragment";
 
     @Override
     public void onCreate(Bundle savedInstanceState) {

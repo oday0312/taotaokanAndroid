@@ -5,6 +5,7 @@ import android.content.Intent;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.os.SystemClock;
+import android.support.v4.app.FragmentTransaction;
 import android.support.v4.view.ViewPager;
 import android.util.Log;
 import android.view.*;
@@ -55,11 +56,8 @@ public class MainActivity extends BaseSampleActivity {
 
         actionBar.setTitle("淘淘看");
         //actionBar.setHomeAction(new ActionBar.IntentAction(this, createIntent(this), R.drawable.ic_title_home_default));
-
-
-        //ActionBar.Action barAction = new startBarCodeAction();
-        //actionBar.addAction(barAction);
-
+        ActionBar.Action barAction = new startBarCodeAction();
+        actionBar.addAction(barAction);
         actionBar.addAction(new StartSearchAction());
         actionBar.addAction(new StartSettingAction());
         actionBar.addAction(new StartShareGridView());
@@ -68,8 +66,30 @@ public class MainActivity extends BaseSampleActivity {
 
 
 
+
         //start to get the big picture information
         new LongOperation().execute();
+
+
+
+
+
+
+
+    }
+
+
+    public void AddToolBar()
+    {
+        MainActivityFragment_toolbar toolbar = MainActivityFragment_toolbar.newInstance();
+        Bundle args = new Bundle();
+        //args.putInt(MainActivityFragment_toolbar.ARG);
+        toolbar.setArguments(args);
+        FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
+
+        transaction.add(toolbar,"toolbar");
+        transaction.commit();
+
     }
 
     @Override
@@ -102,10 +122,12 @@ public class MainActivity extends BaseSampleActivity {
 
         @Override
         public void performAction(View view) {
-            Intent t = new Intent();
-            t.setClass(MainActivity.this,barcodeActivity.class);
-            startActivity(t);
-            overridePendingTransition(R.anim.slide_in, R.anim.slide_out);
+            //Intent t = new Intent();
+            //t.setClass(MainActivity.this,barcodeActivity.class);
+            //startActivity(t);
+            //overridePendingTransition(R.anim.slide_in, R.anim.slide_out);
+
+            AddToolBar();
         }
     }
     private class StartFavorViewAction implements ActionBar.Action{

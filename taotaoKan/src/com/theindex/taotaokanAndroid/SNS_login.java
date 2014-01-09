@@ -2,10 +2,15 @@ package com.theindex.taotaokanAndroid;
 
 import android.app.Activity;
 import android.content.Intent;
+import android.os.AsyncTask;
 import android.os.Bundle;
+import android.os.SystemClock;
+import android.support.v4.view.ViewPager;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
+import com.theindex.CuzyAdSDK.CuzyAdSDK;
+import com.theindex.CuzyAdSDK.CuzyTBKItem;
 import com.theindex.taotaokanAndroid.weibo.WeiboGetUserInfoTask;
 import com.theindex.taotaokanAndroid.weibo.updateWeibo;
 import com.sina.weibo.sdk.auth.Oauth2AccessToken;
@@ -348,5 +353,39 @@ public class SNS_login extends Activity {
 
         }
 
+    }
+
+
+
+
+
+
+    private class LongOperation extends AsyncTask<Void,Void,Void> {
+
+        @Override
+        protected Void doInBackground(Void...params){
+
+
+            return null;
+        }
+
+        @Override
+        protected void onPostExecute(Void result) {
+
+
+
+        }
+
+        @Override
+        protected void onCancelled() {
+        }
+
+        @Override
+        protected void onPreExecute(){
+        }
+
+        @Override
+        protected void onProgressUpdate(Void... values){
+        }
     }
 }
