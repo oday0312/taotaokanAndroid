@@ -27,5 +27,10 @@
             android:layout_width="fill_parent"
             />
 
+    <FrameLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/fragment_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
 </LinearLayout>
 

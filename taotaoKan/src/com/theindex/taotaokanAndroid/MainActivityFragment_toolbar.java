@@ -1,5 +1,6 @@
 package com.theindex.taotaokanAndroid;
 
+import android.app.Activity;
 import android.content.Intent;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
@@ -8,11 +9,9 @@ import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.AdapterView;
-import android.widget.GridView;
-import android.widget.LinearLayout;
-import android.widget.TextView;
+import android.widget.*;
 import com.theindex.taotaokanAndroid.gridView.GridItemType1Adapter;
+import com.theindex.taotaokanAndroid.zxing.view.ViewfinderView;
 
 import java.util.ArrayList;
 
@@ -30,9 +29,20 @@ public class MainActivityFragment_toolbar extends Fragment {
 
 
 
+    private OnMyButton1ClickListener mListener;
+    public interface OnMyButton1ClickListener {
+        public void onMyButton1Click();
+    }
 
 
-
+    public void onAttach(Activity activity) {
+        super.onAttach(activity);
+        try {
+            mListener = (OnMyButton1ClickListener) activity;//这句就是赋初值了。
+        } catch (ClassCastException e) {
+            throw new ClassCastException(activity.toString() + "must implement OnbtnSendClickListener");//这条表示，你不在Activity里实现这个接口的话，我就要抛出异常咯。知道下一步该干嘛了吧？
+        }
+    }
     public static MainActivityFragment_toolbar newInstance() {
         MainActivityFragment_toolbar fragment = new MainActivityFragment_toolbar();
 
@@ -65,11 +75,36 @@ public class MainActivityFragment_toolbar extends Fragment {
 
     public View viewCreator2(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState)
     {
+        final TaoTaoMainApplication application = (TaoTaoMainApplication)getActivity().getApplication();
         View v =  inflater.inflate(R.layout.main_activity_toolbar, container, false);
+        Button bt1 = (Button)v.findViewById(R.id.button1);
+        bt1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                mListener.onMyButton1Click();
+            }
+        });
+        int buttonWidth = application.screenWidth/4 -5;
+        int buttonHeight = v.getHeight();
+        bt1.setLayoutParams(new LinearLayout.LayoutParams(buttonWidth,buttonHeight));
+
+        Button bt2 = (Button)v.findViewById(R.id.button2);
+        bt2.setLayoutParams(new LinearLayout.LayoutParams(buttonWidth,80));
+
+        Button bt3 = (Button)v.findViewById(R.id.button3);
+        bt3.setLayoutParams(new LinearLayout.LayoutParams(buttonWidth,80));
+
+        Button bt4 = (Button)v.findViewById(R.id.button4);
+        bt4.setLayoutParams(new LinearLayout.LayoutParams(buttonWidth,80));
+
+
+
+
 
         return v;
 
     }
+
 
 
     @Override

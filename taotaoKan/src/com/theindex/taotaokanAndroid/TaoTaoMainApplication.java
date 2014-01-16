@@ -199,18 +199,30 @@ public class TaoTaoMainApplication extends Application {
         WaresItems temp1 = new WaresItems();
         temp1.itemImageURLString= "http://img03.taobaocdn.com/bao/uploaded/i3/18580019886278757/T11wXvXC4bXXXXXXXX_!!0-item_pic.jpg_240x240.jpg";
         temp1.itemClickURLString = "b6d767d2f8e.cuzy.com/stat/jump?url=U2ZKOTdmSDhGSkRrM1BqRThNbXBwYjIxdWVqTXJNajhJQ3dkWlZGTlZVRnRkV1ZSWVgxWldFQUlESHhBUFNrcEpTa3RNVGowcTJ0amQwOWJLek1MTDNRPT0=";
-        temp1.itemDescription = "";
+        temp1.itemDescription = "2013新款春秋冬韩版修身时尚棉衣风衣女外套女正品6130";
+        temp1.itemName = "2013新款春秋冬韩版修身时尚棉衣风衣女外套女正品6130";
+        temp1.itemPrice = "390";
+        temp1.itemPromotionPrice="178";
+        temp1.tradingVolumeInThirtyDays = "1386";
 
         WaresItems temp2 = new WaresItems();
         temp2.itemClickURLString = "b6d767d2f8e.cuzy.com/stat/jump?url=U0pDRjljWElMUFNJdUlTZ25LMjFnWkdSaGN6Z2lOUVl6TWpoZ2IyWlVXRnRTVmxCVlUxcFBDeHNjQmdzV1RVTkNRMFJGUlRRdEl5TWtMQzh4TmNYQzFnPT0=";
         temp2.itemImageURLString = "http://img02.taobaocdn.com/bao/uploaded/i2/19339027074070349/T1r6OyFghfXXXXXXXX_!!0-item_pic.jpg_240x240.jpg";
-        temp2.itemDescription = "";
+        temp2.itemDescription = "零五七一世家2013新款秋装韩版女装春秋外套军绿色中长款修身风衣";
+        temp2.itemName = "零五七一世家2013新款秋装韩版女装春秋外套军绿色中长款修身风衣";
+        temp2.itemPrice = "398";
+        temp2.itemPromotionPrice = "199";
+        temp2.tradingVolumeInThirtyDays = "132";
 
 
         WaresItems temp3 = new WaresItems();
         temp3.itemClickURLString = "b6d767d2f8e.cuzy.com/stat/jump?url=SGREUjNKQzROUGlNcElDc21OR3hqWldOZ2NEa3ROQVV5TlRsamJWWlhWVnBUVlZKZlVGaE1DaHdkQlFvSlRFQkRSRVZHUkRzc0lDSWpMU3d3eXNUQjF3PT0=";
         temp3.itemImageURLString = "http://img04.taobaocdn.com/bao/uploaded/i4/11484025967603452/T13TF2Fg4XXXXXXXXX_!!0-item_pic.jpg_240x240.jpg";
-        temp3.itemDescription = "";
+        temp3.itemDescription = "海宁皮草外套新款2013 女士韩版钉珠修身中长款兔毛皮草 清仓特价";
+        temp3.itemName = "海宁皮草外套新款2013 女士韩版钉珠修身中长款兔毛皮草 清仓特价";
+        temp3.itemPrice = "1590";
+        temp3.itemPromotionPrice= "408";
+        temp3.tradingVolumeInThirtyDays="809";
 
         wareItemsArray.add(temp1);
         wareItemsArray.add(temp2);

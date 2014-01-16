@@ -23,7 +23,7 @@ import com.viewpagerindicator.UnderlinePageIndicator;
 import java.util.ArrayList;
 import java.util.Random;
 
-public class MainActivity extends BaseSampleActivity {
+public class MainActivity extends BaseSampleActivity implements MainActivityFragment_toolbar.OnMyButton1ClickListener {
 
 
     /**
@@ -34,7 +34,7 @@ public class MainActivity extends BaseSampleActivity {
     private PopupWindow mPopupWindow;
 
     public ArrayList<CuzyTBKItem> rawData = new ArrayList<CuzyTBKItem>();
-
+    public MainActivityFragment_toolbar toolbar;
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -81,17 +81,32 @@ public class MainActivity extends BaseSampleActivity {
 
     public void AddToolBar()
     {
-        MainActivityFragment_toolbar toolbar = MainActivityFragment_toolbar.newInstance();
+        toolbar = MainActivityFragment_toolbar.newInstance();
         Bundle args = new Bundle();
         //args.putInt(MainActivityFragment_toolbar.ARG);
         toolbar.setArguments(args);
         FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
 
-        transaction.add(toolbar,"toolbar");
+        transaction.add(R.id.fragment_container,toolbar);
         transaction.commit();
 
     }
+    public void removeToolBar()
+    {
+        FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
 
+        transaction.hide(toolbar);
+        Log.d("huangzf", "remove toolbar");
+        transaction.commit();
+    }
+    @Override
+    public void onMyButton1Click() {
+
+
+        Toast.makeText(MainActivity.this,
+                "my Button 1 click",
+                Toast.LENGTH_SHORT).show();
+    }
     @Override
     public boolean onKeyDown(int keyCode, KeyEvent event) {
         if (keyCode == KeyEvent.KEYCODE_MENU && event.getRepeatCount() == 0) {
@@ -112,7 +127,7 @@ public class MainActivity extends BaseSampleActivity {
         return t;
     }
 
-
+    public static int toolbarStatus = 0;
     private class startBarCodeAction implements ActionBar.Action
     {
         @Override
@@ -127,7 +142,16 @@ public class MainActivity extends BaseSampleActivity {
             //startActivity(t);
             //overridePendingTransition(R.anim.slide_in, R.anim.slide_out);
 
-            AddToolBar();
+            if (toolbarStatus == 0)
+            {
+                AddToolBar();
+                toolbarStatus = 1;
+            }
+            else
+            {
+                removeToolBar();
+                toolbarStatus = 0;
+            }
         }
     }
     private class StartFavorViewAction implements ActionBar.Action{
