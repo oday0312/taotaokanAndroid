@@ -31,7 +31,7 @@ public class MainActivityFragment_toolbar extends Fragment {
 
     private OnMyButton1ClickListener mListener;
     public interface OnMyButton1ClickListener {
-        public void onMyButton1Click();
+        public void onMyButton1Click(String themeString);
     }
 
 
@@ -77,27 +77,50 @@ public class MainActivityFragment_toolbar extends Fragment {
     {
         final TaoTaoMainApplication application = (TaoTaoMainApplication)getActivity().getApplication();
         View v =  inflater.inflate(R.layout.main_activity_toolbar, container, false);
+        v.setVerticalFadingEdgeEnabled(false);
         Button bt1 = (Button)v.findViewById(R.id.button1);
         bt1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                mListener.onMyButton1Click();
+
+                mListener.onMyButton1Click("1");
             }
         });
-        int buttonWidth = application.screenWidth/4 -5;
-        int buttonHeight = v.getHeight();
+        int buttonWidth = application.screenWidth/4 ;
+        int buttonHeight = buttonWidth / 2;
         bt1.setLayoutParams(new LinearLayout.LayoutParams(buttonWidth,buttonHeight));
 
         Button bt2 = (Button)v.findViewById(R.id.button2);
-        bt2.setLayoutParams(new LinearLayout.LayoutParams(buttonWidth,80));
+        bt2.setLayoutParams(new LinearLayout.LayoutParams(buttonWidth,buttonHeight));
+        bt2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                mListener.onMyButton1Click("2");
+            }
+        });
 
         Button bt3 = (Button)v.findViewById(R.id.button3);
-        bt3.setLayoutParams(new LinearLayout.LayoutParams(buttonWidth,80));
+        bt3.setLayoutParams(new LinearLayout.LayoutParams(buttonWidth,buttonHeight));
+        bt3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                mListener.onMyButton1Click("3");
+            }
+        });
 
         Button bt4 = (Button)v.findViewById(R.id.button4);
-        bt4.setLayoutParams(new LinearLayout.LayoutParams(buttonWidth,80));
+        bt4.setLayoutParams(new LinearLayout.LayoutParams(buttonWidth,buttonHeight));
+        bt4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                mListener.onMyButton1Click("4");
+            }
+        });
 
-
+        bt1.setText("值得买");
+        bt2.setText("9.9包邮");
+        bt3.setText("19.9包邮");
+        bt4.setText("29.9包邮");
 
 
 

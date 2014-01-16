@@ -100,12 +100,12 @@ public class MainActivity extends BaseSampleActivity implements MainActivityFrag
         transaction.commit();
     }
     @Override
-    public void onMyButton1Click() {
+    public void onMyButton1Click(String themeidString) {
 
+        LongOperationButtonSelection thread1 = new LongOperationButtonSelection();
+        thread1.themeID = themeidString;
 
-        Toast.makeText(MainActivity.this,
-                "my Button 1 click",
-                Toast.LENGTH_SHORT).show();
+        thread1.execute();
     }
     @Override
     public boolean onKeyDown(int keyCode, KeyEvent event) {
@@ -291,6 +291,76 @@ public class MainActivity extends BaseSampleActivity implements MainActivityFrag
                     application.wareItemsArray.add(temp);
 
                 }
+                Log.d("huang alex", ""+ temp.toString() );
+            }
+
+
+
+
+            return null;
+        }
+
+        @Override
+        protected void onPostExecute(Void result) {
+            //mAdapter = new TestFragmentAdapter(getSupportFragmentManager());
+
+            mAdapter.notifyDataSetChanged();
+            mPager = (ViewPager)findViewById(R.id.pager);
+            mPager.setAdapter(mAdapter);
+
+
+        }
+
+        @Override
+        protected void onCancelled() {
+        }
+
+        @Override
+        protected void onPreExecute(){
+        }
+
+        @Override
+        protected void onProgressUpdate(Void... values){
+        }
+    }
+
+
+
+
+    private class LongOperationButtonSelection extends AsyncTask<Void,Void,Void> {
+
+        public String themeID = "1";
+        @Override
+        protected Void doInBackground(Void...params){
+
+            TaoTaoMainApplication application = (TaoTaoMainApplication)getApplication();
+            rawData.clear();
+
+            String cuzyThemeString = themeID;
+
+            {
+                rawData = CuzyAdSDK.getInstance().fetchRawItems(cuzyThemeString, "", 0);
+
+            }
+
+            application.wareItemsArray.clear();
+
+            for (int i = 0; i< rawData.size();i++)
+            {
+                CuzyTBKItem cuzyData = rawData.get(i);
+                WaresItems temp = new WaresItems();
+                temp.itemClickURLString =  cuzyData.getItemClickURLString();
+                temp.itemDescription = cuzyData.getItemDescription();
+                temp.itemPrice = cuzyData.getItemPrice();
+
+                temp.itemImageURLString = cuzyData.getItemImageURLString();
+                temp.itemFreePostage= cuzyData.getItemFreePostage();
+                temp.itemName = cuzyData.getItemName();
+
+                temp.itemPromotionPrice = cuzyData.getItemPromotionPrice();
+                temp.itemType = cuzyData.getItemType();
+                temp.tradingVolumeInThirtyDays= cuzyData.getTradingVolumeInThirtyDays();
+                 application.wareItemsArray.add(temp);
                 Log.d("huang alex", ""+ temp.toString() );
             }
 
